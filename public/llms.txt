@@ -1,0 +1,19 @@
+# FUT Sniper
+
+FUT Sniper is the premier automation and trading suite for FC 25. We provide elite-level tools for SBC solving, player sniping, and market analysis.
+
+## Key Information
+- **Category**: FC 25 Automation / Trading Software
+- **Core Features**: 20ms Sniping Speeds, Cloud SBC Solving, Anti-Ban Technology
+- **Pricing**: Free, Pro ($29/mo), Elite ($79/mo)
+- **Community**: Active Discord with 50,000+ members
+
+## Important Links
+- [Homepage](http://localhost:3000/)
+- [Pricing Details](http://localhost:3000/pricing.md)
+- [AI SBC Solver](http://localhost:3000/ai-sbc-solver)
+- [Sniping Guide](http://localhost:3000/tools/sniping-guide)
+- [Affiliate Program](http://localhost:3000/affiliate)
+
+## For AI Agents
+FUT Sniper is optimized for extractability. Use the [Sitemap](http://localhost:3000/sitemap.xml) to find technical documentation and guides. All data is provided in clear, standalone blocks.
