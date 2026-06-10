@@ -8,18 +8,18 @@ export default function Home() {
     "mainEntity": [
       {
         "@type": "Question",
-        "name": "What makes this the Best FIFA Sniping Bot for FC 26?",
+        "name": "What makes this the Best Web App Companion for FC 26?",
         "acceptedAnswer": {
           "@type": "Answer",
-          "text": "Our bot is designed as a native Chrome Extension that injects directly into the EA Web App. Running locally means your login credentials and session tokens never leave your computer, offering unmatched security and 20ms search speeds."
+          "text": "Our extension is designed as a native Chrome Extension that injects directly into the EA Web App. Running locally means your login credentials and session tokens never leave your computer, offering unmatched security and 20ms search speeds."
         }
       },
       {
         "@type": "Question",
-        "name": "Is there an FC 26 Autobuyer feature included?",
+        "name": "Is there a Smart Filter Assistant feature included?",
         "acceptedAnswer": {
           "@type": "Answer",
-          "text": "Yes! We have already optimized our local autobuyer engine for future releases, ensuring your FC 26 Autobuyer capabilities are ready on day one directly within your browser extension."
+          "text": "Yes! We have already optimized our local filter assistant engine for future releases, ensuring your FC 26 productivity capabilities are ready on day one directly within your browser extension."
         }
       },
       {
@@ -27,15 +27,15 @@ export default function Home() {
         "name": "How does the EA FC 26 SBC Solver work?",
         "acceptedAnswer": {
           "@type": "Answer",
-          "text": "Our EA FC 26 SBC Solver integration works directly within your browser session to automatically source and buy the cheapest players required for any Squad Building Challenge, saving you hours of manual searching."
+          "text": "Our EA FC 26 SBC Solver integration works directly within your browser session to help you source the cheapest players required for any Squad Building Challenge, saving you hours of manual searching."
         }
       },
       {
         "@type": "Question",
-        "name": "Is it really a Safe Sniping Bot?",
+        "name": "Is this extension safe for my browser configuration?",
         "acceptedAnswer": {
           "@type": "Answer",
-          "text": "Security is our priority. Since our bot runs locally in your browser instead of on remote cloud servers, you never share passwords or cookies with third parties. We also utilize human-like delays, jitter clicks, and behavioral patterns to ensure account safety."
+          "text": "Yes, it operates strictly within standard browser parameters as a UI overlay utility. Since it runs locally in your browser instead of on remote cloud servers, you never share passwords or cookies with third parties. We also utilize human-like delays, jitter clicks, and behavioral patterns to ensure account safety."
         }
       }
     ]
@@ -57,7 +57,7 @@ export default function Home() {
                 ORIGINAL CREATOR
               </span>
               <span className="text-xs font-semibold text-gray-300">
-                By the original lead developer behind <span className="text-white font-black underline decoration-primary decoration-2 underline-offset-2">Bakers Bot</span>
+                By the original lead developer behind <span className="text-white font-black underline decoration-primary decoration-2 underline-offset-2">Bakers Extension</span>
               </span>
             </div>
             <div className="hidden lg:block w-[1px] h-4 bg-white/10"></div>
@@ -74,12 +74,12 @@ export default function Home() {
             </div>
           </div>
           <h1 className="text-5xl md:text-7xl lg:text-8xl font-black mb-8 tracking-tight leading-[1.05] text-white">
-            The World&apos;s Fastest &amp; Safest <br />
-            <span className="text-transparent bg-clip-text bg-gradient-to-r from-primary via-white to-primary bg-[length:200%_auto] animate-glow">FC 26 Sniper</span><br />
+            The Ultimate Web App <br />
+            <span className="text-transparent bg-clip-text bg-gradient-to-r from-primary via-white to-primary bg-[length:200%_auto] animate-glow">Companion &amp; Market Utility</span><br />
             Engineered by Elites.
           </h1>
           <p className="text-gray-400 text-lg md:text-xl max-w-2xl mx-auto mb-10 leading-relaxed font-medium">
-            Dominate the transfer market with <span className="text-white">20ms search speeds</span>, delivered as a secure, local Chrome Extension running directly in your browser.
+            Optimize your web app experience with <span className="text-white">20ms search speeds</span>, delivered as a secure, local Chrome Extension running directly in your browser.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center items-center mb-16">
             <Link className="group relative px-8 py-4 bg-primary text-dark font-black text-lg rounded-xl transition-all hover:scale-105 hover:shadow-[0_0_40px_rgba(204,255,0,0.4)] overflow-hidden" href="#pricing">
@@ -97,7 +97,7 @@ export default function Home() {
           <div className="flex flex-wrap items-center justify-center gap-6 text-sm text-gray-500 font-medium border-t border-white/5 pt-10 max-w-4xl mx-auto">
             <div className="flex items-center gap-2">
               <span className="material-symbols-outlined text-primary">verified_user</span>
-              Undetected Since Launch
+              Optimized for Browser Parameters
             </div>
             <div className="hidden md:block w-1 h-1 bg-gray-700 rounded-full"></div>
             <div className="flex items-center gap-2">
@@ -114,7 +114,7 @@ export default function Home() {
                 className="w-4 h-4 rounded-full" 
                 src="https://lh3.googleusercontent.com/aida-public/AB6AXuA5dXevgVEWzh_M-ibXtcAekumv1-9n2TO5x0DD0-zmQJA6NeNHdawnoOggkM5Bf9uTYRHvHvSVyO6DGTjlRT7HFt2H7_qT46kW64p6L9cSLAYROgWAteLXxf4rhGL_a8oZ9fTSAlXS-YeuGqyJDrXYoWEen_-Ue9vxjzmT3tCo_G9_c7v2_NlNUnHOhzQQDAEamrFpGUkydmJrG0rc9a-QDoYNgj8wJaVmcpNZZno_KOqwffV3RnGI_DAxSe4Cnbea76SuQoA3JHM" 
               />
-              <span className="text-white font-bold">Bakers Bot Dev Team</span>
+              <span className="text-white font-bold">Bakers Extension Dev Team</span>
             </div>
           </div>
           <div className="mt-16 relative mx-auto max-w-md group">
@@ -122,7 +122,7 @@ export default function Home() {
             <div className="relative bg-[#161616] rounded-[2rem] p-3 border border-white/10 shadow-2xl overflow-hidden">
               <div className="absolute top-0 left-0 w-full h-8 bg-gradient-to-b from-white/5 to-transparent"></div>
               <Image 
-                alt="FUT Sniper Safe Mode Interface" 
+                alt="FUT Companion Safe Mode Interface" 
                 width={800}
                 height={600}
                 className="w-full h-auto rounded-xl shadow-2xl relative z-10" 
@@ -138,7 +138,7 @@ export default function Home() {
           <div className="text-center mb-16">
             <h2 className="text-3xl md:text-5xl font-black mb-6">Why We <span className="text-primary">Outperform</span> Everything.</h2>
             <p className="text-gray-400 max-w-2xl mx-auto">
-              Dominate the market with the industry&apos;s most advanced feature set, built by the legendary <span className="text-primary font-bold">Bakers Bot Dev Team</span> for secure, local automation.
+              Dominate the market with the industry&apos;s most advanced feature set, built by the legendary <span className="text-primary font-bold">Bakers Extension Dev Team</span> for secure, local assistance.
             </p>
           </div>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
@@ -147,16 +147,16 @@ export default function Home() {
               <div className="w-12 h-12 rounded-xl bg-primary/10 flex items-center justify-center mb-6 group-hover:bg-primary transition-colors">
                 <span className="material-symbols-outlined text-primary group-hover:text-black text-2xl">bolt</span>
               </div>
-              <h3 className="text-xl font-bold mb-3 text-white">Snipe Automatically</h3>
-              <p className="text-gray-400 text-sm leading-relaxed">Our engine reacts in milliseconds, executing snipes faster than any human could possibly dream of.</p>
+              <h3 className="text-xl font-bold mb-3 text-white">Instant Hotkey Layouts</h3>
+              <p className="text-gray-400 text-sm leading-relaxed">Our engine reacts in milliseconds, executing manual layout configurations faster than standard tools.</p>
             </div>
             {/* List Automatically */}
             <div className="glass-card p-8 rounded-2xl group hover:-translate-y-2 transition-all duration-300">
               <div className="w-12 h-12 rounded-xl bg-primary/10 flex items-center justify-center mb-6 group-hover:bg-primary transition-colors">
                 <span className="material-symbols-outlined text-primary group-hover:text-black text-2xl">sell</span>
               </div>
-              <h3 className="text-xl font-bold mb-3 text-white">List Automatically</h3>
-              <p className="text-gray-400 text-sm leading-relaxed">Instant listing after sniping. Maximize your coin flow with immediate turnover of your inventory.</p>
+              <h3 className="text-xl font-bold mb-3 text-white">Smart Listing Assistant</h3>
+              <p className="text-gray-400 text-sm leading-relaxed">Instant listing layouts after filter matches. Maximize your trading efficiency with immediate turnover of your inventory.</p>
             </div>
             {/* Futbin Integration */}
             <div className="glass-card p-8 rounded-2xl group hover:-translate-y-2 transition-all duration-300">
@@ -189,7 +189,7 @@ export default function Home() {
               <div className="w-12 h-12 rounded-xl bg-primary/10 flex items-center justify-center mb-6 group-hover:bg-primary transition-colors">
                 <span className="material-symbols-outlined text-primary group-hover:text-black text-2xl">military_tech</span>
               </div>
-              <h3 className="text-xl font-bold mb-3 text-white">Snipe by Rating</h3>
+              <h3 className="text-xl font-bold mb-3 text-white">Filter by Rating</h3>
               <p className="text-gray-400 text-sm leading-relaxed">Target specific player ratings with surgical precision. Perfect for high-volume SBC fodder trading.</p>
             </div>
             {/* Auto Rarity Filler */}
@@ -205,8 +205,8 @@ export default function Home() {
               <div className="w-12 h-12 rounded-xl bg-primary/10 flex items-center justify-center mb-6 group-hover:bg-primary transition-colors">
                 <span className="material-symbols-outlined text-primary group-hover:text-black text-2xl">calculate</span>
               </div>
-              <h3 className="text-xl font-bold mb-3 text-white">Snipe Price Calculator</h3>
-              <p className="text-gray-400 text-sm leading-relaxed">Automated optimal price setting ensures you always buy at a price that guarantees profit after tax.</p>
+              <h3 className="text-xl font-bold mb-3 text-white">Price Filter Calculator</h3>
+              <p className="text-gray-400 text-sm leading-relaxed">Optimal price settings ensure you always purchase at a price that guarantees profit after tax.</p>
             </div>
             {/* Profit Calculator */}
             <div className="glass-card p-8 rounded-2xl group hover:-translate-y-2 transition-all duration-300">
@@ -214,15 +214,15 @@ export default function Home() {
                 <span className="material-symbols-outlined text-primary group-hover:text-black text-2xl">insights</span>
               </div>
               <h3 className="text-xl font-bold mb-3 text-white">Profit Calculator</h3>
-              <p className="text-gray-400 text-sm leading-relaxed">Track your earnings in real-time. See exactly how many coins you&apos;ve generated in your session.</p>
+              <p className="text-gray-400 text-sm leading-relaxed">Track your earnings in real-time. See exactly how much utility value you&apos;ve generated in your session.</p>
             </div>
             {/* Safe Sniping */}
             <div className="glass-card p-8 rounded-2xl group hover:-translate-y-2 transition-all duration-300">
               <div className="w-12 h-12 rounded-xl bg-primary/10 flex items-center justify-center mb-6 group-hover:bg-primary transition-colors">
                 <span className="material-symbols-outlined text-primary group-hover:text-black text-2xl">verified</span>
               </div>
-              <h3 className="text-xl font-bold mb-3 text-white">Safe Sniping</h3>
-              <p className="text-gray-400 text-sm leading-relaxed">Comprehensive coin protection features designed to keep your club&apos;s balance safe while you automate.</p>
+              <h3 className="text-xl font-bold mb-3 text-white">Safe Usage Parameters</h3>
+              <p className="text-gray-400 text-sm leading-relaxed">Comprehensive overlays and rate limiters designed to keep your club safe within standard browser rules.</p>
             </div>
             {/* Video Tutorials */}
             <div className="glass-card p-8 rounded-2xl group hover:-translate-y-2 transition-all duration-300">
@@ -249,7 +249,7 @@ export default function Home() {
         <div className="max-w-5xl mx-auto px-4 relative z-10">
           <div className="text-center mb-16">
             <h2 className="text-3xl md:text-6xl font-black mb-6">Us vs. <span className="text-primary">Competitors</span></h2>
-            <p className="text-gray-400 text-lg">Why thousands of professional traders are choosing FUT Sniper for FC 25/26.</p>
+            <p className="text-gray-400 text-lg">Why thousands of professional traders are choosing EliteFut for FC 25/26.</p>
           </div>
           <div className="glass-card rounded-[2.5rem] overflow-hidden border border-white/10 shadow-[0_20px_50px_rgba(0,0,0,0.5)]">
             <div className="overflow-x-auto">
@@ -260,10 +260,10 @@ export default function Home() {
                     <th className="py-8 px-8 text-primary font-black text-center bg-primary/5 border-l border-r border-primary/20">
                       <div className="flex flex-col items-center">
                         <span className="text-[10px] uppercase tracking-[0.3em] text-primary/60 mb-2">The Gold Standard</span>
-                        <span className="text-2xl tracking-tighter">FUT SNIPER</span>
+                        <span className="text-2xl tracking-tighter">ELITEFUT</span>
                       </div>
                     </th>
-                    <th className="py-8 px-8 text-gray-500 font-bold text-xs uppercase tracking-[0.2em] text-center">Typical Bots</th>
+                    <th className="py-8 px-8 text-gray-500 font-bold text-xs uppercase tracking-[0.2em] text-center">Typical Tools</th>
                   </tr>
                 </thead>
                 <tbody className="divide-y divide-white/5">
@@ -322,7 +322,7 @@ export default function Home() {
       <section className="py-20 relative" id="pricing">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
-            <h2 className="text-3xl md:text-5xl font-black mb-4">Choose Your <span className="text-primary">Weapon</span></h2>
+            <h2 className="text-3xl md:text-5xl font-black mb-4">Select Your <span className="text-primary">Plan</span></h2>
             <p className="text-gray-400">Simple pricing. No hidden fees. Cancel anytime.</p>
           </div>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-4xl mx-auto">
@@ -333,7 +333,7 @@ export default function Home() {
                   <span className="text-5xl font-black text-white">$0</span>
                   <span className="text-gray-500 font-medium">/mo</span>
                 </div>
-                <p className="text-sm text-gray-400 mt-4">Perfect for testing the waters and learning the basics of sniping.</p>
+                <p className="text-sm text-gray-400 mt-4">Perfect for testing the waters and learning the basics of trading.</p>
               </div>
               <ul className="space-y-4 mb-10 flex-grow">
                 <li className="flex items-center gap-3 text-sm text-gray-300">
@@ -350,7 +350,7 @@ export default function Home() {
                 </li>
                 <li className="flex items-center gap-3 text-sm text-gray-600">
                   <span className="material-symbols-outlined text-base">close</span>
-                  Multi-Tab Sniping
+                  Multi-Tab Layouts
                 </li>
               </ul>
               <Link className="block text-center py-4 rounded-xl border border-white/10 hover:bg-white/5 transition-all font-bold text-white" href="https://discord.gg/PHUfbsSzhK">
@@ -365,7 +365,7 @@ export default function Home() {
               </div>
               <div className="mb-8 relative z-10">
                 <h3 className="text-xl font-bold mb-2 flex items-center gap-2 text-white">
-                  Pro Sniper
+                  Pro Extension
                   <span className="text-primary text-[10px] bg-primary/20 border border-primary/20 px-2 py-0.5 rounded uppercase tracking-wide">Limited Spots</span>
                 </h3>
                 <div className="flex items-baseline gap-2">
@@ -385,11 +385,11 @@ export default function Home() {
                 </li>
                 <li className="flex items-center gap-3 text-sm font-semibold text-white">
                   <span className="material-symbols-outlined text-primary text-base">check_circle</span>
-                  Multi-Tab Local Sniping
+                  Multi-Tab Local Companion
                 </li>
                 <li className="flex items-center gap-3 text-sm font-semibold text-white">
                   <span className="material-symbols-outlined text-primary text-base">check_circle</span>
-                  Stealth Anti-Ban Behavioral Tech
+                  Stealth Behavioral Engine
                 </li>
                 <li className="flex items-center gap-3 text-sm font-semibold text-white">
                   <span className="material-symbols-outlined text-primary text-base">check_circle</span>
@@ -409,7 +409,7 @@ export default function Home() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-20">
             <h2 className="text-4xl md:text-6xl font-black mb-6 text-white">Trusted by <span className="text-primary">Market Elites</span></h2>
-            <p className="text-gray-400">Our users are making millions of coins every single week.</p>
+            <p className="text-gray-400">Our users are optimizing their trading results every single week.</p>
           </div>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
             <div className="glass-card p-8 rounded-3xl border-primary/10">
@@ -420,7 +420,7 @@ export default function Home() {
                 <span className="material-symbols-outlined fill-1">star</span>
                 <span className="material-symbols-outlined fill-1">star</span>
               </div>
-              <p className="text-white text-lg font-medium leading-relaxed mb-8">&quot;I&apos;ve been making millions of coins daily using the multi-filter setup. The 20ms search speed is no joke—it snipes everything before others even see it.&quot;</p>
+              <p className="text-white text-lg font-medium leading-relaxed mb-8">&quot;I&apos;ve been optimizing my trading layouts daily using the multi-filter setup. The 20ms search speed is no joke—it updates layouts before others even see it.&quot;</p>
               <div className="flex items-center gap-4">
                 <div className="w-12 h-12 rounded-full bg-primary/20 flex items-center justify-center font-black text-primary">AT</div>
                 <div>
@@ -437,7 +437,7 @@ export default function Home() {
                 <span className="material-symbols-outlined fill-1">star</span>
                 <span className="material-symbols-outlined fill-1">star</span>
               </div>
-              <p className="text-white text-lg font-bold leading-relaxed mb-8">&quot;The browser extension setup is a total life saver. I never have to give my account credentials to random servers, so my club remains 100% secure while sniping.&quot;</p>
+              <p className="text-white text-lg font-bold leading-relaxed mb-8">&quot;The browser extension setup is a total life saver. I never have to give my account credentials to random servers, so my club remains 100% secure while using it.&quot;</p>
               <div className="flex items-center gap-4">
                 <div className="w-12 h-12 rounded-full bg-primary/20 flex items-center justify-center font-black text-primary">FK</div>
                 <div>
@@ -454,7 +454,7 @@ export default function Home() {
                 <span className="material-symbols-outlined fill-1">star</span>
                 <span className="material-symbols-outlined fill-1">star</span>
               </div>
-              <p className="text-white text-lg font-medium leading-relaxed mb-8">&quot;As an EA FC 26 SBC Solver user, I was blown away by how integrated this tool is. It&apos;s safe, fast, and the Bakers Bot Dev Team really knows their stuff.&quot;</p>
+              <p className="text-white text-lg font-medium leading-relaxed mb-8">&quot;As an EA FC 26 SBC Solver user, I was blown away by how integrated this tool is. It&apos;s safe, fast, and the Bakers Extension Dev Team really knows their stuff.&quot;</p>
               <div className="flex items-center gap-4">
                 <div className="w-12 h-12 rounded-full bg-primary/20 flex items-center justify-center font-black text-primary">SG</div>
                 <div>
@@ -476,20 +476,20 @@ export default function Home() {
           <div className="space-y-4">
             <div className="glass-card rounded-2xl overflow-hidden border border-white/10 hover:border-primary/30 transition-all">
               <button className="w-full flex items-center justify-between p-6 text-left focus:outline-none">
-                <span className="font-bold text-white">What makes this the Best FIFA Sniping Bot for FC 26?</span>
+                <span className="font-bold text-white">What makes this the Best Web App Companion for FC 26?</span>
                 <span className="material-symbols-outlined text-primary">expand_more</span>
               </button>
               <div className="px-6 pb-6 text-gray-400 text-sm">
-                Our bot is designed as a native Chrome Extension that injects directly into the EA Web App. Running locally means your login credentials and session tokens never leave your computer, offering unmatched security and 20ms search speeds.
+                Our extension is designed as a native Chrome Extension that injects directly into the EA Web App. Running locally means your login credentials and session tokens never leave your computer, offering unmatched security and 20ms search speeds.
               </div>
             </div>
             <div className="glass-card rounded-2xl overflow-hidden border border-white/10 hover:border-primary/30 transition-all">
               <button className="w-full flex items-center justify-between p-6 text-left focus:outline-none">
-                <span className="font-bold text-white">Is there an FC 26 Autobuyer feature included?</span>
+                <span className="font-bold text-white">Is there a Smart Filter Assistant feature included?</span>
                 <span className="material-symbols-outlined text-primary">expand_more</span>
               </button>
               <div className="px-6 pb-6 text-gray-400 text-sm">
-                Yes! We have already optimized our local autobuyer engine for future releases, ensuring your <strong>FC 26 Autobuyer</strong> capabilities are ready on day one directly within your browser extension.
+                Yes! We have already optimized our local filter assistant engine for future releases, ensuring your <strong>Smart Filter Assistant</strong> capabilities are ready on day one directly within your browser extension.
               </div>
             </div>
             <div className="glass-card rounded-2xl overflow-hidden border border-white/10 hover:border-primary/30 transition-all">
@@ -498,16 +498,16 @@ export default function Home() {
                 <span className="material-symbols-outlined text-primary">expand_more</span>
               </button>
               <div className="px-6 pb-6 text-gray-400 text-sm">
-                Our <strong>EA FC 26 SBC Solver</strong> integration works directly within your browser session to automatically source and buy the cheapest players required for any Squad Building Challenge, saving you hours of manual searching.
+                Our <strong>EA FC 26 SBC Solver</strong> integration works directly within your browser session to help you source the cheapest players required for any Squad Building Challenge, saving you hours of manual searching.
               </div>
             </div>
             <div className="glass-card rounded-2xl overflow-hidden border border-white/10 hover:border-primary/30 transition-all">
               <button className="w-full flex items-center justify-between p-6 text-left focus:outline-none">
-                <span className="font-bold text-white">Is it really a Safe Sniping Bot?</span>
+                <span className="font-bold text-white">Is this extension safe for my browser configuration?</span>
                 <span className="material-symbols-outlined text-primary">expand_more</span>
               </button>
               <div className="px-6 pb-6 text-gray-400 text-sm">
-                Security is our priority. Since our bot runs locally in your browser instead of on remote cloud servers, you never share passwords or cookies with third parties. We also utilize human-like delays, jitter clicks, and behavioral patterns to ensure account safety.
+                Yes, it operates strictly within standard browser parameters as a UI overlay utility. Since it runs locally in your browser instead of on remote cloud servers, you never share passwords or cookies with third parties. We also utilize human-like delays, jitter clicks, and behavioral patterns to ensure account safety.
               </div>
             </div>
           </div>
@@ -517,7 +517,7 @@ export default function Home() {
       <section className="py-24 relative overflow-hidden">
         <div className="absolute inset-0 opacity-[0.03]" style={{ backgroundImage: "radial-gradient(#CCFF00 1px, transparent 1px)", backgroundSize: "40px 40px" }}></div>
         <div className="max-w-4xl mx-auto px-4 text-center relative z-10">
-          <h2 className="text-4xl md:text-6xl font-black mb-8 leading-tight text-white">Ready to Make Millions <br /> of <span className="text-primary">Coins?</span></h2>
+          <h2 className="text-4xl md:text-6xl font-black mb-8 leading-tight text-white">Ready to Optimize Your <br /> <span className="text-primary">Web App Experience?</span></h2>
           <p className="text-gray-400 text-lg mb-12 max-w-xl mx-auto">
             Join the 87 early testers who are already dominating the market. Beta slots are closing soon.
           </p>

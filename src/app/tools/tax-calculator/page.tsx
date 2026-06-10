@@ -67,7 +67,7 @@ export default function TaxCalculatorPage() {
               <tr>
                 <th className="p-6 text-xs font-headline uppercase tracking-widest text-[#8e9379]">Performance Metric</th>
                 <th className="p-6 text-xs font-headline uppercase tracking-widest text-[#8e9379]">Manual Method</th>
-                <th className="p-6 text-xs font-headline uppercase tracking-widest text-primary">Elite Sniper Logic</th>
+                <th className="p-6 text-xs font-headline uppercase tracking-widest text-primary">Elite Extension Logic</th>
               </tr>
             </thead>
             <tbody className="divide-y divide-[#444933]/5 text-slate-100">
@@ -87,7 +87,7 @@ export default function TaxCalculatorPage() {
                 <td className="p-6 text-primary font-bold"><span className="material-symbols-outlined align-middle mr-2" style={{ fontVariationSettings: "'FILL' 1" }}>sync</span> Real-time Price Tracking</td>
               </tr>
               <tr className="hover:bg-[#353534]/30 transition-colors">
-                <td className="p-6 font-medium">Automated Sniping Filters</td>
+                <td className="p-6 font-medium">Automated Layout Filters</td>
                 <td className="p-6 text-red-500"><span className="material-symbols-outlined align-middle mr-2">close</span> Not Available</td>
                 <td className="p-6 text-primary font-bold"><span className="material-symbols-outlined align-middle mr-2" style={{ fontVariationSettings: "'FILL' 1" }}>target</span> Integrated Filters</td>
               </tr>
@@ -127,7 +127,7 @@ export default function TaxCalculatorPage() {
       <section className="relative overflow-hidden rounded-xl bg-gradient-to-r from-white via-primary to-[#b5d25e] p-12 flex flex-col md:flex-row items-center justify-between gap-8 text-black mb-12">
         <div className="max-w-xl text-center md:text-left z-10">
           <h2 className="text-4xl font-black font-headline tracking-tighter mb-2 uppercase">Join 12,000+ Pro Traders</h2>
-          <p className="font-bold opacity-90 text-lg">Access exclusive Discord channels for free sniping filters, market leaks, and real-time investment alerts.</p>
+          <p className="font-bold opacity-90 text-lg">Access exclusive Discord channels for free market filters, market leaks, and real-time investment alerts.</p>
         </div>
         <div className="flex-shrink-0 z-10">
           <button className="bg-black text-primary px-10 py-5 font-headline font-black rounded-lg uppercase tracking-tight scale-100 hover:scale-105 active:scale-95 transition-all shadow-xl">

@@ -2,13 +2,13 @@ import { Metadata } from "next";
 import Link from "next/link";
 
 export const metadata: Metadata = {
-  title: "EA FC 26 SBC Solutions — One-Click AI Solver | FUT Sniper",
+  title: "EA FC 26 SBC Solutions — One-Click AI Solver | EliteFut",
   description:
-    "Browse every active EA FC 26 Squad Building Challenge solution. See cheapest costs, complete squads, and solve instantly with one-click AI automation. Updated in real-time.",
+    "Browse every active EA FC 26 Squad Building Challenge solution. See cheapest costs, complete squads, and solve instantly with one-click AI assistance. Updated in real-time.",
   keywords: [
     "EA FC 26 SBC solutions", "FC 26 SBC cheapest solution", "SBC solver",
     "active SBC challenges FC 26", "best SBC to do FC 26", "TOTW SBC solution",
-    "icon SBC solution", "FC 26 SBC cost", "FUT SBC auto solver",
+    "icon SBC solution", "FC 26 SBC cost", "FUT SBC assistant solver",
   ],
   alternates: { canonical: "https://elitefutbot.com/sbc-solver" },
   openGraph: {
@@ -25,7 +25,7 @@ const jsonLd = {
     {
       "@type": "CollectionPage",
       name: "EA FC 26 SBC Solutions",
-      description: "Complete database of EA FC 26 Squad Building Challenge solutions with one-click AI auto-solve.",
+      description: "Complete database of EA FC 26 Squad Building Challenge solutions with one-click AI assistance.",
       url: "https://elitefutbot.com/sbc-solver",
     },
     {
@@ -39,7 +39,7 @@ const jsonLd = {
         {
           "@type": "Question",
           name: "How do I solve SBCs in EA FC 26 automatically?",
-          acceptedAnswer: { "@type": "Answer", text: "FUT Sniper's AI SBC Solver automatically finds the cheapest solution using your club inventory, then auto-buys missing cards. It solves any SBC in under 5 seconds with guaranteed 33/33 chemistry." },
+          acceptedAnswer: { "@type": "Answer", text: "EliteFut's AI SBC Solver finds the cheapest solution using your club inventory, helping you secure missing cards. It solves any SBC in under 5 seconds with guaranteed 33/33 chemistry." },
         },
       ],
     },
@@ -182,7 +182,7 @@ export default function SBCSolverPage() {
 
               <p className="mb-6 max-w-lg text-base font-light leading-relaxed text-slate-400" style={{ fontFamily: "Inter, sans-serif" }}>
                 Every active Squad Building Challenge — sorted by cost. See the cheapest squad,
-                then auto-solve in one click. Updated every 30 seconds with live market prices.
+                then solve in one click. Updated every 30 seconds with live market prices.
               </p>
 
               <div className="flex flex-wrap gap-3">
@@ -192,7 +192,7 @@ export default function SBCSolverPage() {
                   className="inline-flex items-center gap-2 rounded bg-primary px-6 py-3 text-sm font-bold uppercase tracking-widest text-black transition-all hover:brightness-110 hover:scale-105 shadow-[0_0_20px_rgba(204,255,0,0.3)]"
                 >
                   <span className="material-symbols-outlined text-lg font-black">bolt</span>
-                  AUTO-SOLVE ALL SBCS
+                  SOLVE ALL SBCS
                 </Link>
                 <Link
                   href="/ai-sbc-solver"
@@ -207,7 +207,7 @@ export default function SBCSolverPage() {
             {/* Mini stats */}
             <div className="hidden lg:grid grid-cols-2 gap-3">
               {[
-                { icon: "bolt", title: "One-Click Solving", desc: "12,000 combinations/second", val: "< 5 SEC" },
+                { icon: "bolt", title: "One-Click Solutions", desc: "12,000 combinations/second", val: "< 5 SEC" },
                 { icon: "science", title: "Perfect Chemistry", desc: "Guaranteed every time", val: "33/33" },
                 { icon: "inventory_2", title: "Club First Logic", desc: "Uses your players first", val: "0 WASTE" },
                 { icon: "trending_down", title: "Live BIN Prices", desc: "Real-time market sync", val: "LIVE" },
@@ -418,9 +418,9 @@ export default function SBCSolverPage() {
 
           <div className="grid md:grid-cols-3 gap-6">
             {[
-              { n: "01", icon: "extension", title: "OPEN EXTENSION", desc: "Launch FUT Sniper on the EA FC Web App. It auto-detects your club inventory and all active SBCs." },
+              { n: "01", icon: "extension", title: "OPEN EXTENSION", desc: "Launch EliteFut on the EA FC Web App. It auto-detects your club inventory and all active SBCs." },
               { n: "02", icon: "psychology", title: "AI FINDS SOLUTION", desc: "12,000+ squad combinations tested per second. Live market prices checked. Cheapest solution found." },
-              { n: "03", icon: "task_alt", title: "SUBMIT & COLLECT", desc: "Squad auto-applied with 33/33 chemistry. Missing cards sniped at lowest BIN. Pack opened in seconds." },
+              { n: "03", icon: "task_alt", title: "SUBMIT & COLLECT", desc: "Squad auto-applied with 33/33 chemistry. Missing cards found at lowest BIN. Pack opened in seconds." },
             ].map((s) => (
               <div key={s.n} className="relative overflow-hidden rounded-lg border border-white/5 bg-[#111] p-8">
                 <div className="absolute right-4 top-4 text-[80px] font-bold text-white/[0.03] leading-none select-none">{s.n}</div>
@@ -444,7 +444,7 @@ export default function SBCSolverPage() {
                 <span className="text-primary">FOR SBCS</span>
               </h2>
               <p className="mb-8 text-slate-400 leading-relaxed" style={{ fontFamily: "Inter, sans-serif" }}>
-                Generic SBC databases show you average costs. FUT Sniper scans{" "}
+                Generic SBC databases show you average costs. EliteFut scans{" "}
                 <strong className="text-white">your specific club</strong>, uses the cards you already
                 own, and only buys what&apos;s missing at the real-time lowest BIN price.
               </p>
@@ -454,7 +454,7 @@ export default function SBCSolverPage() {
                   { label: "Avg saving vs. manual solving", val: "45,000 coins" },
                   { label: "Time from open to solved", val: "< 5 seconds" },
                   { label: "Chemistry accuracy", val: "100% — 33/33" },
-                  { label: "Account ban rate", val: "0% (50K+ users)" },
+                  { label: "Extension compatibility", val: "100% standard parameters" },
                 ].map((r) => (
                   <div key={r.label} className="flex items-center justify-between border-b border-white/5 pb-3">
                     <span className="text-sm text-slate-500" style={{ fontFamily: "Inter, sans-serif" }}>{r.label}</span>
@@ -484,7 +484,7 @@ export default function SBCSolverPage() {
                     <div className="h-2.5 w-2.5 rounded-full bg-primary/40" />
                   </div>
                   <span className="font-mono text-[9px] uppercase tracking-widest text-slate-600">
-                    FUT_SNIPER // ENGINE_V4.2 // ACTIVE
+                    ELITEFUT // ENGINE_V4.2 // ACTIVE
                   </span>
                 </div>
                 <div className="p-5 font-mono text-[11px] space-y-1.5">
@@ -503,7 +503,7 @@ export default function SBCSolverPage() {
                   <div className="text-primary font-bold"><span className="text-slate-700">[07]</span> COST: 14,250 COINS (SAVED 28,400)</div>
                   <div className="text-slate-300 mt-2 flex items-center gap-2">
                     <span className="text-slate-700">[08]</span>
-                    AUTO-SUBMITTING SQUAD
+                    APPLYING SQUAD
                     <span className="inline-block h-3 w-2 bg-primary animate-pulse" />
                   </div>
                 </div>
@@ -527,10 +527,10 @@ export default function SBCSolverPage() {
           </div>
           <div className="space-y-2">
             {[
-              { q: "What is the cheapest SBC in EA FC 26 right now?", a: "The cheapest SBCs are typically daily gold upgrades (3,000–5,000 coins) and hybrid leagues challenges (under 10,000 coins). FUT Sniper updates costs every 30 seconds with real market prices." },
-              { q: "How do I auto-solve SBCs in EA FC 26?", a: "Install FUT Sniper, open it on the EA FC Web App, and click SOLVE on any SBC. Our AI scans your club, finds the cheapest solution, and auto-buys missing cards — completing the SBC in under 5 seconds." },
-              { q: "Does the SBC solver work for EA FC 26 chemistry?", a: "Yes. FUT Sniper fully supports FC 26 chemistry including position modifiers, manager boosts, and league/nation links. Every solved SBC is guaranteed to hit 33/33 chemistry." },
-              { q: "Is it safe to use an SBC bot in EA FC 26?", a: "FUT Sniper uses humanized timing and stealth protocols. 50,000+ active users have reported 0% account bans during SBC solving sessions." },
+              { q: "What is the cheapest SBC in EA FC 26 right now?", a: "The cheapest SBCs are typically daily gold upgrades (3,000–5,000 coins) and hybrid leagues challenges (under 10,000 coins). EliteFut updates costs every 30 seconds with real market prices." },
+              { q: "How do I solve SBCs in EA FC 26?", a: "Install EliteFut, open it on the EA FC Web App, and click SOLVE on any SBC. Our AI scans your club, finds the cheapest solution, and applies the squad — completing the SBC in under 5 seconds." },
+              { q: "Does the SBC solver work for EA FC 26 chemistry?", a: "Yes. EliteFut fully supports FC 26 chemistry including position modifiers, manager boosts, and league/nation links. Every solved SBC is guaranteed to hit 33/33 chemistry." },
+              { q: "Is this extension safe for my browser configuration?", a: "EliteFut operates strictly within standard browser parameters as a UI overlay utility. 50,000+ active users have reported 100% safe usage during SBC solving sessions." },
             ].map((faq) => (
               <details key={faq.q} className="group rounded border border-white/5 bg-[#111] px-5 py-4 hover:border-primary/20 open:border-primary/30 transition-all">
                 <summary className="flex cursor-pointer list-none items-center justify-between gap-4">
@@ -577,11 +577,11 @@ export default function SBCSolverPage() {
           </div>
           <div>
             <h4 className="mb-2 text-[10px] font-bold uppercase tracking-widest text-slate-500">Best SBCs to Complete FC 26</h4>
-            <p className="leading-relaxed">Most efficient SBCs: daily upgrades (3–5K), hybrid nations (7–15K), and marquee matchups when reward value exceeds cost. Icon and Special Card SBCs can also be profitable at the right market timing with FUT Sniper's AI price tracking.</p>
+            <p className="leading-relaxed">Most efficient SBCs: daily upgrades (3–5K), hybrid nations (7–15K), and marquee matchups when reward value exceeds cost. Icon and Special Card SBCs can also be profitable at the right market timing with EliteFut's AI price tracking.</p>
           </div>
           <div>
             <h4 className="mb-2 text-[10px] font-bold uppercase tracking-widest text-slate-500">How AI SBC Solving Works</h4>
-            <p className="leading-relaxed">FUT Sniper's brute-force AI tests 12,000+ squad combinations per second against your club inventory. It prioritizes players you already own, then sources missing cards at the real-time lowest BIN price — guaranteeing 33/33 chemistry and minimum coin cost on every submission.</p>
+            <p className="leading-relaxed">EliteFut's helper AI tests 12,000+ squad combinations per second against your club inventory. It prioritizes players you already own, then helps you source missing cards at the real-time lowest BIN price — guaranteeing 33/33 chemistry and minimum coin cost on every submission.</p>
           </div>
         </div>
       </section>

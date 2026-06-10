@@ -5,7 +5,7 @@ import Image from "next/image";
 export const metadata: Metadata = {
   title: "Tactical Intel Hub - FC 25 Trading Blog",
   description: "Get the latest market analysis, trading intel, and protocol updates for FC 25 and 26. Master the 59th minute with our expert guides.",
-  keywords: ["FC 25 trading blog", "FIFA market analysis", "sniping guide", "FUT Sniper updates"],
+  keywords: ["FC 25 trading blog", "FIFA market analysis", "market guide", "EliteFut updates"],
 };
 
 export default function BlogHubPage() {
@@ -45,7 +45,7 @@ export default function BlogHubPage() {
               </div>
               <div className="p-8 md:p-12 flex flex-col justify-center bg-[#1A1A1A]/80 z-10 backdrop-blur-sm">
                 <span className="text-primary font-headline text-[10px] font-black uppercase tracking-[0.3em] mb-4">Market Analysis // FEAT_01</span>
-                <h2 className="font-headline text-3xl font-bold tracking-tight mb-4 uppercase leading-tight text-white">Mastering the 59th Minute: High-Frequency Sniping Protocol</h2>
+                <h2 className="font-headline text-3xl font-bold tracking-tight mb-4 uppercase leading-tight text-white">Mastering the 59th Minute: High-Frequency Market Layout Guide</h2>
                 <p className="text-slate-400 text-sm font-medium leading-relaxed mb-8 font-body">Algorithm patterns and predictive price drop anticipation for v4.2 systems.</p>
                 <Link className="pulse-lime inline-flex items-center gap-4 text-white font-headline text-xs font-black uppercase tracking-[0.2em]" href="/article/tactical-intel">
                   Initialize Protocol <span className="material-symbols-outlined text-sm">north_east</span>
@@ -130,7 +130,7 @@ export default function BlogHubPage() {
               </div>
               <div className="group cursor-pointer">
                 <div className="text-[10px] font-bold text-primary/40 mb-1">02_COMPARISON</div>
-                <div className="font-headline text-sm font-bold uppercase tracking-tight text-slate-300 group-hover:text-primary transition-colors">Auto-Buy vs Sniper: Technical Diff</div>
+                <div className="font-headline text-sm font-bold uppercase tracking-tight text-slate-300 group-hover:text-primary transition-colors">Smart Filter vs Manual Search: Technical Diff</div>
               </div>
               <div className="group cursor-pointer">
                 <div className="text-[10px] font-bold text-primary/40 mb-1">03_STATUS</div>

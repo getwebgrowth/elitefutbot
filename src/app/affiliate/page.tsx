@@ -1,9 +1,9 @@
 import { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Affiliate Program - Earn with FUT Sniper",
-  description: "Join the FUT Sniper affiliate program and earn high commissions by promoting the world's most advanced FC 25 trading suite.",
-  keywords: ["FUT Sniper affiliate", "earn with FIFA bot", "FC 25 affiliate program", "trading bot commissions"],
+  title: "Affiliate Program - Earn with EliteFut",
+  description: "Join the EliteFut affiliate program and earn high commissions by promoting the world's most advanced FC 25 trading suite.",
+  keywords: ["EliteFut affiliate", "earn with FIFA extension", "FC 25 affiliate program", "trading utility commissions"],
 };
 
 export default function AffiliatePage() {
@@ -20,7 +20,7 @@ export default function AffiliatePage() {
             Become a <span className="text-primary-container">Strategic</span> Partner.
           </h1>
           <p className="text-xl text-on-surface-variant max-w-xl leading-relaxed">
-            Join the most advanced automated trading network in FC 26. We build the tech; you scale the reach. Earn 50% Lifetime Commission.
+            Join the most advanced companion trading network in FC 26. We build the tech; you scale the reach. Earn 50% Lifetime Commission.
           </p>
           <div className="flex flex-col sm:flex-row gap-4">
             <button className="bg-gradient-to-br from-primary to-primary-container text-on-primary-fixed px-8 py-4 font-headline font-black uppercase tracking-widest rounded-lg flex items-center justify-center gap-3 hover:scale-[1.02] transition-transform neon-glow">
@@ -109,7 +109,7 @@ export default function AffiliatePage() {
               <span className="material-symbols-outlined text-4xl">shield</span>
             </div>
             <h3 className="text-lg font-headline font-bold uppercase mb-4 tracking-tight">Instant Credibility</h3>
-            <p className="text-sm text-on-surface-variant leading-relaxed">Promote a tool with 99.9% uptime and elite anti-ban &apos;Stealth Technology&apos;.</p>
+            <p className="text-sm text-on-surface-variant leading-relaxed">Promote a tool with 99.9% uptime and elite &apos;Stealth Behavioral Engine&apos;.</p>
           </div>
           <div className="bg-surface-container-high p-8 rounded-lg border-t-2 border-transparent hover:border-primary transition-all hover:bg-surface-container-highest group">
             <div className="mb-6 text-primary-fixed-dim group-hover:scale-110 transition-transform duration-300">

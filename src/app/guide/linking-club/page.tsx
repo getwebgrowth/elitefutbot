@@ -2,8 +2,8 @@ import { Metadata } from "next";
 
 export const metadata: Metadata = {
   title: "Club Linking Guide - Secure Your FUT Account",
-  description: "Learn how to safely link your FC 25 club to the FUT Sniper platform using our encrypted session protocols.",
-  keywords: ["link FUT club", "FUT Sniper setup", "FIFA account security", "automated trading setup"],
+  description: "Learn how to safely link your FC 25 club to the EliteFut platform using our encrypted session protocols.",
+  keywords: ["link FUT club", "EliteFut setup", "FIFA account security", "trading extension setup"],
 };
 
 export default function LinkingClubGuidePage() {
@@ -47,7 +47,7 @@ export default function LinkingClubGuidePage() {
               <div className="bg-[#0e0e0e] p-6 aspect-[4/3] flex flex-col justify-between overflow-hidden">
                 <div className="flex justify-between items-start">
                   <div>
-                    <h3 className="font-headline text-lg font-bold text-white">FC SNIPER EXTENSION</h3>
+                    <h3 className="font-headline text-lg font-bold text-white">ELITEFUT EXTENSION</h3>
                     <p className="text-[10px] font-headline text-[#8e9379] uppercase tracking-tighter">v4.0.2 // STABLE_BUILD</p>
                   </div>
                   <div className="bg-[#5d7602] px-2 py-1 flex items-center gap-1">
@@ -62,7 +62,7 @@ export default function LinkingClubGuidePage() {
                   </button>
                   <div className="text-center">
                     <p className="text-primary font-bold tracking-widest text-xs uppercase mb-1">Ready to Deploy</p>
-                    <p className="text-slate-400 text-[10px] uppercase tracking-widest">Protocol: Stealth Sync</p>
+                    <p className="text-slate-400 text-[10px] uppercase tracking-widest">Protocol: Secure Sync</p>
                   </div>
                 </div>
                 <div className="space-y-2">
@@ -112,7 +112,7 @@ export default function LinkingClubGuidePage() {
               </div>
               <div className="z-10">
                 <h4 className="font-headline text-xl font-bold text-white mb-2">Activate Extension</h4>
-                <p className="text-slate-400 text-sm leading-relaxed">Launch the FUT Sniper extension. Our &apos;Stealth Sync&apos; protocol will automatically detect your active session.</p>
+                <p className="text-slate-400 text-sm leading-relaxed">Launch the EliteFut extension. Our &apos;Secure Sync&apos; protocol will automatically detect your active session.</p>
               </div>
             </div>
             {/* Step 3 */}
@@ -123,7 +123,7 @@ export default function LinkingClubGuidePage() {
               </div>
               <div className="z-10">
                 <h4 className="font-headline text-xl font-bold text-white mb-2">Extract Club Data</h4>
-                <p className="text-slate-400 text-sm leading-relaxed">Click the &apos;Sync Club&apos; button in the Solver tab. Your players, chemistry, and coin balance will populate the Command Center instantly.</p>
+                <p className="text-slate-400 text-sm leading-relaxed">Click the &apos;Sync Club&apos; button in the Solver tab. Your players, chemistry, and resource balance will populate the Command Center instantly.</p>
               </div>
             </div>
           </div>

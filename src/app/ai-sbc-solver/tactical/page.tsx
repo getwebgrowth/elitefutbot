@@ -2,9 +2,9 @@ import { Metadata } from "next";
 import Link from "next/link";
 
 export const metadata: Metadata = {
-  title: "AI SBC Tactical Console — Market Intelligence & Chemistry Optimizer | FUT Sniper",
+  title: "AI SBC Tactical Console — Market Intelligence & Chemistry Optimizer | EliteFut",
   description:
-    "Real-time EA FC 26 SBC market intelligence. Live price tracking, chemistry optimizer, and automated squad building. The tactical dashboard for elite FUT traders who demand perfection.",
+    "Real-time EA FC 26 SBC market intelligence. Live price tracking, chemistry optimizer, and helper tool for squad building. The tactical dashboard for elite FUT players who demand perfection.",
   keywords: [
     "SBC tactical console",
     "FC 26 SBC market intelligence",
@@ -14,8 +14,8 @@ export const metadata: Metadata = {
     "real-time SBC solutions",
     "FC 25 SBC price tracker",
     "FUT market sync",
-    "SBC automation dashboard",
-    "FC 26 transfer market bot",
+    "SBC assistant dashboard",
+    "FC 26 transfer market helper",
     "33 chemistry SBC",
     "SBC squad optimizer",
   ],
@@ -25,7 +25,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "SBC Tactical Console — Real-Time Market Intelligence & Chemistry Optimizer",
     description:
-      "Live market intelligence for EA FC 26 SBCs. Track prices in real-time, optimize chemistry, and auto-solve every challenge with zero errors.",
+      "Live market intelligence for EA FC 26 SBCs. Track prices in real-time, optimize chemistry, and solve every challenge with zero errors.",
     url: "https://elitefutbot.com/ai-sbc-solver/tactical",
     type: "website",
   },
@@ -36,9 +36,9 @@ const jsonLd = {
   "@graph": [
     {
       "@type": "SoftwareApplication",
-      name: "FUT Sniper Tactical Console",
+      name: "EliteFut Tactical Console",
       description:
-        "Real-time SBC market intelligence dashboard for EA FC 26. Tracks live prices, optimizes chemistry, and auto-solves Squad Building Challenges.",
+        "Real-time SBC market intelligence dashboard for EA FC 26. Tracks live prices, optimizes chemistry, and helps complete Squad Building Challenges.",
       url: "https://elitefutbot.com/ai-sbc-solver/tactical",
       applicationCategory: "GameApplication",
       featureList: [
@@ -46,7 +46,7 @@ const jsonLd = {
         "33/33 chemistry optimization",
         "Live SBC feed",
         "Club inventory analysis",
-        "Auto-buy missing cards",
+        "Highlight missing cards",
       ],
     },
     {
@@ -65,7 +65,7 @@ const jsonLd = {
           name: "What is the SBC Tactical Console?",
           acceptedAnswer: {
             "@type": "Answer",
-            text: "The SBC Tactical Console is FUT Sniper's real-time market intelligence dashboard for EA FC 26 SBCs. It shows live prices for all active Squad Building Challenges, tracks your club inventory, and optimizes chemistry automatically.",
+            text: "The SBC Tactical Console is EliteFut's real-time market intelligence dashboard for EA FC 26 SBCs. It shows live prices for all active Squad Building Challenges, tracks your club inventory, and optimizes chemistry automatically.",
           },
         },
         {
@@ -195,10 +195,10 @@ export default function TacticalConsolePage() {
               <div className="grid lg:grid-cols-12 gap-6 p-8">
                 {/* Terminal */}
                 <div className="lg:col-span-4 rounded-2xl bg-black/60 p-5 font-mono text-[11px] border border-white/5 space-y-1.5">
-                  <div className="text-primary/70">&gt; INITIALIZING_BRUTE_FORCE...</div>
+                  <div className="text-primary/70">&gt; INITIALIZING_OPTIMIZATION...</div>
                   <div className="text-slate-500">&gt; Scanned 342 players in club...</div>
                   <div className="text-slate-500">&gt; Fetching market BIN for &apos;PL_ST_GOLD&apos;...</div>
-                  <div className="text-primary animate-pulse">&gt; Bruting 12,402+ combinations...</div>
+                  <div className="text-primary animate-pulse">&gt; Analyzing 12,402+ combinations...</div>
                   <div className="text-slate-500">&gt; Filter: Min_Rating(84)</div>
                   <div className="text-slate-500">&gt; Syncing Chemistry modules...</div>
                   <div className="text-[#C5A059]">&gt; FOUND SOLUTION: 452,150 Coins</div>
@@ -272,12 +272,12 @@ export default function TacticalConsolePage() {
               {
                 icon: "inventory_2",
                 title: "Club-First Logic",
-                desc: "Scans your entire club inventory — untradeables, duplicates, fodder — before touching the market. Every coin saved is a coin earned.",
+                desc: "Scans your entire club inventory — untradeables, duplicates, fodder — before suggestions are generated. Every choice is fully optimized.",
               },
               {
                 icon: "trending_down",
                 title: "Live Market Sync",
-                desc: "Zero-latency price feeds track every position across all SBC requirements. You always get the cheapest BIN available at that millisecond.",
+                desc: "Zero-latency price feeds track every position across all SBC requirements. You always see the cheapest options available at that millisecond.",
               },
               {
                 icon: "science",
@@ -309,13 +309,13 @@ export default function TacticalConsolePage() {
               </h2>
               <p className="mb-8 text-slate-400 leading-relaxed">
                 The EA FC 26 transfer market moves fast. Prices for SBC fodder can swing 20–40% in hours.
-                Our Tactical Console locks in the lowest BIN at the exact moment you solve — saving you
-                thousands of coins per challenge.
+                Our Tactical Console identifies the lowest price trends at the exact moment you solve — saving you
+                valuable resources per challenge.
               </p>
               <div className="space-y-4">
                 {[
                   { label: "Prices updated every", value: "30 seconds" },
-                  { label: "Average saving vs. manual", value: "45,000 coins" },
+                  { label: "Average saving vs. manual", value: "45,000 resources" },
                   { label: "Players tracked", value: "25,000+" },
                   { label: "SBC types supported", value: "All types" },
                 ].map((item) => (
@@ -378,10 +378,10 @@ export default function TacticalConsolePage() {
           <div className="overflow-hidden rounded-2xl bg-[#111] border border-white/5">
             {[
               { metric: "Execution Speed", manual: "15–20 min / SBC", ai: "5 SECONDS" },
-              { metric: "Cost Optimization", manual: "Subjective estimates", ai: "ABSOLUTE LOWEST BIN" },
+              { metric: "Cost Optimization", manual: "Subjective estimates", ai: "ABSOLUTE LOWEST COST" },
               { metric: "Inventory Integration", manual: "Manual (mental)", ai: "TOTAL CLUB SYNC" },
               { metric: "Chemistry Accuracy", manual: "High error rate", ai: "0% ERRORS GUARANTEED" },
-              { metric: "Market Data", manual: "Outdated Futbin prices", ai: "30-SECOND LIVE FEED" },
+              { metric: "Market Data", manual: "Outdated estimates", ai: "30-SECOND LIVE FEED" },
             ].map((row, i) => (
               <div key={row.metric} className={`grid grid-cols-3 items-center border-b border-white/5 last:border-0 hover:bg-white/3 transition-colors ${i % 2 === 0 ? "" : "bg-white/[0.01]"}`}>
                 <div className="px-8 py-6 font-semibold text-white">{row.metric}</div>
@@ -403,7 +403,7 @@ export default function TacticalConsolePage() {
             {[
               {
                 q: "What is the SBC Tactical Console?",
-                a: "The Tactical Console is FUT Sniper's real-time market intelligence dashboard. It tracks live prices for all EA FC 26 SBC requirements, analyzes your club inventory, and auto-solves challenges with perfect 33/33 chemistry.",
+                a: "The Tactical Console is EliteFut's real-time market intelligence dashboard. It tracks live prices for all EA FC 26 SBC requirements, analyzes your club inventory, and optimizes challenges with perfect 33/33 chemistry.",
               },
               {
                 q: "How does the chemistry optimizer work in FC 26?",
@@ -411,7 +411,7 @@ export default function TacticalConsolePage() {
               },
               {
                 q: "How is this different from Futbin or EasySBC?",
-                a: "Futbin and EasySBC show generic solutions without considering your specific club. FUT Sniper's Tactical Console scans your actual players first, uses only what you own (saving coins), and purchases only what's missing at the real-time lowest BIN — not an estimated price.",
+                a: "Futbin and EasySBC show generic solutions without considering your specific club. EliteFut's Tactical Console scans your actual players first, uses only what you own (saving resources), and highlights only what's missing at the real-time lowest BIN — not an estimated price.",
               },
             ].map((faq) => (
               <details
@@ -485,11 +485,11 @@ export default function TacticalConsolePage() {
           </div>
           <div>
             <h4 className="mb-2 text-xs font-bold uppercase tracking-widest text-slate-400">Real-Time FUT Market Tracking</h4>
-            <p className="leading-relaxed">The EA FC 26 transfer market updates every few minutes. Prices for common SBC fodder (83–87 rated gold players) can fluctuate significantly during peak hours. FUT Sniper's live price feed ensures you always buy at the true lowest BIN — not a cached price from hours ago.</p>
+            <p className="leading-relaxed">The EA FC 26 transfer market updates every few minutes. Prices for common SBC fodder (83–87 rated gold players) can fluctuate significantly during peak hours. EliteFut's live price feed ensures you always view the true lowest price — not a cached price from hours ago.</p>
           </div>
           <div>
-            <h4 className="mb-2 text-xs font-bold uppercase tracking-widest text-slate-400">Auto-Solve vs. Manual SBC</h4>
-            <p className="leading-relaxed">Elite FUT traders complete 5–10 SBCs per day during promo events. Manually solving each one takes 10–20 minutes. With FUT Sniper's Tactical Console, each SBC completes in under 5 seconds — freeing your time while maximizing coin efficiency and pack rewards.</p>
+            <h4 className="mb-2 text-xs font-bold uppercase tracking-widest text-slate-400">SBC Assistant vs. Manual SBC</h4>
+            <p className="leading-relaxed">Elite FUT players complete 5–10 SBCs per day during promo events. Manually solving each one takes 10–20 minutes. With EliteFut's Tactical Console, each SBC completes in under 5 seconds — freeing your time while maximizing resource efficiency and pack rewards.</p>
           </div>
         </div>
       </section>

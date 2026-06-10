@@ -2,31 +2,31 @@ import { Metadata } from "next";
 import Link from "next/link";
 
 export const metadata: Metadata = {
-  title: "SBC Engineering Terminal — Brute-Force AI Solver for EA FC 26 | FUT Sniper",
+  title: "SBC Engineering Terminal — Advanced Optimization Engine for EA FC 26 | EliteFut",
   description:
-    "The most powerful SBC brute-force engine for EA FC 26. Process 12,000+ squad combinations per second, achieve 33/33 chemistry guaranteed, and auto-buy missing cards at the lowest BIN. Zero errors, maximum efficiency.",
+    "The most powerful SBC optimization engine for EA FC 26. Process 12,000+ squad combinations per second, achieve 33/33 chemistry guaranteed, and locate missing cards at the lowest prices. Zero errors, maximum efficiency.",
   keywords: [
     "SBC engineering terminal",
-    "FC 26 brute force SBC solver",
-    "AI SBC automation engine",
+    "FC 26 advanced SBC solver",
+    "AI SBC assistant engine",
     "EA FC 26 chemistry solver engine",
     "SBC squad combination solver",
-    "FUT SBC bot engine",
+    "FUT SBC helper engine",
     "FC 26 SBC algorithm",
-    "automated FC 26 SBC",
+    "assisted FC 26 SBC",
     "FC 26 SBC solver free",
     "best SBC solver EA FC 26",
-    "SBC solver no ban",
-    "FC 26 SBC auto complete bot",
+    "SBC solver layout compatibility",
+    "FC 26 SBC autocomplete utility",
     "FUT 26 SBC solver chrome extension",
   ],
   alternates: {
     canonical: "https://elitefutbot.com/ai-sbc-solver/engineering",
   },
   openGraph: {
-    title: "SBC Engineering Terminal — 12,000 Combinations/s Brute-Force Solver",
+    title: "SBC Engineering Terminal — 12,000 Combinations/s Optimization Solver",
     description:
-      "Raw brute-force power for EA FC 26 SBCs. 12,000+ squad combinations tested per second. 33/33 chemistry guaranteed. Zero errors.",
+      "Raw optimization power for EA FC 26 SBCs. 12,000+ squad combinations tested per second. 33/33 chemistry guaranteed. Zero errors.",
     url: "https://elitefutbot.com/ai-sbc-solver/engineering",
     type: "website",
   },
@@ -37,18 +37,18 @@ const jsonLd = {
   "@graph": [
     {
       "@type": "SoftwareApplication",
-      name: "FUT Sniper Engineering Terminal",
+      name: "EliteFut Engineering Terminal",
       description:
-        "Brute-force AI SBC solving engine for EA FC 26. Tests 12,000+ squad combinations per second, guarantees 33/33 chemistry, and auto-buys missing cards at lowest BIN prices.",
+        "High-performance AI SBC optimization engine for EA FC 26. Tests 12,000+ squad combinations per second, guarantees 33/33 chemistry, and highlights missing cards at the lowest BIN prices.",
       url: "https://elitefutbot.com/ai-sbc-solver/engineering",
       applicationCategory: "GameApplication",
       featureList: [
         "12,000+ combinations per second",
         "33/33 chemistry guaranteed",
         "Zero error rate",
-        "Auto-buy missing cards",
+        "Highlight missing cards",
         "Club inventory priority",
-        "Live market BIN sync",
+        "Live market price updates",
         "FC 26 position modifier support",
       ],
     },
@@ -65,10 +65,10 @@ const jsonLd = {
       mainEntity: [
         {
           "@type": "Question",
-          name: "How does the SBC brute-force engine work?",
+          name: "How does the SBC optimization engine work?",
           acceptedAnswer: {
             "@type": "Answer",
-            text: "FUT Sniper's Engineering Terminal uses a brute-force algorithm that tests over 12,000 squad combinations per second. It evaluates every valid permutation of your club inventory against the SBC requirements, then cross-references live market prices to find the cheapest valid solution with perfect 33/33 chemistry.",
+            text: "EliteFut's Engineering Terminal uses an advanced algorithm that tests over 12,000 squad combinations per second. It evaluates every valid permutation of your club inventory against the SBC requirements, then cross-references live market prices to find the cheapest valid solution with perfect 33/33 chemistry.",
           },
         },
         {
@@ -76,7 +76,7 @@ const jsonLd = {
           name: "What does 33/33 chemistry mean in EA FC 26?",
           acceptedAnswer: {
             "@type": "Answer",
-            text: "In EA FC 26, each player in your SBC squad can earn up to 3 chemistry points based on shared nationality, league, or club with adjacent players. A full 11-player squad with maximum chemistry equals 33/33. FUT Sniper's engineering engine guarantees 33/33 chemistry on every SBC submission.",
+            text: "In EA FC 26, each player in your SBC squad can earn up to 3 chemistry points based on shared nationality, league, or club with adjacent players. A full 11-player squad with maximum chemistry equals 33/33. EliteFut's engineering engine guarantees 33/33 chemistry on every SBC submission.",
           },
         },
         {
@@ -84,7 +84,7 @@ const jsonLd = {
           name: "What is the fastest SBC solver for EA FC 26?",
           acceptedAnswer: {
             "@type": "Answer",
-            text: "FUT Sniper's Engineering Terminal is the fastest AI SBC solver for EA FC 26, processing 12,000+ squad combinations per second to find solutions in under 5 seconds. By comparison, manual solving typically takes 15-20 minutes per challenge.",
+            text: "EliteFut's Engineering Terminal is the fastest AI SBC solver for EA FC 26, processing 12,000+ squad combinations per second to find solutions in under 5 seconds. By comparison, manual solving typically takes 15-20 minutes per challenge.",
           },
         },
       ],
@@ -147,7 +147,7 @@ export default function EngineeringTerminalPage() {
               </h1>
 
               <p className="text-lg text-slate-400 leading-relaxed max-w-xl">
-                Our AI engine brute-forces{" "}
+                Our AI engine optimizes{" "}
                 <strong className="text-white">12,000+ squad combinations per second</strong>.
                 We check your club inventory first, sync live market prices,
                 and guarantee <strong className="text-primary">33/33 chemistry</strong> at the
@@ -226,7 +226,7 @@ export default function EngineeringTerminalPage() {
                       </div>
                       <div className="flex items-center gap-2 text-slate-500">
                         <span className="material-symbols-outlined text-[14px]">check_circle</span>
-                        Fetching Market BINs... Done
+                        Fetching Market Prices... Done
                       </div>
                       <div className="flex items-center gap-2 text-[#C5A059] font-bold">
                         <span className="material-symbols-outlined text-[16px] text-[#C5A059]">verified</span>
@@ -260,7 +260,7 @@ export default function EngineeringTerminalPage() {
           <div className="mb-14 text-center">
             <span className="text-[10px] font-black uppercase tracking-[0.35em] text-primary">Core Capabilities</span>
             <h2 className="mt-3 text-4xl font-black tracking-tighter text-white lg:text-5xl">
-              Built to Brute-Force{" "}
+              Built to Optimize{" "}
               <span className="text-primary italic">Every SBC</span>
             </h2>
           </div>
@@ -270,12 +270,12 @@ export default function EngineeringTerminalPage() {
               {
                 icon: "person_search",
                 title: "Personalized Logic",
-                desc: "Analyzes your specific club players to save every possible coin. Prioritizes untradeables and duplicate items first — spending your coins only when absolutely necessary.",
+                desc: "Analyzes your specific club players to save every possible resource. Prioritizes untradeables and duplicate items first — spending your resources only when absolutely necessary.",
               },
               {
                 icon: "analytics",
                 title: "Market Pulse Sync",
-                desc: "Zero-latency connection to the EA FC 26 transfer market. Finds undervalued fodder instantly with real-time BIN accuracy — not cached prices from hours ago.",
+                desc: "Zero-latency connection to the EA FC 26 transfer market. Finds undervalued items instantly with real-time accuracy — not cached prices from hours ago.",
               },
               {
                 icon: "memory",
@@ -318,7 +318,7 @@ export default function EngineeringTerminalPage() {
             </div>
             {[
               { metric: "Speed", manual: "15 minutes+", ai: "3 seconds" },
-              { metric: "Cost", manual: "Market average", ai: "Absolute lowest BIN" },
+              { metric: "Cost", manual: "Market average", ai: "Absolute lowest cost" },
               { metric: "Errors", manual: "Frequent", ai: "0% Guaranteed" },
               { metric: "Chemistry", manual: "Manual guess", ai: "33/33 Every Time" },
               { metric: "Effort", manual: "High", ai: "Zero" },
@@ -420,7 +420,7 @@ export default function EngineeringTerminalPage() {
                   className="inline-flex items-center gap-3 rounded-xl bg-[#5865F2] px-8 py-4 font-black text-white shadow-lg transition-all hover:brightness-110 hover:scale-105"
                 >
                   <svg className="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
-                    <path d="M20.317 4.37a19.791 19.791 0 0 0-4.885-1.515.074.074 0 0 0-.079.037c-.21.375-.444.864-.608 1.25a18.27 18.27 0 0 0-5.487 0 12.64 12.64 0 0 0-.617-1.25.077.077 0 0 0-.079-.037A19.736 19.736 0 0 0 3.677 4.37a.07.07 0 0 0-.032.027C.533 9.046-.32 13.58.099 18.057a.082.082 0 0 0 .031.057 19.9 19.9 0 0 0 5.993 3.03.078.078 0 0 0 .084-.028 14.09 14.09 0 0 0 1.226-1.994.076.076 0 0 0-.041-.106 13.107 13.107 0 0 1-1.872-.892.077.077 0 0 1-.008-.128 10.2 10.2 0 0 0 .372-.292.074.074 0 0 1 .077-.01c3.928 1.793 8.18 1.793 12.062 0a.074.074 0 0 1 .078.01c.12.098.246.198.373.292a.077.077 0 0 1-.006.127 12.299 12.299 0 0 1-1.873.892.077.077 0 0 0-.041.107c.36.698.772 1.362 1.225 1.993a.076.076 0 0 0 .084.028 19.839 19.839 0 0 0 6.002-3.03.077.077 0 0 0 .032-.054c.5-5.177-.838-9.674-3.549-13.66a.061.061 0 0 0-.031-.03z" />
+                    <path d="M20.317 4.37a19.791 19.791 0 0 0-4.885-1.515.074.074 0 0 0-.079.037c-.21.375-.444.864-.608 1.25a18.27 18.27 0 0 0-5.487 0 12.64 12.64 0 0 0-.617-1.25.077.077 0 0 0-.079-.037A19.736 19.736 0 0 0 3.677 4.37a.07.07 0 0 0-.032.027C.533 9.046-.32 13.58.099 18.057a.082.082 0 0 0 .031.057 19.9 19.9 0 0 0 5.993 3.03.078.078 0 0 0 .084-.028 14.09 14.09 0 0 0 1.226-1.994.076.076 0 0 0-.041-.106 13.107 13.107 0 0 1-1.872-.892.077.077 0 0 1-.008-.128 10.2 10.2 0 0 0 .372-.292.074.074 0 0 1 .077-.01c3.928 1.793 8.18 1.793 12.062 0a.074.074 0 0 1 .078.01c.12.098.246.198.373.292a.077.077 0 0 1-.006.127 12.299 12.299 0 0 1-1.873.892.077.077 0 0 0-.041.107c.36.698.772 1.362 1.225 1.993a.076.076 0 0 0 .084.028 19.839 19.839 0 0 0 6.002-3.03.078.078 0 0 0 .032-.054c.5-5.177-.838-9.674-3.549-13.66a.061.061 0 0 0-.031-.03z" />
                   </svg>
                   CLAIM MY SLOT
                 </Link>
@@ -439,16 +439,16 @@ export default function EngineeringTerminalPage() {
           <div className="space-y-3">
             {[
               {
-                q: "How does the SBC brute-force engine work?",
-                a: "The Engineering Terminal uses a brute-force algorithm that tests 12,000+ squad combinations per second. It evaluates every valid permutation of your club inventory against the SBC requirements, then cross-references live market prices to find the absolute cheapest solution with 33/33 chemistry guaranteed.",
+                q: "How does the SBC optimization engine work?",
+                a: "The Engineering Terminal uses an advanced optimization algorithm that tests 12,000+ squad combinations per second. It evaluates every valid permutation of your club inventory against the SBC requirements, then cross-references live market prices to find the absolute cheapest solution with 33/33 chemistry guaranteed.",
               },
               {
                 q: "What does 33/33 chemistry mean in EA FC 26?",
-                a: "In EA FC 26, each player earns up to 3 chemistry points from links to teammates sharing league, club, or nationality. Full team chemistry is 33 points (11 players × 3). FUT Sniper's engine guarantees every SBC submission hits 33/33 — eliminating the most common and costly manual error.",
+                a: "In EA FC 26, each player earns up to 3 chemistry points from links to teammates sharing league, club, or nationality. Full team chemistry is 33 points (11 players × 3). EliteFut's engine guarantees every SBC submission hits 33/33 — eliminating the most common and costly manual error.",
               },
               {
                 q: "What is the fastest SBC solver for EA FC 26?",
-                a: "FUT Sniper's Engineering Terminal is the fastest AI SBC solver for EA FC 26, processing 12,000+ squad combinations per second for solutions in under 5 seconds. By comparison, manual solving typically takes 15-20 minutes per challenge.",
+                a: "EliteFut's Engineering Terminal is the fastest AI SBC solver for EA FC 26, processing 12,000+ squad combinations per second for solutions in under 5 seconds. By comparison, manual solving typically takes 15-20 minutes per challenge.",
               },
               {
                 q: "Does it work with position modifiers in FC 26?",
@@ -474,16 +474,16 @@ export default function EngineeringTerminalPage() {
       <section className="py-14 border-t border-white/5 bg-[#080808]">
         <div className="mx-auto max-w-[1440px] px-6 grid gap-10 text-sm text-slate-500 md:grid-cols-3">
           <div>
-            <h4 className="mb-2 text-xs font-bold uppercase tracking-widest text-slate-400">AI Brute-Force SBC Solver</h4>
-            <p className="leading-relaxed">Traditional SBC solvers suggest fixed solutions. FUT Sniper&apos;s Engineering Terminal actually brute-forces your specific situation — testing every combination of your personal club inventory against the SBC&apos;s requirements. This personalized approach consistently finds solutions 30–60% cheaper than generic databases.</p>
+            <h4 className="mb-2 text-xs font-bold uppercase tracking-widest text-slate-400">AI SBC Optimizer</h4>
+            <p className="leading-relaxed">Traditional SBC solvers suggest fixed solutions. EliteFut&apos;s Engineering Terminal actually optimizes your specific situation — testing every combination of your personal club inventory against the SBC&apos;s requirements. This personalized approach consistently finds solutions 30–60% cheaper than generic databases.</p>
           </div>
           <div>
             <h4 className="mb-2 text-xs font-bold uppercase tracking-widest text-slate-400">FC 26 Chemistry System</h4>
             <p className="leading-relaxed">The EA FC 26 chemistry system rewards player connections through shared nationality, league, and club. Position modifiers, manager cards, and stadium links also contribute. Our Engineering Terminal models the complete chemistry graph — finding solutions with perfect 33/33 that bypass every constraint.</p>
           </div>
           <div>
-            <h4 className="mb-2 text-xs font-bold uppercase tracking-widest text-slate-400">Auto-Buy Missing SBC Cards</h4>
-            <p className="leading-relaxed">When your club is missing cards for an SBC, FUT Sniper&apos;s Engineering Terminal automatically identifies which cards to buy and snipes them from the transfer market at the lowest BIN price. This is faster and cheaper than manually searching, bidding, and buying one card at a time.</p>
+            <h4 className="mb-2 text-xs font-bold uppercase tracking-widest text-slate-400">Locate Missing SBC Cards</h4>
+            <p className="leading-relaxed">When your club is missing cards for an SBC, EliteFut&apos;s Engineering Terminal automatically identifies which cards to buy and helps locate them on the transfer market at the lowest BIN price. This is faster and cheaper than manually searching, bidding, and buying one card at a time.</p>
           </div>
         </div>
       </section>

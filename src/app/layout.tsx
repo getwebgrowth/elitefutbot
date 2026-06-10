@@ -19,17 +19,17 @@ const publicSans = Public_Sans({
 });
 
 export const metadata: Metadata = {
-  title: "FUT Sniper Bot - The Ultimate FC 25 Sniping Tool & Autobuyer",
-  description: "Dominate the FC 25 transfer market with FUT Sniper. The best FIFA sniping bot featuring 20ms search speeds, advanced anti-ban tech, and cloud automation.",
-  keywords: ["FUT Sniper", "FC 25 sniping bot", "FIFA 25 autobuyer", "SBC solver", "FC 25 trading tools", "FIFA sniping tool"],
+  title: "EliteFut - The Ultimate FC 25 Web App Companion & Market Utility",
+  description: "Optimize your FC 25 web app experience with EliteFut. The best FIFA trading companion featuring 20ms search speeds, advanced anti-ban tech, and browser utility overlay.",
+  keywords: ["EliteFut", "EliteFut Extension", "FC 25 Web App Companion", "SBC solver", "FC 25 trading tools", "FIFA trading utility"],
   alternates: {
     canonical: "https://elitefutbot.com/",
   },
   openGraph: {
-    title: "FUT Sniper Bot - #1 FC 25 Sniping Tool",
-    description: "World's fastest FC 25 sniping bot and autobuyer. Advanced anti-ban engine and cloud-based SBC solving.",
+    title: "EliteFut - #1 FC 25 Web App Companion",
+    description: "World's fastest FC 25 Web App Companion. Advanced rate-limiting overlays and local SBC solving.",
     url: "https://elitefutbot.com/",
-    siteName: "FUT Sniper",
+    siteName: "EliteFut",
     images: [
       {
         url: "/og-image.png", // User should provide this, or I can generate a placeholder
@@ -42,8 +42,8 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "FUT Sniper Bot - #1 FC 25 Sniping Tool",
-    description: "Elite FC 25 sniping bot and autobuyer. 20ms speeds and zero bans.",
+    title: "EliteFut - #1 FC 25 Web App Companion",
+    description: "Elite FC 25 Web App Companion. 20ms search speeds and local overlay utility.",
     images: ["/og-image.png"],
   },
 };
@@ -51,7 +51,7 @@ export const metadata: Metadata = {
 const jsonLd = {
   "@context": "https://schema.org",
   "@type": "SoftwareApplication",
-  "name": "FUT Sniper",
+  "name": "EliteFut",
   "operatingSystem": "Web, Windows, macOS",
   "applicationCategory": "GameApplication",
   "offers": {
@@ -91,7 +91,7 @@ export default function RootLayout({
                   <span className="material-symbols-outlined text-dark text-lg font-bold">bolt</span>
                 </div>
                 <span className="text-xl font-extrabold tracking-tighter uppercase text-white">
-                  FUT <span className="text-primary">Sniper</span>
+                  Elite<span className="text-primary">Fut</span>
                 </span>
               </Link>
               <div className="hidden md:flex items-center space-x-8 text-sm font-medium text-gray-300">
@@ -130,11 +130,11 @@ export default function RootLayout({
                     <span className="material-symbols-outlined text-dark text-xl font-bold" aria-hidden="true">bolt</span>
                   </div>
                   <span className="text-2xl font-black tracking-tighter uppercase text-white font-headline">
-                    FUT <span className="text-primary italic">Sniper</span>
+                    Elite<span className="text-primary italic">Fut</span>
                   </span>
                 </Link>
                 <p className="text-gray-400 text-base leading-relaxed max-w-sm font-body">
-                  The most advanced FC 25 automation suite. Engineered for <span className="text-white font-bold">elite traders</span> who demand absolute speed, surgical precision, and total security.
+                  The most advanced FC 25 web app companion. Engineered for <span className="text-white font-bold">elite traders</span> who demand absolute layout speed, surgical precision, and total security.
                 </p>
                 <div className="flex items-center gap-4">
                   <Link 
@@ -171,7 +171,7 @@ export default function RootLayout({
                   <h4 id="footer-tools" className="text-white font-black text-xs uppercase tracking-[0.2em] font-headline">Tools & Intel</h4>
                   <ul className="space-y-4 text-sm font-medium">
                     <li><Link className="text-gray-500 hover:text-primary transition-colors focus-visible:text-primary focus-visible:outline-none" href="/tools/tax-calculator">Tax Calculator</Link></li>
-                    <li><Link className="text-gray-500 hover:text-primary transition-colors focus-visible:text-primary focus-visible:outline-none" href="/tools/sniping-guide">Sniping Guide</Link></li>
+                    <li><Link className="text-gray-500 hover:text-primary transition-colors focus-visible:text-primary focus-visible:outline-none" href="/tools/sniping-guide">Trading Guide</Link></li>
                     <li><Link className="text-gray-500 hover:text-primary transition-colors focus-visible:text-primary focus-visible:outline-none" href="/blog">Tactical Intel Hub</Link></li>
                     <li><Link className="text-gray-500 hover:text-primary transition-colors focus-visible:text-primary focus-visible:outline-none" href="/article/tactical-intel">Latest Briefing</Link></li>
                   </ul>
@@ -192,7 +192,7 @@ export default function RootLayout({
             {/* Bottom Bar */}
             <div className="pt-12 border-t border-white/5 flex flex-col md:flex-row justify-between items-center gap-8 text-[10px] text-gray-500 font-bold uppercase tracking-[0.3em] font-headline">
               <div className="flex items-center gap-6">
-                <span>© 2024 FUT Sniper</span>
+                <span>© 2024 EliteFut</span>
                 <span className="w-1 h-1 bg-white/10 rounded-full" aria-hidden="true"></span>
                 <span>Not Affiliated with EA Sports</span>
               </div>

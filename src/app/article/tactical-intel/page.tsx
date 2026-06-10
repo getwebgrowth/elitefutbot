@@ -2,9 +2,9 @@ import { Metadata } from "next";
 import Link from "next/link";
 
 export const metadata: Metadata = {
-  title: "Mastering the 59th Minute: High-Frequency Sniping Protocol",
-  description: "Algorithm patterns and predictive price drop anticipation for v4.2 systems. Learn elite sniping strategies for FC 25.",
-  keywords: ["sniping protocol", "59th minute method", "FC 25 trading strategy", "FIFA sniping tips"],
+  title: "Mastering the 59th Minute: High-Frequency Market Layout Guide",
+  description: "Algorithm patterns and predictive price drop anticipation for v4.2 systems. Learn elite market search strategies for FC 25.",
+  keywords: ["trading protocol", "59th minute method", "FC 25 trading strategy", "FIFA market tips"],
 };
 
 export default function TacticalIntelArticlePage() {
@@ -15,7 +15,7 @@ export default function TacticalIntelArticlePage() {
         <header className="space-y-6">
           <div className="space-y-2">
             <span className="text-primary text-[11px] font-bold font-label tracking-[0.2em] uppercase">DATA CATEGORY: STRATEGY_INTEL</span>
-            <h1 className="text-5xl md:text-7xl font-headline font-bold tracking-tight-custom leading-[0.9] text-white">How to Sniping 1M+ Coins Daily in FC 26</h1>
+            <h1 className="text-5xl md:text-7xl font-headline font-bold tracking-tight-custom leading-[0.9] text-white">How to Trade 1M+ Value Daily in FC 26</h1>
           </div>
           <div className="flex flex-wrap items-center gap-x-6 gap-y-2 border-y border-outline-variant/30 py-4 font-label text-[10px] uppercase tracking-widest text-on-surface-variant">
             <div className="flex items-center gap-2">
@@ -54,10 +54,10 @@ export default function TacticalIntelArticlePage() {
                 {/* Central Graphic (Abstract Blueprint) */}
                 <div className="absolute inset-0 flex items-center justify-center">
                   <svg className="w-48 h-48 text-primary/20" viewBox="0 0 100 100">
-                    <circle cx="50" cy="50" fill="none" r="40" stroke="currentColor" strokeDasharray="2 2" strokeWidth="0.5"></circle>
-                    <circle cx="50" cy="50" fill="none" r="30" stroke="currentColor" strokeWidth="0.5"></circle>
-                    <path d="M10 50 L90 50 M50 10 L50 90" stroke="currentColor" strokeWidth="0.5"></path>
-                    <rect fill="none" height="40" stroke="currentColor" strokeWidth="0.5" width="40" x="30" y="30"></rect>
+                     <circle cx="50" cy="50" fill="none" r="40" stroke="currentColor" strokeDasharray="2 2" strokeWidth="0.5"></circle>
+                     <circle cx="50" cy="50" fill="none" r="30" stroke="currentColor" strokeWidth="0.5"></circle>
+                     <path d="M10 50 L90 50 M50 10 L50 90" stroke="currentColor" strokeWidth="0.5"></path>
+                     <rect fill="none" height="40" stroke="currentColor" strokeWidth="0.5" width="40" x="30" y="30"></rect>
                   </svg>
                 </div>
               </div>
@@ -70,13 +70,13 @@ export default function TacticalIntelArticlePage() {
         </header>
 
         <div className="prose prose-invert max-w-none space-y-8 font-body text-on-surface-variant leading-relaxed">
-          <p className="text-lg text-white font-medium border-l-2 border-primary pl-6 py-2">The transfer market in FC 26 is faster than ever. To hit the 1,000,000 coin profit mark daily, you need more than just luck. You need a system that exploits low-latency spikes and price floor inaccuracies before the wider market reacts.</p>
+          <p className="text-lg text-white font-medium border-l-2 border-primary pl-6 py-2">The transfer market in FC 26 is faster than ever. To hit the 1,000,000 resource profit mark daily, you need more than just luck. You need a system that exploits low-latency spikes and price floor inaccuracies before the wider market reacts.</p>
           <div className="space-y-4">
             <h2 className="text-2xl font-headline font-bold text-white flex items-center gap-3">
               <span className="text-primary text-base font-mono">01/</span>
               Identifying the High-Frequency Window
             </h2>
-            <p>Most players attempt to snipe during peak content hours (6 PM UK time). This is a mistake. The true high-frequency window occurs between 1 AM and 4 AM UK time, when liquidity is lower but price gaps are significantly wider.</p>
+            <p>Most players attempt to execute trades during peak content hours (6 PM UK time). This is a mistake. The true high-frequency window occurs between 1 AM and 4 AM UK time, when liquidity is lower but price gaps are significantly wider.</p>
             <ul className="space-y-3 list-none p-0">
               <li className="flex items-start gap-3 group">
                 <span className="font-mono text-primary text-sm mt-1">_</span>
@@ -93,9 +93,9 @@ export default function TacticalIntelArticlePage() {
             <div className="absolute top-0 right-0 p-2 font-mono text-[8px] text-accent-gold uppercase">Module: Intel_Snippet</div>
             <h4 className="text-primary font-headline font-bold text-xs uppercase tracking-widest mb-4">CRITICAL SYSTEM ADVISORY</h4>
             <div className="space-y-4">
-              <p className="text-white text-base leading-relaxed">Manual sniping latency is capped at human reaction times (~250ms). Our execution engine operates at <span className="text-primary font-mono">20ms</span>. The math is simple: you cannot win the 59th minute battle manually against high-tier competition.</p>
+              <p className="text-white text-base leading-relaxed">Manual navigation latency is capped at human reaction times (~250ms). Our layout optimizer operates at <span className="text-primary font-mono">20ms</span>. The math is simple: you cannot win the 59th minute battle manually against high-tier competition.</p>
               <button className="bg-primary text-black px-6 py-3 font-label font-bold uppercase tracking-widest text-[10px] hover:brightness-110 transition-all glow-lime">
-                Upgrade Execution Engine
+                Upgrade Layout Optimizer
               </button>
             </div>
           </div>
@@ -104,7 +104,7 @@ export default function TacticalIntelArticlePage() {
               <span className="text-primary text-base font-mono">02/</span>
               The &quot;Ladder&quot; Selling Strategy
             </h2>
-            <p>Don&apos;t sell everything at the floor. Use laddering to maximize yield. If you snipe 10 cards, list 3 at the floor, 4 at the mid-point, and 3 at the peak trend. This ensures continuous cash flow while gambling on market spikes.</p>
+            <p>Don&apos;t sell everything at the floor. Use laddering to maximize yield. If you acquire 10 cards, list 3 at the floor, 4 at the mid-point, and 3 at the peak trend. This ensures continuous cash flow while gambling on market spikes.</p>
             {/* Data Visual Mockup */}
             <div className="grid grid-cols-3 gap-1 h-32 items-end mt-8 border-b border-outline-variant/30 pb-2">
               <div className="bg-surface-container-high h-[40%] flex items-end justify-center p-2 relative">
@@ -141,11 +141,11 @@ export default function TacticalIntelArticlePage() {
                 <span className="text-[8px] font-mono text-primary">LIVE_LINK</span>
               </div>
             </div>
-            {/* Bot Status */}
+            {/* Status */}
             <div className="flex items-center justify-between bg-black/40 p-3 border border-outline-variant/20">
               <div className="flex items-center gap-3">
                 <div className="w-2 h-2 bg-primary glow-lime"></div>
-                <span className="text-[10px] font-label font-bold text-white uppercase tracking-widest">Bot Status: ACTIVE</span>
+                <span className="text-[10px] font-label font-bold text-white uppercase tracking-widest">Extension Status: ACTIVE</span>
               </div>
               <span className="text-[9px] font-mono text-primary">v4.2.0</span>
             </div>
@@ -164,7 +164,7 @@ export default function TacticalIntelArticlePage() {
               </div>
             </div>
             <button className="w-full py-4 bg-primary text-black font-label font-bold uppercase tracking-[0.2em] text-xs hover:brightness-110 transition-all glow-lime">
-              DEPLOY SNIPER NOW
+              GET THE EXTENSION NOW
             </button>
           </section>
 
@@ -182,7 +182,7 @@ export default function TacticalIntelArticlePage() {
               </div>
               <div className="p-3 bg-surface-container flex justify-between items-center group cursor-default">
                 <span className="text-on-surface-variant font-mono text-[10px]">02</span>
-                <span className="text-white font-body text-xs font-medium grow ml-4">EliteSnipe_99</span>
+                <span className="text-white font-body text-xs font-medium grow ml-4">EliteTrade_99</span>
                 <span className="text-primary font-mono text-xs">8.1M</span>
               </div>
             </div>

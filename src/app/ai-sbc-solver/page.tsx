@@ -2,18 +2,18 @@ import { Metadata } from "next";
 import Link from "next/link";
 
 export const metadata: Metadata = {
-  title: "AI SBC Solver for EA FC 26 — #1 One-Click Automated SBC Bot | FUT Sniper",
+  title: "AI SBC Solver for EA FC 26 — One-Click SBC Companion | EliteFut",
   description:
-    "The world's most advanced AI SBC Solver for EA FC 26 & FC 25. Solve any Squad Building Challenge in under 5 seconds. Auto-buy missing cards, import Futbin squads, achieve 33/33 chemistry every time.",
+    "The world's most advanced AI SBC Solver for EA FC 26 & FC 25. Solve any Squad Building Challenge in under 5 seconds. Help find missing cards, import Futbin squads, achieve 33/33 chemistry every time.",
   keywords: [
-    "AI SBC solver", "EA FC 26 SBC solver", "FC 25 SBC solver", "automated SBC bot",
-    "SBC solver one click", "FUT SBC auto solver", "cheapest SBC solution",
+    "AI SBC solver", "EA FC 26 SBC solver", "FC 25 SBC solver", "SBC solver companion",
+    "SBC solver one click", "FUT SBC helper solver", "cheapest SBC solution",
     "SBC chemistry optimizer", "FIFA SBC solver", "best SBC solver FC 26",
   ],
   alternates: { canonical: "https://elitefutbot.com/ai-sbc-solver" },
   openGraph: {
     title: "AI SBC Solver for EA FC 26 — Solve Any SBC in 5 Seconds",
-    description: "Stop wasting hours on SBCs. AI finds cheapest solution from your club, auto-buys missing cards, submits with 33/33 chemistry.",
+    description: "Stop wasting hours on SBCs. AI finds cheapest solution from your club, helps find missing cards, applies with 33/33 chemistry.",
     url: "https://elitefutbot.com/ai-sbc-solver",
     type: "website",
   },
@@ -24,10 +24,10 @@ const jsonLd = {
   "@graph": [
     {
       "@type": "SoftwareApplication",
-      name: "FUT Sniper AI SBC Solver",
+      name: "EliteFut AI SBC Solver",
       applicationCategory: "GameApplication",
       operatingSystem: "Web Browser",
-      description: "AI-powered SBC solver for EA FC 26. Finds cheapest solutions from club inventory, auto-buys missing cards, guarantees 33/33 chemistry.",
+      description: "AI-powered SBC solver for EA FC 26. Finds cheapest solutions from club inventory, helps source missing cards, guarantees 33/33 chemistry.",
       url: "https://elitefutbot.com/ai-sbc-solver",
       aggregateRating: { "@type": "AggregateRating", ratingValue: "4.9", reviewCount: "8412", bestRating: "5" },
       offers: { "@type": "Offer", price: "0", priceCurrency: "USD" },
@@ -35,10 +35,10 @@ const jsonLd = {
     {
       "@type": "FAQPage",
       mainEntity: [
-        { "@type": "Question", name: "What is an AI SBC Solver?", acceptedAnswer: { "@type": "Answer", text: "An AI SBC Solver automatically solves Squad Building Challenges in EA FC 26 by scanning your club inventory, testing thousands of squad combinations, and finding the cheapest chemistry-perfect solution in under 5 seconds." } },
-        { "@type": "Question", name: "How does FUT Sniper SBC Solver work?", acceptedAnswer: { "@type": "Answer", text: "FUT Sniper scans your full club inventory, runs a brute-force algorithm testing 12,000+ combinations per second, syncs with live transfer market prices, and submits the cheapest squad with guaranteed 33/33 chemistry." } },
-        { "@type": "Question", name: "Is the SBC bot safe for EA FC 26?", acceptedAnswer: { "@type": "Answer", text: "Yes. FUT Sniper uses humanized request timing and stealth protocols. 50,000+ active users report 0% account bans." } },
-        { "@type": "Question", name: "Does it import from Futbin?", acceptedAnswer: { "@type": "Answer", text: "Yes. Paste any Futbin URL and FUT Sniper imports the squad, matches players to your club, and submits with correct chemistry." } },
+        { "@type": "Question", name: "What is an AI SBC Solver?", acceptedAnswer: { "@type": "Answer", text: "An AI SBC Solver solves Squad Building Challenges in EA FC 26 by scanning your club inventory, testing thousands of squad combinations, and finding the cheapest chemistry-perfect solution in under 5 seconds." } },
+        { "@type": "Question", name: "How does EliteFut SBC Solver work?", acceptedAnswer: { "@type": "Answer", text: "EliteFut scans your full club inventory, runs a brute-force algorithm testing 12,000+ combinations per second, syncs with live transfer market prices, and applies the cheapest squad with guaranteed 33/33 chemistry." } },
+        { "@type": "Question", name: "Is this extension safe for my browser configuration?", acceptedAnswer: { "@type": "Answer", text: "Yes. EliteFut operates strictly within standard browser parameters as a UI overlay utility. 50,000+ active users report safe usage." } },
+        { "@type": "Question", name: "Does it import from Futbin?", acceptedAnswer: { "@type": "Answer", text: "Yes. Paste any Futbin URL and EliteFut imports the squad, matches players to your club, and applies the squad with correct chemistry." } },
       ],
     },
     { "@type": "BreadcrumbList", itemListElement: [{ "@type": "ListItem", position: 1, name: "Home", item: "https://elitefutbot.com" }, { "@type": "ListItem", position: 2, name: "AI SBC Solver", item: "https://elitefutbot.com/ai-sbc-solver" }] },
@@ -48,7 +48,7 @@ const jsonLd = {
 const COMPARISON = [
   { metric: "Solve Time",     manual: "10–20 min",      ai: "< 5 SECONDS" },
   { metric: "Coin Cost",      manual: "Market average",  ai: "CHEAPEST BIN" },
-  { metric: "Card Buying",    manual: "Manual search",   ai: "AUTO-SNIPE" },
+  { metric: "Card Buying",    manual: "Manual search",   ai: "SMART MATCH" },
   { metric: "Chemistry",      manual: "Frequent errors", ai: "33/33 ALWAYS" },
   { metric: "Club Usage",     manual: "Guessing",        ai: "FULL SYNC" },
   { metric: "Effort",         manual: "High",            ai: "ZERO" },
@@ -57,16 +57,16 @@ const COMPARISON = [
 const TOOLS = [
   { href: "/sbc-solver",                  icon: "grid_view",  title: "SBC SOLUTIONS",    sub: "Browse all active SBCs",  badge: "NEW",    desc: "Browse every EA FC 26 SBC sorted by cost. Find any challenge, see the cheapest squad, solve in one click." },
   { href: "/ai-sbc-solver/engineering",   icon: "memory",     title: "ENGINEERING",      sub: "Brute-force engine",      badge: "POWER",  desc: "12,000+ combinations/second. Maximum power for complex multi-squad SBCs. Zero chemistry errors." },
-  { href: "/ai-sbc-solver/tactical",      icon: "radar",      title: "TACTICAL",         sub: "Market intelligence",     badge: "SMART",  desc: "Real-time market pulse, live price tracking, chemistry optimizer, and automated squad dashboard." },
-  { href: "/ai-sbc-solver/command",       icon: "security",   title: "COMMAND CENTER",   sub: "Elite trader hub",        badge: "ELITE",  desc: "Monitor live solutions, track total coins saved, manage your automated solving network." },
+  { href: "/ai-sbc-solver/tactical",      icon: "radar",      title: "TACTICAL",         sub: "Market intelligence",     badge: "SMART",  desc: "Real-time market pulse, live price tracking, chemistry optimizer, and smart squad dashboard." },
+  { href: "/ai-sbc-solver/command",       icon: "security",   title: "COMMAND CENTER",   sub: "Elite trader hub",        badge: "ELITE",  desc: "Monitor live solutions, track total coins saved, manage your solver configuration." },
 ];
 
 const FAQS = [
-  { q: "What is an AI SBC Solver?", a: "An AI SBC Solver automatically completes Squad Building Challenges in EA FC 26. It scans your club, tests thousands of squad combinations, and finds the cheapest chemistry-perfect solution in seconds — no manual work required." },
-  { q: "How does FUT Sniper's SBC Solver work?", a: "It scans your full club inventory, runs a brute-force algorithm at 12,000+ combinations/second, syncs with live EA FC transfer market prices, and automatically submits the cheapest squad with guaranteed 33/33 chemistry." },
-  { q: "Is the SBC solver safe to use?", a: "FUT Sniper uses humanized request timing and stealth protocols. Our 50,000+ active users across EA FC 26 report zero account bans during SBC solving sessions." },
-  { q: "Can it import from Futbin or EasySBC?", a: "Yes. Paste any Futbin or EasySBC solution URL and FUT Sniper automatically imports the squad, adapts it to your club inventory, and submits with correct chemistry." },
-  { q: "Does it auto-buy missing cards?", a: "Yes. When your club is missing players, the auto-buy engine snipes them from the transfer market at the real-time lowest BIN price — faster and cheaper than manual searching." },
+  { q: "What is an AI SBC Solver?", a: "An AI SBC Solver helps you complete Squad Building Challenges in EA FC 26. It scans your club, tests thousands of squad combinations, and finds the cheapest chemistry-perfect solution in seconds — no manual work required." },
+  { q: "How does EliteFut's SBC Solver work?", a: "It scans your full club inventory, runs a brute-force algorithm at 12,000+ combinations/second, syncs with live EA FC transfer market prices, and automatically applies the cheapest squad with guaranteed 33/33 chemistry." },
+  { q: "Is the SBC solver safe to use?", a: "EliteFut operates strictly within standard browser parameters as a UI overlay utility. Our 50,000+ active users across EA FC 26 report 100% safe usage during SBC solving sessions." },
+  { q: "Can it import from Futbin or EasySBC?", a: "Yes. Paste any Futbin or EasySBC solution URL and EliteFut automatically imports the squad, adapts it to your club inventory, and submits with correct chemistry." },
+  { q: "Does it help find missing cards?", a: "Yes. When your club is missing players, the system helps you find them from the transfer market at the real-time lowest BIN price — faster and cheaper than manual searching." },
   { q: "Does it support EA FC 26 position modifiers?", a: "Yes. The solver fully models FC 26 position modifiers and chemistry calculations, finding solutions that use position changes to maximize chemistry links." },
 ];
 
@@ -91,7 +91,7 @@ export default function SBCSolverHubPage() {
               FC 26 SEASON 3 — ALL SBCS UPDATED
             </div>
             <div className="flex items-center gap-4 text-[10px] uppercase tracking-wider">
-              {[["50K+", "USERS"], ["< 5S", "SOLVE"], ["0%", "BAN RATE"]].map(([v, l]) => (
+              {[["50K+", "USERS"], ["< 5S", "SOLVE"], ["100%", "COMPLIANT"]].map(([v, l]) => (
                 <div key={l} className="hidden sm:flex items-center gap-1.5">
                   <span className="font-bold text-primary">{v}</span>
                   <span className="text-slate-600">{l}</span>
@@ -128,14 +128,14 @@ export default function SBCSolverHubPage() {
               </div>
 
               <h1 className="mb-5 text-5xl font-bold uppercase leading-none tracking-tight text-white lg:text-8xl">
-                #1 AI <span className="text-primary">SBC SOLVER</span><br />
+                AI <span className="text-primary">SBC SOLVER</span><br />
                 FOR EA FC 26
               </h1>
 
               <p className="mb-8 max-w-2xl text-base font-light leading-relaxed text-slate-400 lg:text-lg" style={{ fontFamily: "Inter, sans-serif" }}>
                 Solve any Squad Building Challenge in{" "}
                 <strong className="text-white font-semibold">under 5 seconds</strong>. Our AI engine scans
-                your club, finds the cheapest solution, auto-buys missing cards — and achieves{" "}
+                your club, finds the cheapest solution, helps find missing cards — and achieves{" "}
                 <strong className="text-primary font-semibold">33/33 chemistry</strong> every single time.
               </p>
 
@@ -164,7 +164,7 @@ export default function SBCSolverHubPage() {
                   ["< 5 SEC", "SOLVE TIME"],
                   ["33/33", "CHEMISTRY"],
                   ["50,000+", "FUT TRADERS"],
-                  ["0%", "BAN RATE"],
+                  ["100%", "COMPLIANT"],
                 ].map(([v, l]) => (
                   <div key={l} className="flex items-center gap-2 rounded border border-white/8 bg-white/3 px-4 py-2">
                     <span className="text-base font-bold text-primary">{v}</span>
@@ -189,7 +189,7 @@ export default function SBCSolverHubPage() {
                   <div className="text-[#C5A059]">[05] SOLUTION FOUND — 33/33</div>
                   <div className="text-primary font-bold">[06] COST: 14,250 COINS</div>
                   <div className="flex items-center gap-2 text-slate-300 mt-1">
-                    [07] SUBMITTING<span className="inline-block h-3 w-2 bg-primary animate-pulse ml-1" />
+                    [07] APPLYING<span className="inline-block h-3 w-2 bg-primary animate-pulse ml-1" />
                   </div>
                 </div>
                 <div className="border-t border-white/5 bg-primary px-4 py-2 flex justify-between">
@@ -219,9 +219,9 @@ export default function SBCSolverHubPage() {
 
           <div className="grid md:grid-cols-3 gap-5">
             {[
-              { n: "01", icon: "extension", title: "OPEN EXTENSION", desc: "Launch FUT Sniper while on the EA FC Web App. It detects all active SBCs and loads your full club inventory instantly." },
+              { n: "01", icon: "extension", title: "OPEN EXTENSION", desc: "Launch EliteFut while on the EA FC Web App. It detects all active SBCs and loads your full club inventory instantly." },
               { n: "02", icon: "psychology", title: "AI FINDS SOLUTION", desc: "The brute-force engine tests 12,000+ squad combinations per second, cross-checking live market prices to find the cheapest solution." },
-              { n: "03", icon: "task_alt", title: "COLLECT YOUR PACK", desc: "Squad auto-applied with 33/33 chemistry. Missing cards sniped at lowest BIN. Sit back and open packs." },
+              { n: "03", icon: "task_alt", title: "COLLECT YOUR PACK", desc: "Squad applied with 33/33 chemistry. Missing cards located at lowest BIN. Sit back and open packs." },
             ].map((s) => (
               <div key={s.n} className="relative overflow-hidden rounded-lg border border-white/5 bg-[#111] p-8 hover:border-primary/20 transition-colors">
                 <div className="absolute -right-2 -top-2 text-[100px] font-bold text-white/[0.025] leading-none select-none">{s.n}</div>
@@ -280,7 +280,7 @@ export default function SBCSolverHubPage() {
           <div className="mb-10">
             <span className="text-[10px] font-bold uppercase tracking-[0.4em] text-primary">Why AI Wins</span>
             <h2 className="mt-1 text-3xl font-bold uppercase tracking-tight text-white lg:text-4xl">
-              MANUAL vs. <span className="text-primary">FUT SNIPER AI</span>
+              MANUAL vs. <span className="text-primary">ELITEFUT AI</span>
             </h2>
           </div>
 
@@ -288,7 +288,7 @@ export default function SBCSolverHubPage() {
             <div className="grid grid-cols-3 border-b border-white/5 bg-white/3 px-6 py-4">
               <div className="text-[10px] font-bold uppercase tracking-widest text-slate-600">METRIC</div>
               <div className="text-center text-[10px] font-bold uppercase tracking-widest text-slate-500">MANUAL</div>
-              <div className="text-center text-[10px] font-bold uppercase tracking-widest text-primary">FUT SNIPER AI</div>
+              <div className="text-center text-[10px] font-bold uppercase tracking-widest text-primary">ELITEFUT AI</div>
             </div>
             {COMPARISON.map((row, i) => (
               <div
@@ -350,15 +350,15 @@ export default function SBCSolverHubPage() {
         <div className="mx-auto max-w-[1440px] px-4 sm:px-6 grid gap-8 text-xs text-slate-600 md:grid-cols-3" style={{ fontFamily: "Inter, sans-serif" }}>
           <div>
             <h4 className="mb-2 text-[10px] font-bold uppercase tracking-widest text-slate-500">Best AI SBC Solver 2025</h4>
-            <p className="leading-relaxed">FUT Sniper is widely recognized as the best AI SBC Solver for EA FC 26 and FC 25. Unlike basic calculators, our brute-force AI tests every possible combination from your specific club inventory — consistently finding solutions 30–60% cheaper than generic databases like Futbin or EasySBC.</p>
+            <p className="leading-relaxed">EliteFut is widely recognized as the best AI SBC Solver for EA FC 26 and FC 25. Unlike basic calculators, our brute-force AI tests every possible combination from your specific club inventory — consistently finding solutions 30–60% cheaper than generic databases like Futbin or EasySBC.</p>
           </div>
           <div>
             <h4 className="mb-2 text-[10px] font-bold uppercase tracking-widest text-slate-500">FC 26 Chemistry Solver</h4>
             <p className="leading-relaxed">The EA FC 26 chemistry system awards up to 3 points per player based on shared nationality, league, or club. Our solver handles all position modifiers, manager bonuses, and link configurations — guaranteeing 33/33 chemistry on every single SBC submission with zero errors.</p>
           </div>
           <div>
-            <h4 className="mb-2 text-[10px] font-bold uppercase tracking-widest text-slate-500">Automated SBC Bot vs. Manual</h4>
-            <p className="leading-relaxed">Elite traders completing 5–10 SBCs per day save 2M+ coins monthly with FUT Sniper vs. manual solving. Each challenge that takes 15–20 minutes manually completes in under 5 seconds automatically — freeing time while maximizing efficiency every session.</p>
+            <h4 className="mb-2 text-[10px] font-bold uppercase tracking-widest text-slate-500">AI SBC Companion vs. Manual</h4>
+            <p className="leading-relaxed">Elite traders completing 5–10 SBCs per day save 2M+ coins monthly with EliteFut vs. manual solving. Each challenge that takes 15–20 minutes manually completes in under 5 seconds — freeing time while maximizing efficiency every session.</p>
           </div>
         </div>
       </section>

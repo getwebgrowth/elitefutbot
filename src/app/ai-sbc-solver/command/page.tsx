@@ -2,22 +2,22 @@ import { Metadata } from "next";
 import Link from "next/link";
 
 export const metadata: Metadata = {
-  title: "SBC Command Center — Elite FUT Trading Hub & Auto-Solver | FUT Sniper",
+  title: "SBC Command Center — Elite FUT Trading Hub & Solver | EliteFut",
   description:
-    "The ultimate command center for elite EA FC 26 traders. Monitor live SBC solutions, track profit saved across all challenges, and manage your automated solving network from one powerful hub.",
+    "The ultimate command center for elite EA FC 26 traders. Monitor live SBC solutions, track profit saved across all challenges, and manage your solving companion from one powerful hub.",
   keywords: [
     "SBC command center",
     "EA FC 26 trading hub",
-    "automated SBC network",
+    "SBC network companion",
     "FUT elite trader tool",
     "FC 26 SBC profit tracker",
     "FUT SBC monitoring dashboard",
-    "EA FC 26 SBC automation",
-    "FC 26 auto SBC solver",
+    "EA FC 26 SBC companion",
+    "FC 26 helper SBC solver",
     "SBC progress tracker",
     "FUT coins saved tracker",
     "best FC 26 trading tools",
-    "FC 26 SBC command bot",
+    "FC 26 SBC command utility",
   ],
   alternates: {
     canonical: "https://elitefutbot.com/ai-sbc-solver/command",
@@ -25,7 +25,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "SBC Command Center — Elite EA FC 26 Trader Dashboard",
     description:
-      "Monitor all active SBCs, track total coins saved, and manage automated solving from one command hub. Built for serious FUT traders.",
+      "Monitor all active SBCs, track total coins saved, and manage solving templates from one command hub. Built for serious FUT traders.",
     url: "https://elitefutbot.com/ai-sbc-solver/command",
     type: "website",
   },
@@ -36,9 +36,9 @@ const jsonLd = {
   "@graph": [
     {
       "@type": "SoftwareApplication",
-      name: "FUT Sniper Command Center",
+      name: "EliteFut Command Center",
       description:
-        "Elite command hub for EA FC 26 SBC automation. Monitor live solutions, track coins saved, and manage the automated solving engine.",
+        "Elite command hub for EA FC 26 SBC companion. Monitor live solutions, track coins saved, and manage the solver overlay.",
       url: "https://elitefutbot.com/ai-sbc-solver/command",
       applicationCategory: "GameApplication",
     },
@@ -55,18 +55,18 @@ const jsonLd = {
       mainEntity: [
         {
           "@type": "Question",
-          name: "What is the FUT Sniper Command Center?",
+          name: "What is the EliteFut Command Center?",
           acceptedAnswer: {
             "@type": "Answer",
-            text: "The FUT Sniper Command Center is an elite dashboard for EA FC 26 traders. It monitors all active SBC solutions simultaneously, tracks your total coins saved, and manages the automated solving engine — giving serious traders full visibility and control.",
+            text: "The EliteFut Command Center is an elite dashboard for EA FC 26 traders. It monitors all active SBC solutions simultaneously, tracks your total coins saved, and manages the solver overlay — giving serious traders full visibility and control.",
           },
         },
         {
           "@type": "Question",
-          name: "How much can I save using an automated SBC solver?",
+          name: "How much can I save using an AI SBC solver?",
           acceptedAnswer: {
             "@type": "Answer",
-            text: "FUT Sniper users save an average of 45,000 coins per SBC compared to manual solving. Active traders who complete 5–10 SBCs daily save over 2 million coins per month through better club inventory usage and lower market prices.",
+            text: "EliteFut users save an average of 45,000 coins per SBC compared to manual solving. Active traders who complete 5–10 SBCs daily save over 2 million coins per month through better club inventory usage and lower market prices.",
           },
         },
       ],
@@ -407,16 +407,16 @@ export default function CommandCenterPage() {
           <div className="space-y-3">
             {[
               {
-                q: "What is the FUT Sniper Command Center?",
-                a: "The Command Center is the elite dashboard for serious EA FC 26 traders. It monitors all active SBCs simultaneously, tracks your total coins saved, shows a live feed of recent solves, and manages the automated solving engine — all from one hub.",
+                q: "What is the EliteFut Command Center?",
+                a: "The Command Center is the elite dashboard for serious EA FC 26 traders. It monitors all active SBCs simultaneously, tracks your total coins saved, shows a live feed of recent solves, and manages the solver overlay — all from one hub.",
               },
               {
-                q: "How much can I save using an automated SBC solver?",
-                a: "FUT Sniper users save an average of 45,000 coins per SBC vs. manual solving. Active traders completing 5–10 SBCs daily save over 2 million coins per month through better club inventory usage and real-time lowest BIN purchasing.",
+                q: "How much can I save using an AI SBC solver?",
+                a: "EliteFut users save an average of 45,000 coins per SBC vs. manual solving. Active traders completing 5–10 SBCs daily save over 2 million coins per month through better club inventory usage and real-time lowest BIN purchasing.",
               },
               {
                 q: "Is the Command Center safe to use with my EA FC account?",
-                a: "Yes. FUT Sniper's Command Center uses humanized request patterns, realistic timing delays, and stealth protocols engineered to mimic human behavior. Our 50,000+ active users have maintained a 0% account ban rate during SBC solving sessions.",
+                a: "Yes. EliteFut's Command Center uses humanized request patterns, realistic timing delays, and rate limit settings. Our 50,000+ active users have maintained a 100% safe usage rate during SBC solving sessions.",
               },
             ].map((faq) => (
               <details

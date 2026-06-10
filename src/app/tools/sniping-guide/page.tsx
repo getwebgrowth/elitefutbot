@@ -3,9 +3,9 @@ import Link from "next/link";
 import Image from "next/image";
 
 export const metadata: Metadata = {
-  title: "FC 25 Sniping Guide - Advanced Trading Filters",
-  description: "Master the art of sniping in FC 25 with our comprehensive guide. Expert filter settings for Mbappé, Vinícius Jr, and elite division cards.",
-  keywords: ["FC 25 sniping guide", "FIFA sniping filters", "how to snipe FIFA players", "trading bot settings"],
+  title: "FC 25 Trading Guide - Advanced Market Filters",
+  description: "Master the art of trading in FC 25 with our comprehensive guide. Expert filter settings for Mbappé, Vinícius Jr, and elite division cards.",
+  keywords: ["FC 25 trading guide", "FIFA market filters", "how to trade FIFA players", "trading layout settings"],
 };
 
 export default function SnipingGuidePage() {
@@ -33,7 +33,7 @@ export default function SnipingGuidePage() {
           </Link>
           <Link className="flex items-center gap-3 px-4 py-3 text-[#c4c9ac] hover:bg-[#2a2a2a] hover:translate-x-1 transition-all duration-200 rounded-lg group" href="#">
             <span className="material-symbols-outlined group-hover:text-primary">target</span>
-            <span className="font-headline font-medium text-sm">Auto-Sniper</span>
+            <span className="font-headline font-medium text-sm">Market Assistant</span>
           </Link>
           <Link className="flex items-center gap-3 px-4 py-3 text-[#c4c9ac] hover:bg-[#2a2a2a] hover:translate-x-1 transition-all duration-200 rounded-lg group" href="#">
             <span className="material-symbols-outlined group-hover:text-primary">payments</span>
@@ -42,7 +42,7 @@ export default function SnipingGuidePage() {
         </nav>
         <div className="mt-auto pt-6 border-t border-[#353534]">
           <button className="w-full flex items-center justify-center gap-2 py-3 mb-4 bg-gradient-to-br from-white to-primary text-black font-headline font-bold text-xs uppercase tracking-widest rounded-lg hover:scale-[0.98] transition-transform shadow-[0_4px_12px_rgba(204,255,0,0.1)]">
-            <span className="material-symbols-outlined text-sm">bolt</span> Start Sniping
+            <span className="material-symbols-outlined text-sm">bolt</span> Get the Extension
           </button>
           <div className="space-y-1">
             <Link className="flex items-center gap-3 px-4 py-2 label-sm-allcaps text-slate-400 hover:text-white transition-colors" href="#">
@@ -76,7 +76,7 @@ export default function SnipingGuidePage() {
             </div>
             <h1 className="font-headline font-black text-4xl md:text-6xl text-white leading-tight kinetic-headline italic uppercase">
               Kylian Mbappé <br />
-              <span className="text-primary">FC 26 Sniping Filter</span>
+              <span className="text-primary">FC 26 Market Filter</span>
             </h1>
             <p className="mt-4 text-slate-400 font-body text-lg max-w-lg">
               The definitive price guide and tactical filter settings for the world&apos;s most elite digital athlete.
@@ -108,7 +108,7 @@ export default function SnipingGuidePage() {
                 <div className="data-display font-headline font-black text-4xl text-white tabular-nums tracking-tighter">950,000</div>
               </div>
               <div className="space-y-2">
-                <span className="label-sm-allcaps text-slate-400">Sniping Target</span>
+                <span className="label-sm-allcaps text-slate-400">Trading Target</span>
                 <div className="data-display font-headline font-black text-4xl text-primary tabular-nums tracking-tighter">850,000</div>
               </div>
               <div className="space-y-2">
@@ -121,7 +121,7 @@ export default function SnipingGuidePage() {
             </div>
           </div>
 
-          {/* Specific Sniper Settings */}
+          {/* Settings */}
           <div className="bg-[#2a2a2a] p-8 rounded-md relative">
             <div className="flex items-center gap-2 mb-6">
               <div className="w-1 h-6 bg-primary"></div>
@@ -152,7 +152,7 @@ export default function SnipingGuidePage() {
           </div>
         </section>
 
-        {/* Programmatic SEO & Similar Opportunities */}
+        {/* Opportunities */}
         <section className="grid grid-cols-1 lg:grid-cols-2 gap-8">
           {/* Timing Intelligence */}
           <div className="bg-[#2a2a2a] p-8 rounded-md">
@@ -178,7 +178,7 @@ export default function SnipingGuidePage() {
                   <span className="label-sm-allcaps text-slate-400">MID LIQUIDITY</span>
                 </div>
                 <div className="text-2xl font-headline font-bold text-white uppercase kinetic-headline">06:00 — 08:00 PM UK</div>
-                <p className="mt-2 text-xs text-slate-400 leading-relaxed">High competition window during content drops. Recommended for advanced snipers only.</p>
+                <p className="mt-2 text-xs text-slate-400 leading-relaxed">High competition window during content drops. Recommended for advanced traders only.</p>
               </div>
             </div>
           </div>
@@ -237,10 +237,10 @@ export default function SnipingGuidePage() {
           </div>
           <div className="relative z-10 text-center max-w-3xl mx-auto space-y-8">
             <h2 className="font-headline font-black text-3xl md:text-5xl uppercase italic kinetic-headline leading-none">
-              Unleash the Elite Sniping Bot
+              Unleash the Elite Market Assistant
             </h2>
             <p className="text-black font-medium text-lg opacity-90 max-w-xl mx-auto">
-              Stop manual refreshing. Access Kylian Mbappé&apos;s advanced algorithmic filters and let our bot secure the deals for you 24/7.
+              Stop manual refreshing. Access Kylian Mbappé&apos;s advanced algorithmic filters and let our extension highlight the deals for you.
             </p>
             <div className="flex flex-col sm:flex-row items-center justify-center gap-6">
               <button className="w-full sm:w-auto px-12 py-5 bg-black text-primary font-headline font-black uppercase tracking-[0.15em] rounded hover:translate-y-[-4px] transition-transform duration-200 shadow-xl">
