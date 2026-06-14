@@ -198,9 +198,9 @@ export default function RootLayout({
               </div>
               <nav className="flex gap-10" aria-label="Legal">
                 <Link className="hover:text-primary transition-colors focus-visible:text-primary focus-visible:outline-none" href="#">Status</Link>
-                <Link className="hover:text-primary transition-colors focus-visible:text-primary focus-visible:outline-none" href="#">Terms</Link>
-                <Link className="hover:text-primary transition-colors focus-visible:text-primary focus-visible:outline-none" href="#">Privacy</Link>
-                <Link className="hover:text-primary transition-colors focus-visible:text-primary focus-visible:outline-none" href="#">Contact</Link>
+                <Link className="hover:text-primary transition-colors focus-visible:text-primary focus-visible:outline-none" href="/terms">Terms</Link>
+                <Link className="hover:text-primary transition-colors focus-visible:text-primary focus-visible:outline-none" href="/privacy">Privacy</Link>
+                <Link className="hover:text-primary transition-colors focus-visible:text-primary focus-visible:outline-none" href="/contact">Contact</Link>
               </nav>
             </div>
           </div>
