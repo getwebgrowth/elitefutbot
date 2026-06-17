@@ -184,7 +184,7 @@ export default function RootLayout({
             {/* Bottom Bar */}
             <div className="pt-12 border-t border-white/5 flex flex-col md:flex-row justify-between items-center gap-8 text-[10px] text-gray-500 font-bold uppercase tracking-[0.3em] font-headline">
               <div className="flex items-center gap-6">
-                <span>© 2024 FUT Sniper</span>
+                <span>© 2026 FUT Sniper</span>
                 <span className="w-1 h-1 bg-white/10 rounded-full" aria-hidden="true"></span>
                 <span>Not Affiliated with EA Sports</span>
               </div>
