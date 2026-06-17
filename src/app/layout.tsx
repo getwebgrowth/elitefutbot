@@ -19,20 +19,20 @@ const publicSans = Public_Sans({
 });
 
 export const metadata: Metadata = {
-  title: "FUT Sniper Bot - The Ultimate FC 25 Sniping Tool & Autobuyer",
-  description: "Dominate the FC 25 transfer market with FUT Sniper. The best FIFA sniping bot featuring 20ms search speeds, advanced anti-ban tech, and cloud automation.",
-  keywords: ["FUT Sniper", "FC 25 sniping bot", "FIFA 25 autobuyer", "SBC solver", "FC 25 trading tools", "FIFA sniping tool"],
+  title: "Elite FUT SNIPER - The Ultimate FC 25 Sniping Tool & Autobuyer",
+  description: "Dominate the FC 25 transfer market with Elite FUT SNIPER. The best FIFA sniping bot featuring 20ms search speeds, advanced anti-ban tech, and cloud automation.",
+  keywords: ["Elite FUT SNIPER", "FUT Sniper", "FC 25 sniping bot", "FIFA 25 autobuyer", "SBC solver", "FC 25 trading tools", "FIFA sniping tool"],
   alternates: {
     canonical: "https://elitefutbot.com/",
   },
   openGraph: {
-    title: "FUT Sniper Bot - #1 FC 25 Sniping Tool",
+    title: "Elite FUT SNIPER - #1 FC 25 Sniping Tool",
     description: "World's fastest FC 25 sniping bot and autobuyer. Advanced anti-ban engine and cloud-based SBC solving.",
     url: "https://elitefutbot.com/",
-    siteName: "FUT Sniper",
+    siteName: "Elite FUT SNIPER",
     images: [
       {
-        url: "/og-image.png", // User should provide this, or I can generate a placeholder
+        url: "/og-image.png",
         width: 1200,
         height: 630,
       },
@@ -42,7 +42,7 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "FUT Sniper Bot - #1 FC 25 Sniping Tool",
+    title: "Elite FUT SNIPER - #1 FC 25 Sniping Tool",
     description: "Elite FC 25 sniping bot and autobuyer. 20ms speeds and zero bans.",
     images: ["/og-image.png"],
   },
@@ -51,7 +51,7 @@ export const metadata: Metadata = {
 const jsonLd = {
   "@context": "https://schema.org",
   "@type": "SoftwareApplication",
-  "name": "FUT Sniper",
+  "name": "Elite FUT SNIPER",
   "operatingSystem": "Web, Windows, macOS",
   "applicationCategory": "GameApplication",
   "offers": {
@@ -87,11 +87,11 @@ export default function RootLayout({
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div className="flex justify-between items-center h-20">
               <Link href="/" className="flex items-center gap-2">
-                <div className="w-8 h-8 bg-primary rounded-lg flex items-center justify-center shadow-[0_0_15px_rgba(204,255,0,0.3)]">
-                  <span className="material-symbols-outlined text-dark text-lg font-bold">bolt</span>
+                <div className="relative w-8 h-8 rounded-lg overflow-hidden flex items-center justify-center shadow-[0_0_15px_rgba(204,255,0,0.3)] bg-black border border-white/10">
+                  <img src="/logo-elite.png" alt="Elite FUT SNIPER Logo" className="w-full h-full object-cover" />
                 </div>
                 <span className="text-xl font-extrabold tracking-tighter uppercase text-white">
-                  FUT <span className="text-primary">Sniper</span>
+                  Elite FUT <span className="text-primary">SNIPER</span>
                 </span>
               </Link>
               <div className="hidden md:flex items-center space-x-8 text-sm font-medium text-gray-300">
@@ -125,11 +125,11 @@ export default function RootLayout({
               {/* Brand Section */}
               <div className="md:col-span-4 space-y-8">
                 <Link href="/" className="flex items-center gap-3 group">
-                  <div className="w-10 h-10 bg-primary rounded-xl flex items-center justify-center shadow-[0_0_20px_rgba(204,255,0,0.4)] group-hover:scale-110 transition-transform duration-500">
-                    <span className="material-symbols-outlined text-dark text-xl font-bold" aria-hidden="true">bolt</span>
+                  <div className="relative w-10 h-10 rounded-xl overflow-hidden flex items-center justify-center shadow-[0_0_20px_rgba(204,255,0,0.4)] bg-black border border-white/10 group-hover:scale-110 transition-transform duration-500">
+                    <img src="/logo-elite.png" alt="Elite FUT SNIPER Logo" className="w-full h-full object-cover" />
                   </div>
                   <span className="text-2xl font-black tracking-tighter uppercase text-white font-headline">
-                    FUT <span className="text-primary italic">Sniper</span>
+                    Elite FUT <span className="text-primary italic">SNIPER</span>
                   </span>
                 </Link>
                 <p className="text-gray-400 text-base leading-relaxed max-w-sm font-body">
@@ -184,7 +184,7 @@ export default function RootLayout({
             {/* Bottom Bar */}
             <div className="pt-12 border-t border-white/5 flex flex-col md:flex-row justify-between items-center gap-8 text-[10px] text-gray-500 font-bold uppercase tracking-[0.3em] font-headline">
               <div className="flex items-center gap-6">
-                <span>© 2026 FUT Sniper</span>
+                <span>© 2026 Elite FUT SNIPER</span>
                 <span className="w-1 h-1 bg-white/10 rounded-full" aria-hidden="true"></span>
                 <span>Not Affiliated with EA Sports</span>
               </div>

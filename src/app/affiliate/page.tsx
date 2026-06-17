@@ -1,9 +1,9 @@
 import { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Affiliate Program - Earn with FUT Sniper",
-  description: "Join the FUT Sniper affiliate program and earn high commissions by promoting the world's most advanced FC 25 trading suite.",
-  keywords: ["FUT Sniper affiliate", "earn with FIFA bot", "FC 25 affiliate program", "trading bot commissions"],
+  title: "Affiliate Program - Earn with Elite FUT SNIPER",
+  description: "Join the Elite FUT SNIPER affiliate program and earn high commissions by promoting the world's most advanced FC 25 trading suite.",
+  keywords: ["Elite FUT SNIPER affiliate", "FUT Sniper affiliate", "earn with FIFA bot", "FC 25 affiliate program", "trading bot commissions"],
 };
 
 export default function AffiliatePage() {

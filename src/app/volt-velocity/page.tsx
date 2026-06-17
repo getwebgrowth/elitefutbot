@@ -1,9 +1,9 @@
 import { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Volt Velocity - FUT Sniper Design System",
-  description: "The core design system behind FUT Sniper. Kinetic aesthetics, high-performance UI components, and premium trading interfaces.",
-  keywords: ["Volt Velocity", "design system", "FUT Sniper UI", "trading interface design"],
+  title: "Volt Velocity - Elite FUT SNIPER Design System",
+  description: "The core design system behind Elite FUT SNIPER. Kinetic aesthetics, high-performance UI components, and premium trading interfaces.",
+  keywords: ["Volt Velocity", "design system", "Elite FUT SNIPER UI", "FUT Sniper UI", "trading interface design"],
 };
 
 export default function VoltVelocityDesignSystemPage() {

@@ -122,7 +122,7 @@ export default function Home() {
             <div className="relative bg-[#161616] rounded-[2rem] p-3 border border-white/10 shadow-2xl overflow-hidden">
               <div className="absolute top-0 left-0 w-full h-8 bg-gradient-to-b from-white/5 to-transparent"></div>
               <Image 
-                alt="FUT Sniper Safe Mode Interface" 
+                alt="Elite FUT SNIPER Safe Mode Interface" 
                 width={800}
                 height={600}
                 className="w-full h-auto rounded-xl shadow-2xl relative z-10" 
@@ -249,7 +249,7 @@ export default function Home() {
         <div className="max-w-5xl mx-auto px-4 relative z-10">
           <div className="text-center mb-16">
             <h2 className="text-3xl md:text-6xl font-black mb-6">Us vs. <span className="text-primary">Competitors</span></h2>
-            <p className="text-gray-400 text-lg">Why thousands of professional traders are choosing FUT Sniper for FC 25/26.</p>
+            <p className="text-gray-400 text-lg">Why thousands of professional traders are choosing Elite FUT SNIPER for FC 25/26.</p>
           </div>
           <div className="glass-card rounded-[2.5rem] overflow-hidden border border-white/10 shadow-[0_20px_50px_rgba(0,0,0,0.5)]">
             <div className="overflow-x-auto">
@@ -260,7 +260,7 @@ export default function Home() {
                     <th className="py-8 px-8 text-primary font-black text-center bg-primary/5 border-l border-r border-primary/20">
                       <div className="flex flex-col items-center">
                         <span className="text-[10px] uppercase tracking-[0.3em] text-primary/60 mb-2">The Gold Standard</span>
-                        <span className="text-2xl tracking-tighter">FUT SNIPER</span>
+                        <span className="text-2xl tracking-tighter">ELITE FUT SNIPER</span>
                       </div>
                     </th>
                     <th className="py-8 px-8 text-gray-500 font-bold text-xs uppercase tracking-[0.2em] text-center">Typical Bots</th>

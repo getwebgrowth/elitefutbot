@@ -2,8 +2,8 @@ import { Metadata } from "next";
 import Link from "next/link";
 
 export const metadata: Metadata = {
-  title: "Terms of Service - FUT Sniper",
-  description: "Read the Terms of Service for FUT Sniper. Understand user agreements, billing terms, and our refund policies.",
+  title: "Terms of Service - Elite FUT SNIPER",
+  description: "Read the Terms of Service for Elite FUT SNIPER. Understand user agreements, billing terms, and our refund policies.",
 };
 
 export default function TermsPage() {
@@ -26,7 +26,7 @@ export default function TermsPage() {
               1. Acceptance of Terms
             </h2>
             <p>
-              By accessing or using the FUT Sniper website (located at <a href="https://www.elitefutbot.com/" className="text-primary hover:underline">https://www.elitefutbot.com/</a>), services, browser helper overlays, and tools (collectively, the &quot;Service&quot;), you agree to be bound by these Terms of Service. If you do not agree to all of these terms, do not access or use the Service.
+              By accessing or using the Elite FUT SNIPER website (located at <a href="https://www.elitefutbot.com/" className="text-primary hover:underline">https://www.elitefutbot.com/</a>), services, browser helper overlays, and tools (collectively, the &quot;Service&quot;), you agree to be bound by these Terms of Service. If you do not agree to all of these terms, do not access or use the Service.
             </p>
           </section>
 
@@ -35,7 +35,7 @@ export default function TermsPage() {
               2. Description of Service
             </h2>
             <p>
-              FUT Sniper provides Squad Building Challenge (SBC) helper templates, market fee calculators, and user interface overlay utilities for browser applications. The Service is provided solely for educational, analytical, and entertainment purposes to optimize standard web app workflows.
+              Elite FUT SNIPER provides Squad Building Challenge (SBC) helper templates, market fee calculators, and user interface overlay utilities for browser applications. The Service is provided solely for educational, analytical, and entertainment purposes to optimize standard web app workflows.
             </p>
           </section>
 
@@ -67,7 +67,7 @@ export default function TermsPage() {
               5. Refund &amp; Cancellation Policy
             </h2>
             <p>
-              We want you to be completely satisfied with FUT Sniper. This policy outlines our commitment to fair and transparent billing:
+              We want you to be completely satisfied with Elite FUT SNIPER. This policy outlines our commitment to fair and transparent billing:
             </p>
             <ul className="list-disc pl-6 space-y-2">
               <li>
@@ -91,7 +91,7 @@ export default function TermsPage() {
             </p>
             <ul className="list-disc pl-6 space-y-2">
               <li>Violate any local, national, or international laws or regulations.</li>
-              <li>Attempt to reverse engineer, copy, disrupt, or exploit the source code, databases, or API integrations of FUT Sniper.</li>
+              <li>Attempt to reverse engineer, copy, disrupt, or exploit the source code, databases, or API integrations of Elite FUT SNIPER.</li>
               <li>Use any automatic scripts or methods that violate third-party application terms or place an unreasonable load on our systems.</li>
             </ul>
           </section>
@@ -101,7 +101,7 @@ export default function TermsPage() {
               7. Disclaimer of Warranties &amp; Limitation of Liability
             </h2>
             <p className="italic text-gray-500">
-              FUT Sniper is provided on an &quot;AS IS&quot; and &quot;AS AVAILABLE&quot; basis. We do not warrant that the website or tools will be uninterrupted, error-free, or fully secure. In no event shall FUT Sniper, its developers, or affiliates be liable for any direct, indirect, incidental, or consequential damages resulting from your use or inability to use the Service.
+              Elite FUT SNIPER is provided on an &quot;AS IS&quot; and &quot;AS AVAILABLE&quot; basis. We do not warrant that the website or tools will be uninterrupted, error-free, or fully secure. In no event shall Elite FUT SNIPER, its developers, or affiliates be liable for any direct, indirect, incidental, or consequential damages resulting from your use or inability to use the Service.
             </p>
           </section>
 
