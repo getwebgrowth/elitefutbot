@@ -86,10 +86,8 @@ export default function RootLayout({
         <nav className="sticky top-0 z-50 bg-dark/80 backdrop-blur-xl border-b border-white/5 supports-[backdrop-filter]:bg-dark/60">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div className="flex justify-between items-center h-20">
-              <Link href="/" className="flex items-center gap-2">
-                <div className="relative w-8 h-8 rounded-lg overflow-hidden flex items-center justify-center shadow-[0_0_15px_rgba(204,255,0,0.3)] bg-black border border-white/10">
-                  <img src="/logo-elite.png" alt="Elite FUT SNIPER Logo" className="w-full h-full object-cover" />
-                </div>
+              <Link href="/" className="flex items-center gap-3">
+                <img src="/logo-elite.png" alt="Elite FUT SNIPER Logo" className="w-12 h-12 object-contain" />
                 <span className="text-xl font-extrabold tracking-tighter uppercase text-white">
                   Elite FUT <span className="text-primary">SNIPER</span>
                 </span>
@@ -125,9 +123,7 @@ export default function RootLayout({
               {/* Brand Section */}
               <div className="md:col-span-4 space-y-8">
                 <Link href="/" className="flex items-center gap-3 group">
-                  <div className="relative w-10 h-10 rounded-xl overflow-hidden flex items-center justify-center shadow-[0_0_20px_rgba(204,255,0,0.4)] bg-black border border-white/10 group-hover:scale-110 transition-transform duration-500">
-                    <img src="/logo-elite.png" alt="Elite FUT SNIPER Logo" className="w-full h-full object-cover" />
-                  </div>
+                  <img src="/logo-elite.png" alt="Elite FUT SNIPER Logo" className="w-16 h-16 object-contain group-hover:scale-110 transition-transform duration-500" />
                   <span className="text-2xl font-black tracking-tighter uppercase text-white font-headline">
                     Elite FUT <span className="text-primary italic">SNIPER</span>
                   </span>
