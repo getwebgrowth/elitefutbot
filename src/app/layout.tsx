@@ -87,7 +87,7 @@ export default function RootLayout({
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div className="flex justify-between items-center h-20">
               <Link href="/" className="flex items-center gap-3">
-                <img src="/logo-elite.png" alt="Elite FUT SNIPER Logo" className="w-12 h-12 object-contain" />
+                <img src="/logo-elite.png" alt="Elite FUT SNIPER Logo" className="w-16 h-16 object-contain" />
                 <span className="text-xl font-extrabold tracking-tighter uppercase text-white">
                   Elite FUT <span className="text-primary">SNIPER</span>
                 </span>
@@ -123,7 +123,7 @@ export default function RootLayout({
               {/* Brand Section */}
               <div className="md:col-span-4 space-y-8">
                 <Link href="/" className="flex items-center gap-3 group">
-                  <img src="/logo-elite.png" alt="Elite FUT SNIPER Logo" className="w-16 h-16 object-contain group-hover:scale-110 transition-transform duration-500" />
+                  <img src="/logo-elite.png" alt="Elite FUT SNIPER Logo" className="w-20 h-20 object-contain group-hover:scale-110 transition-transform duration-500" />
                   <span className="text-2xl font-black tracking-tighter uppercase text-white font-headline">
                     Elite FUT <span className="text-primary italic">SNIPER</span>
                   </span>
