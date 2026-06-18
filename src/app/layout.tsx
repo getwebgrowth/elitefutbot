@@ -19,15 +19,16 @@ const publicSans = Public_Sans({
 });
 
 export const metadata: Metadata = {
-  title: "Elite FUT SNIPER - The Ultimate FC 25 Sniping Tool & Autobuyer",
-  description: "Dominate the FC 25 transfer market with Elite FUT SNIPER. The best FIFA sniping bot featuring 20ms search speeds, advanced anti-ban tech, and cloud automation.",
-  keywords: ["Elite FUT SNIPER", "FUT Sniper", "FC 25 sniping bot", "FIFA 25 autobuyer", "SBC solver", "FC 25 trading tools", "FIFA sniping tool"],
+  metadataBase: new URL('https://elitefutbot.com'),
+  title: "Elite FUT SNIPER - The Ultimate FC 26, FC 25 & FC 27 Sniping Tool & Autobuyer",
+  description: "Dominate the FC 26, FC 25, and upcoming FC 27 transfer markets with Elite FUT SNIPER. The best FIFA sniping bot featuring 20ms search speeds, advanced anti-ban tech, and cloud automation.",
+  keywords: ["Elite FUT SNIPER", "FUT Sniper", "FC 26 sniping bot", "FC 25 sniping bot", "FC 27 sniping bot", "FIFA 26 autobuyer", "SBC solver", "FC 26 trading tools", "FIFA sniping tool"],
   alternates: {
     canonical: "https://elitefutbot.com/",
   },
   openGraph: {
-    title: "Elite FUT SNIPER - #1 FC 25 Sniping Tool",
-    description: "World's fastest FC 25 sniping bot and autobuyer. Advanced anti-ban engine and cloud-based SBC solving.",
+    title: "Elite FUT SNIPER - #1 FC 26, FC 25 & FC 27 Sniping Tool",
+    description: "World's fastest sniping bot and autobuyer for FC 26, FC 25 & FC 27. Advanced anti-ban engine and cloud-based SBC solving.",
     url: "https://elitefutbot.com/",
     siteName: "Elite FUT SNIPER",
     images: [
@@ -42,8 +43,8 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Elite FUT SNIPER - #1 FC 25 Sniping Tool",
-    description: "Elite FC 25 sniping bot and autobuyer. 20ms speeds and zero bans.",
+    title: "Elite FUT SNIPER - #1 FC 26, FC 25 & FC 27 Sniping Tool",
+    description: "Elite sniping bot and autobuyer for FC 26, FC 25 & FC 27. 20ms speeds and zero bans.",
     images: ["/og-image.png"],
   },
 };
@@ -104,12 +105,12 @@ export default function RootLayout({
             </div>
           </div>
         </nav>
-
+ 
         {/* Page Content */}
         <main className="flex-grow">
           {children}
         </main>
-
+ 
         {/* Global Fixed Footer */}
         <footer className="relative py-24 border-t border-white/5 bg-[#050505] mt-auto overflow-hidden">
           {/* Background Decorative Elements */}
@@ -129,7 +130,7 @@ export default function RootLayout({
                   </span>
                 </Link>
                 <p className="text-gray-400 text-base leading-relaxed max-w-sm font-body">
-                  The most advanced FC 25 automation suite. Engineered for <span className="text-white font-bold">elite traders</span> who demand absolute speed, surgical precision, and total security.
+                  The most advanced FC 26, FC 25 & FC 27 automation suite. Engineered for <span className="text-white font-bold">elite traders</span> who demand absolute speed, surgical precision, and total security.
                 </p>
                 <div className="flex items-center gap-4">
                   <Link 
@@ -138,6 +139,15 @@ export default function RootLayout({
                     aria-label="Join our Discord community"
                   >
                     <svg className="w-6 h-6" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path d="M20.317 4.37a19.791 19.791 0 0 0-4.885-1.515.074.074 0 0 0-.079.037c-.21.375-.444.864-.608 1.25a18.27 18.27 0 0 0-5.487 0 12.64 12.64 0 0 0-.617-1.25.077.077 0 0 0-.079-.037A19.736 19.736 0 0 0 3.677 4.37a.07.07 0 0 0-.032.027C.533 9.046-.32 13.58.099 18.057a.082.082 0 0 0 .031.057 19.9 19.9 0 0 0 5.993 3.03.078.078 0 0 0 .084-.028 14.09 14.09 0 0 0 1.226-1.994.076.076 0 0 0-.041-.106 13.107 13.107 0 0 1-1.872-.892.077.077 0 0 1-.008-.128 10.2 10.2 0 0 0 .372-.292.074.074 0 0 1 .077-.01c3.928 1.793 8.18 1.793 12.062 0a.074.074 0 0 1 .078.01c.12.098.246.198.373.292a.077.077 0 0 1-.006.127 12.299 12.299 0 0 1-1.873.892.077.077 0 0 0-.041.107c.36.698.772 1.362 1.225 1.993a.076.076 0 0 0 .084.028 19.839 19.839 0 0 0 6.002-3.03.078.078 0 0 0 .032-.054c.5-5.177-.838-9.674-3.549-13.66a.061.061 0 0 0-.031-.03z"></path></svg>
+                  </Link>
+                  <Link 
+                    className="w-12 h-12 rounded-xl border border-white/10 flex items-center justify-center hover:border-primary/50 hover:bg-primary/5 hover:text-primary text-gray-400 transition-all duration-300 focus-visible:ring-2 focus-visible:ring-primary focus-visible:outline-none" 
+                    href="https://t.me/elitefutbot"
+                    aria-label="Join our Telegram community"
+                  >
+                    <svg className="w-6 h-6" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                      <path d="M20.665 3.717l-17.73 6.837c-1.21.486-1.203 1.161-.222 1.462l4.552 1.42 10.532-6.645c.498-.303.953-.14.579.192l-8.533 7.701-.332 4.978c.488 0 .702-.223.975-.488l2.339-2.274 4.862 3.593c.897.494 1.542.24 1.765-.83l3.19-15.035c.327-1.31-.5-1.905-1.36-1.514z" />
+                    </svg>
                   </Link>
                 </div>
               </div>
