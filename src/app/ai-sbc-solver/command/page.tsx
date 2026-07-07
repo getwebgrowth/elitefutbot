@@ -138,7 +138,7 @@ export default function CommandCenterPage() {
 
             <div className="flex flex-col items-center justify-center gap-4 sm:flex-row">
               <Link
-                href="https://discord.gg/PHUfbsSzhK"
+                href="https://discord.gg/yAQEBmRnv"
                 id="command-cta-primary"
                 className="group relative inline-flex items-center gap-3 overflow-hidden rounded-2xl bg-primary px-10 py-5 text-xl font-black text-black shadow-[0_0_40px_rgba(204,255,0,0.4)] transition-all hover:scale-105 animate-pulse-glow"
               >
@@ -222,7 +222,7 @@ export default function CommandCenterPage() {
               {/* Main CTA */}
               <div className="p-8 flex justify-center">
                 <Link
-                  href="https://discord.gg/PHUfbsSzhK"
+                  href="https://discord.gg/yAQEBmRnv"
                   id="command-engine-cta"
                   className="group relative inline-flex items-center gap-4 overflow-hidden rounded-2xl bg-primary px-12 py-6 shadow-[0_0_30px_rgba(204,255,0,0.5)] transition-all hover:scale-105 animate-pulse-glow"
                 >
@@ -454,7 +454,7 @@ export default function CommandCenterPage() {
             </p>
             <div className="flex flex-col sm:flex-row items-center justify-center gap-6">
               <Link
-                href="https://discord.gg/PHUfbsSzhK"
+                href="https://discord.gg/yAQEBmRnv"
                 id="command-final-cta"
                 className="w-full sm:w-auto inline-flex items-center justify-center gap-3 rounded-2xl bg-primary px-10 py-5 text-xl font-black text-black shadow-[0_0_40px_rgba(204,255,0,0.4)] transition-all hover:scale-105 hover:shadow-[0_0_60px_rgba(204,255,0,0.6)]"
               >

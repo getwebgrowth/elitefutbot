@@ -138,7 +138,7 @@ export default function SBCSolverPage() {
                 </div>
               ))}
               <Link
-                href="https://discord.gg/PHUfbsSzhK"
+                href="https://discord.gg/yAQEBmRnv"
                 id="topbar-cta"
                 className="rounded bg-primary px-3 py-1 text-[10px] font-bold uppercase tracking-widest text-black hover:brightness-110 transition-all"
               >
@@ -187,7 +187,7 @@ export default function SBCSolverPage() {
 
               <div className="flex flex-wrap gap-3">
                 <Link
-                  href="https://discord.gg/PHUfbsSzhK"
+                  href="https://discord.gg/yAQEBmRnv"
                   id="hero-solve-cta"
                   className="inline-flex items-center gap-2 rounded bg-primary px-6 py-3 text-sm font-bold uppercase tracking-widest text-black transition-all hover:brightness-110 hover:scale-105 shadow-[0_0_20px_rgba(204,255,0,0.3)]"
                 >
@@ -557,7 +557,7 @@ export default function SBCSolverPage() {
               </p>
             </div>
             <Link
-              href="https://discord.gg/PHUfbsSzhK"
+              href="https://discord.gg/yAQEBmRnv"
               id="banner-cta"
               className="shrink-0 inline-flex items-center gap-2 rounded bg-black px-8 py-4 text-sm font-bold uppercase tracking-widest text-primary transition-all hover:bg-black/80 hover:scale-105"
             >

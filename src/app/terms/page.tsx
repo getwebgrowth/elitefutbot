@@ -123,7 +123,7 @@ export default function TermsPage() {
             </p>
             <div className="bg-white/5 p-6 rounded-lg space-y-2 font-mono text-sm border border-white/10">
               <p>Email: <a href="mailto:support@elitefutbot.com" className="text-primary hover:underline">support@elitefutbot.com</a></p>
-              <p>Support Desk: <Link href="https://discord.gg/PHUfbsSzhK" className="text-primary hover:underline">Discord Support Channel</Link></p>
+              <p>Support Desk: <Link href="https://discord.gg/yAQEBmRnv" className="text-primary hover:underline">Discord Support Channel</Link></p>
               <p>Response SLA: Typically within 24 to 48 business hours.</p>
             </div>
           </section>

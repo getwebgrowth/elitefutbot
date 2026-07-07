@@ -77,7 +77,7 @@ export default function ContactPage() {
                   </div>
                   <div>
                     <h3 className="text-xs font-bold text-gray-500 uppercase tracking-wider">Discord HQ</h3>
-                    <Link href="https://discord.gg/PHUfbsSzhK" className="text-white font-bold hover:text-primary transition-colors text-sm sm:text-base block">
+                    <Link href="https://discord.gg/yAQEBmRnv" className="text-white font-bold hover:text-primary transition-colors text-sm sm:text-base block">
                       Join Support Desk
                     </Link>
                     <p className="text-xs text-gray-500 mt-1">Live updates and companion guide discussions.</p>
