@@ -19,4 +19,4 @@ FUT Sniper provides the world's most advanced FC 25 automation tools. All plans 
 
 ## Contact
 - Sales: sales@futsniper.com
-- Support: https://discord.gg/futsniper
+- Support: https://discord.gg/Rkb9nF6WG6

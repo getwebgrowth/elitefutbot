@@ -97,7 +97,7 @@ export default function SBCSolverHubPage() {
                   <span className="text-slate-600">{l}</span>
                 </div>
               ))}
-              <Link href="https://discord.gg/yAQEBmRnv" id="topbar-cta" className="rounded bg-primary px-3 py-1 text-[10px] font-bold uppercase tracking-widest text-black hover:brightness-110 transition-all">
+              <Link href="https://discord.gg/Rkb9nF6WG6" id="topbar-cta" className="rounded bg-primary px-3 py-1 text-[10px] font-bold uppercase tracking-widest text-black hover:brightness-110 transition-all">
                 FREE BETA
               </Link>
             </div>
@@ -141,7 +141,7 @@ export default function SBCSolverHubPage() {
 
               <div className="flex flex-wrap gap-3 mb-10">
                 <Link
-                  href="https://discord.gg/yAQEBmRnv"
+                  href="https://discord.gg/Rkb9nF6WG6"
                   id="hero-cta-primary"
                   className="inline-flex items-center gap-2 rounded bg-primary px-8 py-4 text-sm font-bold uppercase tracking-widest text-black shadow-[0_0_30px_rgba(204,255,0,0.3)] transition-all hover:brightness-110 hover:scale-105"
                 >
@@ -337,7 +337,7 @@ export default function SBCSolverHubPage() {
               </h2>
               <p className="text-sm text-black/60 mt-1" style={{ fontFamily: "Inter, sans-serif" }}>13 beta slots remaining · No credit card required</p>
             </div>
-            <Link href="https://discord.gg/yAQEBmRnv" id="final-cta" className="shrink-0 inline-flex items-center gap-2 rounded bg-black px-8 py-4 text-sm font-bold uppercase tracking-widest text-primary transition-all hover:bg-black/80 hover:scale-105">
+            <Link href="https://discord.gg/Rkb9nF6WG6" id="final-cta" className="shrink-0 inline-flex items-center gap-2 rounded bg-black px-8 py-4 text-sm font-bold uppercase tracking-widest text-primary transition-all hover:bg-black/80 hover:scale-105">
               <span className="material-symbols-outlined font-black">chat</span>
               JOIN DISCORD FREE
             </Link>

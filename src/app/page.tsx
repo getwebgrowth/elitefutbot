@@ -47,84 +47,99 @@ export default function Home() {
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(faqJsonLd) }}
       />
-      <header className="relative pt-24 pb-20 lg:pt-32 lg:pb-28 overflow-hidden">
-        <div className="absolute top-0 left-1/2 -translate-x-1/2 w-[1000px] h-[600px] bg-primary/5 blur-[120px] rounded-full -z-10 pointer-events-none"></div>
-        <div className="absolute top-20 right-0 w-[300px] h-[300px] bg-blue-500/5 blur-[100px] rounded-full -z-10 pointer-events-none"></div>
+      <header className="relative pt-12 pb-16 lg:pt-20 lg:pb-24 overflow-hidden">
+        <div className="absolute top-0 left-1/2 -translate-x-1/2 w-[1000px] h-[500px] bg-primary/5 blur-[120px] rounded-full -z-10 pointer-events-none"></div>
+        <div className="absolute top-10 right-0 w-[300px] h-[300px] bg-blue-500/5 blur-[100px] rounded-full -z-10 pointer-events-none"></div>
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 text-center">
-          <div className="inline-flex flex-col lg:flex-row items-center gap-3.5 bg-card/40 border border-primary/20 hover:border-primary/40 px-5 py-3.5 lg:py-2.5 rounded-2xl lg:rounded-full mb-12 backdrop-blur-md shadow-[0_8px_32px_rgba(0,0,0,0.5)] transition-all duration-300">
-            <div className="flex items-center gap-2.5">
+          <div className="inline-flex flex-col sm:flex-row items-center gap-3 bg-card/60 border border-primary/25 hover:border-primary/45 px-4 py-2 sm:py-1.5 rounded-2xl sm:rounded-full mb-7 backdrop-blur-md shadow-[0_8px_32px_rgba(0,0,0,0.4)] transition-all duration-300">
+            <div className="flex items-center gap-2">
               <span className="text-[9px] font-black uppercase tracking-widest bg-primary text-dark px-2 py-0.5 rounded-md shadow-[0_0_10px_rgba(204,255,0,0.3)]">
                 ORIGINAL CREATOR
               </span>
-              <span className="text-xs font-semibold text-gray-300">
-                By the original lead developer behind <span className="text-white font-black underline decoration-primary decoration-2 underline-offset-2">Bakers Bot</span>
+              <span className="text-xs font-semibold text-gray-300 flex items-center gap-1.5">
+                By original lead developer behind
+                <span className="inline-flex items-center gap-1.5 bg-primary/15 border border-primary/40 px-2.5 py-0.5 rounded-full text-white font-black shadow-[0_0_12px_rgba(204,255,0,0.2)]">
+                  <Image 
+                    alt="Bakers Bot Logo" 
+                    width={16}
+                    height={16}
+                    className="w-4 h-4 rounded-full object-cover border border-primary/50" 
+                    src="/bakersbot-avatar.webp" 
+                  />
+                  <span className="text-primary font-black">Bakers Bot</span>
+                </span>
               </span>
             </div>
-            <div className="hidden lg:block w-[1px] h-4 bg-white/10"></div>
-            <div className="flex items-center gap-3.5">
+            <div className="hidden sm:block w-[1px] h-3.5 bg-white/15"></div>
+            <div className="flex items-center gap-3">
               <span className="text-[9px] font-black uppercase tracking-widest bg-emerald-500/10 text-emerald-400 border border-emerald-500/25 px-2 py-0.5 rounded-md">
                 FREE BETA
               </span>
               <div className="flex items-center gap-2">
-                <div className="w-24 h-1.5 bg-gray-800 rounded-full overflow-hidden">
+                <div className="w-20 h-1.5 bg-gray-800 rounded-full overflow-hidden">
                   <div className="h-full bg-emerald-500 shadow-[0_0_8px_rgba(16,185,129,0.6)] w-[87%]"></div>
                 </div>
                 <span className="text-xs font-black text-emerald-400 font-technical">87/100 Slots Filled</span>
               </div>
             </div>
           </div>
-          <h1 className="text-5xl md:text-7xl lg:text-8xl font-black mb-8 tracking-tight leading-[1.05] text-white">
+          <h1 className="text-3xl sm:text-4xl lg:text-5xl font-black mb-5 tracking-tight leading-tight text-white">
             The World&apos;s Fastest &amp; Safest <br />
-            <span className="text-transparent bg-clip-text bg-gradient-to-r from-primary via-white to-primary bg-[length:200%_auto] animate-glow">FC 26 Sniper</span><br />
+            <span className="text-transparent bg-clip-text bg-gradient-to-r from-primary via-white to-primary uppercase drop-shadow-[0_0_8px_rgba(204,255,0,0.35)]">
+              FC 26 &amp; FC 27
+            </span> <br />
+            <span className="text-transparent bg-clip-text bg-gradient-to-r from-primary via-white to-primary uppercase drop-shadow-[0_0_8px_rgba(204,255,0,0.35)]">
+              FUT SNIPING BOT
+            </span><br />
             Engineered by Elites.
           </h1>
-          <p className="text-gray-400 text-lg md:text-xl max-w-2xl mx-auto mb-10 leading-relaxed font-medium">
-            Dominate the transfer market with <span className="text-white">20ms search speeds</span>, delivered as a secure, local Chrome Extension running directly in your browser.
+          <p className="text-gray-400 text-base sm:text-lg max-w-xl mx-auto mb-7 leading-relaxed font-medium">
+            Dominate the transfer market with <span className="text-white font-semibold">20ms search speeds</span>, delivered as a secure, local Chrome Extension running directly in your browser.
           </p>
-          <div className="flex flex-col sm:flex-row gap-4 justify-center items-center mb-16">
-            <Link className="group relative px-8 py-4 bg-primary text-dark font-black text-lg rounded-xl transition-all hover:scale-105 hover:shadow-[0_0_40px_rgba(204,255,0,0.4)] overflow-hidden" href="#pricing">
+          <div className="flex flex-col sm:flex-row gap-3.5 justify-center items-center mb-8">
+            <Link className="group relative px-7 py-3.5 bg-primary text-dark font-black text-base rounded-xl transition-all hover:scale-105 hover:shadow-[0_0_35px_rgba(204,255,0,0.4)] overflow-hidden" href="#pricing">
               <div className="absolute inset-0 w-full h-full bg-white/20 translate-y-full group-hover:translate-y-0 transition-transform duration-300"></div>
               <span className="relative flex items-center gap-2">
                 Claim Your Free Beta Slot
-                <span className="material-symbols-outlined">arrow_forward</span>
+                <span className="material-symbols-outlined text-xl">arrow_forward</span>
               </span>
             </Link>
-            <Link className="px-8 py-4 bg-white/5 border border-white/10 text-white font-bold text-lg rounded-xl hover:bg-white/10 transition-all flex items-center gap-2 backdrop-blur-sm" href="#features">
-              <span className="material-symbols-outlined">play_circle</span>
+            <Link className="px-7 py-3.5 bg-white/5 border border-white/10 text-white font-bold text-base rounded-xl hover:bg-white/10 transition-all flex items-center gap-2 backdrop-blur-sm" href="#features">
+              <span className="material-symbols-outlined text-xl">play_circle</span>
               Watch Demo
             </Link>
           </div>
-          <div className="flex flex-wrap items-center justify-center gap-6 text-sm text-gray-500 font-medium border-t border-white/5 pt-10 max-w-4xl mx-auto">
+          <div className="flex flex-wrap items-center justify-center gap-4 sm:gap-6 text-xs sm:text-sm text-gray-400 font-medium border-t border-white/5 pt-6 sm:pt-8 max-w-4xl mx-auto">
             <div className="flex items-center gap-2">
-              <span className="material-symbols-outlined text-primary">verified_user</span>
+              <span className="material-symbols-outlined text-primary text-lg">verified_user</span>
               Undetected Since Launch
             </div>
             <div className="hidden md:block w-1 h-1 bg-gray-700 rounded-full"></div>
             <div className="flex items-center gap-2">
-              <span className="material-symbols-outlined text-primary">extension</span>
+              <span className="material-symbols-outlined text-primary text-lg">extension</span>
               Chrome Extension (100% Local)
             </div>
             <div className="hidden md:block w-1 h-1 bg-gray-700 rounded-full"></div>
             <div className="flex items-center gap-2 bg-primary/10 px-3 py-1 rounded-full border border-primary/20">
-              <span className="text-[10px] font-black text-primary uppercase tracking-tighter mr-1">PROVEN LEGACY</span>
+              <span className="text-[9px] font-black text-primary uppercase tracking-tighter mr-1">PROVEN LEGACY</span>
               <Image 
-                alt="Pedigree" 
-                width={16}
-                height={16}
-                className="w-4 h-4 rounded-full" 
-                src="https://lh3.googleusercontent.com/aida-public/AB6AXuA5dXevgVEWzh_M-ibXtcAekumv1-9n2TO5x0DD0-zmQJA6NeNHdawnoOggkM5Bf9uTYRHvHvSVyO6DGTjlRT7HFt2H7_qT46kW64p6L9cSLAYROgWAteLXxf4rhGL_a8oZ9fTSAlXS-YeuGqyJDrXYoWEen_-Ue9vxjzmT3tCo_G9_c7v2_NlNUnHOhzQQDAEamrFpGUkydmJrG0rc9a-QDoYNgj8wJaVmcpNZZno_KOqwffV3RnGI_DAxSe4Cnbea76SuQoA3JHM" 
+                alt="Bakers Bot Dev Team" 
+                width={20}
+                height={20}
+                className="w-5 h-5 rounded-full object-cover border border-primary/40 shadow-sm" 
+                src="/bakersbot-avatar.webp" 
               />
-              <span className="text-white font-bold">Bakers Bot Dev Team</span>
+              <span className="text-white font-bold text-xs">Bakers Bot Dev Team</span>
             </div>
           </div>
-          <div className="mt-16 relative mx-auto max-w-md group">
-            <div className="absolute -inset-1 bg-gradient-to-r from-primary/30 to-blue-500/30 rounded-[2.5rem] blur opacity-25 group-hover:opacity-50 transition duration-1000 group-hover:duration-200"></div>
-            <div className="relative bg-[#161616] rounded-[2rem] p-3 border border-white/10 shadow-2xl overflow-hidden">
+          <div className="mt-16 sm:mt-24 relative mx-auto max-w-3xl group">
+            <div className="absolute -inset-1 bg-gradient-to-r from-primary/30 to-blue-500/30 rounded-[2rem] blur opacity-30 group-hover:opacity-60 transition duration-500"></div>
+            <div className="relative bg-[#141414] rounded-[1.5rem] p-2 sm:p-3 border border-white/10 shadow-2xl overflow-hidden">
               <div className="absolute top-0 left-0 w-full h-8 bg-gradient-to-b from-white/5 to-transparent"></div>
               <Image 
                 alt="Elite FUT SNIPER Safe Mode Interface" 
-                width={800}
-                height={600}
+                width={1200}
+                height={800}
                 className="w-full h-auto rounded-xl shadow-2xl relative z-10" 
                 src="/hero-dashboard-new.webp" 
               />
@@ -353,7 +368,7 @@ export default function Home() {
                   Multi-Tab Sniping
                 </li>
               </ul>
-              <Link className="block text-center py-4 rounded-xl border border-white/10 hover:bg-white/5 transition-all font-bold text-white" href="https://discord.gg/yAQEBmRnv">
+              <Link className="block text-center py-4 rounded-xl border border-white/10 hover:bg-white/5 transition-all font-bold text-white" href="https://discord.gg/Rkb9nF6WG6">
                 Join Discord to Start
               </Link>
             </div>
@@ -397,7 +412,7 @@ export default function Home() {
                 </li>
               </ul>
               <div className="absolute bottom-0 left-0 w-full h-1/2 bg-gradient-to-t from-primary/10 to-transparent pointer-events-none"></div>
-              <Link className="relative z-10 block text-center py-4 rounded-xl bg-primary text-dark font-black hover:scale-[1.02] active:scale-[0.98] transition-all shadow-[0_0_20px_rgba(204,255,0,0.3)]" href="https://discord.gg/yAQEBmRnv">
+              <Link className="relative z-10 block text-center py-4 rounded-xl bg-primary text-dark font-black hover:scale-[1.02] active:scale-[0.98] transition-all shadow-[0_0_20px_rgba(204,255,0,0.3)]" href="https://discord.gg/Rkb9nF6WG6">
                 Join Discord for Free Beta Access
               </Link>
             </div>
@@ -522,7 +537,7 @@ export default function Home() {
             Join the 87 early testers who are already dominating the market. Beta slots are closing soon.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <Link className="px-10 py-5 bg-primary text-dark font-black text-xl rounded-2xl hover:scale-105 transition-all shadow-[0_0_30px_rgba(204,255,0,0.4)] flex items-center justify-center gap-2" href="https://discord.gg/yAQEBmRnv">
+            <Link className="px-10 py-5 bg-primary text-dark font-black text-xl rounded-2xl hover:scale-105 transition-all shadow-[0_0_30px_rgba(204,255,0,0.4)] flex items-center justify-center gap-2" href="https://discord.gg/Rkb9nF6WG6">
               JOIN THE BETA
               <span className="material-symbols-outlined font-black">arrow_forward</span>
             </Link>
@@ -539,7 +554,7 @@ export default function Home() {
             Join our Discord today to claim one of the last remaining <span className="text-white font-bold decoration-primary decoration-4 underline underline-offset-4">lifetime free access slots</span> for beta testers! Don&apos;t miss your chance to own the market for free.
           </p>
           <div className="flex justify-center">
-            <Link className="inline-flex items-center gap-4 px-12 py-6 bg-primary text-dark font-black text-2xl rounded-2xl hover:scale-105 transition-all shadow-[0_0_60px_rgba(204,255,0,0.5)] active:scale-95" href="https://discord.gg/yAQEBmRnv">
+            <Link className="inline-flex items-center gap-4 px-12 py-6 bg-primary text-dark font-black text-2xl rounded-2xl hover:scale-105 transition-all shadow-[0_0_60px_rgba(204,255,0,0.5)] active:scale-95" href="https://discord.gg/Rkb9nF6WG6">
               <svg className="w-8 h-8" fill="currentColor" viewBox="0 0 24 24"><path d="M20.317 4.37a19.791 19.791 0 0 0-4.885-1.515.074.074 0 0 0-.079.037c-.21.375-.444.864-.608 1.25a18.27 18.27 0 0 0-5.487 0 12.64 12.64 0 0 0-.617-1.25.077.077 0 0 0-.079-.037A19.736 19.736 0 0 0 3.677 4.37a.07.07 0 0 0-.032.027C.533 9.046-.32 13.58.099 18.057a.082.082 0 0 0 .031.057 19.9 19.9 0 0 0 5.993 3.03.078.078 0 0 0 .084-.028 14.09 14.09 0 0 0 1.226-1.994.076.076 0 0 0-.041-.106 13.107 13.107 0 0 1-1.872-.892.077.077 0 0 1-.008-.128 10.2 10.2 0 0 0 .372-.292.074.074 0 0 1 .077-.01c3.928 1.793 8.18 1.793 12.062 0a.074.074 0 0 1 .078.01c.12.098.246.198.373.292a.077.077 0 0 1-.006.127 12.299 12.299 0 0 1-1.873.892.077.077 0 0 0-.041.107c.36.698.772 1.362 1.225 1.993a.076.076 0 0 0 .084.028 19.839 19.839 0 0 0 6.002-3.03.078.078 0 0 0 .032-.054c.5-5.177-.838-9.674-3.549-13.66a.061.061 0 0 0-.031-.03z"></path></svg>
               Join Discord &amp; Claim Free Access
             </Link>

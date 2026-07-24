@@ -118,7 +118,7 @@ export default function PrivacyPage() {
             </p>
             <div className="bg-white/5 p-6 rounded-lg space-y-2 font-mono text-sm border border-white/10">
               <p>Email: <a href="mailto:support@elitefutbot.com" className="text-primary hover:underline">support@elitefutbot.com</a></p>
-              <p>Support Desk: <Link href="https://discord.gg/yAQEBmRnv" className="text-primary hover:underline">Discord Support Channel</Link></p>
+              <p>Support Desk: <Link href="https://discord.gg/Rkb9nF6WG6" className="text-primary hover:underline">Discord Support Channel</Link></p>
             </div>
           </section>
         </div>

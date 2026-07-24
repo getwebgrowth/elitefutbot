@@ -147,7 +147,7 @@ export default function TacticalConsolePage() {
 
             <div className="flex flex-col items-center justify-center gap-4 sm:flex-row">
               <Link
-                href="https://discord.gg/yAQEBmRnv"
+                href="https://discord.gg/Rkb9nF6WG6"
                 id="tactical-cta-primary"
                 className="group relative inline-flex items-center gap-3 overflow-hidden rounded-2xl bg-primary px-10 py-5 text-lg font-black text-black shadow-[0_0_40px_rgba(204,255,0,0.4)] transition-all hover:scale-105"
               >
@@ -457,7 +457,7 @@ export default function TacticalConsolePage() {
             </div>
             <div className="flex flex-col items-center gap-4 sm:flex-row sm:justify-center">
               <Link
-                href="https://discord.gg/yAQEBmRnv"
+                href="https://discord.gg/Rkb9nF6WG6"
                 id="tactical-discord-cta"
                 className="inline-flex items-center gap-3 rounded-2xl bg-primary px-10 py-5 text-lg font-black text-black shadow-[0_0_40px_rgba(204,255,0,0.3)] transition-all hover:scale-105"
               >

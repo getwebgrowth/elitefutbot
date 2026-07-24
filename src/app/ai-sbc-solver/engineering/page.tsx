@@ -156,7 +156,7 @@ export default function EngineeringTerminalPage() {
 
               <div className="flex flex-col sm:flex-row gap-4 pt-2">
                 <Link
-                  href="https://discord.gg/yAQEBmRnv"
+                  href="https://discord.gg/Rkb9nF6WG6"
                   id="engineering-cta-primary"
                   className="group relative inline-flex items-center gap-3 overflow-hidden rounded-xl bg-primary px-8 py-4 text-lg font-black text-black shadow-[0_0_30px_rgba(204,255,0,0.4)] transition-all hover:scale-105"
                 >
@@ -415,7 +415,7 @@ export default function EngineeringTerminalPage() {
                   <div className="text-[10px] font-black uppercase tracking-widest text-slate-500 mt-1">Slots Remaining</div>
                 </div>
                 <Link
-                  href="https://discord.gg/yAQEBmRnv"
+                  href="https://discord.gg/Rkb9nF6WG6"
                   id="engineering-discord-cta"
                   className="inline-flex items-center gap-3 rounded-xl bg-[#5865F2] px-8 py-4 font-black text-white shadow-lg transition-all hover:brightness-110 hover:scale-105"
                 >
