@@ -76,6 +76,8 @@ export default function RootLayout({
   return (
     <html lang="en" className="scroll-smooth">
       <head>
+        {/* Bing Webmaster Verification */}
+        <meta name="msvalidate.01" content="DF183DB29828D77C74770B08A8F24DD0" />
         {/* Google Analytics tag (gtag.js) */}
         <script async src="https://www.googletagmanager.com/gtag/js?id=G-224X1P08Z4"></script>
         <script dangerouslySetInnerHTML={{
