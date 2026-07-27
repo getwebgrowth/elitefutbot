@@ -2,22 +2,21 @@ import { Metadata } from "next";
 import Link from "next/link";
 
 export const metadata: Metadata = {
-  title: "AI SBC Solver FC 26 & FC 27 — Auto SBC Solutions (Releasing Soon)",
+  title: "EA FC 26 & FC 27 SBC Solutions & AI Solver (Releasing Soon)",
   description:
-    "The world's fastest AI SBC Solver for EA FC 26 & FC 27. Automatically solve any Squad Building Challenge in 1 click using your club inventory. Releasing soon — Join Discord for free early beta access!",
+    "Browse EA FC 26 & FC 27 Squad Building Challenge solutions. 1-Click AI SBC Solver releasing soon — Join our official Discord for free early beta access!",
   keywords: [
-    "EA FC 26 SBC solver",
-    "FC 27 AI SBC solver",
-    "cheapest SBC solutions FC 26",
-    "auto SBC solver Chrome extension",
-    "FUT SBC auto solver free beta",
-    "FC 26 SBC solution finder",
-    "33 chemistry SBC solver",
-    "untradeable club SBC solver"
+    "EA FC 26 SBC solutions",
+    "FC 27 SBC cheapest solutions",
+    "AI SBC solver FC 26",
+    "cheapest Futbin SBC solution",
+    "FC 26 TOTW SBC solution",
+    "FC 26 Icon SBC solution",
+    "FUT SBC auto solver free beta"
   ],
   alternates: { canonical: "https://elitefutbot.com/sbc-solver" },
   openGraph: {
-    title: "AI SBC Solver FC 26 & FC 27 — Auto SBC Solutions (Releasing Soon)",
+    title: "EA FC 26 & FC 27 SBC Solutions & AI Solver (Releasing Soon)",
     description: "Solve any EA FC Squad Building Challenge in under 3 seconds with AI. Join our Discord today for free beta access!",
     url: "https://elitefutbot.com/sbc-solver",
     siteName: "Elite FUT SNIPER",
@@ -25,7 +24,7 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "AI SBC Solver FC 26 & FC 27 — Auto SBC Solutions",
+    title: "EA FC 26 & FC 27 SBC Solutions & AI Solver",
     description: "1-Click AI SBC Solver for EA FC 26 & FC 27 releasing soon. Join Discord for free early access!",
   }
 };
