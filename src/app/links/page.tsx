@@ -10,7 +10,6 @@ export default function LinksPage() {
     { href: "/", label: "Homepage", category: "Core Pages", desc: "Main landing page showcasing features, pricing, and community reviews." },
     { href: "/affiliate", label: "Affiliate Program", category: "Core Pages", desc: "Earn commission by referring traders to Elite FUT SNIPER." },
     { href: "/contact", label: "Contact Us", category: "Support & Legal", desc: "Get in touch with the support and developer team." },
-    { href: "/support", label: "Support Center", category: "Support & Legal", desc: "Frequently asked questions and support options." },
     { href: "/privacy", label: "Privacy Policy", category: "Support & Legal", desc: "Our privacy policy and data protection terms." },
     { href: "/terms", label: "Terms of Service", category: "Support & Legal", desc: "Usage terms and condition specifications." },
     
