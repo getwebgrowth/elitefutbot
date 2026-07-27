@@ -183,7 +183,7 @@ export default function SBCSolutionsDatabasePage() {
               SBC Solutions Database • Live Prices
             </div>
             <h1 className="text-3xl sm:text-5xl font-black font-headline tracking-tight uppercase">
-              EA FC 26 &amp; FC 27 <span className="text-primary italic">SBC SOLUTIONS</span>
+              EA FC 26 &amp; FC 27 <span className="text-primary italic ml-2">SBC SOLUTIONS</span>
             </h1>
             <p className="text-sm sm:text-base text-gray-400 font-medium leading-relaxed">
               Explore active Squad Building Challenges, estimated coin costs, and optimal 33/33 chemistry squad builds.

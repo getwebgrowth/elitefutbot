@@ -154,7 +154,7 @@ export default function AISBCSolverHubPage() {
             </div>
 
             <h1 className="text-4xl sm:text-6xl font-black font-headline tracking-tight uppercase max-w-4xl mx-auto leading-tight">
-              AI <span className="text-primary italic">SBC SOLVER</span> FOR FC 26 &amp; FC 27
+              AI <span className="text-primary italic mr-3">SBC SOLVER</span> FOR FC 26 &amp; FC 27
             </h1>
 
             <p className="text-gray-300 text-base sm:text-lg max-w-2xl mx-auto font-medium leading-relaxed">
