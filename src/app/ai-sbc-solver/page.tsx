@@ -91,34 +91,34 @@ const ENGINES = [
   {
     href: "/sbc-solver",
     icon: "grid_view",
-    title: "SBC SOLUTIONS DIRECTORY",
-    sub: "Live Challenge Preview",
+    title: "SBC SOLUTIONS CATALOG",
+    sub: "Live Challenge Directory",
     badge: "SOLUTIONS",
     desc: "Browse every active FC 26 & FC 27 SBC, estimated coin costs, and preview cheapest AI solutions."
   },
   {
-    href: "/ai-sbc-solver/engineering",
-    icon: "memory",
-    title: "ENGINEERING TERMINAL",
-    sub: "Combinatorial AI Engine",
-    badge: "ALGORITHM",
-    desc: "Processes 20,000+ squad link combinations per second. Zero chemistry calculation errors."
+    href: "https://discord.gg/Rkb9nF6WG6",
+    icon: "bolt",
+    title: "1-CLICK AI AUTOMATION",
+    sub: "Free Beta Access",
+    badge: "DISCORD",
+    desc: "Processes 20,000+ squad link combinations per second with guaranteed 33/33 chemistry."
   },
   {
-    href: "/ai-sbc-solver/tactical",
-    icon: "radar",
-    title: "TACTICAL CONSOLE",
-    sub: "Market & Fodder Pulse",
-    badge: "ANALYTICS",
-    desc: "Real-time BIN price tracking, fodder inflation alerts, and chemistry link optimization."
+    href: "/tools/tax-calculator",
+    icon: "calculate",
+    title: "TAX & PROFIT CALCULATOR",
+    sub: "Market Trading Intel",
+    badge: "TOOL",
+    desc: "Calculate EA 5% tax and net profit before buying SBC player fodder from the transfer market."
   },
   {
-    href: "/ai-sbc-solver/command",
-    icon: "security",
-    title: "COMMAND CENTER",
-    sub: "Automation Manager",
-    badge: "CONTROL",
-    desc: "Monitor live SBC submissions, track total coins saved, and manage local Chrome extension settings."
+    href: "/tools/sniping-guide",
+    icon: "menu_book",
+    title: "SNIPING & SAFETY GUIDE",
+    sub: "Anti-Detection Setup",
+    badge: "GUIDE",
+    desc: "Learn humanized request delays and stealth configuration to keep your account 100% safe."
   }
 ];
 

@@ -36,6 +36,21 @@ const nextConfig: NextConfig = {
         destination: "/",
         permanent: true,
       },
+      {
+        source: "/ai-sbc-solver/engineering",
+        destination: "/ai-sbc-solver",
+        permanent: true,
+      },
+      {
+        source: "/ai-sbc-solver/tactical",
+        destination: "/ai-sbc-solver",
+        permanent: true,
+      },
+      {
+        source: "/ai-sbc-solver/command",
+        destination: "/ai-sbc-solver",
+        permanent: true,
+      },
     ];
   },
 };

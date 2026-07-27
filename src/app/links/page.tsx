@@ -14,11 +14,8 @@ export default function LinksPage() {
     { href: "/privacy", label: "Privacy Policy", category: "Support & Legal", desc: "Our privacy policy and data protection terms." },
     { href: "/terms", label: "Terms of Service", category: "Support & Legal", desc: "Usage terms and condition specifications." },
     
-    { href: "/ai-sbc-solver", label: "AI SBC Solver Hub", category: "SBC Solving", desc: "Access the AI-powered SBC solver dashboards." },
-    { href: "/ai-sbc-solver/command", label: "Command Center", category: "SBC Solving", desc: "Command center interface for AI SBC Solver." },
-    { href: "/ai-sbc-solver/engineering", label: "Engineering Terminal", category: "SBC Solving", desc: "Developer/Engineering terminal layout for SBC automation." },
-    { href: "/ai-sbc-solver/tactical", label: "Tactical Console", category: "SBC Solving", desc: "Tactical view console for SBC operations." },
-    { href: "/sbc-solver", label: "SBC Solutions", category: "SBC Solving", desc: "Browse solved squad building challenges." },
+    { href: "/ai-sbc-solver", label: "AI SBC Solver Engine", category: "SBC Solving", desc: "Access the 1-click AI-powered SBC solver engine." },
+    { href: "/sbc-solver", label: "SBC Solutions Catalog", category: "SBC Solving", desc: "Browse solved squad building challenges." },
     
     { href: "/tools/sniping-guide", label: "Sniping Guide", category: "Tools & Resources", desc: "Step-by-step tutorial on sniping settings and safety." },
     { href: "/tools/tax-calculator", label: "Tax Calculator", category: "Tools & Resources", desc: "Calculate EA tax and project profit from market trading." },

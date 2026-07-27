@@ -212,10 +212,8 @@ export default function RootLayout({
                   <h4 id="footer-sbc" className="text-white font-black text-xs uppercase tracking-[0.2em] font-headline">SBC Solving</h4>
                   <ul className="space-y-4 text-sm font-medium">
                     <li><Link className="text-gray-500 hover:text-primary transition-colors focus-visible:text-primary focus-visible:outline-none" href="/sbc-solver">SBC Solutions</Link></li>
-                    <li><Link className="text-gray-500 hover:text-primary transition-colors focus-visible:text-primary focus-visible:outline-none" href="/ai-sbc-solver">SBC Solver Hub</Link></li>
-                    <li><Link className="text-gray-500 hover:text-primary transition-colors focus-visible:text-primary focus-visible:outline-none" href="/ai-sbc-solver/engineering">Engineering Terminal</Link></li>
-                    <li><Link className="text-gray-500 hover:text-primary transition-colors focus-visible:text-primary focus-visible:outline-none" href="/ai-sbc-solver/tactical">Tactical Console</Link></li>
-                    <li><Link className="text-gray-500 hover:text-primary transition-colors focus-visible:text-primary focus-visible:outline-none" href="/ai-sbc-solver/command">Command Center</Link></li>
+                    <li><Link className="text-gray-500 hover:text-primary transition-colors focus-visible:text-primary focus-visible:outline-none" href="/ai-sbc-solver">AI SBC Engine</Link></li>
+                    <li><Link className="text-gray-500 hover:text-primary transition-colors focus-visible:text-primary focus-visible:outline-none" href="/tools/sniping-guide">Sniping Guide</Link></li>
                   </ul>
                 </nav>
 
