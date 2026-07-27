@@ -3,21 +3,21 @@ import Link from "next/link";
 
 export const metadata: Metadata = {
   title: "Official Links & Socials | Elite FUT SNIPER",
-  description: "Connect with the Elite FUT SNIPER community. Join our Discord, follow us on TikTok, Instagram, X/Twitter, and Telegram. Get free beta access and try our trading tools.",
+  description: "Claim free beta access to the #1 FC 26 & FC 27 sniping bot. Join our official Discord, follow on TikTok, Instagram, X/Twitter, and Telegram.",
   keywords: [
     "Elite FUT SNIPER bio",
+    "FUT Sniper free beta",
     "FUT Sniper TikTok",
     "Elite FUT SNIPER Instagram",
     "FutSnipeBot Twitter X",
-    "FIFA sniping bot Discord",
-    "FUT sniper socials"
+    "FIFA sniping bot Discord"
   ],
   alternates: {
     canonical: "https://elitefutbot.com/bio",
   },
   openGraph: {
     title: "Official Links & Social Media | Elite FUT SNIPER",
-    description: "Join the Elite FUT SNIPER network. Connect on Discord, TikTok, Instagram, X, and Telegram to get live trading setups and bot updates.",
+    description: "Claim free beta access and connect with Elite FUT SNIPER on Discord, TikTok, Instagram, X, and Telegram.",
     url: "https://elitefutbot.com/bio",
     siteName: "Elite FUT SNIPER",
     type: "website",
@@ -25,11 +25,19 @@ export const metadata: Metadata = {
   twitter: {
     card: "summary_large_image",
     title: "Official Links & Social Media | Elite FUT SNIPER",
-    description: "Join our official channels on TikTok, Instagram, X, and Discord for bot setups, clips, and market updates.",
+    description: "Claim free beta access and join our official channels on TikTok, Instagram, X, and Discord.",
   }
 };
 
 export default function BioPage() {
+  const featuredAction = {
+    title: "Claim Free Beta Access",
+    subtitle: "20ms local Chrome extension bot for FC 26 & FC 27",
+    href: "/#pricing",
+    badge: "FREE BETA",
+    icon: "bolt"
+  };
+
   const communities = [
     {
       title: "Join Our Discord Server",
@@ -103,16 +111,10 @@ export default function BioPage() {
 
   const tools = [
     {
-      title: "Claim Free Beta Access",
-      desc: "Download 20ms local Chrome extension sniper",
-      href: "/#pricing",
-      badge: "BETASLOTS"
-    },
-    {
       title: "Earn 50% Lifetime Commission",
       desc: "Promote Elite FUT SNIPER & keep half of subscription fees",
       href: "/affiliate",
-      badge: "CASH"
+      badge: "50% REVSHARE"
     },
     {
       title: "AI SBC Solver Hub",
@@ -125,6 +127,12 @@ export default function BioPage() {
       desc: "Calculate EA 5% tax and net profits in 1 click",
       href: "/tools/tax-calculator",
       badge: "FREE"
+    },
+    {
+      title: "Contact Support Team",
+      desc: "Direct account queries, billing & customer service",
+      href: "/contact",
+      badge: "SUPPORT"
     }
   ];
 
@@ -182,10 +190,40 @@ export default function BioPage() {
             </div>
           </div>
 
-          {/* Social Communities Links (Main Purpose Section) */}
+          {/* Primary Featured Action: Claim Free Beta Access */}
           <div className="space-y-3.5">
-            <h2 className="text-[10px] font-black uppercase tracking-[0.25em] text-primary border-b border-primary/20 pb-2">
-              Join Our Communities
+            <Link
+              href={featuredAction.href}
+              className="group flex items-center justify-between p-4 rounded-2xl bg-primary text-dark border border-primary hover:scale-[1.02] shadow-[0_0_25px_rgba(204,255,0,0.3)] transition-all duration-300 relative overflow-hidden"
+            >
+              <div className="flex items-center gap-3.5 relative z-10">
+                <div className="w-10 h-10 rounded-xl bg-dark/20 flex items-center justify-center shrink-0 text-dark">
+                  <span className="material-symbols-outlined text-xl">{featuredAction.icon}</span>
+                </div>
+                <div className="text-left">
+                  <div className="flex items-center gap-2">
+                    <span className="font-black text-sm tracking-tight text-dark font-headline uppercase">
+                      {featuredAction.title}
+                    </span>
+                    <span className="text-[9px] font-black uppercase px-2 py-0.5 rounded bg-dark text-primary">
+                      {featuredAction.badge}
+                    </span>
+                  </div>
+                  <p className="text-[11px] text-dark/80 font-medium line-clamp-1 mt-0.5">
+                    {featuredAction.subtitle}
+                  </p>
+                </div>
+              </div>
+              <div className="relative z-10">
+                <span className="material-symbols-outlined text-lg text-dark group-hover:translate-x-1 transition-transform">
+                  arrow_forward
+                </span>
+              </div>
+            </Link>
+
+            {/* Social Communities Section */}
+            <h2 className="text-[10px] font-black uppercase tracking-[0.25em] text-primary border-b border-primary/20 pb-2 pt-2">
+              Join Our Social Channels
             </h2>
             {communities.map((c) => (
               <a
@@ -225,7 +263,7 @@ export default function BioPage() {
           {/* Tools & Website Links Section */}
           <div className="space-y-3">
             <h2 className="text-[10px] font-black uppercase tracking-[0.25em] text-gray-500 border-b border-white/5 pb-2">
-              Useful Tools &amp; Web
+              Tools &amp; Partners
             </h2>
             <div className="grid grid-cols-1 gap-2.5">
               {tools.map((t) => (
