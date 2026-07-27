@@ -1,142 +1,289 @@
-import { Metadata } from "next";
+"use client";
 
-export const metadata: Metadata = {
-  title: "EA Tax Calculator - FC 25 Profit Calculator",
-  description: "Calculate your exact profit after EA's 5% transfer market tax. The most precise tax calculator for FC 25 and 26 trading.",
-  keywords: ["EA tax calculator", "FIFA tax calculator", "FC 25 profit calculator", "transfer market tax"],
+import { useState } from "react";
+import Link from "next/link";
+
+const jsonLd = {
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "SoftwareApplication",
+      name: "EA FC 26 & FC 27 Tax Calculator",
+      applicationCategory: "BusinessApplication",
+      operatingSystem: "Web Browser",
+      description: "Free calculator for EA Sports FC 5% transfer market tax, net profit, and break-even sell price calculation.",
+      url: "https://elitefutbot.com/tools/tax-calculator"
+    },
+    {
+      "@type": "FAQPage",
+      mainEntity: [
+        {
+          "@type": "Question",
+          name: "How much is EA's transfer market tax in FC 26 & FC 27?",
+          acceptedAnswer: {
+            "@type": "Answer",
+            text: "EA Sports charges a flat 5% transaction fee on the gross sell price of every card sold on the transfer market."
+          }
+        },
+        {
+          "@type": "Question",
+          name: "How do I calculate the break-even sell price in FC 26?",
+          acceptedAnswer: {
+            "@type": "Answer",
+            text: "To break even after EA's 5% tax, divide your purchase price by 0.95. For example, if you buy a card for 9,500 coins, your break-even sell price is 10,000 coins."
+          }
+        }
+      ]
+    }
+  ]
 };
 
+const PRESETS = [
+  { label: "10K", buy: 9500, sell: 12000 },
+  { label: "50K", buy: 48000, sell: 60000 },
+  { label: "100K", buy: 92000, sell: 115000 },
+  { label: "500K", buy: 470000, sell: 580000 },
+  { label: "1M", buy: 950000, sell: 1180000 },
+];
+
 export default function TaxCalculatorPage() {
+  const [buyPrice, setBuyPrice] = useState<number>(85000);
+  const [sellPrice, setSellPrice] = useState<number>(110000);
+  const [quantity, setQuantity] = useState<number>(1);
+
+  const safeQuantity = Math.max(1, quantity || 1);
+  const totalCost = (buyPrice || 0) * safeQuantity;
+  const totalGrossRevenue = (sellPrice || 0) * safeQuantity;
+  const eaTax = Math.round(totalGrossRevenue * 0.05);
+  const netRevenue = totalGrossRevenue - eaTax;
+  const netProfit = netRevenue - totalCost;
+
+  // Break even calculation per single card
+  const breakEvenSingle = buyPrice > 0 ? Math.ceil(buyPrice / 0.95) : 0;
+  const profitMargin = totalCost > 0 ? ((netProfit / totalCost) * 100).toFixed(1) : "0.0";
+
   return (
-    <main className="min-h-screen max-w-7xl mx-auto px-6 py-12 space-y-24 font-body selection:bg-primary selection:text-black">
-      {/* Hero & Calculator Section */}
-      <section className="flex flex-col items-center text-center">
-        <div className="mb-6 inline-flex items-center gap-2 bg-[#2a2a2a] px-4 py-1.5 rounded-full">
-          <div className="w-2 h-2 bg-primary rounded-full animate-pulse"></div>
-          <span className="text-xs font-headline font-bold uppercase tracking-[0.2rem] text-primary">Live Tax Engine v2.6</span>
-        </div>
-        <h1 className="text-5xl md:text-7xl font-black font-headline tracking-tighter mb-4 text-white">
-          EA FC 26 <span className="text-primary italic">PROFIT</span> CALCULATOR
-        </h1>
-        <p className="text-slate-400 max-w-2xl mb-12 text-lg">
-          Calculate EA&apos;s 5% transaction tax and maximize your market margins with surgical precision. Use the elite dashboard to stay ahead of the transfer market.
-        </p>
-        {/* Glassmorphic Calculator */}
-        <div className="glass-panel w-full max-w-2xl p-8 rounded-xl border border-outline-variant/20 shadow-2xl relative overflow-hidden text-slate-100">
-          <div className="absolute top-0 left-0 w-full h-1 bg-gradient-to-r from-transparent via-primary to-transparent opacity-50"></div>
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-10">
-            <div className="space-y-2 text-left">
-              <label className="text-[10px] font-headline font-bold uppercase tracking-widest text-[#8e9379]">Card Quantity</label>
-              <input className="w-full bg-[#0e0e0e] border-none ring-1 ring-[#444933]/30 focus:ring-primary text-primary font-headline font-bold text-xl p-4 rounded-lg transition-all placeholder:text-[#353534]" placeholder="1" type="number" />
-            </div>
-            <div className="space-y-2 text-left">
-              <label className="text-[10px] font-headline font-bold uppercase tracking-widest text-[#8e9379]">Buy Price</label>
-              <input className="w-full bg-[#0e0e0e] border-none ring-1 ring-[#444933]/30 focus:ring-primary text-primary font-headline font-bold text-xl p-4 rounded-lg transition-all placeholder:text-[#353534]" placeholder="800" type="number" />
-            </div>
-            <div className="space-y-2 text-left">
-              <label className="text-[10px] font-headline font-bold uppercase tracking-widest text-[#8e9379]">Sell Price</label>
-              <input className="w-full bg-[#0e0e0e] border-none ring-1 ring-[#444933]/30 focus:ring-primary text-primary font-headline font-bold text-xl p-4 rounded-lg transition-all placeholder:text-[#353534]" placeholder="1200" type="number" />
-            </div>
-          </div>
-          <div className="flex flex-col md:flex-row items-center justify-between gap-8 mb-10 p-6 bg-[#0e0e0e] rounded-xl">
-            <div className="text-center md:text-left">
-              <p className="text-[10px] font-headline font-bold uppercase tracking-[0.1rem] text-slate-400 mb-1">EA Tax (5%)</p>
-              <p className="text-2xl font-headline font-bold text-slate-300">60 <span className="text-sm">COINS</span></p>
-            </div>
-            <div className="h-10 w-px bg-[#444933]/30 hidden md:block"></div>
-            <div className="text-center md:text-right">
-              <p className="text-[10px] font-headline font-bold uppercase tracking-[0.1rem] text-primary mb-1">Estimated Net Profit</p>
-              <p className="text-4xl font-headline font-black text-primary tracking-tighter">+340 <span className="text-sm">COINS</span></p>
-            </div>
-          </div>
-          <button className="w-full bg-gradient-to-br from-white to-primary text-black font-headline font-black text-lg py-5 rounded-lg uppercase tracking-tighter hover:scale-105 transition-all hover:shadow-[0_0_20px_rgba(204,255,0,0.4)] active:scale-95">
-            Calculate Max Profit
-          </button>
-        </div>
-      </section>
+    <>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+      />
+      <div className="min-h-screen bg-[#050505] text-white pt-24 pb-20 relative overflow-hidden font-sans">
+        {/* Ambient background glow */}
+        <div className="absolute top-0 left-1/2 -translate-x-1/2 w-[800px] h-[400px] bg-primary/10 blur-[150px] rounded-full pointer-events-none -z-10"></div>
 
-      {/* Trust Signals Table */}
-      <section className="space-y-12">
-        <div className="text-center">
-          <h2 className="text-3xl font-black font-headline tracking-tight uppercase text-white">Manual vs <span className="text-primary">ELITE Logic</span></h2>
-          <p className="text-slate-400 mt-2">Why 12,000+ traders trust our kinetic calculation engine.</p>
-        </div>
-        <div className="overflow-hidden rounded-xl bg-[#1c1b1b] border border-[#444933]/10">
-          <table className="w-full text-left border-collapse">
-            <thead className="bg-[#2a2a2a]">
-              <tr>
-                <th className="p-6 text-xs font-headline uppercase tracking-widest text-[#8e9379]">Performance Metric</th>
-                <th className="p-6 text-xs font-headline uppercase tracking-widest text-[#8e9379]">Manual Method</th>
-                <th className="p-6 text-xs font-headline uppercase tracking-widest text-primary">Elite Sniper Logic</th>
-              </tr>
-            </thead>
-            <tbody className="divide-y divide-[#444933]/5 text-slate-100">
-              <tr className="hover:bg-[#353534]/30 transition-colors">
-                <td className="p-6 font-medium">Calculation Accuracy</td>
-                <td className="p-6 text-red-500"><span className="material-symbols-outlined align-middle mr-2">close</span> Human Error Prone</td>
-                <td className="p-6 text-primary font-bold"><span className="material-symbols-outlined align-middle mr-2" style={{ fontVariationSettings: "'FILL' 1" }}>check_circle</span> 100% Math-Verified</td>
-              </tr>
-              <tr className="hover:bg-[#353534]/30 transition-colors">
-                <td className="p-6 font-medium">Processing Speed</td>
-                <td className="p-6 text-slate-400 italic">~15-30 Seconds</td>
-                <td className="p-6 text-primary font-bold"><span className="material-symbols-outlined align-middle mr-2" style={{ fontVariationSettings: "'FILL' 1" }}>bolt</span> 20ms Execution</td>
-              </tr>
-              <tr className="hover:bg-[#353534]/30 transition-colors">
-                <td className="p-6 font-medium">Market Trends Sync</td>
-                <td className="p-6 text-red-500"><span className="material-symbols-outlined align-middle mr-2">close</span> Static Input</td>
-                <td className="p-6 text-primary font-bold"><span className="material-symbols-outlined align-middle mr-2" style={{ fontVariationSettings: "'FILL' 1" }}>sync</span> Real-time Price Tracking</td>
-              </tr>
-              <tr className="hover:bg-[#353534]/30 transition-colors">
-                <td className="p-6 font-medium">Automated Sniping Filters</td>
-                <td className="p-6 text-red-500"><span className="material-symbols-outlined align-middle mr-2">close</span> Not Available</td>
-                <td className="p-6 text-primary font-bold"><span className="material-symbols-outlined align-middle mr-2" style={{ fontVariationSettings: "'FILL' 1" }}>target</span> Integrated Filters</td>
-              </tr>
-            </tbody>
-          </table>
-        </div>
-      </section>
+        <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 space-y-16">
+          
+          {/* Header */}
+          <div className="text-center space-y-4 max-w-3xl mx-auto">
+            <div className="inline-flex items-center gap-2 px-3.5 py-1 rounded-full bg-primary/10 border border-primary/30 text-xs font-bold uppercase tracking-widest text-primary">
+              <span className="w-2 h-2 rounded-full bg-primary animate-pulse"></span>
+              Live 5% Tax Calculation Engine • FC 26 &amp; FC 27
+            </div>
+            <h1 className="text-4xl sm:text-6xl font-black font-headline tracking-tight uppercase leading-tight">
+              EA FC 26 &amp; FC 27 <span className="text-primary italic">TAX CALCULATOR</span>
+            </h1>
+            <p className="text-base sm:text-lg text-gray-300 font-medium leading-relaxed">
+              Calculate EA's 5% transfer market tax, net profit, break-even sell price, and profit margins with surgical accuracy.
+            </p>
+          </div>
 
-      {/* SEO Content Grid */}
-      <section className="space-y-12 pb-12">
-        <h2 className="text-3xl font-black font-headline tracking-tight uppercase text-center md:text-left text-white">Tactical <span className="text-primary">Intelligence</span> FAQ</h2>
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-6 text-slate-100">
-          {/* FAQ 1 */}
-          <div className="bg-[#1c1b1b] p-8 rounded-xl border-t-2 border-primary/30 relative group hover:bg-[#2a2a2a] transition-all">
-            <h3 className="text-xl font-headline font-bold mb-4 text-primary">How is the EA tax calculated exactly?</h3>
-            <p className="text-slate-400 leading-relaxed">EA Sports deducts a flat 5% from every completed transfer on the market. Our calculator takes your target sell price and multiplies it by 0.95 to give you the exact coin return after tax.</p>
-          </div>
-          {/* FAQ 2 */}
-          <div className="bg-[#1c1b1b] p-8 rounded-xl border-t-2 border-primary/30 relative group hover:bg-[#2a2a2a] transition-all">
-            <h3 className="text-xl font-headline font-bold mb-4 text-primary">Can I use this for flipping players?</h3>
-            <p className="text-slate-400 leading-relaxed">Absolutely. This tool is designed for high-frequency flippers who need to know their break-even point instantly. Any profit highlighted in green is pure net gain.</p>
-          </div>
-          {/* FAQ 3 */}
-          <div className="bg-[#1c1b1b] p-8 rounded-xl border-t-2 border-primary/30 relative group hover:bg-[#2a2a2a] transition-all">
-            <h3 className="text-xl font-headline font-bold mb-4 text-primary">Is the calculator updated for FC 26?</h3>
-            <p className="text-slate-400 leading-relaxed">Yes. We track game-code updates 24/7. The 5% tax remains the standard for FC 26 Ultimate Team across all transfer market platforms (Web App, Console, Mobile).</p>
-          </div>
-          {/* FAQ 4 */}
-          <div className="bg-[#1c1b1b] p-8 rounded-xl border-t-2 border-primary/30 relative group hover:bg-[#2a2a2a] transition-all">
-            <h3 className="text-xl font-headline font-bold mb-4 text-primary">How do I maximize my profit per trade?</h3>
-            <p className="text-slate-400 leading-relaxed">Focus on &quot;The Gap.&quot; Our tool highlights the optimal buy-under price for any given sell-target, ensuring you cover the 5% tax and still net a significant margin.</p>
-          </div>
-        </div>
-      </section>
+          {/* Interactive Calculator Container */}
+          <div className="p-8 sm:p-12 rounded-3xl bg-white/[0.02] border border-primary/30 backdrop-blur-xl shadow-[0_0_50px_rgba(204,255,0,0.1)] space-y-8">
+            
+            {/* Quick Presets Bar */}
+            <div className="flex flex-wrap items-center justify-between gap-3 border-b border-white/10 pb-6">
+              <span className="text-xs font-bold text-gray-400 uppercase tracking-widest">
+                Quick Market Presets:
+              </span>
+              <div className="flex flex-wrap items-center gap-2">
+                {PRESETS.map((preset) => (
+                  <button
+                    key={preset.label}
+                    onClick={() => {
+                      setBuyPrice(preset.buy);
+                      setSellPrice(preset.sell);
+                      setQuantity(1);
+                    }}
+                    className="px-3.5 py-1.5 rounded-lg bg-white/5 hover:bg-primary hover:text-dark border border-white/10 text-xs font-headline font-bold uppercase tracking-wider transition-all"
+                  >
+                    {preset.label}
+                  </button>
+                ))}
+              </div>
+            </div>
 
-      {/* Growth Hack Banner */}
-      <section className="relative overflow-hidden rounded-xl bg-gradient-to-r from-white via-primary to-[#b5d25e] p-12 flex flex-col md:flex-row items-center justify-between gap-8 text-black mb-12">
-        <div className="max-w-xl text-center md:text-left z-10">
-          <h2 className="text-4xl font-black font-headline tracking-tighter mb-2 uppercase">Join 12,000+ Pro Traders</h2>
-          <p className="font-bold opacity-90 text-lg">Access exclusive Discord channels for free sniping filters, market leaks, and real-time investment alerts.</p>
+            {/* Input Controls Grid */}
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+              <div className="space-y-2">
+                <label className="text-xs font-headline font-bold uppercase tracking-wider text-gray-400">
+                  Buy Price (Coins)
+                </label>
+                <div className="relative">
+                  <input
+                    type="number"
+                    value={buyPrice || ""}
+                    onChange={(e) => setBuyPrice(Number(e.target.value))}
+                    placeholder="e.g. 85000"
+                    className="w-full px-4 py-3.5 rounded-xl bg-black/60 border border-white/15 focus:border-primary focus:outline-none text-white font-mono font-bold text-lg"
+                  />
+                  <span className="absolute right-4 top-1/2 -translate-y-1/2 text-xs font-bold text-gray-500 uppercase">
+                    Coins
+                  </span>
+                </div>
+              </div>
+
+              <div className="space-y-2">
+                <label className="text-xs font-headline font-bold uppercase tracking-wider text-gray-400">
+                  Target Sell Price (Coins)
+                </label>
+                <div className="relative">
+                  <input
+                    type="number"
+                    value={sellPrice || ""}
+                    onChange={(e) => setSellPrice(Number(e.target.value))}
+                    placeholder="e.g. 110000"
+                    className="w-full px-4 py-3.5 rounded-xl bg-black/60 border border-white/15 focus:border-primary focus:outline-none text-primary font-mono font-bold text-lg"
+                  />
+                  <span className="absolute right-4 top-1/2 -translate-y-1/2 text-xs font-bold text-gray-500 uppercase">
+                    Coins
+                  </span>
+                </div>
+              </div>
+
+              <div className="space-y-2">
+                <label className="text-xs font-headline font-bold uppercase tracking-wider text-gray-400">
+                  Quantity
+                </label>
+                <div className="relative">
+                  <input
+                    type="number"
+                    value={quantity || ""}
+                    onChange={(e) => setQuantity(Number(e.target.value))}
+                    placeholder="1"
+                    min="1"
+                    className="w-full px-4 py-3.5 rounded-xl bg-black/60 border border-white/15 focus:border-primary focus:outline-none text-white font-mono font-bold text-lg"
+                  />
+                  <span className="absolute right-4 top-1/2 -translate-y-1/2 text-xs font-bold text-gray-500 uppercase">
+                    Cards
+                  </span>
+                </div>
+              </div>
+            </div>
+
+            {/* Calculated Output Breakdown Grid */}
+            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 pt-4">
+              
+              <div className="p-5 rounded-2xl bg-white/[0.02] border border-white/10 space-y-1">
+                <span className="text-[10px] font-bold uppercase tracking-widest text-gray-400">
+                  EA Tax (5%)
+                </span>
+                <div className="text-2xl font-headline font-bold text-red-400 font-mono">
+                  - {eaTax.toLocaleString()} <span className="text-xs">Coins</span>
+                </div>
+                <span className="text-[10px] text-gray-500 block">5% deducted by EA</span>
+              </div>
+
+              <div className="p-5 rounded-2xl bg-white/[0.02] border border-white/10 space-y-1">
+                <span className="text-[10px] font-bold uppercase tracking-widest text-gray-400">
+                  Break-Even Sell Price
+                </span>
+                <div className="text-2xl font-headline font-bold text-amber-400 font-mono">
+                  {breakEvenSingle.toLocaleString()} <span className="text-xs">Coins</span>
+                </div>
+                <span className="text-[10px] text-gray-500 block">Min. price for 0 loss</span>
+              </div>
+
+              <div className="p-5 rounded-2xl bg-white/[0.02] border border-white/10 space-y-1">
+                <span className="text-[10px] font-bold uppercase tracking-widest text-gray-400">
+                  Profit Margin
+                </span>
+                <div className={`text-2xl font-headline font-bold font-mono ${netProfit >= 0 ? "text-primary" : "text-red-400"}`}>
+                  {netProfit >= 0 ? `+${profitMargin}%` : `${profitMargin}%`}
+                </div>
+                <span className="text-[10px] text-gray-500 block">ROI on total cost</span>
+              </div>
+
+              <div className="p-5 rounded-2xl bg-primary/10 border border-primary/40 space-y-1">
+                <span className="text-[10px] font-bold uppercase tracking-widest text-primary">
+                  Net Profit (After Tax)
+                </span>
+                <div className={`text-2xl font-headline font-black font-mono ${netProfit >= 0 ? "text-primary" : "text-red-400"}`}>
+                  {netProfit >= 0 ? `+${netProfit.toLocaleString()}` : netProfit.toLocaleString()} <span className="text-xs">Coins</span>
+                </div>
+                <span className="text-[10px] text-gray-300 block font-bold">Pure profit retained</span>
+              </div>
+
+            </div>
+
+          </div>
+
+          {/* Manual vs Elite Sniper Logic Comparison */}
+          <div className="space-y-6">
+            <div className="text-center space-y-2">
+              <h2 className="text-2xl sm:text-4xl font-black font-headline uppercase tracking-tight">
+                Manual Trading vs <span className="text-primary italic">Automated Precision</span>
+              </h2>
+              <p className="text-sm text-gray-400 max-w-lg mx-auto font-medium">
+                Why thousands of FC 26 &amp; FC 27 traders rely on automated profit calculation tools.
+              </p>
+            </div>
+
+            <div className="rounded-2xl border border-white/10 overflow-hidden bg-card/60 backdrop-blur-md">
+              <div className="grid grid-cols-3 p-4 bg-white/5 border-b border-white/10 text-xs font-black uppercase tracking-wider text-gray-400">
+                <div>Feature</div>
+                <div className="text-center text-gray-500">Manual Calculation</div>
+                <div className="text-right text-primary">Elite Sniper Engine</div>
+              </div>
+              <div className="divide-y divide-white/5 text-xs sm:text-sm font-medium">
+                <div className="grid grid-cols-3 p-4 items-center">
+                  <div className="font-bold text-white">Tax Accuracy</div>
+                  <div className="text-center text-gray-500">Human Error Prone</div>
+                  <div className="text-right font-bold text-primary flex items-center justify-end gap-1">
+                    <span>100% Math-Verified</span>
+                    <span className="material-symbols-outlined text-sm">check_circle</span>
+                  </div>
+                </div>
+                <div className="grid grid-cols-3 p-4 items-center">
+                  <div className="font-bold text-white">Calculation Speed</div>
+                  <div className="text-center text-gray-500">15 – 30 Seconds</div>
+                  <div className="text-right font-bold text-primary flex items-center justify-end gap-1">
+                    <span>Instant Real-Time</span>
+                    <span className="material-symbols-outlined text-sm">bolt</span>
+                  </div>
+                </div>
+                <div className="grid grid-cols-3 p-4 items-center">
+                  <div className="font-bold text-white">Break-Even Detection</div>
+                  <div className="text-center text-gray-500">Rough Estimate</div>
+                  <div className="text-right font-bold text-primary flex items-center justify-end gap-1">
+                    <span>Exact Coin Target</span>
+                    <span className="material-symbols-outlined text-sm">target</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          {/* Discord Callout */}
+          <div className="p-8 sm:p-12 rounded-3xl bg-white/[0.02] border border-white/10 text-center space-y-4">
+            <h2 className="text-2xl sm:text-3xl font-black font-headline uppercase tracking-tight">
+              Ready to Automate Your Market Sniping?
+            </h2>
+            <p className="text-xs sm:text-sm text-gray-400 max-w-xl mx-auto font-medium leading-relaxed">
+              Join 50,000+ traders in our official Discord community. Get free access to our Chrome extension auto-sniper, live market investment signals, and SBC solver tools.
+            </p>
+            <Link
+              href="https://discord.gg/Rkb9nF6WG6"
+              target="_blank"
+              className="inline-flex items-center gap-2 px-8 py-4 rounded-xl bg-primary text-dark font-headline font-black text-xs uppercase tracking-wider hover:brightness-110 transition-all shadow-[0_0_20px_rgba(204,255,0,0.2)]"
+            >
+              Join Official Discord HQ For Free Access
+              <span className="material-symbols-outlined text-sm">open_in_new</span>
+            </Link>
+          </div>
+
         </div>
-        <div className="flex-shrink-0 z-10">
-          <button className="bg-black text-primary px-10 py-5 font-headline font-black rounded-lg uppercase tracking-tight scale-100 hover:scale-105 active:scale-95 transition-all shadow-xl">
-            Join Discord &amp; Claim Free Access
-          </button>
-        </div>
-        {/* Decorative background element */}
-        <div className="absolute -right-20 -bottom-20 w-96 h-96 bg-primary/20 rounded-full blur-3xl"></div>
-      </section>
-    </main>
+      </div>
+    </>
   );
 }

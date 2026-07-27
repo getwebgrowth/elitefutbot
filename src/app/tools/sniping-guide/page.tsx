@@ -1,258 +1,310 @@
 import { Metadata } from "next";
 import Link from "next/link";
-import Image from "next/image";
 
 export const metadata: Metadata = {
-  title: "FC 25 Sniping Guide - Advanced Trading Filters",
-  description: "Master the art of sniping in FC 25 with our comprehensive guide. Expert filter settings for Mbappé, Vinícius Jr, and elite division cards.",
-  keywords: ["FC 25 sniping guide", "FIFA sniping filters", "how to snipe FIFA players", "trading bot settings"],
+  title: "EA FC 26 & FC 27 Sniping Guide — Ultimate FUT Trading & Filter Settings",
+  description:
+    "Master transfer market sniping in EA FC 26 & FC 27. Expert filter settings for Meta Icons, TOTW cards, and SBC fodder with 100% anti-detection safety rules.",
+  keywords: [
+    "EA FC 26 sniping guide",
+    "FC 27 FUT sniping filters",
+    "how to snipe FC 26 players",
+    "best FUT sniping settings",
+    "FC 26 transfer market trading bot",
+    "FUT fodder sniping filter",
+    "undefeated EA FC sniping setup"
+  ],
+  alternates: { canonical: "https://elitefutbot.com/tools/sniping-guide" },
+  openGraph: {
+    title: "EA FC 26 & FC 27 Sniping Guide — Ultimate FUT Trading & Filter Settings",
+    description: "Master transfer market sniping with expert filter settings and anti-detection safety rules.",
+    url: "https://elitefutbot.com/tools/sniping-guide",
+    siteName: "Elite FUT SNIPER",
+    type: "article",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "EA FC 26 & FC 27 Sniping Guide",
+    description: "Expert EA FC transfer market sniping filters and safety guidelines.",
+  }
 };
+
+const jsonLd = {
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "HowTo",
+      name: "How to Snipe Players safely in EA FC 26 & FC 27",
+      description: "Step-by-step guide to setting up automated transfer market sniping filters with humanized safety protocols.",
+      step: [
+        {
+          "@type": "HowToStep",
+          name: "Set Target Buy Price Below BIN",
+          text: "Calculate the current average lowest Buy It Now (BIN) price on FUTBIN, then set your max buy price 10% to 15% below market."
+        },
+        {
+          "@type": "HowToStep",
+          name: "Configure Humanized Search Delays",
+          text: "Use randomized search request delays between 1.2 to 2.8 seconds to mirror human behavior and prevent automated web app rate limits."
+        },
+        {
+          "@type": "HowToStep",
+          name: "Execute Snipe and Auto-List",
+          text: "When a target card is listed, auto-buy in under 50ms and list immediately at market BIN price to secure max profit."
+        }
+      ]
+    },
+    {
+      "@type": "FAQPage",
+      mainEntity: [
+        {
+          "@type": "Question",
+          name: "What is sniping in EA FC 26?",
+          acceptedAnswer: {
+            "@type": "Answer",
+            text: "Sniping is buying player cards instantly when they are listed by seller errors far below their actual market value, then reselling them for profit."
+          }
+        },
+        {
+          "@type": "Question",
+          name: "How do I prevent market bans while sniping?",
+          acceptedAnswer: {
+            "@type": "Answer",
+            text: "Always use randomized request intervals (1,200ms–2,500ms), take automatic 5-minute cooling breaks after every 30 searches, and avoid fixed rigid click cycles."
+          }
+        }
+      ]
+    }
+  ]
+};
+
+const FILTER_PRESETS = [
+  {
+    title: "META ICON & PROMO FILTER",
+    target: "Mbappé, Vinícius Jr., Bellingham",
+    minRating: "90+",
+    maxBuy: "15% Below BIN",
+    profitPerCard: "40,000 – 150,000 Coins",
+    badge: "HIGH PROFIT",
+    desc: "Target high-tier meta cards when sellers misprice expensive promo items during lightning packs."
+  },
+  {
+    title: "SBC FODDER FILTER",
+    target: "84, 85, 86, 87 Rated Gold Rares",
+    minRating: "84+",
+    maxBuy: "2,000 Below Market",
+    profitPerCard: "1,500 – 5,000 Coins",
+    badge: "HIGH VOLUME",
+    desc: "Snipe high-rated SBC fodder during daily 6 PM content drops when thousands of packs are opened."
+  },
+  {
+    title: "TEAM OF THE WEEK (TOTW) FILTER",
+    target: "Current Active TOTW In-Forms",
+    minRating: "83+",
+    maxBuy: "12,000 Max BIN",
+    profitPerCard: "3,000 – 10,000 Coins",
+    badge: "CONSISTENT",
+    desc: "Catch low-priced TOTW cards required for SBC prerequisites and sell when upgrade packs release."
+  },
+  {
+    title: "GOLD RARE 83-RATED FILTER",
+    target: "Meta 83 Gold Rares",
+    minRating: "83",
+    maxBuy: "800 – 1,100 Coins",
+    profitPerCard: "700 – 1,500 Coins",
+    badge: "LOW RISK",
+    desc: "Mass-snipe gold rare cards at discard prices with zero risk of loss."
+  }
+];
+
+const SAFETY_RULES = [
+  {
+    icon: "timer",
+    title: "Randomized Search Delays",
+    desc: "Never search at static exact intervals. Set randomized delays (e.g. 1.3s, 2.1s, 1.7s) to emulate genuine human typing and mouse clicks."
+  },
+  {
+    icon: "pause_circle",
+    title: "Automated Cooling Breaks",
+    desc: "Program your extension to take 3–5 minute rest breaks after every 40 search attempts to respect EA web app rate limits."
+  },
+  {
+    icon: "security",
+    title: "Zero Account Password Sharing",
+    desc: "Always run tools locally inside your own Google Chrome extension without sharing web app credentials or passwords."
+  },
+  {
+    icon: "verified_user",
+    title: "Cap Search Limits Per Session",
+    desc: "Limit total search sessions to 300 searches per hour to maintain stealth operation and zero account flags."
+  }
+];
 
 export default function SnipingGuidePage() {
   return (
-    <div className="flex max-w-[1440px] mx-auto bg-[#1c1b1b] min-h-screen text-slate-100 font-body selection:bg-primary selection:text-black">
-      {/* Sidebar */}
-      <aside className="hidden lg:flex flex-col min-h-screen sticky top-[72px] w-64 bg-[#131313] py-8 px-4 border-r border-[#353534]">
-        <div className="flex items-center gap-3 mb-10 px-2">
-          <div className="w-10 h-10 rounded-lg bg-[#2a2a2a] flex items-center justify-center">
-            <span className="material-symbols-outlined text-primary">shield</span>
-          </div>
-          <div>
-            <div className="font-headline font-bold text-sm text-primary kinetic-headline">Elite Trader</div>
-            <div className="label-sm-allcaps text-slate-400">Gold Member</div>
-          </div>
-        </div>
-        <nav className="flex-1 space-y-2">
-          <Link className="flex items-center gap-3 px-4 py-3 text-[#c4c9ac] hover:bg-[#2a2a2a] hover:translate-x-1 transition-all duration-200 rounded-lg group" href="#">
-            <span className="material-symbols-outlined group-hover:text-primary">dashboard</span>
-            <span className="font-headline font-medium text-sm">Dashboard</span>
-          </Link>
-          <Link className="flex items-center gap-3 px-4 py-3 bg-[#2a2a2a] text-primary rounded-lg shadow-[inset_2px_0_0_#CCFF00]" href="#">
-            <span className="material-symbols-outlined">trending_up</span>
-            <span className="font-headline font-medium text-sm">Price Alerts</span>
-          </Link>
-          <Link className="flex items-center gap-3 px-4 py-3 text-[#c4c9ac] hover:bg-[#2a2a2a] hover:translate-x-1 transition-all duration-200 rounded-lg group" href="#">
-            <span className="material-symbols-outlined group-hover:text-primary">target</span>
-            <span className="font-headline font-medium text-sm">Auto-Sniper</span>
-          </Link>
-          <Link className="flex items-center gap-3 px-4 py-3 text-[#c4c9ac] hover:bg-[#2a2a2a] hover:translate-x-1 transition-all duration-200 rounded-lg group" href="#">
-            <span className="material-symbols-outlined group-hover:text-primary">payments</span>
-            <span className="font-headline font-medium text-sm">Profit Log</span>
-          </Link>
-        </nav>
-        <div className="mt-auto pt-6 border-t border-[#353534]">
-          <button className="w-full flex items-center justify-center gap-2 py-3 mb-4 bg-gradient-to-br from-white to-primary text-black font-headline font-bold text-xs uppercase tracking-widest rounded-lg hover:scale-[0.98] transition-transform shadow-[0_4px_12px_rgba(204,255,0,0.1)]">
-            <span className="material-symbols-outlined text-sm">bolt</span> Start Sniping
-          </button>
-          <div className="space-y-1">
-            <Link className="flex items-center gap-3 px-4 py-2 label-sm-allcaps text-slate-400 hover:text-white transition-colors" href="#">
-              <span className="material-symbols-outlined text-sm">help</span> Help
-            </Link>
-            <Link className="flex items-center gap-3 px-4 py-2 label-sm-allcaps text-slate-400 hover:text-white transition-colors" href="#">
-              <span className="material-symbols-outlined text-sm">logout</span> Logout
-            </Link>
-          </div>
-        </div>
-      </aside>
+    <>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+      />
+      <div className="min-h-screen bg-[#050505] text-white pt-24 pb-20 relative overflow-hidden font-sans">
+        {/* Ambient background glow */}
+        <div className="absolute top-0 left-1/2 -translate-x-1/2 w-[800px] h-[400px] bg-primary/10 blur-[150px] rounded-full pointer-events-none -z-10"></div>
 
-      {/* Main Content Area */}
-      <main className="flex-1 p-6 md:p-10 space-y-10 overflow-x-hidden">
-        {/* Hero Section */}
-        <section className="relative rounded-md overflow-hidden bg-[#0e0e0e] min-h-[320px] flex items-end p-8 md:p-12">
-          <div className="absolute inset-0 opacity-40">
-            <Image 
-              fill
-              alt="Football stadium at night with dramatic lights" 
-              className="w-full h-full object-cover" 
-              src="https://lh3.googleusercontent.com/aida-public/AB6AXuBsEiYb30W0MYLEw7CmXyrZ3txd8kzzXlefbb0CocEMpZ71u1s2wLrjCedIstMVCnBllWHzGl4_w16SO_OJdPh_eUYPNhW7fNIfvCBTSPb8B0523HlrymWtQxLHxP0g6NCPTCKjxqWUN1kjK4Y35H5gw_muePIqZXKaXUnuObVkKFkbABI4-3T0DtKv8oh_gct10TAeJfjV9H9fcYACBbyodYL6S1zdek0Lg4qyKn2dXv-o6uCZifMQNZYj1W877fyFNZG11ZRzDQY"
-            />
-            <div className="absolute inset-0 bg-gradient-to-t from-[#0e0e0e] via-[#0e0e0e]/60 to-transparent"></div>
-            <div className="absolute inset-0 bg-gradient-to-r from-[#0e0e0e] via-transparent to-transparent"></div>
-          </div>
-          <div className="relative z-10 max-w-2xl">
-            <div className="inline-flex items-center gap-2 px-3 py-1 bg-primary text-black text-[10px] font-black uppercase tracking-widest mb-4 rounded-sm">
-              <span className="w-2 h-2 bg-black rounded-full animate-pulse"></span>
-              Live Filter
+        <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 space-y-16">
+          
+          {/* Hero Header */}
+          <div className="text-center space-y-4 max-w-3xl mx-auto">
+            <div className="inline-flex items-center gap-2 px-3.5 py-1 rounded-full bg-primary/10 border border-primary/30 text-xs font-bold uppercase tracking-widest text-primary">
+              <span className="w-2 h-2 rounded-full bg-primary animate-pulse"></span>
+              Tactical Trading Guide • FC 26 &amp; FC 27
             </div>
-            <h1 className="font-headline font-black text-4xl md:text-6xl text-white leading-tight kinetic-headline italic uppercase">
-              Kylian Mbappé <br />
-              <span className="text-primary">FC 26 Sniping Filter</span>
+            <h1 className="text-4xl sm:text-6xl font-black font-headline tracking-tight uppercase leading-tight">
+              EA FC 26 &amp; FC 27 <span className="text-primary italic">SNIPING GUIDE</span>
             </h1>
-            <p className="mt-4 text-slate-400 font-body text-lg max-w-lg">
-              The definitive price guide and tactical filter settings for the world&apos;s most elite digital athlete.
+            <p className="text-base sm:text-lg text-gray-300 font-medium leading-relaxed">
+              Master transfer market sniping filters, optimal search delays, and 100% anti-detection safety rules to build a multi-million coin club.
             </p>
           </div>
-          <div className="absolute top-8 right-8 flex items-center gap-2">
-            <div className="w-2 h-2 bg-primary rounded-sm shadow-[0_0_8px_#ccff00]"></div>
-            <span className="label-sm-allcaps text-slate-400">System Live</span>
-          </div>
-        </section>
 
-        {/* Data Modules Grid */}
-        <section className="grid grid-cols-1 lg:grid-cols-3 gap-6">
-          {/* Hardware-Style Price Monitor Card */}
-          <div className="lg:col-span-2 hardware-module p-8 flex flex-col justify-between relative overflow-hidden">
-            <div className="flex justify-between items-start mb-8">
-              <div>
-                <h3 className="font-headline font-bold text-xl text-white uppercase kinetic-headline">Price Monitor</h3>
-                <p className="label-sm-allcaps text-slate-400 mt-1 italic opacity-60">Real-time market analytics</p>
+          {/* Quick Start Discord CTA Box */}
+          <div className="p-8 rounded-3xl bg-gradient-to-br from-primary/15 via-card to-card border border-primary/30 flex flex-col md:flex-row items-center justify-between gap-6 shadow-[0_0_40px_rgba(204,255,0,0.12)]">
+            <div className="space-y-2 text-left">
+              <div className="flex items-center gap-2 text-xs font-black text-primary uppercase tracking-wider">
+                <span className="material-symbols-outlined text-base">bolt</span>
+                <span>Automated Sniping Bot Extension</span>
               </div>
-              <span className="material-symbols-outlined text-primary/80">analytics</span>
+              <h2 className="text-2xl font-headline font-black text-white">
+                Want Pre-Configured Filters Auto-Executed in Chrome?
+              </h2>
+              <p className="text-xs text-gray-300 font-medium">
+                Join our Discord community today to download our free local Chrome extension auto-sniper with built-in human delays.
+              </p>
             </div>
-            <div className="grid grid-cols-1 md:grid-cols-3 gap-6 items-end">
-              <div className="space-y-2">
-                <div className="flex items-center gap-2">
-                  <span className="label-sm-allcaps text-slate-400">Market Price</span>
-                  <span className="live-pulse"></span>
-                </div>
-                <div className="data-display font-headline font-black text-4xl text-white tabular-nums tracking-tighter">950,000</div>
-              </div>
-              <div className="space-y-2">
-                <span className="label-sm-allcaps text-slate-400">Sniping Target</span>
-                <div className="data-display font-headline font-black text-4xl text-primary tabular-nums tracking-tighter">850,000</div>
-              </div>
-              <div className="space-y-2">
-                <span className="label-sm-allcaps text-primary">Estimated Profit</span>
-                <div className="data-display flex flex-col items-center">
-                  <div className="font-headline font-black text-3xl text-primary neon-glow tabular-nums tracking-tighter">+52,500</div>
-                  <p className="label-sm-allcaps text-primary/50 mt-1 italic">After EA Tax</p>
-                </div>
-              </div>
-            </div>
+            <Link
+              href="https://discord.gg/Rkb9nF6WG6"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="shrink-0 px-8 py-4 rounded-xl bg-primary text-dark font-headline font-black text-xs uppercase tracking-wider hover:brightness-110 transition-all flex items-center gap-2 shadow-[0_0_20px_rgba(204,255,0,0.3)] hover:scale-105"
+            >
+              <span>Join Discord For Free Access</span>
+              <span className="material-symbols-outlined text-sm">arrow_forward</span>
+            </Link>
           </div>
 
-          {/* Specific Sniper Settings */}
-          <div className="bg-[#2a2a2a] p-8 rounded-md relative">
-            <div className="flex items-center gap-2 mb-6">
-              <div className="w-1 h-6 bg-primary"></div>
-              <h3 className="font-headline font-bold text-lg text-white uppercase kinetic-headline">Filters</h3>
-            </div>
-            <div className="space-y-4">
-              <div className="flex justify-between items-center">
-                <span className="label-sm-allcaps text-slate-400">League</span>
-                <span className="text-sm text-white font-headline font-bold">La Liga</span>
-              </div>
-              <div className="flex justify-between items-center">
-                <span className="label-sm-allcaps text-slate-400">Nation</span>
-                <span className="text-sm text-white font-headline font-bold">France</span>
-              </div>
-              <div className="flex justify-between items-center">
-                <span className="label-sm-allcaps text-slate-400">Club</span>
-                <span className="text-sm text-white font-headline font-bold">Real Madrid</span>
-              </div>
-              <div className="flex justify-between items-center">
-                <span className="label-sm-allcaps text-slate-400">Quality</span>
-                <span className="text-sm text-white font-headline font-bold">Gold</span>
-              </div>
-              <div className="flex justify-between items-center">
-                <span className="label-sm-allcaps text-slate-400">Rarity</span>
-                <span className="text-sm font-headline font-bold text-[#C5A059]">Rare</span>
-              </div>
-            </div>
-          </div>
-        </section>
-
-        {/* Programmatic SEO & Similar Opportunities */}
-        <section className="grid grid-cols-1 lg:grid-cols-2 gap-8">
-          {/* Timing Intelligence */}
-          <div className="bg-[#2a2a2a] p-8 rounded-md">
-            <div className="flex items-center justify-between mb-8">
-              <h3 className="font-headline font-bold text-xl text-white uppercase kinetic-headline italic">Velocity Windows</h3>
-              <span className="material-symbols-outlined text-[#8e9379]">schedule</span>
-            </div>
-            <div className="space-y-4">
-              <div className="p-5 bg-[#0e0e0e] rounded-md border-l-4 border-primary relative overflow-hidden group">
-                <div className="absolute right-[-20px] top-[-20px] opacity-5 group-hover:opacity-10 transition-opacity">
-                  <span className="material-symbols-outlined text-8xl">bolt</span>
-                </div>
-                <div className="flex justify-between items-center mb-2">
-                  <span className="label-sm-allcaps text-primary">Prime Velocity</span>
-                  <span className="label-sm-allcaps text-slate-400">HIGH LIQUIDITY</span>
-                </div>
-                <div className="text-2xl font-headline font-bold text-white uppercase kinetic-headline">02:00 — 04:00 AM UK</div>
-                <p className="mt-2 text-xs text-slate-400 leading-relaxed">Maximum supply injection during late-night US hours results in the highest frequency of underpriced listings.</p>
-              </div>
-              <div className="p-5 bg-[#0e0e0e] rounded-md opacity-60">
-                <div className="flex justify-between items-center mb-2">
-                  <span className="label-sm-allcaps text-white">Secondary Window</span>
-                  <span className="label-sm-allcaps text-slate-400">MID LIQUIDITY</span>
-                </div>
-                <div className="text-2xl font-headline font-bold text-white uppercase kinetic-headline">06:00 — 08:00 PM UK</div>
-                <p className="mt-2 text-xs text-slate-400 leading-relaxed">High competition window during content drops. Recommended for advanced snipers only.</p>
-              </div>
-            </div>
-          </div>
-          {/* Similar Opportunities */}
+          {/* Filter Presets Grid */}
           <div className="space-y-6">
-            <h3 className="font-headline font-bold text-xl text-white uppercase kinetic-headline italic">Tactical Alternates</h3>
-            <div className="grid grid-cols-2 gap-4">
-              <div className="bg-[#2a2a2a] p-6 rounded-md hover:bg-[#353534] transition-colors cursor-pointer group">
-                <div className="flex justify-between items-start mb-4">
-                  <div className="w-8 h-8 rounded bg-[#0e0e0e] flex items-center justify-center">
-                    <span className="material-symbols-outlined text-xs text-primary">trending_up</span>
-                  </div>
-                  <span className="label-sm-allcaps text-[#b5d25e]">+4.2%</span>
-                </div>
-                <div className="font-headline font-bold text-lg text-white group-hover:text-primary transition-colors kinetic-headline">Vinícius Jr.</div>
-                <div className="label-sm-allcaps text-slate-400 mt-1">Real Madrid • LW</div>
-              </div>
-              <div className="bg-[#2a2a2a] p-6 rounded-md hover:bg-[#353534] transition-colors cursor-pointer group">
-                <div className="flex justify-between items-start mb-4">
-                  <div className="w-8 h-8 rounded bg-[#0e0e0e] flex items-center justify-center">
-                    <span className="material-symbols-outlined text-xs text-primary">trending_up</span>
-                  </div>
-                  <span className="label-sm-allcaps text-[#b5d25e]">+2.8%</span>
-                </div>
-                <div className="font-headline font-bold text-lg text-white group-hover:text-primary transition-colors kinetic-headline">Bellingham</div>
-                <div className="label-sm-allcaps text-slate-400 mt-1">Real Madrid • CM</div>
-              </div>
-              <div className="bg-[#2a2a2a] p-6 rounded-md hover:bg-[#353534] transition-colors cursor-pointer group">
-                <div className="flex justify-between items-start mb-4">
-                  <div className="w-8 h-8 rounded bg-[#0e0e0e] flex items-center justify-center">
-                    <span className="material-symbols-outlined text-xs text-primary">trending_up</span>
-                  </div>
-                  <span className="label-sm-allcaps text-[#b5d25e]">+5.1%</span>
-                </div>
-                <div className="font-headline font-bold text-lg text-white group-hover:text-primary transition-colors kinetic-headline">Fede Valverde</div>
-                <div className="label-sm-allcaps text-slate-400 mt-1">Real Madrid • CM</div>
-              </div>
-              <div className="bg-[#2a2a2a] p-6 rounded-md hover:bg-[#353534] transition-colors cursor-pointer group">
-                <div className="flex justify-between items-start mb-4">
-                  <div className="w-8 h-8 rounded bg-[#0e0e0e] flex items-center justify-center">
-                    <span className="material-symbols-outlined text-xs text-primary">trending_up</span>
-                  </div>
-                  <span className="label-sm-allcaps text-[#b5d25e]">+1.5%</span>
-                </div>
-                <div className="font-headline font-bold text-lg text-white group-hover:text-primary transition-colors kinetic-headline">Camavinga</div>
-                <div className="label-sm-allcaps text-slate-400 mt-1">Real Madrid • CDM</div>
-              </div>
+            <div className="text-center space-y-2">
+              <h2 className="text-2xl sm:text-4xl font-black font-headline uppercase tracking-tight">
+                Top Profitable <span className="text-primary italic">Sniping Filters</span>
+              </h2>
+              <p className="text-sm text-gray-400 max-w-lg mx-auto font-medium">
+                Tested filter combinations for maximum coin returns in EA FC 26 &amp; FC 27.
+              </p>
             </div>
-          </div>
-        </section>
 
-        {/* Main SaaS CTA */}
-        <section className="relative rounded-md overflow-hidden bg-gradient-to-br from-white via-primary to-[#b5d25e] p-10 md:p-16 text-black shadow-[0_20px_60px_-15px_rgba(204,255,0,0.3)] mb-12">
-          <div className="absolute top-0 right-0 p-4 opacity-10">
-            <span className="material-symbols-outlined text-[12rem]" style={{ fontVariationSettings: "'FILL' 1" }}>target</span>
-          </div>
-          <div className="relative z-10 text-center max-w-3xl mx-auto space-y-8">
-            <h2 className="font-headline font-black text-3xl md:text-5xl uppercase italic kinetic-headline leading-none">
-              Unleash the Elite Sniping Bot
-            </h2>
-            <p className="text-black font-medium text-lg opacity-90 max-w-xl mx-auto">
-              Stop manual refreshing. Access Kylian Mbappé&apos;s advanced algorithmic filters and let our bot secure the deals for you 24/7.
-            </p>
-            <div className="flex flex-col sm:flex-row items-center justify-center gap-6">
-              <button className="w-full sm:w-auto px-12 py-5 bg-black text-primary font-headline font-black uppercase tracking-[0.15em] rounded hover:translate-y-[-4px] transition-transform duration-200 shadow-xl">
-                Upgrade to Elite
-              </button>
-              <button className="w-full sm:w-auto px-12 py-5 border-2 border-black text-black font-headline font-bold uppercase tracking-[0.15em] rounded hover:bg-black hover:text-primary transition-all">
-                View Live Demo
-              </button>
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+              {FILTER_PRESETS.map((filter) => (
+                <div
+                  key={filter.title}
+                  className="p-6 rounded-2xl bg-white/[0.02] border border-white/10 hover:border-primary/40 transition-all duration-300 space-y-4 relative overflow-hidden group"
+                >
+                  <div className="flex items-center justify-between">
+                    <span className="text-xs font-headline font-black text-white group-hover:text-primary transition-colors">
+                      {filter.title}
+                    </span>
+                    <span className="px-2.5 py-0.5 rounded text-[9px] font-black uppercase tracking-wider bg-primary/20 text-primary border border-primary/30">
+                      {filter.badge}
+                    </span>
+                  </div>
+
+                  <p className="text-xs text-gray-300 leading-relaxed font-medium">
+                    {filter.desc}
+                  </p>
+
+                  <div className="grid grid-cols-2 gap-2 p-3 rounded-xl bg-white/[0.02] border border-white/5 text-xs font-mono">
+                    <div>
+                      <span className="text-[10px] text-gray-500 block uppercase">Target Cards</span>
+                      <span className="font-bold text-white line-clamp-1">{filter.target}</span>
+                    </div>
+                    <div>
+                      <span className="text-[10px] text-gray-500 block uppercase">Est. Profit</span>
+                      <span className="font-bold text-primary">{filter.profitPerCard}</span>
+                    </div>
+                  </div>
+                </div>
+              ))}
             </div>
           </div>
-        </section>
-      </main>
-    </div>
+
+          {/* Safety & Anti-Detection Protocol Rules */}
+          <div className="space-y-6">
+            <div className="text-center space-y-2">
+              <h2 className="text-2xl sm:text-4xl font-black font-headline uppercase tracking-tight">
+                Anti-Detection <span className="text-primary italic">Safety Protocols</span>
+              </h2>
+              <p className="text-sm text-gray-400 max-w-lg mx-auto font-medium">
+                Follow these strict operational guidelines to keep your account safe from web app flags.
+              </p>
+            </div>
+
+            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+              {SAFETY_RULES.map((rule) => (
+                <div
+                  key={rule.title}
+                  className="p-6 rounded-2xl bg-white/[0.02] border border-white/10 space-y-3"
+                >
+                  <div className="w-12 h-12 rounded-xl bg-primary/10 border border-primary/20 flex items-center justify-center text-primary">
+                    <span className="material-symbols-outlined text-2xl">{rule.icon}</span>
+                  </div>
+                  <h3 className="font-bold font-headline text-base text-white">{rule.title}</h3>
+                  <p className="text-xs text-gray-400 leading-relaxed font-medium">{rule.desc}</p>
+                </div>
+              ))}
+            </div>
+          </div>
+
+          {/* Bottom FAQ & Callout */}
+          <div className="p-8 sm:p-12 rounded-3xl bg-white/[0.02] border border-white/10 space-y-8 text-center">
+            <div className="space-y-3 max-w-xl mx-auto">
+              <h2 className="text-2xl sm:text-3xl font-black font-headline uppercase tracking-tight">
+                Sniping Guide <span className="text-primary italic">FAQ</span>
+              </h2>
+              <p className="text-xs sm:text-sm text-gray-400 font-medium">
+                Everything you need to know about transfer market sniping in FC 26 &amp; FC 27.
+              </p>
+            </div>
+
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-6 text-left">
+              <div className="p-6 rounded-2xl bg-white/[0.02] border border-white/5 space-y-2">
+                <h3 className="font-bold text-white text-base font-headline">What is the best time to snipe players?</h3>
+                <p className="text-xs text-gray-400 leading-relaxed font-medium">
+                  The peak sniping windows occur during 6 PM UK content releases, Lightning Rounds, and Weekend League reward dispatches when market supply spikes.
+                </p>
+              </div>
+
+              <div className="p-6 rounded-2xl bg-white/[0.02] border border-white/5 space-y-2">
+                <h3 className="font-bold text-white text-base font-headline">How fast should search delays be?</h3>
+                <p className="text-xs text-gray-400 leading-relaxed font-medium">
+                  We recommend search intervals between 1,200ms and 2,500ms with randomized offsets to mimic human speed without triggering web app rate limits.
+                </p>
+              </div>
+            </div>
+
+            <div className="pt-4">
+              <Link
+                href="https://discord.gg/Rkb9nF6WG6"
+                target="_blank"
+                className="inline-flex items-center gap-2 px-8 py-4 rounded-xl bg-primary text-dark font-headline font-black text-xs uppercase tracking-wider hover:brightness-110 transition-all shadow-[0_0_20px_rgba(204,255,0,0.2)]"
+              >
+                Join Discord Server for Free Sniping Tools
+                <span className="material-symbols-outlined text-sm">open_in_new</span>
+              </Link>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </>
   );
 }
