@@ -22,7 +22,6 @@ export default function LinksPage() {
     
     { href: "/tools/sniping-guide", label: "Sniping Guide", category: "Tools & Resources", desc: "Step-by-step tutorial on sniping settings and safety." },
     { href: "/tools/tax-calculator", label: "Tax Calculator", category: "Tools & Resources", desc: "Calculate EA tax and project profit from market trading." },
-    { href: "/guide/linking-club", label: "Linking Club Guide", category: "Tools & Resources", desc: "Guide on linking your FC club safely with automation tools." },
     { href: "/volt-velocity", label: "Volt Velocity", category: "Tools & Resources", desc: "Optimizing connection speed and response times." },
     { href: "/bakers-bot-developer", label: "Developer Origin Story", category: "Tools & Resources", desc: "The story behind the creation of Elite FUT SNIPER." },
     

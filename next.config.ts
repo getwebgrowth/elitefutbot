@@ -31,6 +31,11 @@ const nextConfig: NextConfig = {
         destination: "/bio",
         permanent: true,
       },
+      {
+        source: "/guide/linking-club",
+        destination: "/",
+        permanent: true,
+      },
     ];
   },
 };

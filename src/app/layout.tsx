@@ -232,7 +232,7 @@ export default function RootLayout({
                 <nav className="space-y-6" aria-labelledby="footer-resources">
                   <h4 id="footer-resources" className="text-white font-black text-xs uppercase tracking-[0.2em] font-headline">Resources</h4>
                   <ul className="space-y-4 text-sm font-medium">
-                    <li><Link className="text-gray-500 hover:text-primary transition-colors focus-visible:text-primary focus-visible:outline-none" href="/guide/linking-club">Linking Guide</Link></li>
+                    <li><Link className="text-gray-500 hover:text-primary transition-colors focus-visible:text-primary focus-visible:outline-none" href="/bio">Link in Bio</Link></li>
                     <li><Link className="text-gray-500 hover:text-primary transition-colors focus-visible:text-primary focus-visible:outline-none" href="/volt-velocity">Volt Velocity</Link></li>
                     <li><Link className="text-gray-500 hover:text-primary transition-colors focus-visible:text-primary focus-visible:outline-none" href="/bakers-bot-developer">Origin Story</Link></li>
                     <li><Link className="text-gray-500 hover:text-primary transition-colors focus-visible:text-primary focus-visible:outline-none" href="/">Homepage</Link></li>
