@@ -2,30 +2,30 @@ import { Metadata } from "next";
 import Link from "next/link";
 
 export const metadata: Metadata = {
-  title: "EA FC 26 & FC 27 SBC Solutions & AI Solver (Releasing Soon)",
+  title: "EA FC 26 & FC 27 SBC Solutions Database — Cheapest Solutions",
   description:
-    "Browse EA FC 26 & FC 27 Squad Building Challenge solutions. 1-Click AI SBC Solver releasing soon — Join our official Discord for free early beta access!",
+    "Browse the cheapest EA FC 26 & FC 27 SBC solutions for every active Squad Building Challenge. Filter Icon, Promo, POTM, and Upgrade SBCs with real-time coin cost estimates.",
   keywords: [
     "EA FC 26 SBC solutions",
-    "FC 27 SBC cheapest solutions",
-    "AI SBC solver FC 26",
-    "cheapest Futbin SBC solution",
-    "FC 26 TOTW SBC solution",
-    "FC 26 Icon SBC solution",
-    "FUT SBC auto solver free beta"
+    "cheapest SBC solutions FC 26",
+    "FC 27 SBC solver database",
+    "POTM SBC solution FC 26",
+    "Icon SBC solution FC 26",
+    "Marquee matchups SBC solution",
+    "FUT SBC solutions"
   ],
   alternates: { canonical: "https://elitefutbot.com/sbc-solver" },
   openGraph: {
-    title: "EA FC 26 & FC 27 SBC Solutions & AI Solver (Releasing Soon)",
-    description: "Solve any EA FC Squad Building Challenge in under 3 seconds with AI. Join our Discord today for free beta access!",
+    title: "EA FC 26 & FC 27 SBC Solutions Database — Cheapest Solutions",
+    description: "Browse every active EA FC Squad Building Challenge solution with cheapest market prices.",
     url: "https://elitefutbot.com/sbc-solver",
     siteName: "Elite FUT SNIPER",
     type: "website",
   },
   twitter: {
     card: "summary_large_image",
-    title: "EA FC 26 & FC 27 SBC Solutions & AI Solver",
-    description: "1-Click AI SBC Solver for EA FC 26 & FC 27 releasing soon. Join Discord for free early access!",
+    title: "EA FC 26 & FC 27 SBC Solutions Database",
+    description: "Browse active SBC solutions and cheapest squad costs.",
   }
 };
 
@@ -33,137 +33,137 @@ const jsonLd = {
   "@context": "https://schema.org",
   "@graph": [
     {
-      "@type": "SoftwareApplication",
-      name: "Elite FUT SNIPER AI SBC Solver",
-      applicationCategory: "GameApplication",
-      operatingSystem: "Windows, macOS, Chrome OS",
-      description: "Automated AI Squad Building Challenge solver for EA Sports FC 26 and FC 27.",
-      offers: {
-        "@type": "Offer",
-        price: "0",
-        priceCurrency: "USD",
-        availability: "https://schema.org/PreOrder"
-      }
-    },
-    {
-      "@type": "FAQPage",
-      mainEntity: [
-        {
-          "@type": "Question",
-          name: "When will the AI SBC Solver for FC 26 & FC 27 be released?",
-          acceptedAnswer: {
-            "@type": "Answer",
-            text: "The AI SBC Solver is currently in private beta testing and releasing very soon! Joining our official Discord HQ gives you immediate free beta access slots."
-          }
-        },
-        {
-          "@type": "Question",
-          name: "How does the AI SBC Solver build the cheapest squad?",
-          acceptedAnswer: {
-            "@type": "Answer",
-            text: "Our AI scans your club's untradeable inventory first to avoid spending coins, then calculates real-time BIN market prices to buy missing cards for the lowest cost with guaranteed 33/33 chemistry."
-          }
-        },
-        {
-          "@type": "Question",
-          name: "Is the SBC Solver safe to use with FC Web App?",
-          acceptedAnswer: {
-            "@type": "Answer",
-            text: "Yes. The SBC Solver runs 100% locally inside your Chrome browser extension with randomized human actions, preventing automated flags and keeping your account secure."
-          }
-        }
-      ]
+      "@type": "CollectionPage",
+      name: "EA FC 26 & FC 27 SBC Solutions Database",
+      description: "Database of active Squad Building Challenge solutions sorted by cheapest coin cost.",
+      url: "https://elitefutbot.com/sbc-solver"
     }
   ]
 };
 
-const UPCOMING_SBCS = [
+const SBC_SOLUTIONS = [
   {
-    name: "POTM VINÍCIUS JR.",
-    category: "PLAYER OF THE MONTH",
+    id: "potm-vinicius",
+    name: "Vinícius Jr.",
+    title: "Player of the Month (POTM)",
+    rating: 94,
+    position: "LW",
+    type: "POTM",
     cost: "1,250,000",
-    reward: "94 POTM Card",
-    chem: "33/33",
-    status: "BETA TESTING",
-    badge: "94 RAT",
-    color: "from-purple-900/40 to-black border-purple-500/30"
+    reward: "94 POTM Vinícius Jr.",
+    timeLeft: "6 Days left",
+    hot: true,
+    badgeBg: "bg-purple-500/20 text-purple-400 border-purple-500/30"
   },
   {
-    name: "SHAPESHIFTERS ICON MBAPPÉ",
-    category: "ICON SBC",
+    id: "shapeshifters-mbappe",
+    name: "Kylian Mbappé",
+    title: "Shapeshifters Icon",
+    rating: 98,
+    position: "ST",
+    type: "ICON",
     cost: "1,450,000",
-    reward: "98 SS Icon",
-    chem: "33/33",
-    status: "BETA TESTING",
-    badge: "98 RAT",
-    color: "from-amber-900/40 to-black border-amber-500/30"
+    reward: "98 SS Icon Mbappé",
+    timeLeft: "5 Days left",
+    hot: true,
+    badgeBg: "bg-amber-500/20 text-amber-400 border-amber-500/30"
   },
   {
-    name: "MARQUEE MATCHUPS",
-    category: "WEEKLY CHALLENGE",
-    cost: "22,500",
-    reward: "Rare Electrum Pack",
-    chem: "33/33",
-    status: "SOLVED",
-    badge: "CHEAP",
-    color: "from-primary/10 to-black border-primary/30"
-  },
-  {
-    name: "85+ DOUBLE UPGRADE",
-    category: "DAILY REPEATABLE",
-    cost: "34,000",
-    reward: "2x 85+ Gold Players",
-    chem: "33/33",
-    status: "SOLVED",
-    badge: "POPULAR",
-    color: "from-blue-900/40 to-black border-blue-500/30"
-  },
-  {
-    name: "CENTURIONS BELLINGHAM",
-    category: "PROMO PLAYER",
+    id: "centurions-bellingham",
+    name: "Jude Bellingham",
+    title: "Centurions Special",
+    rating: 95,
+    position: "CAM",
+    type: "PROMO",
     cost: "890,000",
-    reward: "95 Centurions",
-    chem: "33/33",
-    status: "BETA TESTING",
-    badge: "95 RAT",
-    color: "from-emerald-900/40 to-black border-emerald-500/30"
+    reward: "95 Centurions Bellingham",
+    timeLeft: "3 Days left",
+    hot: true,
+    badgeBg: "bg-emerald-500/20 text-emerald-400 border-emerald-500/30"
   },
   {
-    name: "HYBRID LEAGUES MASTER",
-    category: "FOUNDATIONS",
+    id: "flashback-kante",
+    name: "N'Golo Kanté",
+    title: "Flashback Edition",
+    rating: 91,
+    position: "CDM",
+    type: "FLASHBACK",
+    cost: "815,000",
+    reward: "91 Flashback Kanté",
+    timeLeft: "1 Day left",
+    hot: false,
+    badgeBg: "bg-blue-500/20 text-blue-400 border-blue-500/30"
+  },
+  {
+    id: "marquee-matchups",
+    name: "Marquee Matchups",
+    title: "Weekly Fixtures Challenge",
+    rating: 85,
+    position: "MIXED",
+    type: "WEEKLY",
+    cost: "22,500",
+    reward: "Rare Electrum Players Pack",
+    timeLeft: "4 Days left",
+    hot: false,
+    badgeBg: "bg-cyan-500/20 text-cyan-400 border-cyan-500/30"
+  },
+  {
+    id: "85-double-upgrade",
+    name: "85+ Double Upgrade",
+    title: "Daily Repeatable SBC",
+    rating: 85,
+    position: "MIXED",
+    type: "UPGRADE",
+    cost: "34,000",
+    reward: "2x 85+ Rare Players",
+    timeLeft: "2 Days left",
+    hot: true,
+    badgeBg: "bg-primary/20 text-primary border-primary/30"
+  },
+  {
+    id: "totw-upgrade",
+    name: "TOTW Player Upgrade",
+    title: "Team of the Week SBC",
+    rating: 83,
+    position: "MIXED",
+    type: "UPGRADE",
+    cost: "31,000",
+    reward: "Guaranteed TOTW Pack",
+    timeLeft: "3 Days left",
+    hot: false,
+    badgeBg: "bg-primary/20 text-primary border-primary/30"
+  },
+  {
+    id: "hybrid-leagues",
+    name: "Hybrid Leagues",
+    title: "Foundations Challenge",
+    rating: 82,
+    position: "MIXED",
+    type: "BASIC",
     cost: "8,200",
     reward: "Prime Gold Players Pack",
-    chem: "33/33",
-    status: "SOLVED",
-    badge: "BASIC",
-    color: "from-slate-900/40 to-black border-slate-700/30"
+    timeLeft: "Permanent",
+    hot: false,
+    badgeBg: "bg-slate-500/20 text-slate-300 border-slate-500/30"
+  },
+  {
+    id: "daily-gold-upgrade",
+    name: "Daily Gold Upgrade",
+    title: "Daily Pack Crafting",
+    rating: 81,
+    position: "MIXED",
+    type: "DAILY",
+    cost: "3,500",
+    reward: "Gold Players Pack",
+    timeLeft: "12 Hours left",
+    hot: false,
+    badgeBg: "bg-green-500/20 text-green-400 border-green-500/30"
   }
 ];
 
-const FEATURES = [
-  {
-    icon: "bolt",
-    title: "1-Click Auto Solve",
-    desc: "AI evaluates over 20,000 squad combinations in 2.5 seconds to build full 33 chemistry solutions."
-  },
-  {
-    icon: "inventory_2",
-    title: "Club-First Untradeables",
-    desc: "Prioritizes high-rated fodder already in your club so you spend zero coins wherever possible."
-  },
-  {
-    icon: "trending_down",
-    title: "Lowest Market Cost",
-    desc: "Live BIN market price integration ensures any missing card is purchased at the absolute lowest buy price."
-  },
-  {
-    icon: "shield",
-    title: "100% Undetected & Safe",
-    desc: "Executes locally inside your Chrome extension with natural human delays and zero password sharing."
-  }
-];
+const CATEGORIES = ["ALL", "POTM", "ICON", "PROMO", "FLASHBACK", "WEEKLY", "UPGRADE", "BASIC"];
 
-export default function SBCSolverPage() {
+export default function SBCSolutionsDatabasePage() {
   return (
     <>
       <script
@@ -171,203 +171,129 @@ export default function SBCSolverPage() {
         dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
       />
       <div className="min-h-screen bg-[#050505] text-white pt-24 pb-20 relative overflow-hidden font-sans">
-        {/* Ambient background glow */}
-        <div className="absolute top-0 left-1/2 -translate-x-1/2 w-[800px] h-[400px] bg-primary/10 blur-[150px] rounded-full pointer-events-none -z-10"></div>
-        <div className="absolute bottom-20 right-10 w-[500px] h-[400px] bg-purple-600/10 blur-[150px] rounded-full pointer-events-none -z-10"></div>
+        {/* Background glow */}
+        <div className="absolute top-0 left-1/2 -translate-x-1/2 w-[700px] h-[350px] bg-primary/10 blur-[140px] rounded-full pointer-events-none -z-10"></div>
 
-        <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 space-y-16">
+        <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 space-y-10">
           
-          {/* Release Soon Announcement Banner */}
-          <div className="relative rounded-3xl p-8 sm:p-12 border border-primary/40 bg-gradient-to-br from-primary/10 via-card/80 to-card/90 backdrop-blur-xl shadow-[0_0_50px_rgba(204,255,0,0.15)] text-center space-y-6 overflow-hidden">
-            <div className="absolute top-0 right-0 transform translate-x-4 -translate-y-4 w-32 h-32 bg-primary/20 rounded-full blur-2xl pointer-events-none"></div>
-
-            <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-primary text-dark font-black text-xs uppercase tracking-widest animate-pulse">
-              <span className="w-2 h-2 rounded-full bg-dark"></span>
-              RELEASING SOON • BETA PHASE
+          {/* Header section */}
+          <div className="space-y-4 text-center max-w-3xl mx-auto">
+            <div className="inline-flex items-center gap-2 px-3.5 py-1 rounded-full bg-white/5 border border-white/10 text-xs font-bold uppercase tracking-widest text-primary">
+              <span className="w-2 h-2 rounded-full bg-primary animate-pulse"></span>
+              SBC Solutions Database • Live Prices
             </div>
-
-            <h1 className="text-4xl sm:text-6xl font-black font-headline tracking-tight uppercase max-w-3xl mx-auto leading-tight">
-              AI <span className="text-primary italic">SBC SOLVER</span> FOR FC 26 &amp; FC 27
+            <h1 className="text-3xl sm:text-5xl font-black font-headline tracking-tight uppercase">
+              EA FC 26 &amp; FC 27 <span className="text-primary italic">SBC SOLUTIONS</span>
             </h1>
-
-            <p className="text-gray-300 text-base sm:text-lg max-w-2xl mx-auto font-medium leading-relaxed">
-              Automate every Squad Building Challenge with 1-click AI precision. Uses your untradeable club inventory first to save 100% of your coins.
+            <p className="text-sm sm:text-base text-gray-400 font-medium leading-relaxed">
+              Explore active Squad Building Challenges, estimated coin costs, and optimal 33/33 chemistry squad builds.
             </p>
-
-            {/* High-Impact CTA Box */}
-            <div className="pt-4 flex flex-col sm:flex-row items-center justify-center gap-4 max-w-md mx-auto">
-              <Link
-                href="https://discord.gg/Rkb9nF6WG6"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="w-full sm:w-auto inline-flex items-center justify-center gap-3 px-8 py-4 rounded-xl bg-primary text-dark font-headline font-black text-sm uppercase tracking-wider hover:brightness-110 transition-all shadow-[0_0_30px_rgba(204,255,0,0.3)] hover:scale-105"
-              >
-                <svg className="w-5 h-5 fill-current" viewBox="0 0 24 24">
-                  <path d="M20.317 4.37a19.791 19.791 0 0 0-4.885-1.515.074.074 0 0 0-.079.037c-.21.375-.444.864-.608 1.25a18.27 18.27 0 0 0-5.487 0 12.64 12.64 0 0 0-.617-1.25.077.077 0 0 0-.079-.037A19.736 19.736 0 0 0 3.677 4.37a.07.07 0 0 0-.032.027C.533 9.046-.32 13.58.099 18.057a.082.082 0 0 0 .031.057 19.9 19.9 0 0 0 5.993 3.03.078.078 0 0 0 .084-.028 14.09 14.09 0 0 0 1.226-1.994.076.076 0 0 0-.041-.106 13.107 13.107 0 0 1-1.872-.892.077.077 0 0 1-.008-.128 10.2 10.2 0 0 0 .372-.292.074.074 0 0 1 .077-.01c3.928 1.793 8.18 1.793 12.062 0a.074.074 0 0 1 .078.01c.12.098.246.198.373.292a.077.077 0 0 1-.006.127 12.299 12.299 0 0 1-1.873.892.077.077 0 0 0-.041.107c.36.698.772 1.362 1.225 1.993a.076.076 0 0 0 .084.028 19.839 19.839 0 0 0 6.002-3.03.078.078 0 0 0 .032-.054c.5-5.177-.838-9.674-3.549-13.66a.061.061 0 0 0-.031-.03z"/>
-                </svg>
-                JOIN DISCORD FOR FREE ACCESS
-                <span className="material-symbols-outlined text-base">arrow_forward</span>
-              </Link>
-            </div>
-
-            <div className="flex justify-center items-center gap-6 text-xs text-gray-400 font-bold uppercase tracking-wider pt-2">
-              <span className="flex items-center gap-1.5">
-                <span className="material-symbols-outlined text-primary text-base">check_circle</span>
-                100% Free Beta
-              </span>
-              <span className="flex items-center gap-1.5">
-                <span className="material-symbols-outlined text-primary text-base">bolt</span>
-                Instant Access in Discord
-              </span>
-            </div>
           </div>
 
-          {/* Key Features Grid */}
-          <div className="space-y-6">
-            <div className="text-center space-y-2">
-              <h2 className="text-2xl sm:text-3xl font-black font-headline tracking-tight uppercase">
-                Why Elite FUT <span className="text-primary">AI SBC Solver?</span>
+          {/* AI Solver Teaser Banner */}
+          <div className="p-6 rounded-2xl bg-gradient-to-r from-primary/15 via-card to-card border border-primary/30 flex flex-col md:flex-row items-center justify-between gap-6 shadow-[0_0_30px_rgba(204,255,0,0.1)]">
+            <div className="space-y-1 text-left">
+              <div className="flex items-center gap-2 text-xs font-black text-primary uppercase tracking-wider">
+                <span className="material-symbols-outlined text-sm">auto_awesome</span>
+                <span>AI SBC Solver Releasing Soon</span>
+              </div>
+              <h2 className="text-xl font-headline font-black text-white">
+                Want 1-Click Auto SBC Solving Using Your Club Inventory?
               </h2>
-              <p className="text-sm text-gray-400 max-w-lg mx-auto">
-                Built specifically for serious FC 26 &amp; FC 27 traders wanting zero waste and instant pack rewards.
+              <p className="text-xs text-gray-400 font-medium">
+                Our AI engine scans your club, saves 100% of your untradeable fodder, and submits in under 3 seconds.
               </p>
             </div>
-
-            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
-              {FEATURES.map((feat) => (
-                <div
-                  key={feat.title}
-                  className="p-6 rounded-2xl bg-white/[0.02] border border-white/10 hover:border-primary/40 transition-all duration-300 space-y-3 group"
-                >
-                  <div className="w-12 h-12 rounded-xl bg-primary/10 border border-primary/20 flex items-center justify-center text-primary group-hover:scale-110 transition-transform">
-                    <span className="material-symbols-outlined text-2xl">{feat.icon}</span>
-                  </div>
-                  <h3 className="font-bold font-headline text-lg text-white group-hover:text-primary transition-colors">
-                    {feat.title}
-                  </h3>
-                  <p className="text-xs text-gray-400 leading-relaxed font-medium">
-                    {feat.desc}
-                  </p>
-                </div>
-              ))}
-            </div>
+            <Link
+              href="https://discord.gg/Rkb9nF6WG6"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="shrink-0 px-6 py-3 rounded-xl bg-primary text-dark font-headline font-black text-xs uppercase tracking-wider hover:brightness-110 transition-all flex items-center gap-2 shadow-[0_0_20px_rgba(204,255,0,0.2)]"
+            >
+              <span>Join Discord For Free AI Access</span>
+              <span className="material-symbols-outlined text-sm">arrow_forward</span>
+            </Link>
           </div>
 
-          {/* Upcoming SBC Solutions Teaser Grid */}
-          <div className="space-y-6">
-            <div className="flex flex-col sm:flex-row justify-between items-start sm:items-end gap-4 border-b border-white/10 pb-4">
-              <div>
-                <span className="text-xs font-bold uppercase tracking-widest text-primary">SBC Preview Database</span>
-                <h2 className="text-2xl sm:text-3xl font-black font-headline tracking-tight uppercase">
-                  Supported Challenges <span className="text-gray-500 text-lg font-normal">(Releasing Soon)</span>
-                </h2>
-              </div>
-
-              <Link
-                href="https://discord.gg/Rkb9nF6WG6"
-                target="_blank"
-                className="text-xs font-bold uppercase tracking-wider text-primary hover:underline flex items-center gap-1"
+          {/* Category Filter Pills */}
+          <div className="flex items-center gap-2 overflow-x-auto pb-2 scrollbar-none border-b border-white/10">
+            <span className="text-xs font-bold text-gray-500 uppercase tracking-widest mr-2 shrink-0">Filter:</span>
+            {CATEGORIES.map((cat, idx) => (
+              <button
+                key={cat}
+                className={`px-3.5 py-1.5 rounded-lg text-xs font-bold uppercase tracking-wider transition-all shrink-0 border ${
+                  idx === 0
+                    ? "bg-primary text-dark border-primary"
+                    : "bg-white/[0.02] text-gray-400 border-white/10 hover:border-primary/40 hover:text-white"
+                }`}
               >
-                <span>Request Custom SBC Solution in Discord</span>
-                <span className="material-symbols-outlined text-sm">open_in_new</span>
-              </Link>
-            </div>
+                {cat}
+              </button>
+            ))}
+          </div>
 
-            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-              {UPCOMING_SBCS.map((sbc) => (
-                <div
-                  key={sbc.name}
-                  className={`p-6 rounded-2xl bg-gradient-to-br border transition-all duration-300 space-y-4 relative overflow-hidden ${sbc.color}`}
-                >
+          {/* SBC Grid Catalog */}
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+            {SBC_SOLUTIONS.map((sbc) => (
+              <div
+                key={sbc.id}
+                className="p-6 rounded-2xl bg-white/[0.02] hover:bg-white/[0.04] border border-white/10 hover:border-primary/40 transition-all duration-300 space-y-4 flex flex-col justify-between"
+              >
+                <div className="space-y-3">
                   <div className="flex items-center justify-between">
-                    <span className="text-[10px] font-black uppercase tracking-wider text-gray-400">
-                      {sbc.category}
+                    <span className={`px-2.5 py-0.5 rounded text-[9px] font-black uppercase tracking-wider border ${sbc.badgeBg}`}>
+                      {sbc.type}
                     </span>
-                    <span className="px-2.5 py-0.5 rounded-full text-[9px] font-black bg-primary/20 text-primary border border-primary/30">
-                      {sbc.badge}
+                    <span className="text-[10px] text-gray-400 font-medium">
+                      {sbc.timeLeft}
                     </span>
                   </div>
 
                   <div>
                     <h3 className="text-xl font-headline font-black text-white">{sbc.name}</h3>
-                    <p className="text-xs text-gray-400 mt-1">Reward: <span className="text-white font-bold">{sbc.reward}</span></p>
+                    <p className="text-xs text-gray-400 font-medium">{sbc.title}</p>
                   </div>
 
-                  <div className="pt-2 grid grid-cols-2 gap-2 text-xs border-t border-white/10 font-mono">
-                    <div>
-                      <span className="text-[10px] text-gray-500 block uppercase">Est. Cost</span>
+                  <div className="p-3 rounded-xl bg-white/[0.02] border border-white/5 space-y-1.5">
+                    <div className="flex justify-between text-xs font-mono">
+                      <span className="text-gray-400">Est. Coin Cost:</span>
                       <span className="font-bold text-primary">{sbc.cost} Coins</span>
                     </div>
-                    <div>
-                      <span className="text-[10px] text-gray-500 block uppercase">Chemistry</span>
-                      <span className="font-bold text-white">{sbc.chem}</span>
+                    <div className="flex justify-between text-xs font-mono">
+                      <span className="text-gray-400">Reward:</span>
+                      <span className="font-bold text-white line-clamp-1">{sbc.reward}</span>
                     </div>
                   </div>
-
-                  <Link
-                    href="https://discord.gg/Rkb9nF6WG6"
-                    target="_blank"
-                    className="w-full py-2.5 rounded-xl bg-white/5 hover:bg-primary hover:text-dark text-white font-bold text-xs uppercase tracking-wider flex items-center justify-center gap-1.5 transition-all"
-                  >
-                    <span>Get Free Beta Access</span>
-                    <span className="material-symbols-outlined text-xs">arrow_forward</span>
-                  </Link>
                 </div>
-              ))}
-            </div>
+
+                <Link
+                  href="https://discord.gg/Rkb9nF6WG6"
+                  target="_blank"
+                  className="w-full py-3 rounded-xl bg-white/5 hover:bg-primary hover:text-dark text-white font-bold text-xs uppercase tracking-wider flex items-center justify-center gap-1.5 transition-all mt-4 border border-white/10 hover:border-primary"
+                >
+                  <span>Solve With AI (Free Beta)</span>
+                  <span className="material-symbols-outlined text-xs">arrow_forward</span>
+                </Link>
+              </div>
+            ))}
           </div>
 
-          {/* Bottom Callout & FAQ */}
-          <div className="p-8 sm:p-12 rounded-3xl bg-white/[0.02] border border-white/10 space-y-8">
-            <div className="text-center space-y-3 max-w-xl mx-auto">
-              <h2 className="text-2xl sm:text-4xl font-black font-headline uppercase tracking-tight">
-                Frequently Asked <span className="text-primary italic">Questions</span>
-              </h2>
-              <p className="text-xs sm:text-sm text-gray-400 font-medium">
-                Everything you need to know about the upcoming Elite FUT SNIPER AI SBC Solver.
-              </p>
-            </div>
-
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-6 text-left">
-              <div className="p-6 rounded-2xl bg-white/[0.02] border border-white/5 space-y-2">
-                <h3 className="font-bold text-white text-base font-headline">When will the AI SBC Solver release?</h3>
-                <p className="text-xs text-gray-400 leading-relaxed font-medium">
-                  The AI SBC Solver is currently undergoing final beta tests. You can claim instant free access by joining our official Discord community today!
-                </p>
-              </div>
-
-              <div className="p-6 rounded-2xl bg-white/[0.02] border border-white/5 space-y-2">
-                <h3 className="font-bold text-white text-base font-headline">Does it use my untradeable club players?</h3>
-                <p className="text-xs text-gray-400 leading-relaxed font-medium">
-                  Yes! The solver scans your club inventory first to build solutions using cards you already own, saving hundreds of thousands of coins.
-                </p>
-              </div>
-
-              <div className="p-6 rounded-2xl bg-white/[0.02] border border-white/5 space-y-2">
-                <h3 className="font-bold text-white text-base font-headline">Is the extension safe to use?</h3>
-                <p className="text-xs text-gray-400 leading-relaxed font-medium">
-                  100% safe. The solver runs locally in your Chrome browser extension without requiring your EA account login details or third-party server credentials.
-                </p>
-              </div>
-
-              <div className="p-6 rounded-2xl bg-white/[0.02] border border-white/5 space-y-2">
-                <h3 className="font-bold text-white text-base font-headline">Is the SBC Solver free during beta?</h3>
-                <p className="text-xs text-gray-400 leading-relaxed font-medium">
-                  Yes! All Discord members get free beta access slots for the SBC Solver and Chrome extension sniping tool.
-                </p>
-              </div>
-            </div>
-
-            <div className="text-center pt-4">
-              <Link
-                href="https://discord.gg/Rkb9nF6WG6"
-                target="_blank"
-                className="inline-flex items-center gap-2 px-8 py-3.5 rounded-xl bg-primary text-dark font-headline font-black text-sm uppercase tracking-wider hover:brightness-110 transition-all shadow-[0_0_20px_rgba(204,255,0,0.2)]"
-              >
-                Join Discord Server for Free SBC Access
-                <span className="material-symbols-outlined text-base">arrow_forward</span>
-              </Link>
-            </div>
+          {/* Bottom Info Banner */}
+          <div className="p-8 rounded-3xl bg-white/[0.02] border border-white/10 text-center space-y-4">
+            <h3 className="text-xl font-headline font-black text-white uppercase">
+              Need Help Completing Expensive SBCs?
+            </h3>
+            <p className="text-xs text-gray-400 max-w-xl mx-auto font-medium leading-relaxed">
+              Join 50,000+ traders in our official Discord server. Get custom SBC solution advice, fodder investment tips, and free access keys for the AI SBC Solver extension.
+            </p>
+            <Link
+              href="https://discord.gg/Rkb9nF6WG6"
+              target="_blank"
+              className="inline-flex items-center gap-2 px-6 py-3 rounded-xl bg-primary text-dark font-black text-xs uppercase tracking-wider hover:brightness-110 transition-all"
+            >
+              Join Official Discord HQ
+              <span className="material-symbols-outlined text-sm">open_in_new</span>
+            </Link>
           </div>
 
         </div>
