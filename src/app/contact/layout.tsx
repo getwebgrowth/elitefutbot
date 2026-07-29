@@ -10,6 +10,10 @@ export const metadata: Metadata = {
     url: "https://elitefutbot.com/contact",
     siteName: "Elite FUT SNIPER",
     type: "website",
+  },
+  twitter: {
+    title: "Contact Elite FUT SNIPER Support",
+    description: "Get in touch with the Elite FUT SNIPER team for support.",
   }
 };
 

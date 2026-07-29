@@ -9,12 +9,12 @@ Elite FUT SNIPER is the world's most advanced web-app automation and sniping sui
 - **Tax Calculator:** A real-time tool calculating the 5% EA transfer market tax, break-even prices, and profit margins.
 
 ## Key Links
-- Homepage: https://elitefutbot.com/
-- Discord Community: https://discord.gg/Rkb9nF6WG6
-- Tax Calculator: https://elitefutbot.com/tools/tax-calculator
-- Sniping Guide: https://elitefutbot.com/tools/sniping-guide
-- AI SBC Solver: https://elitefutbot.com/ai-sbc-solver
-- SBC Solutions: https://elitefutbot.com/sbc-solver
+- [Homepage](https://elitefutbot.com/)
+- [Discord Community](https://discord.gg/Rkb9nF6WG6)
+- [Tax Calculator](https://elitefutbot.com/tools/tax-calculator)
+- [Sniping Guide](https://elitefutbot.com/tools/sniping-guide)
+- [AI SBC Solver](https://elitefutbot.com/ai-sbc-solver)
+- [SBC Solutions](https://elitefutbot.com/sbc-solver)
 
 ## Pricing
-We are currently in open beta. See https://elitefutbot.com/pricing.md for details.
+We are currently in open beta. See [Pricing Information](https://elitefutbot.com/pricing.md) for details.

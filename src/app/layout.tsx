@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { Inter, Space_Grotesk, Public_Sans } from "next/font/google";
 import Link from "next/link";
 import Script from "next/script";
+import Image from "next/image";
 import "./globals.css";
 
 const inter = Inter({
@@ -21,33 +22,34 @@ const publicSans = Public_Sans({
 
 export const metadata: Metadata = {
   metadataBase: new URL('https://elitefutbot.com'),
-  title: "Elite FUT SNIPER - The Ultimate FC 26, FC 25 & FC 27 Sniping Tool & Autobuyer",
-  description: "Dominate the FC 26, FC 25, and upcoming FC 27 transfer markets with Elite FUT SNIPER. The best FIFA sniping bot featuring 20ms search speeds, advanced anti-ban tech, and cloud automation.",
-  keywords: ["Elite FUT SNIPER", "FUT Sniper", "FC 26 sniping bot", "FC 25 sniping bot", "FC 27 sniping bot", "FIFA 26 autobuyer", "SBC solver", "FC 26 trading tools", "FIFA sniping tool", "EA FC AI Autobuyer", "FC 27 Web App Sniper"],
+  title: { 
+    default: "Elite FUT SNIPER – FC 26 Sniping Bot & Autobuyer", 
+    template: "%s | Elite FUT SNIPER" 
+  },
+  description: "Dominate the EA FC 26, FC 25 & upcoming FC 27 transfer markets. The fastest FUT sniping bot and autobuyer featuring 20ms speeds and local security.",
   alternates: {
     canonical: "https://elitefutbot.com/",
   },
   openGraph: {
-    title: "Elite FUT SNIPER - #1 FC 26, FC 25 & FC 27 Sniping Tool",
+    title: "Elite FUT SNIPER – FC 26 Sniping Bot & Autobuyer",
     description: "World's fastest sniping bot and autobuyer for FC 26, FC 25 & FC 27. Advanced anti-ban engine and cloud-based SBC solving.",
     url: "https://elitefutbot.com/",
     siteName: "Elite FUT SNIPER",
-    images: [
-      {
-        url: "/og-image.png",
-        width: 1200,
-        height: 630,
-      },
-    ],
     locale: "en_US",
     type: "website",
   },
   twitter: {
     card: "summary_large_image",
-    title: "Elite FUT SNIPER - #1 FC 26, FC 25 & FC 27 Sniping Tool",
-    description: "Elite sniping bot and autobuyer for FC 26, FC 25 & FC 27. 20ms speeds and zero bans.",
-    images: ["/og-image.png"],
+    title: "Elite FUT SNIPER – FC 26 Sniping Bot & Autobuyer",
+    description: "Elite sniping bot and autobuyer for FC 26, FC 25 & FC 27. 20ms speeds and anti-ban engine.",
   },
+  verification: {
+    google: "TODO(owner)",
+    other: {
+      "msvalidate.01": "DF183DB29828D77C74770B08A8F24DD0",
+      "yandex-verification": "a303969db4d28193",
+    }
+  }
 };
 
 const jsonLd = {
@@ -66,8 +68,8 @@ const jsonLd = {
       },
       "aggregateRating": {
         "@type": "AggregateRating",
-        "ratingValue": "4.9",
-        "ratingCount": "1250"
+        "ratingValue": "TODO(owner)",
+        "ratingCount": "TODO(owner)"
       }
     },
     {
@@ -108,8 +110,8 @@ export default function RootLayout({
         {/* Yandex Verification */}
         <meta name="yandex-verification" content="a303969db4d28193" />
         {/* Google Analytics tag (gtag.js) */}
-        <script async src="https://www.googletagmanager.com/gtag/js?id=G-224X1P08Z4"></script>
-        <script dangerouslySetInnerHTML={{
+        <Script src="https://www.googletagmanager.com/gtag/js?id=G-224X1P08Z4" strategy="afterInteractive" />
+        <Script id="google-analytics" strategy="afterInteractive" dangerouslySetInnerHTML={{
           __html: `
             window.dataLayer = window.dataLayer || [];
             function gtag(){dataLayer.push(arguments);}
@@ -132,7 +134,7 @@ export default function RootLayout({
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div className="flex justify-between items-center h-16">
               <Link href="/" className="flex items-center gap-2.5 group">
-                <img src="/logo-elite.png" alt="Elite FUT SNIPER Logo" className="w-10 h-10 object-contain transition-transform group-hover:scale-105" />
+                <Image src="/logo-elite.png" alt="Elite FUT SNIPER Logo" width={40} height={40} className="w-10 h-10 object-contain transition-transform group-hover:scale-105" />
                 <span className="text-lg font-black tracking-tighter uppercase text-white">
                   Elite FUT <span className="text-primary">SNIPER</span>
                 </span>
@@ -168,7 +170,7 @@ export default function RootLayout({
               {/* Brand Section */}
               <div className="md:col-span-4 space-y-8">
                 <Link href="/" className="flex items-center gap-3 group">
-                  <img src="/logo-elite.png" alt="Elite FUT SNIPER Logo" className="w-20 h-20 object-contain group-hover:scale-110 transition-transform duration-500" />
+                  <Image src="/logo-elite.png" alt="Elite FUT SNIPER Logo" width={80} height={80} className="w-20 h-20 object-contain group-hover:scale-110 transition-transform duration-500" />
                   <span className="text-2xl font-black tracking-tighter uppercase text-white font-headline">
                     Elite FUT <span className="text-primary italic">SNIPER</span>
                   </span>
@@ -238,38 +240,38 @@ export default function RootLayout({
               {/* Links Grid */}
               <div className="md:col-span-8 grid grid-cols-2 sm:grid-cols-3 gap-12">
                 <nav className="space-y-6" aria-labelledby="footer-sbc">
-                  <h4 id="footer-sbc" className="text-white font-black text-xs uppercase tracking-[0.2em] font-headline">SBC Solving</h4>
+                  <h2 id="footer-sbc" className="text-white font-black text-xs uppercase tracking-[0.2em] font-headline">SBC Solving</h2>
                   <ul className="space-y-4 text-sm font-medium">
-                    <li><Link className="text-gray-500 hover:text-primary transition-colors focus-visible:text-primary focus-visible:outline-none" href="/sbc-solver">SBC Solutions</Link></li>
-                    <li><Link className="text-gray-500 hover:text-primary transition-colors focus-visible:text-primary focus-visible:outline-none" href="/ai-sbc-solver">AI SBC Engine</Link></li>
-                    <li><Link className="text-gray-500 hover:text-primary transition-colors focus-visible:text-primary focus-visible:outline-none" href="/tools/sniping-guide">Sniping Guide</Link></li>
+                    <li><Link className="text-gray-400 hover:text-primary transition-colors focus-visible:text-primary focus-visible:outline-none" href="/sbc-solver">SBC Solutions</Link></li>
+                    <li><Link className="text-gray-400 hover:text-primary transition-colors focus-visible:text-primary focus-visible:outline-none" href="/ai-sbc-solver">AI SBC Engine</Link></li>
+                    <li><Link className="text-gray-400 hover:text-primary transition-colors focus-visible:text-primary focus-visible:outline-none" href="/tools/sniping-guide">Sniping Guide</Link></li>
                   </ul>
                 </nav>
 
                 <nav className="space-y-6" aria-labelledby="footer-tools">
-                  <h4 id="footer-tools" className="text-white font-black text-xs uppercase tracking-[0.2em] font-headline">Tools & Intel</h4>
+                  <h2 id="footer-tools" className="text-white font-black text-xs uppercase tracking-[0.2em] font-headline">Tools &amp; Intel</h2>
                   <ul className="space-y-4 text-sm font-medium">
-                    <li><Link className="text-gray-500 hover:text-primary transition-colors focus-visible:text-primary focus-visible:outline-none" href="/tools/tax-calculator">Tax Calculator</Link></li>
-                    <li><Link className="text-gray-500 hover:text-primary transition-colors focus-visible:text-primary focus-visible:outline-none" href="/tools/sniping-guide">Sniping Guide</Link></li>
-                    <li><Link className="text-gray-500 hover:text-primary transition-colors focus-visible:text-primary focus-visible:outline-none" href="/blog">Tactical Intel Hub</Link></li>
-                    <li><Link className="text-gray-500 hover:text-primary transition-colors focus-visible:text-primary focus-visible:outline-none" href="/article/tactical-intel">Latest Briefing</Link></li>
+                    <li><Link className="text-gray-400 hover:text-primary transition-colors focus-visible:text-primary focus-visible:outline-none" href="/tools/tax-calculator">Tax Calculator</Link></li>
+                    <li><Link className="text-gray-400 hover:text-primary transition-colors focus-visible:text-primary focus-visible:outline-none" href="/tools/sniping-guide">Sniping Guide</Link></li>
+                    <li><Link className="text-gray-400 hover:text-primary transition-colors focus-visible:text-primary focus-visible:outline-none" href="/blog">Tactical Intel Hub</Link></li>
+                    <li><Link className="text-gray-400 hover:text-primary transition-colors focus-visible:text-primary focus-visible:outline-none" href="/article/tactical-intel">Latest Briefing</Link></li>
                   </ul>
                 </nav>
 
                 <nav className="space-y-6" aria-labelledby="footer-resources">
-                  <h4 id="footer-resources" className="text-white font-black text-xs uppercase tracking-[0.2em] font-headline">Resources</h4>
+                  <h2 id="footer-resources" className="text-white font-black text-xs uppercase tracking-[0.2em] font-headline">Resources</h2>
                   <ul className="space-y-4 text-sm font-medium">
-                    <li><Link className="text-gray-500 hover:text-primary transition-colors focus-visible:text-primary focus-visible:outline-none" href="/bio">Link in Bio</Link></li>
-                    <li><Link className="text-gray-500 hover:text-primary transition-colors focus-visible:text-primary focus-visible:outline-none" href="/volt-velocity">Volt Velocity</Link></li>
-                    <li><Link className="text-gray-500 hover:text-primary transition-colors focus-visible:text-primary focus-visible:outline-none" href="/bakers-bot-developer">Origin Story</Link></li>
-                    <li><Link className="text-gray-500 hover:text-primary transition-colors focus-visible:text-primary focus-visible:outline-none" href="/">Homepage</Link></li>
+                    <li><Link className="text-gray-400 hover:text-primary transition-colors focus-visible:text-primary focus-visible:outline-none" href="/bio">Link in Bio</Link></li>
+                    <li><Link className="text-gray-400 hover:text-primary transition-colors focus-visible:text-primary focus-visible:outline-none" href="/volt-velocity">Volt Velocity</Link></li>
+                    <li><Link className="text-gray-400 hover:text-primary transition-colors focus-visible:text-primary focus-visible:outline-none" href="/bakers-bot-developer">Origin Story</Link></li>
+                    <li><Link className="text-gray-400 hover:text-primary transition-colors focus-visible:text-primary focus-visible:outline-none" href="/">Homepage</Link></li>
                   </ul>
                 </nav>
               </div>
             </div>
             
             {/* Bottom Bar */}
-            <div className="pt-12 border-t border-white/5 flex flex-col md:flex-row justify-between items-center gap-8 text-[10px] text-gray-500 font-bold uppercase tracking-[0.3em] font-headline">
+            <div className="pt-12 border-t border-white/5 flex flex-col md:flex-row justify-between items-center gap-8 text-[10px] text-gray-400 font-bold uppercase tracking-[0.3em] font-headline">
               <div className="flex items-center gap-6">
                 <span>© 2026 Elite FUT SNIPER</span>
                 <span className="w-1 h-1 bg-white/10 rounded-full" aria-hidden="true"></span>

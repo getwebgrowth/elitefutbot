@@ -2,32 +2,19 @@ import { Metadata } from "next";
 import Link from "next/link";
 
 export const metadata: Metadata = {
-  title: "AI SBC Solver FC 26 & FC 27 — #1 AI Squad Building Challenge Engine",
-  description:
-    "The ultimate AI SBC Solver for EA FC 26 & FC 27. Solve any Squad Building Challenge in under 3 seconds using your club untradeable players. Releasing soon — Join Discord for free beta access!",
-  keywords: [
-    "AI SBC solver",
-    "AI SBC solver FC 26",
-    "FC 27 AI SBC solver",
-    "automated AI SBC engine",
-    "EA FC 26 SBC solver extension",
-    "33/33 chemistry AI solver",
-    "untradeable club SBC solver",
-    "Futbin AI SBC solver import",
-    "free AI SBC solver beta"
-  ],
+  title: "AI SBC Solver – Auto-Fill Squad Building Challenges",
+  description: "The ultimate AI SBC Solver for EA FC 26. Auto-fill any Squad Building Challenge in 3 seconds using your untradeable club players. Join the free beta!",
   alternates: { canonical: "https://elitefutbot.com/ai-sbc-solver" },
   openGraph: {
-    title: "AI SBC Solver FC 26 & FC 27 — #1 Automated SBC Engine",
-    description: "Automate EA FC Squad Building Challenges in 1 click. Uses your untradeable club inventory first. Releasing soon — Join Discord for free beta access!",
+    title: "AI SBC Solver – Auto-Fill Squad Building Challenges",
+    description: "Automate EA FC Squad Building Challenges in 1 click. Uses your untradeable club inventory first.",
     url: "https://elitefutbot.com/ai-sbc-solver",
     siteName: "Elite FUT SNIPER",
     type: "website",
   },
   twitter: {
-    card: "summary_large_image",
-    title: "AI SBC Solver FC 26 & FC 27 — #1 AI SBC Engine",
-    description: "Automate any EA FC SBC with 33/33 chemistry. Releasing soon — Join Discord for free beta access!",
+    title: "AI SBC Solver – Auto-Fill Squad Building Challenges",
+    description: "Automate any EA FC SBC with 33/33 chemistry.",
   }
 };
 
@@ -264,14 +251,14 @@ export default function AISBCSolverHubPage() {
             <div className="rounded-2xl border border-white/10 overflow-hidden bg-card/60 backdrop-blur-md">
               <div className="grid grid-cols-3 p-4 bg-white/5 border-b border-white/10 text-xs font-black uppercase tracking-wider text-gray-400">
                 <div>Feature</div>
-                <div className="text-center text-gray-500">Manual SBC</div>
+                <div className="text-center text-gray-400">Manual SBC</div>
                 <div className="text-right text-primary">AI SBC Solver</div>
               </div>
               <div className="divide-y divide-white/5 text-xs sm:text-sm font-medium">
                 {COMPARISON.map((row) => (
                   <div key={row.feature} className="grid grid-cols-3 p-4 items-center">
                     <div className="font-bold text-white">{row.feature}</div>
-                    <div className="text-center text-gray-500">{row.manual}</div>
+                    <div className="text-center text-gray-400">{row.manual}</div>
                     <div className="text-right font-bold text-primary flex items-center justify-end gap-1">
                       <span>{row.ai}</span>
                       <span className="material-symbols-outlined text-sm text-primary">check_circle</span>

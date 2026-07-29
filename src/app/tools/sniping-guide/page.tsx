@@ -2,30 +2,19 @@ import { Metadata } from "next";
 import Link from "next/link";
 
 export const metadata: Metadata = {
-  title: "EA FC 26 & FC 27 Sniping Guide — Ultimate FUT Trading & Filter Settings",
-  description:
-    "Master transfer market sniping in EA FC 26 & FC 27. Expert filter settings for Meta Icons, TOTW cards, and SBC fodder with 100% anti-detection safety rules.",
-  keywords: [
-    "EA FC 26 sniping guide",
-    "FC 27 FUT sniping filters",
-    "how to snipe FC 26 players",
-    "best FUT sniping settings",
-    "FC 26 transfer market trading bot",
-    "FUT fodder sniping filter",
-    "undefeated EA FC sniping setup"
-  ],
+  title: "FC 26 Sniping Guide – Best FUT Filters & Methods",
+  description: "Master transfer market sniping in EA FC 26 & FC 27. Discover the best FUT filter settings for Icons and fodder with anti-detection safety rules.",
   alternates: { canonical: "https://elitefutbot.com/tools/sniping-guide" },
   openGraph: {
-    title: "EA FC 26 & FC 27 Sniping Guide — Ultimate FUT Trading & Filter Settings",
+    title: "FC 26 Sniping Guide – Best FUT Filters & Methods",
     description: "Master transfer market sniping with expert filter settings and anti-detection safety rules.",
     url: "https://elitefutbot.com/tools/sniping-guide",
     siteName: "Elite FUT SNIPER",
-    type: "article",
+    type: "website",
   },
   twitter: {
-    card: "summary_large_image",
-    title: "EA FC 26 & FC 27 Sniping Guide",
-    description: "Expert EA FC transfer market sniping filters and safety guidelines.",
+    title: "FC 26 Sniping Guide – Best FUT Filters & Methods",
+    description: "Master transfer market sniping with expert filter settings.",
   }
 };
 
@@ -224,11 +213,11 @@ export default function SnipingGuidePage() {
 
                   <div className="grid grid-cols-2 gap-2 p-3 rounded-xl bg-white/[0.02] border border-white/5 text-xs font-mono">
                     <div>
-                      <span className="text-[10px] text-gray-500 block uppercase">Target Cards</span>
+                      <span className="text-[10px] text-gray-400 block uppercase">Target Cards</span>
                       <span className="font-bold text-white line-clamp-1">{filter.target}</span>
                     </div>
                     <div>
-                      <span className="text-[10px] text-gray-500 block uppercase">Est. Profit</span>
+                      <span className="text-[10px] text-gray-400 block uppercase">Est. Profit</span>
                       <span className="font-bold text-primary">{filter.profitPerCard}</span>
                     </div>
                   </div>

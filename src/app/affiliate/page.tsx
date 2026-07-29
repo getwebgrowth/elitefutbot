@@ -2,35 +2,24 @@ import { Metadata } from "next";
 import AffiliatePageClient from "./AffiliatePageClient";
 
 export const metadata: Metadata = {
-  title: "Affiliate & Partner Program | Elite FUT SNIPER",
-  description: "Join the Elite FUT SNIPER Affiliate Program. Earn 50% lifetime recurring commission promoting the #1 FC 26 & FC 27 sniping bot & autobuyer. Custom discount codes and VIP rates for YouTube, TikTok & Twitch creators.",
-  keywords: [
-    "Elite FUT SNIPER affiliate",
-    "FUT Sniper partner program",
-    "FIFA sniping bot commission",
-    "FC 26 autobuyer affiliate",
-    "FC 27 affiliate program",
-    "FIFA trading bot sponsorships",
-    "earn with FUT sniping bot",
-    "FIFA content creator affiliate",
-    "weekly payouts crypto paypal"
-  ],
+  title: "Affiliate Program | Elite FUT SNIPER",
+  description: "Join the Elite FUT SNIPER Affiliate Program. Earn 50% lifetime recurring commission promoting the #1 FC 26 sniping bot.",
   alternates: {
     canonical: "https://elitefutbot.com/affiliate",
   },
   openGraph: {
-    title: "Elite FUT SNIPER Affiliate Program | 50% Lifetime RevShare",
-    description: "Earn 50% lifetime recurring commission promoting the fastest FC 26 & FC 27 sniping bot. TikTok, YouTube, & Twitch creators welcome with VIP rates.",
+    title: "Affiliate Program | Elite FUT SNIPER",
+    description: "Join the Elite FUT SNIPER Affiliate Program and earn 50% recurring commission.",
     url: "https://elitefutbot.com/affiliate",
     siteName: "Elite FUT SNIPER",
     type: "website",
   },
   twitter: {
-    card: "summary_large_image",
-    title: "Elite FUT SNIPER Affiliate Program | 50% Lifetime RevShare",
-    description: "Earn 50% lifetime recurring commission promoting the #1 FC 26 & FC 27 sniping bot. Special creator rates & sponsorships available.",
+    title: "Affiliate Program | Elite FUT SNIPER",
+    description: "Earn 50% recurring commission promoting the #1 FC 26 sniping bot.",
   }
 };
+
 
 export default function Page() {
   const faqs = [

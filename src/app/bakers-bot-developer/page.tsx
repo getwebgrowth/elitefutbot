@@ -4,24 +4,18 @@ import Image from 'next/image';
 
 export const metadata: Metadata = {
   title: "Baker's Bot Developer Creates Elite FUT SNIPER",
-  description: "Built by the core engineer behind Baker's Bot (2020–2025). Elite FUT SNIPER is an independent 100% local FC 26 sniping bot built from scratch.",
-  keywords: [
-    "Baker's Bot",
-    "Baker's Bot developer",
-    "who built Baker's Bot",
-    "FUT sniping bot",
-    "FC 26 sniping bot",
-    "Elite FUT SNIPER",
-    "FUT autobuyer",
-    "local Chrome extension sniper"
-  ],
+  description: "Built by the core engineer behind Baker's Bot. Elite FUT SNIPER is an independent 100% local FC 26 sniping bot built from scratch.",
   alternates: { canonical: "https://elitefutbot.com/bakers-bot-developer" },
   openGraph: {
     title: "Baker's Bot Developer Creates Elite FUT SNIPER",
-    description: "Built by the core engineer behind Baker's Bot (2020–2025). Elite FUT SNIPER is an independent 100% local FC 26 sniping bot built from scratch.",
+    description: "Built by the core engineer behind Baker's Bot. Elite FUT SNIPER is an independent 100% local FC 26 sniping bot.",
     url: "https://elitefutbot.com/bakers-bot-developer",
     siteName: "Elite FUT SNIPER",
-    type: "website",
+    type: "article",
+  },
+  twitter: {
+    title: "Baker's Bot Developer Creates Elite FUT SNIPER",
+    description: "Built by the core engineer behind Baker's Bot.",
   }
 };
 

@@ -1,16 +1,19 @@
 import { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Volt Velocity - Elite FUT SNIPER Design System",
+  title: "Volt Velocity Design System | Elite FUT SNIPER",
   description: "The core design system behind Elite FUT SNIPER. Kinetic aesthetics, high-performance UI components, and premium trading interfaces.",
-  keywords: ["Volt Velocity", "design system", "Elite FUT SNIPER UI", "FUT Sniper UI", "trading interface design"],
   alternates: { canonical: "https://elitefutbot.com/volt-velocity" },
   openGraph: {
-    title: "Volt Velocity - Elite FUT SNIPER Design System",
+    title: "Volt Velocity Design System | Elite FUT SNIPER",
     description: "The core design system behind Elite FUT SNIPER.",
     url: "https://elitefutbot.com/volt-velocity",
     siteName: "Elite FUT SNIPER",
     type: "website",
+  },
+  twitter: {
+    title: "Volt Velocity Design System | Elite FUT SNIPER",
+    description: "The core design system behind Elite FUT SNIPER.",
   }
 };
 

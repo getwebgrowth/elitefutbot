@@ -4,8 +4,7 @@
       "command": "/Users/ishara/.nvm/versions/node/v22.21.1/bin/npx",
       "args": [
         "-y",
-        "chrome-devtools-mcp@latest",
-        "--browser-url=http://127.0.0.1:9222"
+        "chrome-devtools-mcp@latest"
       ],
       "env": {
         "PATH": "/Users/ishara/.nvm/versions/node/v22.21.1/bin:/usr/local/bin:/usr/bin:/bin"

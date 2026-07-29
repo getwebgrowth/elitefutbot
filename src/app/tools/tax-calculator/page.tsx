@@ -127,7 +127,7 @@ export default function TaxCalculatorPage() {
                     placeholder="e.g. 85000"
                     className="w-full px-4 py-3.5 rounded-xl bg-black/60 border border-white/15 focus:border-primary focus:outline-none text-white font-mono font-bold text-lg"
                   />
-                  <span className="absolute right-4 top-1/2 -translate-y-1/2 text-xs font-bold text-gray-500 uppercase">
+                  <span className="absolute right-4 top-1/2 -translate-y-1/2 text-xs font-bold text-gray-400 uppercase">
                     Coins
                   </span>
                 </div>
@@ -145,7 +145,7 @@ export default function TaxCalculatorPage() {
                     placeholder="e.g. 110000"
                     className="w-full px-4 py-3.5 rounded-xl bg-black/60 border border-white/15 focus:border-primary focus:outline-none text-primary font-mono font-bold text-lg"
                   />
-                  <span className="absolute right-4 top-1/2 -translate-y-1/2 text-xs font-bold text-gray-500 uppercase">
+                  <span className="absolute right-4 top-1/2 -translate-y-1/2 text-xs font-bold text-gray-400 uppercase">
                     Coins
                   </span>
                 </div>
@@ -164,7 +164,7 @@ export default function TaxCalculatorPage() {
                     min="1"
                     className="w-full px-4 py-3.5 rounded-xl bg-black/60 border border-white/15 focus:border-primary focus:outline-none text-white font-mono font-bold text-lg"
                   />
-                  <span className="absolute right-4 top-1/2 -translate-y-1/2 text-xs font-bold text-gray-500 uppercase">
+                  <span className="absolute right-4 top-1/2 -translate-y-1/2 text-xs font-bold text-gray-400 uppercase">
                     Cards
                   </span>
                 </div>
@@ -181,7 +181,7 @@ export default function TaxCalculatorPage() {
                 <div className="text-2xl font-headline font-bold text-red-400 font-mono">
                   - {eaTax.toLocaleString()} <span className="text-xs">Coins</span>
                 </div>
-                <span className="text-[10px] text-gray-500 block">5% deducted by EA</span>
+                <span className="text-[10px] text-gray-400 block">5% deducted by EA</span>
               </div>
 
               <div className="p-5 rounded-2xl bg-white/[0.02] border border-white/10 space-y-1">
@@ -191,7 +191,7 @@ export default function TaxCalculatorPage() {
                 <div className="text-2xl font-headline font-bold text-amber-400 font-mono">
                   {breakEvenSingle.toLocaleString()} <span className="text-xs">Coins</span>
                 </div>
-                <span className="text-[10px] text-gray-500 block">Min. price for 0 loss</span>
+                <span className="text-[10px] text-gray-400 block">Min. price for 0 loss</span>
               </div>
 
               <div className="p-5 rounded-2xl bg-white/[0.02] border border-white/10 space-y-1">
@@ -201,7 +201,7 @@ export default function TaxCalculatorPage() {
                 <div className={`text-2xl font-headline font-bold font-mono ${netProfit >= 0 ? "text-primary" : "text-red-400"}`}>
                   {netProfit >= 0 ? `+${profitMargin}%` : `${profitMargin}%`}
                 </div>
-                <span className="text-[10px] text-gray-500 block">ROI on total cost</span>
+                <span className="text-[10px] text-gray-400 block">ROI on total cost</span>
               </div>
 
               <div className="p-5 rounded-2xl bg-primary/10 border border-primary/40 space-y-1">
@@ -232,13 +232,13 @@ export default function TaxCalculatorPage() {
             <div className="rounded-2xl border border-white/10 overflow-hidden bg-card/60 backdrop-blur-md">
               <div className="grid grid-cols-3 p-4 bg-white/5 border-b border-white/10 text-xs font-black uppercase tracking-wider text-gray-400">
                 <div>Feature</div>
-                <div className="text-center text-gray-500">Manual Calculation</div>
+                <div className="text-center text-gray-400">Manual Calculation</div>
                 <div className="text-right text-primary">Elite Sniper Engine</div>
               </div>
               <div className="divide-y divide-white/5 text-xs sm:text-sm font-medium">
                 <div className="grid grid-cols-3 p-4 items-center">
                   <div className="font-bold text-white">Tax Accuracy</div>
-                  <div className="text-center text-gray-500">Human Error Prone</div>
+                  <div className="text-center text-gray-400">Human Error Prone</div>
                   <div className="text-right font-bold text-primary flex items-center justify-end gap-1">
                     <span>100% Math-Verified</span>
                     <span className="material-symbols-outlined text-sm">check_circle</span>
@@ -246,7 +246,7 @@ export default function TaxCalculatorPage() {
                 </div>
                 <div className="grid grid-cols-3 p-4 items-center">
                   <div className="font-bold text-white">Calculation Speed</div>
-                  <div className="text-center text-gray-500">15 – 30 Seconds</div>
+                  <div className="text-center text-gray-400">15 – 30 Seconds</div>
                   <div className="text-right font-bold text-primary flex items-center justify-end gap-1">
                     <span>Instant Real-Time</span>
                     <span className="material-symbols-outlined text-sm">bolt</span>
@@ -254,7 +254,7 @@ export default function TaxCalculatorPage() {
                 </div>
                 <div className="grid grid-cols-3 p-4 items-center">
                   <div className="font-bold text-white">Break-Even Detection</div>
-                  <div className="text-center text-gray-500">Rough Estimate</div>
+                  <div className="text-center text-gray-400">Rough Estimate</div>
                   <div className="text-right font-bold text-primary flex items-center justify-end gap-1">
                     <span>Exact Coin Target</span>
                     <span className="material-symbols-outlined text-sm">target</span>

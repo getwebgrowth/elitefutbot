@@ -24,6 +24,30 @@ export default function Home() {
       },
       {
         "@type": "Question",
+        "name": "What is the difference between a FUT Snipe Bot and a FUT Autobuyer?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "A FUT Snipe Bot specifically targets undervalued player listings on the EA FC Web App using millisecond filter refreshes (sniping), whereas a FUT Autobuyer automates broader trading tasks like mass buying fodder, automatic listing, and continuous market monitoring. Elite FUT SNIPER combines both powerful capabilities into one unified Chrome extension."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Why is a local Chrome Extension safer than cloud-based FIFA sniping bots?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Cloud-based bots require you to upload your EA account credentials and session tokens to external servers, creating massive security and ban risks. Our local Chrome Extension FIFA Sniping Bot executes 100% locally inside your active browser session, utilizing stealth behavioral delays and anti-ban jitter algorithms to protect your club."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Does Elite FUT SNIPER support FC 25, FC 26, and upcoming FC 27 Web Apps?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Yes! Elite FUT SNIPER is engineered for total cross-title compatibility across FC 25, FC 26, and upcoming FC 27. Our team continuously updates search filters and Web App adapters so your FC26 snipe bot features stay operational on day one of every new season release."
+        }
+      },
+      {
+        "@type": "Question",
         "name": "How does the EA FC 26 SBC Solver work?",
         "acceptedAnswer": {
           "@type": "Answer",
@@ -36,6 +60,14 @@ export default function Home() {
         "acceptedAnswer": {
           "@type": "Answer",
           "text": "Security is our priority. Since our bot runs locally in your browser instead of on remote cloud servers, you never share passwords or cookies with third parties. We also utilize human-like delays, jitter clicks, and behavioral patterns to ensure account safety."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "How do I claim Free Beta access for the FC 26 Sniping Bot?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Simply join our official Discord community! We are offering free lifetime beta access for early adopters. Once you join, you will receive step-by-step instructions on installing the browser extension and configuring your first FC 26 Autobuyer filters."
         }
       }
     ]
@@ -94,7 +126,7 @@ export default function Home() {
             Engineered by Elites.
           </h1>
           <p className="text-gray-400 text-base sm:text-lg max-w-xl mx-auto mb-7 leading-relaxed font-medium">
-            Dominate the transfer market with <span className="text-white font-semibold">20ms search speeds</span>, delivered as a secure, local Chrome Extension running directly in your browser.
+            Elite FUT SNIPER is the world's fastest and safest EA FC 26 and FC 27 sniping bot and autobuyer. It operates as a 100% local Chrome extension running directly in your browser, enabling sub-20ms market search speeds while completely protecting your account from cloud-server bans.
           </p>
           <div className="flex flex-col sm:flex-row gap-3.5 justify-center items-center mb-8">
             <Link className="group relative px-7 py-3.5 bg-primary text-dark font-black text-base rounded-xl transition-all hover:scale-105 hover:shadow-[0_0_35px_rgba(204,255,0,0.4)] overflow-hidden" href="#pricing">
@@ -153,7 +185,7 @@ export default function Home() {
           <div className="text-center mb-16">
             <h2 className="text-3xl md:text-5xl font-black mb-6">Why We <span className="text-primary">Outperform</span> Everything.</h2>
             <p className="text-gray-400 max-w-2xl mx-auto">
-              Dominate the market with the industry&apos;s most advanced feature set, built by the legendary <span className="text-primary font-bold">Bakers Bot Dev Team</span> for secure, local automation.
+              Elite FUT SNIPER outperforms competitor bots because it runs locally inside your browser rather than relying on external cloud servers. Developed by the legendary Bakers Bot Dev Team, this secure architecture eliminates datacenter ping latency, ensuring you snipe FC 26 players in milliseconds without compromising account safety.
             </p>
           </div>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
@@ -264,21 +296,21 @@ export default function Home() {
         <div className="max-w-5xl mx-auto px-4 relative z-10">
           <div className="text-center mb-16">
             <h2 className="text-3xl md:text-6xl font-black mb-6">Us vs. <span className="text-primary">Competitors</span></h2>
-            <p className="text-gray-400 text-lg">Why thousands of professional traders are choosing Elite FUT SNIPER for FC 25/26.</p>
+            <p className="text-gray-400 text-lg max-w-3xl mx-auto">Unlike traditional cloud-based competitor bots that risk your account via server-side pings and credential sharing, Elite FUT SNIPER is a local Chrome extension. Thousands of professional traders choose our FC 26 autobuyer for its zero-password-sharing architecture, integrated AI SBC solver, and superior 20ms response times.</p>
           </div>
           <div className="glass-card rounded-[2.5rem] overflow-hidden border border-white/10 shadow-[0_20px_50px_rgba(0,0,0,0.5)]">
             <div className="overflow-x-auto">
               <table className="w-full text-left border-collapse">
                 <thead>
                   <tr className="border-b border-white/10 bg-white/5">
-                    <th className="py-8 px-8 text-gray-500 font-bold text-xs uppercase tracking-[0.2em]">Core Capability</th>
+                    <th className="py-8 px-8 text-gray-400 font-bold text-xs uppercase tracking-[0.2em]">Core Capability</th>
                     <th className="py-8 px-8 text-primary font-black text-center bg-primary/5 border-l border-r border-primary/20">
                       <div className="flex flex-col items-center">
                         <span className="text-[10px] uppercase tracking-[0.3em] text-primary/60 mb-2">The Gold Standard</span>
                         <span className="text-2xl tracking-tighter">ELITE FUT SNIPER</span>
                       </div>
                     </th>
-                    <th className="py-8 px-8 text-gray-500 font-bold text-xs uppercase tracking-[0.2em] text-center">Typical Bots</th>
+                    <th className="py-8 px-8 text-gray-400 font-bold text-xs uppercase tracking-[0.2em] text-center">Typical Bots</th>
                   </tr>
                 </thead>
                 <tbody className="divide-y divide-white/5">
@@ -346,7 +378,7 @@ export default function Home() {
                 <h3 className="text-xl font-bold mb-2 text-white">Free Beta</h3>
                 <div className="flex items-baseline gap-1">
                   <span className="text-5xl font-black text-white">$0</span>
-                  <span className="text-gray-500 font-medium">/mo</span>
+                  <span className="text-gray-400 font-medium">/mo</span>
                 </div>
                 <p className="text-sm text-gray-400 mt-4">Perfect for testing the waters and learning the basics of sniping.</p>
               </div>
@@ -363,7 +395,7 @@ export default function Home() {
                   <span className="material-symbols-outlined text-primary text-base">check_circle</span>
                   Discord Community Support
                 </li>
-                <li className="flex items-center gap-3 text-sm text-gray-600">
+                <li className="flex items-center gap-3 text-sm text-gray-400">
                   <span className="material-symbols-outlined text-base">close</span>
                   Multi-Tab Sniping
                 </li>
@@ -385,7 +417,7 @@ export default function Home() {
                 </h3>
                 <div className="flex items-baseline gap-2">
                   <span className="text-5xl font-black text-white">$19.99</span>
-                  <span className="text-gray-500 line-through text-lg decoration-2 decoration-red-500/50">$49.99</span>
+                  <span className="text-gray-400 line-through text-lg decoration-2 decoration-red-500/50">$49.99</span>
                 </div>
                 <p className="text-sm text-primary mt-4 font-bold bg-primary/10 inline-block px-2 py-1 rounded">Currently FREE for Early Beta Testers!</p>
               </div>
@@ -440,7 +472,7 @@ export default function Home() {
                 <div className="w-12 h-12 rounded-full bg-primary/20 flex items-center justify-center font-black text-primary">AT</div>
                 <div>
                   <div className="font-bold text-white">Alex_Trader21</div>
-                  <div className="text-xs text-gray-500">Verified Pro Member</div>
+                  <div className="text-xs text-gray-400">Verified Pro Member</div>
                 </div>
               </div>
             </div>
@@ -457,7 +489,7 @@ export default function Home() {
                 <div className="w-12 h-12 rounded-full bg-primary/20 flex items-center justify-center font-black text-primary">FK</div>
                 <div>
                   <div className="font-bold text-white">FUT_King</div>
-                  <div className="text-xs text-gray-500">Beta Tester Since Day 1</div>
+                  <div className="text-xs text-gray-400">Beta Tester Since Day 1</div>
                 </div>
               </div>
             </div>
@@ -474,7 +506,7 @@ export default function Home() {
                 <div className="w-12 h-12 rounded-full bg-primary/20 flex items-center justify-center font-black text-primary">SG</div>
                 <div>
                   <div className="font-bold text-white">Sarah_G</div>
-                  <div className="text-xs text-gray-500">Elite Division Trader</div>
+                  <div className="text-xs text-gray-400">Elite Division Trader</div>
                 </div>
               </div>
             </div>
@@ -485,8 +517,12 @@ export default function Home() {
       <section className="py-24 bg-dark" id="faq">
         <div className="max-w-4xl mx-auto px-4">
           <div className="text-center mb-16">
+            <div className="inline-flex items-center gap-2 bg-primary/10 border border-primary/20 px-3 py-1 rounded-full text-xs font-bold text-primary mb-4">
+              <span className="material-symbols-outlined text-sm">help_outline</span>
+              FAQ &amp; SEARCH INSIGHTS
+            </div>
             <h2 className="text-3xl md:text-5xl font-black mb-4">Frequently Asked <span className="text-primary">Questions</span></h2>
-            <p className="text-gray-400">Everything you need to know about the world&apos;s most powerful trading tool.</p>
+            <p className="text-gray-400 max-w-3xl mx-auto">Find comprehensive answers about our FC 26 sniping bot, autobuyer features, and security protocols below. Learn why our local Chrome extension architecture provides faster market search speeds, eliminates EA ban risks, and operates without ever requesting your Ultimate Team account passwords.</p>
           </div>
           <div className="space-y-4">
             <div className="glass-card rounded-2xl overflow-hidden border border-white/10 hover:border-primary/30 transition-all">
@@ -508,6 +544,33 @@ export default function Home() {
               </div>
             </div>
             <div className="glass-card rounded-2xl overflow-hidden border border-white/10 hover:border-primary/30 transition-all">
+              <button type="button" aria-expanded="true" aria-label="Toggle answer for What is the difference between a FUT Snipe Bot and a FUT Autobuyer" className="w-full flex items-center justify-between p-6 text-left focus:outline-none">
+                <span className="font-bold text-white">What is the difference between a FUT Snipe Bot and a FUT Autobuyer?</span>
+                <span className="material-symbols-outlined text-primary" aria-hidden="true">expand_more</span>
+              </button>
+              <div className="px-6 pb-6 text-gray-400 text-sm">
+                A <strong>FUT Snipe Bot</strong> specifically targets undervalued player listings on the EA FC Web App using millisecond filter refreshes (sniping), whereas a <strong>FUT Autobuyer</strong> automates broader trading tasks like mass buying fodder, automatic listing, and continuous market monitoring. Elite FUT SNIPER combines both powerful capabilities into one unified Chrome extension.
+              </div>
+            </div>
+            <div className="glass-card rounded-2xl overflow-hidden border border-white/10 hover:border-primary/30 transition-all">
+              <button type="button" aria-expanded="true" aria-label="Toggle answer for Why is a local Chrome Extension safer than cloud-based FIFA sniping bots" className="w-full flex items-center justify-between p-6 text-left focus:outline-none">
+                <span className="font-bold text-white">Why is a local Chrome Extension safer than cloud-based FIFA sniping bots?</span>
+                <span className="material-symbols-outlined text-primary" aria-hidden="true">expand_more</span>
+              </button>
+              <div className="px-6 pb-6 text-gray-400 text-sm">
+                Cloud-based bots require you to upload your EA account credentials and session tokens to external servers, creating massive security and ban risks. Our local <strong>Chrome Extension FIFA Sniping Bot</strong> executes 100% locally inside your active browser session, utilizing stealth behavioral delays and anti-ban jitter algorithms to protect your club.
+              </div>
+            </div>
+            <div className="glass-card rounded-2xl overflow-hidden border border-white/10 hover:border-primary/30 transition-all">
+              <button type="button" aria-expanded="true" aria-label="Toggle answer for Does Elite FUT SNIPER support FC 25, FC 26, and upcoming FC 27 Web Apps" className="w-full flex items-center justify-between p-6 text-left focus:outline-none">
+                <span className="font-bold text-white">Does Elite FUT SNIPER support FC 25, FC 26, and upcoming FC 27 Web Apps?</span>
+                <span className="material-symbols-outlined text-primary" aria-hidden="true">expand_more</span>
+              </button>
+              <div className="px-6 pb-6 text-gray-400 text-sm">
+                Yes! Elite FUT SNIPER is engineered for total cross-title compatibility across <strong>FC 25, FC 26, and upcoming FC 27</strong>. Our team continuously updates search filters and Web App adapters so your <strong>FC26 snipe bot</strong> features stay operational on day one of every new season release.
+              </div>
+            </div>
+            <div className="glass-card rounded-2xl overflow-hidden border border-white/10 hover:border-primary/30 transition-all">
               <button type="button" aria-expanded="true" aria-label="Toggle answer for How does the EA FC 26 SBC Solver work" className="w-full flex items-center justify-between p-6 text-left focus:outline-none">
                 <span className="font-bold text-white">How does the EA FC 26 SBC Solver work?</span>
                 <span className="material-symbols-outlined text-primary" aria-hidden="true">expand_more</span>
@@ -523,6 +586,15 @@ export default function Home() {
               </button>
               <div className="px-6 pb-6 text-gray-400 text-sm">
                 Security is our priority. Since our bot runs locally in your browser instead of on remote cloud servers, you never share passwords or cookies with third parties. We also utilize human-like delays, jitter clicks, and behavioral patterns to ensure account safety.
+              </div>
+            </div>
+            <div className="glass-card rounded-2xl overflow-hidden border border-white/10 hover:border-primary/30 transition-all">
+              <button type="button" aria-expanded="true" aria-label="Toggle answer for How do I claim Free Beta access for the FC 26 Sniping Bot" className="w-full flex items-center justify-between p-6 text-left focus:outline-none">
+                <span className="font-bold text-white">How do I claim Free Beta access for the FC 26 Sniping Bot?</span>
+                <span className="material-symbols-outlined text-primary" aria-hidden="true">expand_more</span>
+              </button>
+              <div className="px-6 pb-6 text-gray-400 text-sm">
+                Simply join our official Discord community! We are offering free lifetime beta access for early adopters. Once you join, you will receive step-by-step instructions on installing the browser extension and configuring your first <strong>FC 26 Autobuyer</strong> filters.
               </div>
             </div>
           </div>

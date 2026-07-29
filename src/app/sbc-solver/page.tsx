@@ -2,29 +2,18 @@ import { Metadata } from "next";
 import Link from "next/link";
 
 export const metadata: Metadata = {
-  title: "EA FC 26 & FC 27 SBC Solutions Database — Cheapest Solutions",
-  description:
-    "Browse the cheapest EA FC 26 & FC 27 SBC solutions for every active Squad Building Challenge. Filter Icon, Promo, POTM, and Upgrade SBCs with real-time coin cost estimates.",
-  keywords: [
-    "EA FC 26 SBC solutions",
-    "cheapest SBC solutions FC 26",
-    "FC 27 SBC solver database",
-    "POTM SBC solution FC 26",
-    "Icon SBC solution FC 26",
-    "Marquee matchups SBC solution",
-    "FUT SBC solutions"
-  ],
+  title: "EA FC 26 SBC Solutions – Cheapest SBC Squad Costs",
+  description: "Browse the cheapest EA FC 26 & FC 27 SBC solutions for every active Squad Building Challenge. Filter Icon and Promo SBCs with real-time coin cost estimates.",
   alternates: { canonical: "https://elitefutbot.com/sbc-solver" },
   openGraph: {
-    title: "EA FC 26 & FC 27 SBC Solutions Database — Cheapest Solutions",
+    title: "EA FC 26 SBC Solutions – Cheapest SBC Squad Costs",
     description: "Browse every active EA FC Squad Building Challenge solution with cheapest market prices.",
     url: "https://elitefutbot.com/sbc-solver",
     siteName: "Elite FUT SNIPER",
     type: "website",
   },
   twitter: {
-    card: "summary_large_image",
-    title: "EA FC 26 & FC 27 SBC Solutions Database",
+    title: "EA FC 26 SBC Solutions – Cheapest SBC Squad Costs",
     description: "Browse active SBC solutions and cheapest squad costs.",
   }
 };
@@ -217,7 +206,7 @@ export default function SBCSolutionsDatabasePage() {
 
           {/* Category Filter Pills */}
           <div className="flex items-center gap-2 overflow-x-auto pb-2 scrollbar-none border-b border-white/10">
-            <span className="text-xs font-bold text-gray-500 uppercase tracking-widest mr-2 shrink-0">Filter:</span>
+            <span className="text-xs font-bold text-gray-400 uppercase tracking-widest mr-2 shrink-0">Filter:</span>
             {CATEGORIES.map((cat, idx) => (
               <button
                 key={cat}
