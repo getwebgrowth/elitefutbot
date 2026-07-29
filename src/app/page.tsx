@@ -490,36 +490,36 @@ export default function Home() {
           </div>
           <div className="space-y-4">
             <div className="glass-card rounded-2xl overflow-hidden border border-white/10 hover:border-primary/30 transition-all">
-              <button className="w-full flex items-center justify-between p-6 text-left focus:outline-none">
+              <button type="button" aria-expanded="true" aria-label="Toggle answer for What makes this the Best FIFA Sniping Bot for FC 26" className="w-full flex items-center justify-between p-6 text-left focus:outline-none">
                 <span className="font-bold text-white">What makes this the Best FIFA Sniping Bot for FC 26?</span>
-                <span className="material-symbols-outlined text-primary">expand_more</span>
+                <span className="material-symbols-outlined text-primary" aria-hidden="true">expand_more</span>
               </button>
               <div className="px-6 pb-6 text-gray-400 text-sm">
                 Our bot is designed as a native Chrome Extension that injects directly into the EA Web App. Running locally means your login credentials and session tokens never leave your computer, offering unmatched security and 20ms search speeds.
               </div>
             </div>
             <div className="glass-card rounded-2xl overflow-hidden border border-white/10 hover:border-primary/30 transition-all">
-              <button className="w-full flex items-center justify-between p-6 text-left focus:outline-none">
+              <button type="button" aria-expanded="true" aria-label="Toggle answer for Is there an FC 26 Autobuyer feature included" className="w-full flex items-center justify-between p-6 text-left focus:outline-none">
                 <span className="font-bold text-white">Is there an FC 26 Autobuyer feature included?</span>
-                <span className="material-symbols-outlined text-primary">expand_more</span>
+                <span className="material-symbols-outlined text-primary" aria-hidden="true">expand_more</span>
               </button>
               <div className="px-6 pb-6 text-gray-400 text-sm">
                 Yes! We have already optimized our local autobuyer engine for future releases, ensuring your <strong>FC 26 Autobuyer</strong> capabilities are ready on day one directly within your browser extension.
               </div>
             </div>
             <div className="glass-card rounded-2xl overflow-hidden border border-white/10 hover:border-primary/30 transition-all">
-              <button className="w-full flex items-center justify-between p-6 text-left focus:outline-none">
+              <button type="button" aria-expanded="true" aria-label="Toggle answer for How does the EA FC 26 SBC Solver work" className="w-full flex items-center justify-between p-6 text-left focus:outline-none">
                 <span className="font-bold text-white">How does the EA FC 26 SBC Solver work?</span>
-                <span className="material-symbols-outlined text-primary">expand_more</span>
+                <span className="material-symbols-outlined text-primary" aria-hidden="true">expand_more</span>
               </button>
               <div className="px-6 pb-6 text-gray-400 text-sm">
                 Our <strong>EA FC 26 SBC Solver</strong> integration works directly within your browser session to automatically source and buy the cheapest players required for any Squad Building Challenge, saving you hours of manual searching.
               </div>
             </div>
             <div className="glass-card rounded-2xl overflow-hidden border border-white/10 hover:border-primary/30 transition-all">
-              <button className="w-full flex items-center justify-between p-6 text-left focus:outline-none">
+              <button type="button" aria-expanded="true" aria-label="Toggle answer for Is it really a Safe Sniping Bot" className="w-full flex items-center justify-between p-6 text-left focus:outline-none">
                 <span className="font-bold text-white">Is it really a Safe Sniping Bot?</span>
-                <span className="material-symbols-outlined text-primary">expand_more</span>
+                <span className="material-symbols-outlined text-primary" aria-hidden="true">expand_more</span>
               </button>
               <div className="px-6 pb-6 text-gray-400 text-sm">
                 Security is our priority. Since our bot runs locally in your browser instead of on remote cloud servers, you never share passwords or cookies with third parties. We also utilize human-like delays, jitter clicks, and behavioral patterns to ensure account safety.
