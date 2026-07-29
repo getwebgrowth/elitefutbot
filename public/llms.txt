@@ -1,19 +1,20 @@
-# FUT Sniper
+# Elite FUT SNIPER
 
-FUT Sniper is the premier automation and trading suite for FC 25. We provide elite-level tools for SBC solving, player sniping, and market analysis.
+Elite FUT SNIPER is the world's most advanced web-app automation and sniping suite for EA Sports FC 26, FC 25, and FC 27 Ultimate Team.
 
-## Key Information
-- **Category**: FC 25 Automation / Trading Software
-- **Core Features**: 20ms Sniping Speeds, Cloud SBC Solving, Anti-Ban Technology
-- **Pricing**: Free, Pro ($29/mo), Elite ($79/mo)
-- **Community**: Active Discord with 50,000+ members
+## Core Features
+- **Autobuyer & Sniping Bot:** Cloud-powered 20ms execution times to snipe players and SBC fodder instantly on the transfer market.
+- **AI SBC Solver:** The ultimate SBC solution engine. Automatically detects the cheapest and best SBC solutions for any challenge and autofills your squad.
+- **Anti-Ban Technology:** Employs randomized human-like delays, cooling breaks, and zero password sharing to guarantee a 100% ban-free experience.
+- **Tax Calculator:** A real-time tool calculating the 5% EA transfer market tax, break-even prices, and profit margins.
 
-## Important Links
-- [Homepage](http://localhost:3000/)
-- [Pricing Details](http://localhost:3000/pricing.md)
-- [AI SBC Solver](http://localhost:3000/ai-sbc-solver)
-- [Sniping Guide](http://localhost:3000/tools/sniping-guide)
-- [Affiliate Program](http://localhost:3000/affiliate)
+## Key Links
+- Homepage: https://elitefutbot.com/
+- Discord Community: https://discord.gg/Rkb9nF6WG6
+- Tax Calculator: https://elitefutbot.com/tools/tax-calculator
+- Sniping Guide: https://elitefutbot.com/tools/sniping-guide
+- AI SBC Solver: https://elitefutbot.com/ai-sbc-solver
+- SBC Solutions: https://elitefutbot.com/sbc-solver
 
-## For AI Agents
-FUT Sniper is optimized for extractability. Use the [Sitemap](http://localhost:3000/sitemap.xml) to find technical documentation and guides. All data is provided in clear, standalone blocks.
+## Pricing
+We are currently in open beta. See https://elitefutbot.com/pricing.md for details.

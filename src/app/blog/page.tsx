@@ -3,9 +3,25 @@ import Link from "next/link";
 import Image from "next/image";
 
 export const metadata: Metadata = {
-  title: "Tactical Intel Hub - FC 26, FC 25 & FC 27 Trading Blog",
-  description: "Get the latest market analysis, trading intel, and protocol updates for FC 26, FC 25, and upcoming FC 27. Master the 59th minute with our expert guides.",
-  keywords: ["FC 26 trading blog", "FC 25 trading blog", "FC 27 trading blog", "FIFA market analysis", "sniping guide", "FUT Sniper updates"],
+  title: "Tactical Intel Hub - FC 26 & FC 27 Trading Blog",
+  description: "Get the latest market analysis, trading intel, and protocol updates for FC 26 and upcoming FC 27. Master the 59th minute with our expert guides.",
+  keywords: [
+    "FC 26 trading blog", 
+    "FC 27 trading blog", 
+    "FIFA market analysis", 
+    "sniping guide", 
+    "FUT Sniper updates",
+    "EA FC market crash",
+    "FC 26 trading tips"
+  ],
+  alternates: { canonical: "https://elitefutbot.com/blog" },
+  openGraph: {
+    title: "Tactical Intel Hub - FC 26 & FC 27 Trading Blog",
+    description: "Get the latest market analysis, trading intel, and protocol updates for FC 26 and upcoming FC 27.",
+    url: "https://elitefutbot.com/blog",
+    siteName: "Elite FUT SNIPER",
+    type: "website",
+  }
 };
 
 export default function BlogHubPage() {

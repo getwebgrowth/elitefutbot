@@ -1,22 +1,24 @@
-# Pricing — FUT Sniper
+# Pricing — Elite FUT SNIPER
 
-FUT Sniper provides the world's most advanced FC 25 automation tools. All plans include 24/7 Discord support and access to our private trading community.
+## Access Tier
+- Price: Free (Beta Phase)
+- Limits: Full access via Discord
+- Features: 
+  - Elite FUT SNIPER Autobuyer (Chrome Extension)
+  - Tax Calculator
+  - Sniping Filters Guide
+  - Cloud SBC Solutions
+  - Basic Discord Support
 
-## Free Beta
-- Price: $0/month
-- Limits: 1 SBC Solution/day, Manual Sniping Mode
-- Features: Basic Tax Calculator, Community Access
+## Pro / Elite Tier (Releasing Soon)
+- Price: TBD (Expected ~ $29/month)
+- Features:
+  - Advanced AI SBC Engine Automation
+  - 20ms Cloud-based Autobuyer execution
+  - Real-time Premium Market Signals
+  - VIP 1-on-1 Trading Support
 
-## Pro Sniper
-- Price: $29/month (billed annually) | $35/month (billed monthly)
-- Limits: Unlimited SBC Solutions, 1 Automated Sniper Instance
-- Features: 20ms Search Speeds, Anti-Ban Engine, Mobile App Access
-
-## Elite Command
-- Price: $79/month
-- Limits: 5 Concurrent Sniper Instances, Full Cloud Automation
-- Features: Custom SBC Scripting, VIP Support, Early Beta Access to FC 26 Tools
-
-## Contact
-- Sales: sales@futsniper.com
-- Support: https://discord.gg/Rkb9nF6WG6
+## Terms & Info
+- Status: Currently in free open beta. Join Discord for the Chrome Extension key.
+- Guarantee: 100% Anti-Ban Guarantee.
+- Platform Support: EA FC 26, FC 25 & FC 27 Web App.

@@ -15,6 +15,14 @@ export const metadata: Metadata = {
     "FUT autobuyer",
     "local Chrome extension sniper"
   ],
+  alternates: { canonical: "https://elitefutbot.com/bakers-bot-developer" },
+  openGraph: {
+    title: "Baker's Bot Developer Creates Elite FUT SNIPER",
+    description: "Built by the core engineer behind Baker's Bot (2020–2025). Elite FUT SNIPER is an independent 100% local FC 26 sniping bot built from scratch.",
+    url: "https://elitefutbot.com/bakers-bot-developer",
+    siteName: "Elite FUT SNIPER",
+    type: "website",
+  }
 };
 
 export default function BakersBotDeveloperPage() {

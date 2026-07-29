@@ -23,7 +23,7 @@ export const metadata: Metadata = {
   metadataBase: new URL('https://elitefutbot.com'),
   title: "Elite FUT SNIPER - The Ultimate FC 26, FC 25 & FC 27 Sniping Tool & Autobuyer",
   description: "Dominate the FC 26, FC 25, and upcoming FC 27 transfer markets with Elite FUT SNIPER. The best FIFA sniping bot featuring 20ms search speeds, advanced anti-ban tech, and cloud automation.",
-  keywords: ["Elite FUT SNIPER", "FUT Sniper", "FC 26 sniping bot", "FC 25 sniping bot", "FC 27 sniping bot", "FIFA 26 autobuyer", "SBC solver", "FC 26 trading tools", "FIFA sniping tool"],
+  keywords: ["Elite FUT SNIPER", "FUT Sniper", "FC 26 sniping bot", "FC 25 sniping bot", "FC 27 sniping bot", "FIFA 26 autobuyer", "SBC solver", "FC 26 trading tools", "FIFA sniping tool", "EA FC AI Autobuyer", "FC 27 Web App Sniper"],
   alternates: {
     canonical: "https://elitefutbot.com/",
   },
@@ -52,20 +52,47 @@ export const metadata: Metadata = {
 
 const jsonLd = {
   "@context": "https://schema.org",
-  "@type": "SoftwareApplication",
-  "name": "Elite FUT SNIPER",
-  "operatingSystem": "Web, Windows, macOS",
-  "applicationCategory": "GameApplication",
-  "offers": {
-    "@type": "Offer",
-    "price": "29.00",
-    "priceCurrency": "USD"
-  },
-  "aggregateRating": {
-    "@type": "AggregateRating",
-    "ratingValue": "4.9",
-    "ratingCount": "1250"
-  }
+  "@graph": [
+    {
+      "@type": "SoftwareApplication",
+      "@id": "https://elitefutbot.com/#software",
+      "name": "Elite FUT SNIPER",
+      "operatingSystem": "Web, Windows, macOS",
+      "applicationCategory": "GameApplication",
+      "offers": {
+        "@type": "Offer",
+        "price": "29.00",
+        "priceCurrency": "USD"
+      },
+      "aggregateRating": {
+        "@type": "AggregateRating",
+        "ratingValue": "4.9",
+        "ratingCount": "1250"
+      }
+    },
+    {
+      "@type": "Organization",
+      "@id": "https://elitefutbot.com/#organization",
+      "name": "Elite FUT SNIPER",
+      "url": "https://elitefutbot.com",
+      "logo": "https://elitefutbot.com/logo-elite.png",
+      "sameAs": [
+        "https://www.tiktok.com/@elitefutbotx",
+        "https://www.instagram.com/elitefutbot/",
+        "https://x.com/FutSnipeBot"
+      ]
+    },
+    {
+      "@type": "WebSite",
+      "@id": "https://elitefutbot.com/#website",
+      "url": "https://elitefutbot.com",
+      "name": "Elite FUT SNIPER",
+      "description": "World's fastest sniping bot and autobuyer for FC 26, FC 25 & FC 27.",
+      "publisher": {
+        "@id": "https://elitefutbot.com/#organization"
+      }
+    }
+  ]
 };
 
 export default function RootLayout({

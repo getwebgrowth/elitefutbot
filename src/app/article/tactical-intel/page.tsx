@@ -2,15 +2,50 @@ import { Metadata } from "next";
 import Link from "next/link";
 
 export const metadata: Metadata = {
-  title: "Mastering the 59th Minute: High-Frequency Sniping Protocol",
-  description: "Algorithm patterns and predictive price drop anticipation for v4.2 systems. Learn elite sniping strategies for FC 25.",
-  keywords: ["sniping protocol", "59th minute method", "FC 25 trading strategy", "FIFA sniping tips"],
+  title: "Mastering the 59th Minute: FC 26 High-Frequency Sniping Protocol",
+  description: "Algorithm patterns and predictive price drop anticipation. Learn elite sniping strategies for FC 26 & FC 27.",
+  keywords: ["sniping protocol", "59th minute method", "FC 26 trading strategy", "FIFA sniping tips", "FC 27 autobuyer method"],
+  alternates: { canonical: "https://elitefutbot.com/article/tactical-intel" },
+  openGraph: {
+    title: "Mastering the 59th Minute: FC 26 High-Frequency Sniping Protocol",
+    description: "Learn elite sniping strategies for FC 26 & FC 27. Mastering the 59th minute algorithm patterns.",
+    url: "https://elitefutbot.com/article/tactical-intel",
+    siteName: "Elite FUT SNIPER",
+    type: "article",
+    publishedTime: "2026-07-28T08:00:00Z",
+    authors: ["Elite FUT SNIPER Team"],
+  }
+};
+
+const jsonLd = {
+  "@context": "https://schema.org",
+  "@type": "Article",
+  "headline": "How to Sniping 1M+ Coins Daily in FC 26",
+  "image": "https://elitefutbot.com/og-image.png",
+  "author": {
+    "@type": "Organization",
+    "name": "Elite FUT SNIPER"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "Elite FUT SNIPER",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://elitefutbot.com/logo-elite.png"
+    }
+  },
+  "datePublished": "2026-07-28T08:00:00Z"
 };
 
 export default function TacticalIntelArticlePage() {
   return (
-    <main className="max-w-7xl mx-auto px-6 py-8 grid grid-cols-1 lg:grid-cols-12 gap-12 font-body selection:bg-primary selection:text-black">
-      {/* Article Content */}
+    <>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+      />
+      <main className="max-w-7xl mx-auto px-6 py-8 grid grid-cols-1 lg:grid-cols-12 gap-12 font-body selection:bg-primary selection:text-black">
+        {/* Article Content */}
       <article className="lg:col-span-8 space-y-8">
         <header className="space-y-6">
           <div className="space-y-2">
@@ -205,5 +240,6 @@ export default function TacticalIntelArticlePage() {
         </div>
       </aside>
     </main>
+    </>
   );
 }
