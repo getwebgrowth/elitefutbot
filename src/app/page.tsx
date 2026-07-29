@@ -614,7 +614,7 @@ export default function Home() {
               <span className="material-symbols-outlined font-black">arrow_forward</span>
             </Link>
           </div>
-          <p className="mt-6 text-xs text-gray-600 uppercase tracking-widest font-bold">No credit card required for beta access</p>
+          <p className="mt-6 text-xs text-gray-400 uppercase tracking-widest font-bold">No credit card required for beta access</p>
         </div>
       </section>
 

@@ -19,7 +19,7 @@ export default function TermsPage() {
           <h1 className="text-4xl md:text-6xl font-headline font-extrabold tracking-tight text-white">
             Terms of <span className="text-primary italic">Service</span>
           </h1>
-          <p className="text-sm text-gray-500 font-medium">Last updated: June 18, 2026</p>
+          <p className="text-sm text-gray-400 font-medium">Last updated: June 18, 2026</p>
         </div>
 
         <div className="prose prose-invert max-w-none space-y-8 text-gray-400 leading-relaxed text-sm md:text-base">
@@ -102,7 +102,7 @@ export default function TermsPage() {
             <h2 className="text-2xl font-headline font-bold text-white border-b border-white/10 pb-2">
               7. Disclaimer of Warranties &amp; Limitation of Liability
             </h2>
-            <p className="italic text-gray-500">
+            <p className="italic text-gray-400">
               Elite FUT SNIPER is provided on an &quot;AS IS&quot; and &quot;AS AVAILABLE&quot; basis. We do not warrant that the website or tools will be uninterrupted, error-free, or fully secure. In no event shall Elite FUT SNIPER, its developers, or affiliates be liable for any direct, indirect, incidental, or consequential damages resulting from your use or inability to use the Service.
             </p>
           </section>

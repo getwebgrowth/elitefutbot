@@ -130,7 +130,7 @@ export default function ContactPage() {
                   <a href="mailto:support@elitefutbot.com" className="text-white font-bold hover:text-primary transition-colors text-sm sm:text-base">
                     support@elitefutbot.com
                   </a>
-                  <p className="text-xs text-gray-500 mt-0.5">Direct billing, refunds &amp; account queries.</p>
+                  <p className="text-xs text-gray-400 mt-0.5">Direct billing, refunds &amp; account queries.</p>
                 </div>
               </div>
             </div>
@@ -165,10 +165,10 @@ export default function ContactPage() {
                           <span>{s.name}</span>
                           <span className="text-[10px] text-gray-400 font-mono">({s.handle})</span>
                         </div>
-                        <p className="text-[10px] text-gray-500 line-clamp-1">{s.desc}</p>
+                        <p className="text-[10px] text-gray-400 line-clamp-1">{s.desc}</p>
                       </div>
                     </div>
-                    <span className="material-symbols-outlined text-sm text-gray-500 group-hover:text-primary group-hover:translate-x-1 transition-all">
+                    <span className="material-symbols-outlined text-sm text-gray-400 group-hover:text-primary group-hover:translate-x-1 transition-all">
                       arrow_forward
                     </span>
                   </a>

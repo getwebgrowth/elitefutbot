@@ -120,7 +120,7 @@ export default function BakersBotDeveloperPage() {
                   <span className="w-2 h-2 rounded-full bg-primary animate-pulse"></span>
                   <span>TECHNICAL BRIEFING // ENGINE DEMO</span>
                 </div>
-                <div className="text-xs font-mono text-gray-500 hidden sm:block">
+                <div className="text-xs font-mono text-gray-400 hidden sm:block">
                   v4.2 LOCAL EXECUTION
                 </div>
               </div>
@@ -159,7 +159,7 @@ export default function BakersBotDeveloperPage() {
                 </p>
               </div>
 
-              <div className="pt-4 border-t border-white/5 text-xs font-mono text-gray-500">
+              <div className="pt-4 border-t border-white/5 text-xs font-mono text-gray-400">
                 TIMELINE: 2020 — 2025 // LEAD CORE AUTOMATION DEVELOPER
               </div>
             </section>
@@ -183,7 +183,7 @@ export default function BakersBotDeveloperPage() {
                 </p>
               </div>
 
-              <div className="pt-4 border-t border-white/5 text-xs font-mono text-gray-500">
+              <div className="pt-4 border-t border-white/5 text-xs font-mono text-gray-400">
                 MILESTONE: 2025 // 100% INDEPENDENT CODEBASE LAUNCH
               </div>
             </section>

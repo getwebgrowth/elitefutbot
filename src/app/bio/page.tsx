@@ -257,7 +257,7 @@ export default function BioPage() {
 
           {/* Tools & Website Links Section */}
           <div className="space-y-3">
-            <h2 className="text-[10px] font-black uppercase tracking-[0.25em] text-gray-500 border-b border-white/5 pb-2">
+            <h2 className="text-[10px] font-black uppercase tracking-[0.25em] text-gray-400 border-b border-white/5 pb-2">
               Tools &amp; Partners
             </h2>
             <div className="grid grid-cols-1 gap-2.5">
@@ -278,11 +278,11 @@ export default function BioPage() {
                         </span>
                       )}
                     </div>
-                    <p className="text-[10px] text-gray-500 group-hover:text-gray-400 transition-colors mt-0.5 font-medium">
+                    <p className="text-[10px] text-gray-400 group-hover:text-gray-400 transition-colors mt-0.5 font-medium">
                       {t.desc}
                     </p>
                   </div>
-                  <span className="material-symbols-outlined text-sm text-gray-500 group-hover:text-primary transition-colors group-hover:translate-x-1 transition-transform">
+                  <span className="material-symbols-outlined text-sm text-gray-400 group-hover:text-primary transition-colors group-hover:translate-x-1 transition-transform">
                     arrow_forward
                   </span>
                 </Link>
@@ -296,7 +296,7 @@ export default function BioPage() {
               <span className="material-symbols-outlined text-primary text-sm font-black">security</span>
               <span className="text-[11px]">100% Local Chrome Extension • Undetected Safety</span>
             </div>
-            <div className="text-[9px] text-gray-500 font-bold uppercase tracking-widest">
+            <div className="text-[9px] text-gray-400 font-bold uppercase tracking-widest">
               Trusted by 50,000+ FC Traders Worldwide
             </div>
           </div>

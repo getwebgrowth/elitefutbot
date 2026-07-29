@@ -19,7 +19,7 @@ export default function PrivacyPage() {
           <h1 className="text-4xl md:text-6xl font-headline font-extrabold tracking-tight text-white">
             Privacy <span className="text-primary italic">Policy</span>
           </h1>
-          <p className="text-sm text-gray-500 font-medium">Last updated: June 18, 2026</p>
+          <p className="text-sm text-gray-400 font-medium">Last updated: June 18, 2026</p>
         </div>
 
         <div className="prose prose-invert max-w-none space-y-8 text-gray-400 leading-relaxed text-sm md:text-base">

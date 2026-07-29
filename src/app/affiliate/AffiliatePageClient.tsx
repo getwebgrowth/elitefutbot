@@ -350,7 +350,7 @@ export default function AffiliatePageClient({ faqs }: AffiliatePageClientProps) 
                 onChange={(e) => setReferrals(parseInt(e.target.value))}
                 className="w-full h-3 bg-gray-800 rounded-lg appearance-none cursor-pointer accent-primary border border-white/10"
               />
-              <div className="flex justify-between text-[11px] text-gray-500 font-bold uppercase tracking-widest">
+              <div className="flex justify-between text-[11px] text-gray-400 font-bold uppercase tracking-widest">
                 <span>5 Users</span>
                 <span>100 Users</span>
                 <span>250 Users</span>
@@ -498,7 +498,7 @@ export default function AffiliatePageClient({ faqs }: AffiliatePageClientProps) 
               <span className="text-xs font-black uppercase tracking-widest text-primary bg-primary/10 px-3 py-1 rounded-md border border-primary/20">
                 STEP 01
               </span>
-              <span className="material-symbols-outlined text-gray-500 group-hover:text-primary transition-colors text-2xl">
+              <span className="material-symbols-outlined text-gray-400 group-hover:text-primary transition-colors text-2xl">
                 person_add
               </span>
             </div>
@@ -513,7 +513,7 @@ export default function AffiliatePageClient({ faqs }: AffiliatePageClientProps) 
               <span className="text-xs font-black uppercase tracking-widest text-primary bg-primary/10 px-3 py-1 rounded-md border border-primary/20">
                 STEP 02
               </span>
-              <span className="material-symbols-outlined text-gray-500 group-hover:text-primary transition-colors text-2xl">
+              <span className="material-symbols-outlined text-gray-400 group-hover:text-primary transition-colors text-2xl">
                 share
               </span>
             </div>
@@ -528,7 +528,7 @@ export default function AffiliatePageClient({ faqs }: AffiliatePageClientProps) 
               <span className="text-xs font-black uppercase tracking-widest text-primary bg-primary/10 px-3 py-1 rounded-md border border-primary/20">
                 STEP 03
               </span>
-              <span className="material-symbols-outlined text-gray-500 group-hover:text-primary transition-colors text-2xl">
+              <span className="material-symbols-outlined text-gray-400 group-hover:text-primary transition-colors text-2xl">
                 account_balance
               </span>
             </div>

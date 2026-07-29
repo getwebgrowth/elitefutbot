@@ -67,7 +67,7 @@ export default function LinksPage() {
                         <span className="font-bold text-white group-hover:text-primary transition-colors">
                           {link.label}
                         </span>
-                        <span className="text-gray-500 group-hover:text-primary transition-colors text-xs font-mono">
+                        <span className="text-gray-400 group-hover:text-primary transition-colors text-xs font-mono">
                           {link.href}
                         </span>
                       </div>
