@@ -477,107 +477,20 @@ export default function Home() {
             <p className="text-gray-400 max-w-2xl mx-auto text-sm md:text-base">Real screen captures & live feedback shared directly by our Ultimate Team traders inside Discord.</p>
           </div>
 
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-            
-            {/* DISCORD CARD 1 */}
-            <div className="bg-gradient-to-tr from-purple-900/60 via-purple-600/40 to-pink-500/50 p-3 sm:p-4 rounded-[2rem] shadow-2xl group hover:-translate-y-2 transition-all duration-300">
-              <div className="bg-[#313338] border border-white/10 p-5 rounded-2xl text-white font-sans">
-                <div className="flex items-start gap-3 mb-3">
-                  <div className="w-10 h-10 rounded-full bg-gradient-to-tr from-indigo-500 to-purple-600 flex items-center justify-center font-bold text-white shadow-md flex-shrink-0">
-                    ツ
-                  </div>
-                  <div className="flex-1 min-w-0">
-                    <div className="flex items-center gap-2 flex-wrap">
-                      <span className="font-bold text-sm text-white tracking-wide">Phantom</span>
-                      <span className="bg-[#2b2d31] border border-emerald-500/40 text-emerald-400 text-[10px] font-semibold px-2 py-0.5 rounded flex items-center gap-1">
-                        <span className="w-1.5 h-1.5 rounded-full bg-emerald-400"></span> GENO
-                      </span>
-                      <span className="text-[11px] text-gray-400">Yesterday at 22:32</span>
-                    </div>
-                    <p className="text-gray-200 text-sm mt-2 font-normal leading-relaxed">
-                      Bro it works I sniped TOTS YAMAL twice for 300k
-                    </p>
-                  </div>
-                </div>
-                <div className="flex items-center gap-2 mt-4 pt-2 border-t border-white/5">
-                  <div className="bg-[#2b2d31] hover:bg-[#35373c] border border-purple-500/40 px-3 py-1 rounded-lg text-xs flex items-center gap-1.5 transition-colors cursor-pointer">
-                    <span className="text-red-500 text-sm">❤️</span>
-                    <span className="font-bold text-purple-300">1</span>
-                  </div>
-                  <div className="bg-[#2b2d31] hover:bg-[#35373c] border border-white/10 px-3 py-1 rounded-lg text-xs flex items-center gap-1.5 transition-colors cursor-pointer">
-                    <span className="text-amber-400 text-sm">🔥</span>
-                    <span className="font-bold text-gray-300">5</span>
-                  </div>
-                </div>
+          <div className="flex justify-center items-center">
+            <div className="relative group max-w-2xl w-full">
+              <div className="absolute -inset-1 bg-gradient-to-r from-purple-600 to-pink-600 rounded-[2.5rem] blur opacity-40 group-hover:opacity-75 transition duration-500"></div>
+              <div className="relative rounded-[2rem] p-2 bg-[#0d0d0d] border border-white/10 shadow-2xl overflow-hidden">
+                <Image 
+                  src="/discord-review-card.png" 
+                  alt="Real Discord Community Review: Bro it works I sniped TOTS YAMAL twice for 300k"
+                  width={686}
+                  height={302}
+                  className="w-full h-auto rounded-[1.5rem] shadow-xl relative z-10"
+                  priority
+                />
               </div>
             </div>
-
-            {/* DISCORD CARD 2 */}
-            <div className="bg-gradient-to-tr from-purple-900/60 via-purple-600/40 to-pink-500/50 p-3 sm:p-4 rounded-[2rem] shadow-2xl group hover:-translate-y-2 transition-all duration-300">
-              <div className="bg-[#313338] border border-white/10 p-5 rounded-2xl text-white font-sans">
-                <div className="flex items-start gap-3 mb-3">
-                  <div className="w-10 h-10 rounded-full bg-gradient-to-tr from-emerald-500 to-teal-600 flex items-center justify-center font-bold text-white shadow-md flex-shrink-0">
-                    FK
-                  </div>
-                  <div className="flex-1 min-w-0">
-                    <div className="flex items-center gap-2 flex-wrap">
-                      <span className="font-bold text-sm text-white tracking-wide">FUT_King</span>
-                      <span className="bg-[#2b2d31] border border-purple-500/40 text-purple-400 text-[10px] font-semibold px-2 py-0.5 rounded flex items-center gap-1">
-                        <span className="w-1.5 h-1.5 rounded-full bg-purple-400"></span> BETA ELITE
-                      </span>
-                      <span className="text-[11px] text-gray-400">Today at 14:15</span>
-                    </div>
-                    <p className="text-gray-200 text-sm mt-2 font-normal leading-relaxed">
-                      Just sniped 98 Yamal for min price!! Best bot hands down team 🔥
-                    </p>
-                  </div>
-                </div>
-                <div className="flex items-center gap-2 mt-4 pt-2 border-t border-white/5">
-                  <div className="bg-[#2b2d31] hover:bg-[#35373c] border border-purple-500/40 px-3 py-1 rounded-lg text-xs flex items-center gap-1.5 transition-colors cursor-pointer">
-                    <span className="text-red-500 text-sm">❤️</span>
-                    <span className="font-bold text-purple-300">12</span>
-                  </div>
-                  <div className="bg-[#2b2d31] hover:bg-[#35373c] border border-white/10 px-3 py-1 rounded-lg text-xs flex items-center gap-1.5 transition-colors cursor-pointer">
-                    <span className="text-blue-400 text-sm">🚀</span>
-                    <span className="font-bold text-gray-300">8</span>
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            {/* DISCORD CARD 3 */}
-            <div className="bg-gradient-to-tr from-purple-900/60 via-purple-600/40 to-pink-500/50 p-3 sm:p-4 rounded-[2rem] shadow-2xl group hover:-translate-y-2 transition-all duration-300">
-              <div className="bg-[#313338] border border-white/10 p-5 rounded-2xl text-white font-sans">
-                <div className="flex items-start gap-3 mb-3">
-                  <div className="w-10 h-10 rounded-full bg-gradient-to-tr from-amber-500 to-orange-600 flex items-center justify-center font-bold text-white shadow-md flex-shrink-0">
-                    AT
-                  </div>
-                  <div className="flex-1 min-w-0">
-                    <div className="flex items-center gap-2 flex-wrap">
-                      <span className="font-bold text-sm text-white tracking-wide">Alex_Trader</span>
-                      <span className="bg-[#2b2d31] border border-blue-500/40 text-blue-400 text-[10px] font-semibold px-2 py-0.5 rounded flex items-center gap-1">
-                        <span className="w-1.5 h-1.5 rounded-full bg-blue-400"></span> PRO TRADER
-                      </span>
-                      <span className="text-[11px] text-gray-400">Today at 18:40</span>
-                    </div>
-                    <p className="text-gray-200 text-sm mt-2 font-normal leading-relaxed">
-                      Local Chrome extension is so fast, sub 20ms pings are unbeatable. 1M profit today!
-                    </p>
-                  </div>
-                </div>
-                <div className="flex items-center gap-2 mt-4 pt-2 border-t border-white/5">
-                  <div className="bg-[#2b2d31] hover:bg-[#35373c] border border-purple-500/40 px-3 py-1 rounded-lg text-xs flex items-center gap-1.5 transition-colors cursor-pointer">
-                    <span className="text-amber-400 text-sm">🔥</span>
-                    <span className="font-bold text-purple-300">9</span>
-                  </div>
-                  <div className="bg-[#2b2d31] hover:bg-[#35373c] border border-white/10 px-3 py-1 rounded-lg text-xs flex items-center gap-1.5 transition-colors cursor-pointer">
-                    <span className="text-emerald-400 text-sm">💯</span>
-                    <span className="font-bold text-gray-300">4</span>
-                  </div>
-                </div>
-              </div>
-            </div>
-
           </div>
 
           {/* DISCORD COMMUNITY JOIN CTA */}
