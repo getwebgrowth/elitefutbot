@@ -557,12 +557,12 @@ export default function Home() {
             </div>
 
             {/* SCREENSHOT 5: Phantom Yamal Snipe */}
-            <div className="relative group rounded-2xl p-1 bg-[#0d0d0d] border border-white/10 shadow-xl overflow-hidden hover:border-purple-500/40 hover:-translate-y-1 transition-all duration-300 flex flex-col md:col-span-2 lg:col-span-2">
+            <div className="relative group rounded-2xl p-1 bg-[#0d0d0d] border border-white/10 shadow-xl overflow-hidden hover:border-purple-500/40 hover:-translate-y-1 transition-all duration-300 flex flex-col">
               <div className="bg-[#141414] px-3.5 py-2 border-b border-white/10 flex items-center justify-between text-xs">
                 <span className="text-purple-400 font-bold flex items-center gap-1.5">
                   <span className="w-2 h-2 rounded-full bg-emerald-400"></span> Phantom (GENO)
                 </span>
-                <span className="text-purple-300 font-semibold text-[11px]">🔥 TOTS Yamal Snipe Proof</span>
+                <span className="text-purple-300 font-semibold text-[11px]">🔥 TOTS Yamal Snipe</span>
               </div>
               <div className="p-1 flex-1 flex items-center justify-center bg-[#050505]">
                 <Image 
@@ -571,6 +571,44 @@ export default function Home() {
                   width={686}
                   height={302}
                   className="w-full h-auto rounded-xl"
+                />
+              </div>
+            </div>
+
+            {/* SCREENSHOT 6: Phantom Quick Coins Review */}
+            <div className="relative group rounded-2xl p-1 bg-[#0d0d0d] border border-white/10 shadow-xl overflow-hidden hover:border-purple-500/40 hover:-translate-y-1 transition-all duration-300 flex flex-col">
+              <div className="bg-[#141414] px-3.5 py-2 border-b border-white/10 flex items-center justify-between text-xs">
+                <span className="text-purple-400 font-bold flex items-center gap-1.5">
+                  <span className="w-2 h-2 rounded-full bg-emerald-400"></span> Phantom (GENO)
+                </span>
+                <span className="text-amber-400 font-semibold text-[11px]">⚡ Best Bot I Use</span>
+              </div>
+              <div className="p-1 flex-1 flex items-center justify-center bg-[#050505]">
+                <Image 
+                  src="/discord-review-5.png" 
+                  alt="Discord Review by Phantom: this is the best one I use because I made the most quick coins"
+                  width={598}
+                  height={172}
+                  className="w-full h-auto rounded-xl"
+                />
+              </div>
+            </div>
+
+            {/* SCREENSHOT 7: Phantom 97 Yamal Snipe + 1M Coins Balance Proof */}
+            <div className="relative group rounded-2xl p-1 bg-[#0d0d0d] border border-white/10 shadow-xl overflow-hidden hover:border-purple-500/40 hover:-translate-y-1 transition-all duration-300 flex flex-col md:col-span-2 lg:col-span-1">
+              <div className="bg-[#141414] px-3.5 py-2 border-b border-white/10 flex items-center justify-between text-xs">
+                <span className="text-purple-400 font-bold flex items-center gap-1.5">
+                  <span className="w-2 h-2 rounded-full bg-emerald-400"></span> Phantom (GENO)
+                </span>
+                <span className="text-emerald-400 font-semibold text-[11px]">💰 1,005,378 Coins Balance</span>
+              </div>
+              <div className="p-1 flex-1 flex items-center justify-center bg-[#050505]">
+                <Image 
+                  src="/discord-review-6.png" 
+                  alt="Discord Proof by Phantom: 97 Lamine Yamal card snipe and 1,005,378 coins balance"
+                  width={491}
+                  height={876}
+                  className="w-full h-auto max-h-[380px] object-contain rounded-xl"
                 />
               </div>
             </div>
