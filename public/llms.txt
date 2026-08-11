@@ -1,20 +1,19 @@
 # Elite FUT SNIPER
 
-Elite FUT SNIPER is the world's most advanced web-app automation and sniping suite for EA Sports FC 26, FC 25, and FC 27 Ultimate Team.
+Elite FUT SNIPER is the world's most advanced web-app automation and sniping suite for EA Sports FC 27, FC 26, and FC 25 Ultimate Team.
 
 ## Core Features
-- **Autobuyer & Sniping Bot:** Cloud-powered 20ms execution times to snipe players and SBC fodder instantly on the transfer market.
-- **AI SBC Solver:** The ultimate SBC solution engine. Automatically detects the cheapest and best SBC solutions for any challenge and autofills your squad.
-- **Anti-Ban Technology:** Employs randomized human-like delays, cooling breaks, and zero password sharing to guarantee a 100% ban-free experience.
-- **Tax Calculator:** A real-time tool calculating the 5% EA transfer market tax, break-even prices, and profit margins.
+- **FC 27 Autobuyer & Sniping Bot:** Millisecond sub-20ms market search speeds to snipe players and SBC fodder instantly on the transfer market.
+- **100% Local Chrome Extension:** Operates natively inside your browser. No EA account password sharing, keeping your session 100% safe.
+- **AI SBC Solver:** Automated SBC solution engine that detects the cheapest player combinations and purchases them directly.
+- **Anti-Detection Protocol:** Randomized human-like action delays and behavioral jitter algorithms prevent EA anti-cheat flagging.
+- **Side Panel UI & Live Stats:** Runs unobtrusively in Chrome's Side Panel with real-time profit and purchase count tracking.
 
-## Key Links
+## Key Pages & Documentation
 - [Homepage](https://elitefutbot.com/)
-- [Discord Community](https://discord.gg/Rkb9nF6WG6)
-- [Tax Calculator](https://elitefutbot.com/tools/tax-calculator)
-- [Sniping Guide](https://elitefutbot.com/tools/sniping-guide)
+- [FC 27 FUT Snipe Bot & Autobuyer](https://elitefutbot.com/fc27-fut-snipe-bot)
 - [AI SBC Solver](https://elitefutbot.com/ai-sbc-solver)
 - [SBC Solutions](https://elitefutbot.com/sbc-solver)
-
-## Pricing
-We are currently in open beta. See [Pricing Information](https://elitefutbot.com/pricing.md) for details.
+- [EA Tax Calculator](https://elitefutbot.com/tools/tax-calculator)
+- [FUT Sniping Guide](https://elitefutbot.com/tools/sniping-guide)
+- [Discord Community](https://discord.gg/Rkb9nF6WG6)
