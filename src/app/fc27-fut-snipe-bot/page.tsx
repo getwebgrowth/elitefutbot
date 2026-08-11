@@ -146,11 +146,11 @@ export default function FC27FutSnipeBotPage() {
                 </div>
               </div>
               <div className="aspect-video w-full">
-                <iframe 
-                  src="https://www.youtube.com/embed/S0YuEelYNQ8" 
-                  title="FC 27 FUT Snipe Bot & Autobuyer Demo" 
-                  className="w-full h-full border-0" 
-                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                <iframe
+                  className="w-full h-full rounded-b-2xl border-0"
+                  src="https://www.youtube-nocookie.com/embed/S0YuEelYNQ8?autoplay=0&rel=0"
+                  title="EA FC 27 Sniping Bot & Autobuyer Demonstration"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                   allowFullScreen
                 ></iframe>
               </div>

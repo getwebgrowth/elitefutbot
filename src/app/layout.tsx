@@ -250,6 +250,7 @@ export default function RootLayout({
                 <nav className="space-y-6" aria-labelledby="footer-tools">
                   <h2 id="footer-tools" className="text-white font-black text-xs uppercase tracking-[0.2em] font-headline">Tools &amp; Intel</h2>
                   <ul className="space-y-4 text-sm font-medium">
+                    <li><Link className="text-gray-400 hover:text-primary transition-colors focus-visible:text-primary focus-visible:outline-none" href="/fc27-fut-snipe-bot">FC 27 Snipe Bot</Link></li>
                     <li><Link className="text-gray-400 hover:text-primary transition-colors focus-visible:text-primary focus-visible:outline-none" href="/tools/tax-calculator">Tax Calculator</Link></li>
                     <li><Link className="text-gray-400 hover:text-primary transition-colors focus-visible:text-primary focus-visible:outline-none" href="/tools/sniping-guide">Sniping Guide</Link></li>
                     <li><Link className="text-gray-400 hover:text-primary transition-colors focus-visible:text-primary focus-visible:outline-none" href="/blog">Tactical Intel Hub</Link></li>

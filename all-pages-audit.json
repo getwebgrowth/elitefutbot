@@ -1,180 +1,121 @@
 [
   {
     "route": "/",
-    "perf": 79,
+    "perf": 99,
     "a11y": 100,
     "bp": 100,
-    "seo": 100,
-    "failures": []
+    "seo": 100
   },
   {
     "route": "/fc27-fut-snipe-bot",
-    "perf": 95,
+    "perf": 97,
     "a11y": 100,
     "bp": 96,
-    "seo": 100,
-    "failures": [
-      {
-        "id": "inspector-issues",
-        "title": "Issues were logged in the `Issues` panel in Chrome Devtools"
-      }
-    ]
+    "seo": 100
   },
   {
     "route": "/sbc-solver",
     "perf": 100,
     "a11y": 100,
     "bp": 100,
-    "seo": 100,
-    "failures": []
+    "seo": 100
   },
   {
     "route": "/ai-sbc-solver",
     "perf": 100,
     "a11y": 100,
     "bp": 100,
-    "seo": 100,
-    "failures": []
+    "seo": 100
   },
   {
     "route": "/tools/tax-calculator",
     "perf": 100,
     "a11y": 100,
     "bp": 100,
-    "seo": 100,
-    "failures": []
+    "seo": 100
   },
   {
     "route": "/tools/sniping-guide",
     "perf": 100,
     "a11y": 100,
     "bp": 100,
-    "seo": 100,
-    "failures": []
+    "seo": 100
   },
   {
     "route": "/tools/comparison-guide",
     "perf": 100,
     "a11y": 100,
     "bp": 100,
-    "seo": 100,
-    "failures": []
+    "seo": 100
   },
   {
     "route": "/blog",
-    "perf": 89,
+    "perf": 100,
     "a11y": 100,
     "bp": 100,
-    "seo": 100,
-    "failures": []
+    "seo": 100
   },
   {
     "route": "/article/tactical-intel",
     "perf": 100,
     "a11y": 93,
     "bp": 100,
-    "seo": 100,
-    "failures": [
-      {
-        "id": "heading-order",
-        "title": "Heading elements are not in a sequentially-descending order"
-      },
-      {
-        "id": "label",
-        "title": "Form elements do not have associated labels"
-      },
-      {
-        "id": "agent-accessibility-tree",
-        "title": "Accessibility tree is not well-formed"
-      }
-    ]
+    "seo": 100
   },
   {
     "route": "/affiliate",
     "perf": 100,
     "a11y": 95,
     "bp": 100,
-    "seo": 100,
-    "failures": [
-      {
-        "id": "label",
-        "title": "Form elements do not have associated labels"
-      },
-      {
-        "id": "agent-accessibility-tree",
-        "title": "Accessibility tree is not well-formed"
-      }
-    ]
+    "seo": 100
   },
   {
     "route": "/volt-velocity",
     "perf": 100,
     "a11y": 100,
     "bp": 100,
-    "seo": 100,
-    "failures": []
+    "seo": 100
   },
   {
     "route": "/bakers-bot-developer",
     "perf": 99,
     "a11y": 100,
     "bp": 96,
-    "seo": 100,
-    "failures": [
-      {
-        "id": "inspector-issues",
-        "title": "Issues were logged in the `Issues` panel in Chrome Devtools"
-      }
-    ]
+    "seo": 100
   },
   {
     "route": "/contact",
     "perf": 100,
     "a11y": 100,
     "bp": 100,
-    "seo": 100,
-    "failures": []
+    "seo": 100
   },
   {
     "route": "/bio",
-    "perf": 98,
+    "perf": 100,
     "a11y": 100,
     "bp": 100,
-    "seo": 100,
-    "failures": []
+    "seo": 100
   },
   {
     "route": "/links",
-    "perf": 99,
+    "perf": 100,
     "a11y": 100,
     "bp": 100,
-    "seo": 100,
-    "failures": []
+    "seo": 100
   },
   {
     "route": "/terms",
     "perf": 100,
     "a11y": 96,
     "bp": 100,
-    "seo": 100,
-    "failures": [
-      {
-        "id": "link-in-text-block",
-        "title": "Links rely on color to be distinguishable."
-      }
-    ]
+    "seo": 100
   },
   {
     "route": "/privacy",
     "perf": 100,
     "a11y": 96,
     "bp": 100,
-    "seo": 100,
-    "failures": [
-      {
-        "id": "link-in-text-block",
-        "title": "Links rely on color to be distinguishable."
-      }
-    ]
+    "seo": 100
   }
 ]
