@@ -164,10 +164,13 @@ export default function Home() {
               <span className="text-white font-bold text-xs">Bakers Bot Dev Team</span>
             </div>
           </div>
-          <div className="mt-16 sm:mt-24 relative mx-auto max-w-3xl flex items-center justify-center">
-            <div className="absolute size-[300px] rounded-full bg-primary/10 blur-[80px]"></div>
+          <div className="mt-16 sm:mt-24 relative mx-auto max-w-4xl flex items-center justify-center">
+            <div className="absolute size-[350px] rounded-full bg-primary/10 blur-[90px]"></div>
+            
             <div className="relative w-full max-w-[380px] drop-shadow-[0_0_60px_rgba(198,255,61,0.18)] transition-transform duration-500 hover:scale-[1.02]">
               <div className="absolute -inset-3 rounded-2xl border border-primary/20 pointer-events-none"></div>
+              
+              {/* Main Bot Console UI */}
               <Image 
                 alt="Elite FUT SNIPER side panel UI showing snipe filters, price range, and live stats" 
                 width={600} 
@@ -176,15 +179,46 @@ export default function Home() {
                 src="/product-screenshot-panel.png" 
                 priority
               />
-              <div className="absolute -right-12 -bottom-10 w-[140px] rotate-6 drop-shadow-[0_15px_40px_rgba(0,0,0,0.6)] z-20 hover:rotate-12 transition-transform duration-300">
-                <Image 
-                  alt="Messi 88 Rating FUT Card Snipe Result" 
-                  width={245} 
-                  height={312} 
-                  className="w-full h-auto" 
-                  src="/player-card-placeholder.png" 
-                />
+
+              {/* FLOATING PROOF 1 (LEFT): Yamal Snipe Price Stats */}
+              <div className="absolute -left-16 sm:-left-44 lg:-left-56 top-1/6 w-[180px] sm:w-[240px] -rotate-6 drop-shadow-[0_20px_50px_rgba(0,0,0,0.9)] z-20 hover:-rotate-3 transition-all duration-300 group/left">
+                <div className="relative rounded-2xl p-1 bg-[#090909] border border-emerald-500/50 shadow-[0_0_25px_rgba(16,185,129,0.2)] overflow-hidden">
+                  <div className="bg-[#121212] px-3 py-1.5 border-b border-emerald-500/30 flex items-center justify-between text-xs">
+                    <span className="text-emerald-400 font-bold flex items-center gap-1.5">
+                      <span className="w-2 h-2 rounded-full bg-emerald-400 animate-pulse"></span> SNIPE PROFIT
+                    </span>
+                    <span className="text-emerald-300 font-bold text-[11px] bg-emerald-500/10 px-2 py-0.5 rounded border border-emerald-500/30">+63k Profit</span>
+                  </div>
+                  <Image 
+                    alt="Yamal 97 Snipe Price Stats Proof (Bought for 337,000)" 
+                    width={292} 
+                    height={339} 
+                    quality={100}
+                    unoptimized
+                    className="w-full h-auto rounded-xl block" 
+                    src="/yamal-snipe-proof-stats.png" 
+                  />
+                </div>
               </div>
+
+              {/* FLOATING PROOF 2 (RIGHT): 97 Lamine Yamal TOTS Player Card */}
+              <div className="absolute -right-14 sm:-right-36 lg:-right-48 -bottom-10 w-[150px] sm:w-[200px] rotate-6 drop-shadow-[0_20px_50px_rgba(0,0,0,0.9)] z-20 hover:rotate-12 transition-all duration-300 group/right">
+                <div className="relative rounded-2xl p-1 bg-[#090909] border border-primary/50 shadow-[0_0_25px_rgba(204,255,0,0.2)] overflow-hidden">
+                  <div className="bg-[#121212] px-2.5 py-1 border-b border-primary/30 text-center text-xs">
+                    <span className="text-primary font-bold">⭐ 97 Yamal Sniped</span>
+                  </div>
+                  <Image 
+                    alt="97 Lamine Yamal Rating TOTS Card Snipe Result" 
+                    width={219} 
+                    height={257} 
+                    quality={100}
+                    unoptimized
+                    className="w-full h-auto rounded-xl block" 
+                    src="/yamal-97-card.png" 
+                  />
+                </div>
+              </div>
+
             </div>
           </div>
         </div>
