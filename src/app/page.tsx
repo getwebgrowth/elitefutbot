@@ -164,17 +164,27 @@ export default function Home() {
               <span className="text-white font-bold text-xs">Bakers Bot Dev Team</span>
             </div>
           </div>
-          <div className="mt-16 sm:mt-24 relative mx-auto max-w-3xl group">
-            <div className="absolute -inset-1 bg-gradient-to-r from-primary/30 to-blue-500/30 rounded-[2rem] blur opacity-30 group-hover:opacity-60 transition duration-500"></div>
-            <div className="relative bg-[#141414] rounded-[1.5rem] p-2 sm:p-3 border border-white/10 shadow-2xl overflow-hidden">
-              <div className="absolute top-0 left-0 w-full h-8 bg-gradient-to-b from-white/5 to-transparent"></div>
+          <div className="mt-16 sm:mt-24 relative mx-auto max-w-3xl flex items-center justify-center">
+            <div className="absolute size-[300px] rounded-full bg-primary/10 blur-[80px]"></div>
+            <div className="relative w-full max-w-[380px] drop-shadow-[0_0_60px_rgba(198,255,61,0.18)] transition-transform duration-500 hover:scale-[1.02]">
+              <div className="absolute -inset-3 rounded-2xl border border-primary/20 pointer-events-none"></div>
               <Image 
-                alt="Elite FUT SNIPER Safe Mode Interface" 
-                width={1200}
-                height={800}
-                className="w-full h-auto rounded-xl shadow-2xl relative z-10" 
-                src="/hero-dashboard-new.webp" 
+                alt="Elite FUT SNIPER side panel UI showing snipe filters, price range, and live stats" 
+                width={600} 
+                height={958} 
+                className="w-full h-auto relative rounded-xl shadow-2xl z-10" 
+                src="/product-screenshot-panel.png" 
+                priority
               />
+              <div className="absolute -right-12 -bottom-10 w-[140px] rotate-6 drop-shadow-[0_15px_40px_rgba(0,0,0,0.6)] z-20 hover:rotate-12 transition-transform duration-300">
+                <Image 
+                  alt="Messi 88 Rating FUT Card Snipe Result" 
+                  width={245} 
+                  height={312} 
+                  className="w-full h-auto" 
+                  src="/player-card-placeholder.png" 
+                />
+              </div>
             </div>
           </div>
         </div>
