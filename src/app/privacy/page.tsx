@@ -5,7 +5,6 @@ export const metadata: Metadata = {
   title: "Privacy Policy - Elite FUT SNIPER",
   description: "Read the Privacy Policy for Elite FUT SNIPER. Learn how we collect, use, and safeguard your personal information.",
   alternates: { canonical: "https://elitefutbot.com/privacy" },
-  robots: "noindex"
 };
 
 export default function PrivacyPage() {

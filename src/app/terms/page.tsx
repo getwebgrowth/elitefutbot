@@ -5,7 +5,6 @@ export const metadata: Metadata = {
   title: "Terms of Service - Elite FUT SNIPER",
   description: "Read the Terms of Service for Elite FUT SNIPER. Understand user agreements, billing terms, and our refund policies.",
   alternates: { canonical: "https://elitefutbot.com/terms" },
-  robots: "noindex"
 };
 
 export default function TermsPage() {

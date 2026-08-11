@@ -3,7 +3,6 @@ import Link from "next/link";
 export const metadata = {
   title: "Site Directory | Elite FUT SNIPER",
   description: "Temporary directory of all pages on the Elite FUT SNIPER website. Explore tools, SBC solvers, and trading intel.",
-  robots: "noindex",
 };
 
 export default function LinksPage() {

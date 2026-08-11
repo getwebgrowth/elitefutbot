@@ -1,0 +1,180 @@
+[
+  {
+    "route": "/",
+    "perf": 79,
+    "a11y": 100,
+    "bp": 100,
+    "seo": 100,
+    "failures": []
+  },
+  {
+    "route": "/fc27-fut-snipe-bot",
+    "perf": 95,
+    "a11y": 100,
+    "bp": 96,
+    "seo": 100,
+    "failures": [
+      {
+        "id": "inspector-issues",
+        "title": "Issues were logged in the `Issues` panel in Chrome Devtools"
+      }
+    ]
+  },
+  {
+    "route": "/sbc-solver",
+    "perf": 100,
+    "a11y": 100,
+    "bp": 100,
+    "seo": 100,
+    "failures": []
+  },
+  {
+    "route": "/ai-sbc-solver",
+    "perf": 100,
+    "a11y": 100,
+    "bp": 100,
+    "seo": 100,
+    "failures": []
+  },
+  {
+    "route": "/tools/tax-calculator",
+    "perf": 100,
+    "a11y": 100,
+    "bp": 100,
+    "seo": 100,
+    "failures": []
+  },
+  {
+    "route": "/tools/sniping-guide",
+    "perf": 100,
+    "a11y": 100,
+    "bp": 100,
+    "seo": 100,
+    "failures": []
+  },
+  {
+    "route": "/tools/comparison-guide",
+    "perf": 100,
+    "a11y": 100,
+    "bp": 100,
+    "seo": 100,
+    "failures": []
+  },
+  {
+    "route": "/blog",
+    "perf": 89,
+    "a11y": 100,
+    "bp": 100,
+    "seo": 100,
+    "failures": []
+  },
+  {
+    "route": "/article/tactical-intel",
+    "perf": 100,
+    "a11y": 93,
+    "bp": 100,
+    "seo": 100,
+    "failures": [
+      {
+        "id": "heading-order",
+        "title": "Heading elements are not in a sequentially-descending order"
+      },
+      {
+        "id": "label",
+        "title": "Form elements do not have associated labels"
+      },
+      {
+        "id": "agent-accessibility-tree",
+        "title": "Accessibility tree is not well-formed"
+      }
+    ]
+  },
+  {
+    "route": "/affiliate",
+    "perf": 100,
+    "a11y": 95,
+    "bp": 100,
+    "seo": 100,
+    "failures": [
+      {
+        "id": "label",
+        "title": "Form elements do not have associated labels"
+      },
+      {
+        "id": "agent-accessibility-tree",
+        "title": "Accessibility tree is not well-formed"
+      }
+    ]
+  },
+  {
+    "route": "/volt-velocity",
+    "perf": 100,
+    "a11y": 100,
+    "bp": 100,
+    "seo": 100,
+    "failures": []
+  },
+  {
+    "route": "/bakers-bot-developer",
+    "perf": 99,
+    "a11y": 100,
+    "bp": 96,
+    "seo": 100,
+    "failures": [
+      {
+        "id": "inspector-issues",
+        "title": "Issues were logged in the `Issues` panel in Chrome Devtools"
+      }
+    ]
+  },
+  {
+    "route": "/contact",
+    "perf": 100,
+    "a11y": 100,
+    "bp": 100,
+    "seo": 100,
+    "failures": []
+  },
+  {
+    "route": "/bio",
+    "perf": 98,
+    "a11y": 100,
+    "bp": 100,
+    "seo": 100,
+    "failures": []
+  },
+  {
+    "route": "/links",
+    "perf": 99,
+    "a11y": 100,
+    "bp": 100,
+    "seo": 100,
+    "failures": []
+  },
+  {
+    "route": "/terms",
+    "perf": 100,
+    "a11y": 96,
+    "bp": 100,
+    "seo": 100,
+    "failures": [
+      {
+        "id": "link-in-text-block",
+        "title": "Links rely on color to be distinguishable."
+      }
+    ]
+  },
+  {
+    "route": "/privacy",
+    "perf": 100,
+    "a11y": 96,
+    "bp": 100,
+    "seo": 100,
+    "failures": [
+      {
+        "id": "link-in-text-block",
+        "title": "Links rely on color to be distinguishable."
+      }
+    ]
+  }
+]
