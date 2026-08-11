@@ -462,119 +462,134 @@ export default function Home() {
         </div>
       </section>
 
-      <section className="py-16 bg-[#080808] border-t border-white/5 relative overflow-hidden" id="reviews">
-        <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[500px] h-[250px] bg-purple-600/10 blur-[130px] pointer-events-none"></div>
+      <section className="py-20 bg-[#080808] border-t border-white/5 relative overflow-hidden" id="reviews">
+        <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[700px] h-[350px] bg-purple-600/10 blur-[150px] pointer-events-none"></div>
 
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
-          <div className="text-center mb-12">
-            <div className="inline-flex items-center gap-2 bg-primary/10 border border-primary/20 px-3 py-1 rounded-full text-xs font-bold text-primary mb-3">
-              <span className="material-symbols-outlined text-sm">verified</span>
-              COMMUNITY PROOF & REVIEWS
+          <div className="text-center mb-16">
+            <div className="inline-flex items-center gap-2 bg-purple-500/10 border border-purple-500/20 px-3.5 py-1.5 rounded-full text-xs font-bold text-purple-400 mb-4">
+              <svg className="w-4 h-4 fill-current text-[#5865F2]" viewBox="0 0 24 24">
+                <path d="M20.317 4.37a19.791 19.791 0 0 0-4.885-1.515.074.074 0 0 0-.079.037c-.21.375-.444.864-.608 1.25a18.27 18.27 0 0 0-5.487 0 12.64 12.64 0 0 0-.617-1.25.077.077 0 0 0-.079-.037A19.736 19.736 0 0 0 3.677 4.37a.07.07 0 0 0-.032.027C.533 9.046-.32 13.58.099 18.057a.082.082 0 0 0 .031.057 19.9 19.9 0 0 0 5.993 3.03.078.078 0 0 0 .084-.028c.462-.63.874-1.295 1.226-1.994.021-.041.001-.09-.041-.106a13.107 13.107 0 0 1-1.872-.892.077.077 0 0 1-.008-.128c.126-.093.252-.19.373-.287a.075.075 0 0 1 .078-.01c3.927 1.793 8.18 1.793 12.061 0a.075.075 0 0 1 .079.009c.12.098.245.195.372.288a.077.077 0 0 1-.006.128 12.299 12.299 0 0 1-1.873.891.077.077 0 0 0-.041.107c.36.698.772 1.362 1.225 1.993a.076.076 0 0 0 .084.028 19.839 19.839 0 0 0 6.002-3.03.077.077 0 0 0 .032-.054c.5-5.177-.838-9.674-3.549-13.66a.061.061 0 0 0-.031-.028zM8.02 15.33c-1.183 0-2.157-1.085-2.157-2.419 0-1.333.956-2.419 2.157-2.419 1.21 0 2.176 1.096 2.157 2.42 0 1.333-.956 2.418-2.157 2.418zm7.975 0c-1.183 0-2.157-1.085-2.157-2.419 0-1.333.955-2.419 2.157-2.419 1.21 0 2.176 1.096 2.157 2.42 0 1.333-.946 2.418-2.157 2.418z"/>
+              </svg>
+              VERIFIED DISCORD TESTIMONIALS
             </div>
-            <h2 className="text-3xl md:text-5xl font-black mb-4 text-white">Trusted by <span className="text-primary">Market Elites</span></h2>
-            <p className="text-gray-400 max-w-2xl mx-auto text-sm md:text-base">Real Ultimate Team traders making millions of coins every single week.</p>
+            <h2 className="text-4xl md:text-6xl font-black mb-4 text-white">Real <span className="text-purple-400">Community Reviews</span></h2>
+            <p className="text-gray-400 max-w-2xl mx-auto text-sm md:text-base">Authentic feedback & snipe proof shared directly by our Ultimate Team traders inside Discord.</p>
           </div>
 
-          <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 items-stretch">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 items-stretch">
             
-            {/* LEFT 2 COLUMNS: STRUCTURED TESTIMONIAL CARDS */}
-            <div className="lg:col-span-7 grid grid-cols-1 sm:grid-cols-2 gap-4">
-              <div className="glass-card p-6 rounded-2xl border-white/10 hover:border-primary/30 transition-all flex flex-col justify-between">
-                <div>
-                  <div className="flex gap-1 mb-3 text-primary">
-                    <span className="material-symbols-outlined fill-1 text-sm">star</span>
-                    <span className="material-symbols-outlined fill-1 text-sm">star</span>
-                    <span className="material-symbols-outlined fill-1 text-sm">star</span>
-                    <span className="material-symbols-outlined fill-1 text-sm">star</span>
-                    <span className="material-symbols-outlined fill-1 text-sm">star</span>
-                  </div>
-                  <p className="text-gray-300 text-xs md:text-sm font-medium leading-relaxed mb-6">&quot;Making millions daily with multi-filters. 20ms search speed snipes everything before anyone else.&quot;</p>
-                </div>
-                <div className="flex items-center gap-3 pt-4 border-t border-white/5">
-                  <div className="w-9 h-9 rounded-full bg-primary/20 flex items-center justify-center font-bold text-xs text-primary">AT</div>
-                  <div>
-                    <div className="font-bold text-white text-xs">Alex_Trader21</div>
-                    <div className="text-[10px] text-gray-400">Verified Pro Member</div>
-                  </div>
-                </div>
+            {/* SCREENSHOT 1: _mesirve_ */}
+            <div className="relative group rounded-2xl p-1 bg-[#0d0d0d] border border-white/10 shadow-xl overflow-hidden hover:border-purple-500/40 hover:-translate-y-1 transition-all duration-300 flex flex-col">
+              <div className="bg-[#141414] px-3.5 py-2 border-b border-white/10 flex items-center justify-between text-xs">
+                <span className="text-purple-400 font-bold flex items-center gap-1.5">
+                  <span className="w-2 h-2 rounded-full bg-emerald-400"></span> _mesirve_
+                </span>
+                <span className="text-amber-400 font-semibold text-[11px]">⭐ 5-Star Review</span>
               </div>
-
-              <div className="glass-card p-6 rounded-2xl border-primary/30 bg-primary/[0.02] hover:border-primary/50 transition-all flex flex-col justify-between">
-                <div>
-                  <div className="flex gap-1 mb-3 text-primary">
-                    <span className="material-symbols-outlined fill-1 text-sm">star</span>
-                    <span className="material-symbols-outlined fill-1 text-sm">star</span>
-                    <span className="material-symbols-outlined fill-1 text-sm">star</span>
-                    <span className="material-symbols-outlined fill-1 text-sm">star</span>
-                    <span className="material-symbols-outlined fill-1 text-sm">star</span>
-                  </div>
-                  <p className="text-white text-xs md:text-sm font-bold leading-relaxed mb-6">&quot;Browser extension setup keeps credentials 100% local. Zero password sharing & total security.&quot;</p>
-                </div>
-                <div className="flex items-center gap-3 pt-4 border-t border-white/5">
-                  <div className="w-9 h-9 rounded-full bg-primary/20 flex items-center justify-center font-bold text-xs text-primary">FK</div>
-                  <div>
-                    <div className="font-bold text-white text-xs">FUT_King</div>
-                    <div className="text-[10px] text-gray-400">Beta Tester</div>
-                  </div>
-                </div>
-              </div>
-
-              <div className="glass-card p-6 rounded-2xl border-white/10 hover:border-primary/30 transition-all sm:col-span-2 flex flex-col sm:flex-row items-start sm:items-center justify-between gap-4">
-                <div>
-                  <div className="flex gap-1 mb-2 text-primary">
-                    <span className="material-symbols-outlined fill-1 text-sm">star</span>
-                    <span className="material-symbols-outlined fill-1 text-sm">star</span>
-                    <span className="material-symbols-outlined fill-1 text-sm">star</span>
-                    <span className="material-symbols-outlined fill-1 text-sm">star</span>
-                    <span className="material-symbols-outlined fill-1 text-sm">star</span>
-                  </div>
-                  <p className="text-gray-300 text-xs md:text-sm font-medium leading-relaxed">&quot;Integrated SBC solver and fast market searches make this the best autobuyer on the market.&quot;</p>
-                </div>
-                <div className="flex items-center gap-3 shrink-0 pt-3 sm:pt-0 border-t sm:border-t-0 border-white/5">
-                  <div className="w-9 h-9 rounded-full bg-primary/20 flex items-center justify-center font-bold text-xs text-primary">SG</div>
-                  <div>
-                    <div className="font-bold text-white text-xs">Sarah_G</div>
-                    <div className="text-[10px] text-gray-400">Elite Division Trader</div>
-                  </div>
-                </div>
+              <div className="p-1 flex-1 flex items-center justify-center bg-[#050505]">
+                <Image 
+                  src="/discord-review-1.png" 
+                  alt="Discord Review by _mesirve_: You brighten people's lives by creating these extensions for FC26. 5 stars."
+                  width={1024}
+                  height={657}
+                  className="w-full h-auto rounded-xl"
+                  priority
+                />
               </div>
             </div>
 
-            {/* RIGHT COLUMN: COMPACT DISCORD SCREENSHOT PROOF */}
-            <div className="lg:col-span-5 flex flex-col justify-center items-center">
-              <div className="relative group w-full max-w-[440px]">
-                <div className="absolute -inset-1 bg-gradient-to-r from-purple-600/50 to-pink-600/50 rounded-2xl blur-md opacity-40 group-hover:opacity-75 transition duration-500"></div>
-                <div className="relative rounded-xl p-1.5 bg-[#0d0d0d] border border-white/10 shadow-xl overflow-hidden">
-                  <div className="bg-[#141414] px-3 py-1.5 border-b border-white/10 flex items-center justify-between text-[11px]">
-                    <span className="text-purple-400 font-bold flex items-center gap-1.5">
-                      <svg className="w-3.5 h-3.5 fill-current" viewBox="0 0 24 24">
-                        <path d="M20.317 4.37a19.791 19.791 0 0 0-4.885-1.515.074.074 0 0 0-.079.037c-.21.375-.444.864-.608 1.25a18.27 18.27 0 0 0-5.487 0 12.64 12.64 0 0 0-.617-1.25.077.077 0 0 0-.079-.037A19.736 19.736 0 0 0 3.677 4.37a.07.07 0 0 0-.032.027C.533 9.046-.32 13.58.099 18.057a.082.082 0 0 0 .031.057 19.9 19.9 0 0 0 5.993 3.03.078.078 0 0 0 .084-.028c.462-.63.874-1.295 1.226-1.994.021-.041.001-.09-.041-.106a13.107 13.107 0 0 1-1.872-.892.077.077 0 0 1-.008-.128c.126-.093.252-.19.373-.287a.075.075 0 0 1 .078-.01c3.927 1.793 8.18 1.793 12.061 0a.075.075 0 0 1 .079.009c.12.098.245.195.372.288a.077.077 0 0 1-.006.128 12.299 12.299 0 0 1-1.873.891.077.077 0 0 0-.041.107c.36.698.772 1.362 1.225 1.993a.076.076 0 0 0 .084.028 19.839 19.839 0 0 0 6.002-3.03.077.077 0 0 0 .032-.054c.5-5.177-.838-9.674-3.549-13.66a.061.061 0 0 0-.031-.028zM8.02 15.33c-1.183 0-2.157-1.085-2.157-2.419 0-1.333.956-2.419 2.157-2.419 1.21 0 2.176 1.096 2.157 2.42 0 1.333-.956 2.418-2.157 2.418zm7.975 0c-1.183 0-2.157-1.085-2.157-2.419 0-1.333.955-2.419 2.157-2.419 1.21 0 2.176 1.096 2.157 2.42 0 1.333-.946 2.418-2.157 2.418z"/>
-                      </svg>
-                      Verified Snipe Proof
-                    </span>
-                    <span className="text-emerald-400 font-bold">#success-logs</span>
-                  </div>
-                  <Image 
-                    src="/discord-review-card.png" 
-                    alt="Real Discord Snipe Proof: Bro it works I sniped TOTS YAMAL twice for 300k"
-                    width={686}
-                    height={302}
-                    className="w-full h-auto rounded-lg relative z-10"
-                    priority
-                  />
-                </div>
+            {/* SCREENSHOT 2: Patrunjel Regele */}
+            <div className="relative group rounded-2xl p-1 bg-[#0d0d0d] border border-white/10 shadow-xl overflow-hidden hover:border-purple-500/40 hover:-translate-y-1 transition-all duration-300 flex flex-col">
+              <div className="bg-[#141414] px-3.5 py-2 border-b border-white/10 flex items-center justify-between text-xs">
+                <span className="text-purple-400 font-bold flex items-center gap-1.5">
+                  <span className="w-2 h-2 rounded-full bg-emerald-400"></span> Patrunjel Regele
+                </span>
+                <span className="text-emerald-400 font-semibold text-[11px]">Verified Tester</span>
               </div>
-              
-              <Link 
-                href="https://discord.gg" 
-                target="_blank"
-                rel="noopener noreferrer"
-                className="mt-4 inline-flex items-center justify-center gap-2 bg-[#5865F2] hover:bg-[#4752C4] text-white font-bold text-xs px-6 py-2.5 rounded-lg shadow-md transition-all hover:scale-105"
-              >
-                Join 5,000+ Traders on Discord
-              </Link>
+              <div className="p-1 flex-1 flex items-center justify-center bg-[#050505]">
+                <Image 
+                  src="/discord-review-4.png" 
+                  alt="Discord Review by Patrunjel Regele: The menu for the sniper is great I really like it. The sniping itself works."
+                  width={794}
+                  height={570}
+                  className="w-full h-auto rounded-xl"
+                />
+              </div>
             </div>
 
+            {/* SCREENSHOT 3: faresislol */}
+            <div className="relative group rounded-2xl p-1 bg-[#0d0d0d] border border-white/10 shadow-xl overflow-hidden hover:border-purple-500/40 hover:-translate-y-1 transition-all duration-300 flex flex-col">
+              <div className="bg-[#141414] px-3.5 py-2 border-b border-white/10 flex items-center justify-between text-xs">
+                <span className="text-purple-400 font-bold flex items-center gap-1.5">
+                  <span className="w-2 h-2 rounded-full bg-emerald-400"></span> faresislol
+                </span>
+                <span className="text-amber-400 font-semibold text-[11px]">⭐ Goated Review</span>
+              </div>
+              <div className="p-1 flex-1 flex items-center justify-center bg-[#050505]">
+                <Image 
+                  src="/discord-review-2.png" 
+                  alt="Discord Review by faresislol: alr thanks bro your goated ill give u a 5 star review"
+                  width={694}
+                  height={368}
+                  className="w-full h-auto rounded-xl"
+                />
+              </div>
+            </div>
+
+            {/* SCREENSHOT 4: astroa */}
+            <div className="relative group rounded-2xl p-1 bg-[#0d0d0d] border border-white/10 shadow-xl overflow-hidden hover:border-purple-500/40 hover:-translate-y-1 transition-all duration-300 flex flex-col">
+              <div className="bg-[#141414] px-3.5 py-2 border-b border-white/10 flex items-center justify-between text-xs">
+                <span className="text-purple-400 font-bold flex items-center gap-1.5">
+                  <span className="w-2 h-2 rounded-full bg-emerald-400"></span> astroa
+                </span>
+                <span className="text-primary font-semibold text-[11px]">BSS Member</span>
+              </div>
+              <div className="p-1 flex-1 flex items-center justify-center bg-[#050505]">
+                <Image 
+                  src="/discord-review-3.png" 
+                  alt="Discord Review by astroa: yes its very good"
+                  width={806}
+                  height={544}
+                  className="w-full h-auto rounded-xl"
+                />
+              </div>
+            </div>
+
+            {/* SCREENSHOT 5: Phantom Yamal Snipe */}
+            <div className="relative group rounded-2xl p-1 bg-[#0d0d0d] border border-white/10 shadow-xl overflow-hidden hover:border-purple-500/40 hover:-translate-y-1 transition-all duration-300 flex flex-col md:col-span-2 lg:col-span-2">
+              <div className="bg-[#141414] px-3.5 py-2 border-b border-white/10 flex items-center justify-between text-xs">
+                <span className="text-purple-400 font-bold flex items-center gap-1.5">
+                  <span className="w-2 h-2 rounded-full bg-emerald-400"></span> Phantom (GENO)
+                </span>
+                <span className="text-purple-300 font-semibold text-[11px]">🔥 TOTS Yamal Snipe Proof</span>
+              </div>
+              <div className="p-1 flex-1 flex items-center justify-center bg-[#050505]">
+                <Image 
+                  src="/discord-review-card.png" 
+                  alt="Discord Review by Phantom: Bro it works I sniped TOTS YAMAL twice for 300k"
+                  width={686}
+                  height={302}
+                  className="w-full h-auto rounded-xl"
+                />
+              </div>
+            </div>
+
+          </div>
+
+          {/* DISCORD COMMUNITY JOIN CTA */}
+          <div className="mt-14 text-center">
+            <Link 
+              href="https://discord.gg" 
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-flex items-center gap-3 bg-[#5865F2] hover:bg-[#4752C4] text-white font-bold px-8 py-3.5 rounded-xl shadow-lg transition-all hover:scale-105 text-sm"
+            >
+              <svg className="w-5 h-5 fill-current" viewBox="0 0 24 24">
+                <path d="M20.317 4.37a19.791 19.791 0 0 0-4.885-1.515.074.074 0 0 0-.079.037c-.21.375-.444.864-.608 1.25a18.27 18.27 0 0 0-5.487 0 12.64 12.64 0 0 0-.617-1.25.077.077 0 0 0-.079-.037A19.736 19.736 0 0 0 3.677 4.37a.07.07 0 0 0-.032.027C.533 9.046-.32 13.58.099 18.057a.082.082 0 0 0 .031.057 19.9 19.9 0 0 0 5.993 3.03.078.078 0 0 0 .084-.028c.462-.63.874-1.295 1.226-1.994.021-.041.001-.09-.041-.106a13.107 13.107 0 0 1-1.872-.892.077.077 0 0 1-.008-.128c.126-.093.252-.19.373-.287a.075.075 0 0 1 .078-.01c3.927 1.793 8.18 1.793 12.061 0a.075.075 0 0 1 .079.009c.12.098.245.195.372.288a.077.077 0 0 1-.006.128 12.299 12.299 0 0 1-1.873.891.077.077 0 0 0-.041.107c.36.698.772 1.362 1.225 1.993a.076.076 0 0 0 .084.028 19.839 19.839 0 0 0 6.002-3.03.078.078 0 0 0 .032-.054c.5-5.177-.838-9.674-3.549-13.66a.061.061 0 0 0-.031-.028zM8.02 15.33c-1.183 0-2.157-1.085-2.157-2.419 0-1.333.956-2.419 2.157-2.419 1.21 0 2.176 1.096 2.157 2.42 0 1.333-.956 2.418-2.157 2.418zm7.975 0c-1.183 0-2.157-1.085-2.157-2.419 0-1.333.955-2.419 2.157-2.419 1.21 0 2.176 1.096 2.157 2.42 0 1.333-.946 2.418-2.157 2.418z"/>
+              </svg>
+              Join 5,000+ Traders on Discord
+            </Link>
           </div>
         </div>
       </section>
