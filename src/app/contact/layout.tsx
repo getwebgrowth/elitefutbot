@@ -1,20 +1,9 @@
-import { Metadata } from "next";
+import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Contact Elite FUT SNIPER Support",
-  description: "Get in touch with the Elite FUT SNIPER team for support, business inquiries, and partnership opportunities.",
-  alternates: { canonical: "https://elitefutbot.com/contact" },
-  openGraph: {
-    title: "Contact Elite FUT SNIPER Support",
-    description: "Get in touch with the Elite FUT SNIPER team for support.",
-    url: "https://elitefutbot.com/contact",
-    siteName: "Elite FUT SNIPER",
-    type: "website",
-  },
-  twitter: {
-    title: "Contact Elite FUT SNIPER Support",
-    description: "Get in touch with the Elite FUT SNIPER team for support.",
-  }
+  title: "Contact Support | Elite FUT SNIPER",
+  description: "Get in touch with the Elite FUT SNIPER team. Discord support, technical help, and general inquiries for our EA FC sniping bot.",
+  keywords: "contact elite fut bot, fut snipe bot support, ea fc autobuyer help",
 };
 
 export default function ContactLayout({
