@@ -21,20 +21,29 @@ const publicSans = Public_Sans({
 });
 
 export const metadata: Metadata = {
-  metadataBase: new URL('https://elitefutbot.com'),
+  metadataBase: new URL('https://www.futsnipebot.com'),
   title: { 
     default: "Elite FUT SNIPER – FC 26 Sniping Bot & Autobuyer", 
     template: "%s | Elite FUT SNIPER" 
   },
   description: "Dominate the EA FC 26, FC 25 & upcoming FC 27 transfer markets. The fastest FUT sniping bot and autobuyer featuring 20ms speeds and local security.",
   alternates: {
-    canonical: "https://elitefutbot.com/",
+    canonical: "https://www.futsnipebot.com/",
   },
   openGraph: {
     title: "Elite FUT SNIPER – FC 26 Sniping Bot & Autobuyer",
     description: "World's fastest sniping bot and autobuyer for FC 26, FC 25 & FC 27. Advanced anti-ban engine and cloud-based SBC solving.",
-    url: "https://elitefutbot.com/",
+    url: "https://www.futsnipebot.com/",
     siteName: "Elite FUT SNIPER",
+    images: [
+      {
+        url: "https://www.futsnipebot.com/og-image.png",
+        width: 1200,
+        height: 630,
+        alt: "Elite FUT SNIPER - #1 FC 26, FC 25 & FC 27 Sniping Bot & Autobuyer",
+        type: "image/jpeg",
+      }
+    ],
     locale: "en_US",
     type: "website",
   },
@@ -42,6 +51,8 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "Elite FUT SNIPER – FC 26 Sniping Bot & Autobuyer",
     description: "Elite sniping bot and autobuyer for FC 26, FC 25 & FC 27. 20ms speeds and anti-ban engine.",
+    images: ["https://www.futsnipebot.com/og-image.png"],
+    creator: "@FutSnipeBot",
   },
   verification: {
     other: {
@@ -56,7 +67,7 @@ const jsonLd = {
   "@graph": [
     {
       "@type": "SoftwareApplication",
-      "@id": "https://elitefutbot.com/#software",
+      "@id": "https://www.futsnipebot.com/#software",
       "name": "Elite FUT SNIPER",
       "operatingSystem": "Web, Windows, macOS",
       "applicationCategory": "GameApplication",
@@ -73,10 +84,10 @@ const jsonLd = {
     },
     {
       "@type": "Organization",
-      "@id": "https://elitefutbot.com/#organization",
+      "@id": "https://www.futsnipebot.com/#organization",
       "name": "Elite FUT SNIPER",
-      "url": "https://elitefutbot.com",
-      "logo": "https://elitefutbot.com/logo-elite.png",
+      "url": "https://www.futsnipebot.com",
+      "logo": "https://www.futsnipebot.com/logo-elite.png",
       "sameAs": [
         "https://www.tiktok.com/@elitefutbotx",
         "https://www.instagram.com/elitefutbot/",
@@ -85,12 +96,12 @@ const jsonLd = {
     },
     {
       "@type": "WebSite",
-      "@id": "https://elitefutbot.com/#website",
-      "url": "https://elitefutbot.com",
+      "@id": "https://www.futsnipebot.com/#website",
+      "url": "https://www.futsnipebot.com",
       "name": "Elite FUT SNIPER",
       "description": "World's fastest sniping bot and autobuyer for FC 26, FC 25 & FC 27.",
       "publisher": {
-        "@id": "https://elitefutbot.com/#organization"
+        "@id": "https://www.futsnipebot.com/#organization"
       }
     }
   ]
@@ -104,6 +115,16 @@ export default function RootLayout({
   return (
     <html lang="en" className="scroll-smooth">
       <head>
+        {/* Open Graph & Social Share Fallback Tags for WhatsApp, X/Twitter, FB, iMessage, Discord, Telegram */}
+        <meta property="og:image" content="https://www.futsnipebot.com/og-image.png" />
+        <meta property="og:image:secure_url" content="https://www.futsnipebot.com/og-image.png" />
+        <meta property="og:image:width" content="1200" />
+        <meta property="og:image:height" content="630" />
+        <meta property="og:image:type" content="image/jpeg" />
+        <meta property="og:image:alt" content="Elite FUT SNIPER - #1 FC 26, FC 25 & FC 27 Sniping Bot & Autobuyer" />
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:image" content="https://www.futsnipebot.com/og-image.png" />
+        <meta name="twitter:site" content="@FutSnipeBot" />
         {/* Bing Webmaster Verification */}
         <meta name="msvalidate.01" content="DF183DB29828D77C74770B08A8F24DD0" />
         {/* Yandex Verification */}

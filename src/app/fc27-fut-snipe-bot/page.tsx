@@ -9,6 +9,21 @@ export const metadata: Metadata = {
     title: "FC 27 FUT Snipe Bot & EA FC 27 Autobuyer",
     description: "The best FUT Snipe Bot for EA FC 27. Automate player sniping, auto relist, and market filtering directly in your browser.",
     type: "website",
+    url: "https://www.futsnipebot.com/fc27-fut-snipe-bot",
+    images: [
+      {
+        url: "https://www.futsnipebot.com/og-image.png",
+        width: 1200,
+        height: 630,
+        alt: "FC 27 FUT Snipe Bot & EA FC 27 Autobuyer",
+      }
+    ],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "FC 27 FUT Snipe Bot & EA FC 27 Autobuyer",
+    description: "The best FUT Snipe Bot for EA FC 27. Automate player sniping, auto relist, and market filtering.",
+    images: ["https://www.futsnipebot.com/og-image.png"],
   },
 };
 
