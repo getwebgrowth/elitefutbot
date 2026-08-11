@@ -67,6 +67,7 @@ export default function FC27FutSnipeBotPage() {
         dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
       />
       
+      <main className="flex-grow">
       {/* HERO SECTION */}
       <header className="relative pt-12 pb-16 lg:pt-20 lg:pb-24 overflow-hidden">
         {/* Ambient Glows */}
@@ -196,7 +197,7 @@ export default function FC27FutSnipeBotPage() {
                     Add Elite FUT Bot to Google Chrome and pin it to your toolbar for instant 1-click access.
                   </p>
                 </div>
-                <div className="mt-6 pt-4 border-t border-white/5 flex items-center gap-1.5 text-[11px] text-gray-500 font-medium">
+                <div className="mt-6 pt-4 border-t border-white/5 flex items-center gap-1.5 text-[11px] text-gray-400 font-medium">
                   <span className="w-1.5 h-1.5 rounded-full bg-primary/60"></span>
                   Quick 1-click install
                 </div>
@@ -216,7 +217,7 @@ export default function FC27FutSnipeBotPage() {
                     Log into the EA FC 27 Web App and open the bot inside Chrome&apos;s native Side Panel.
                   </p>
                 </div>
-                <div className="mt-6 pt-4 border-t border-white/5 flex items-center gap-1.5 text-[11px] text-gray-500 font-medium">
+                <div className="mt-6 pt-4 border-t border-white/5 flex items-center gap-1.5 text-[11px] text-gray-400 font-medium">
                   <span className="w-1.5 h-1.5 rounded-full bg-primary/60"></span>
                   No login credentials required
                 </div>
@@ -236,7 +237,7 @@ export default function FC27FutSnipeBotPage() {
                     Pick the players, max buy prices, and rating filters you want the bot to watch for.
                   </p>
                 </div>
-                <div className="mt-6 pt-4 border-t border-white/5 flex items-center gap-1.5 text-[11px] text-gray-500 font-medium">
+                <div className="mt-6 pt-4 border-t border-white/5 flex items-center gap-1.5 text-[11px] text-gray-400 font-medium">
                   <span className="w-1.5 h-1.5 rounded-full bg-primary/60"></span>
                   Futbin price sync enabled
                 </div>
@@ -470,6 +471,7 @@ export default function FC27FutSnipeBotPage() {
         </div>
       </section>
 
+      </main>
     </>
   );
 }
