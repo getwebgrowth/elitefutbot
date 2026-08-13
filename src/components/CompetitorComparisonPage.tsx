@@ -3,11 +3,51 @@ import Link from "next/link";
 import { useState } from "react";
 import type { CompetitorData } from "@/data/competitors/types";
 
+const FEATURE_DESCRIPTIONS: Record<string, string> = {
+  "Execution Location": "Where the automation runs (your local browser vs a remote external server).",
+  "EA Password Required": "Whether you need to share your EA password and login credentials.",
+  "Market Search Speed": "The round-trip speed of search requests (lower latency wins snipes).",
+  "AI SBC Solver": "Whether the bot automatically solves Squad Building Challenges using club players.",
+  "Side Panel HUD Integration": "Chrome side panel dashboard so controls stay neatly next to your Web App.",
+  "Pricing Model": "The pricing structure (e.g. flat purchase vs recurring monthly/seasonal keys).",
+  "Monthly Subscription Price": "The recurring monthly fee to maintain access to the service.",
+  "License Price": "The licensing structure (flat fee vs seasonal keys).",
+  "Billing Method": "How you purchase the software licenses.",
+  "Anti-Detection Delay": "Timing randomizers that mimic organic human speed to prevent account bans.",
+  "Anti-Ban Protection": "Timing randomizers that mimic organic human speed to prevent account bans.",
+  "FC 27 Compatibility": "Immediate day-one update support for the latest EA Sports FC 27 Web App.",
+  "FC 27 Web App Support": "Immediate day-one update support for the latest EA Sports FC 27 Web App.",
+  "FC 27 Support": "Immediate day-one update support for the latest EA Sports FC 27 Web App.",
+  "Telegram Control & Alerts": "Ability to send sniped deal alerts or control the bot remotely via Telegram.",
+  "Setup Complexity": "Complexity of setting up the tool (Chrome store vs desktop database files).",
+  "Multi-Account Support": "Whether it supports running dozens of EA accounts simultaneously for coin farming.",
+  "Real-time Profit Sync": "Automatically updates coin counts and profits in real-time.",
+  "Real-time Profit Tracking": "Automatically updates coin counts and profits in real-time.",
+  "Session Data Leaves Your PC": "Whether session tokens are sent to external databases.",
+  "PC Required to be On": "Whether you need to keep your computer running to execute market trades.",
+  "Mobile Compatibility": "Availability of dedicated Android/iOS mobile companion apps or web scripts.",
+  "Sound Alerts & Anti-Captcha": "Sound notifications when a deal is sniped or a captcha is encountered.",
+  "Unlimited Unassigned Items": "Ability to bypass the 50-item unassigned limit to store infinite cards.",
+  "Market Investment Guides": "Expert trading tips, gold/meta player buy guides, and market watch filters.",
+  "Active Since": "How long the brand has been operating in the Ultimate Team trading space.",
+  "Ban Risk": "Security profile and risk of catching a market ban from EA Sports.",
+  "Installation Safety": "Security level of extension installation (unpacked developers files vs store)."
+};
+
 export default function CompetitorComparisonPage({ data }: { data: CompetitorData }) {
   const [openFaq, setOpenFaq] = useState<number | null>(null);
+  const [filterMode, setFilterMode] = useState<"all" | "elite" | "diff">("all");
 
   const eliteWins = data.comparisonRows.filter((r) => r.winner === "elite").length;
   const competitorWins = data.comparisonRows.filter((r) => r.winner === "competitor").length;
+
+  const filteredRows = data.comparisonRows.filter((row) => {
+    if (filterMode === "elite") return row.winner === "elite";
+    if (filterMode === "diff") {
+      return String(row.elite) !== String(row.competitor);
+    }
+    return true;
+  });
 
   const schemaJsonLd = {
     "@context": "https://schema.org",
@@ -170,67 +210,174 @@ export default function CompetitorComparisonPage({ data }: { data: CompetitorDat
             </div>
           </section>
 
-          {/* ─── COMPARISON TABLE ─────────────────────────── */}
+          {/* ─── COMPARISON SECTION ─────────────────────────── */}
           <section className="space-y-6">
-            <div className="space-y-1">
-              <span className="text-primary text-xs font-bold uppercase tracking-widest">Feature Breakdown</span>
-              <h2 className="text-2xl sm:text-3xl font-black font-headline uppercase text-white">
-                {data.competitorName} vs Elite FUT SNIPER — Full Comparison
-              </h2>
-            </div>
-
-            <div className="rounded-2xl border border-white/10 overflow-hidden bg-white/[0.01] shadow-[0_0_40px_rgba(0,0,0,0.5)]">
-              {/* Table Header */}
-              <div className="grid grid-cols-[1fr,1fr,1fr] text-[10px] font-mono uppercase tracking-widest text-gray-500 px-4 py-3 border-b border-white/10 bg-black/30">
-                <span>Feature</span>
-                <span className="text-center">{data.competitorName}</span>
-                <span className="text-center text-primary">Elite FUT SNIPER</span>
+            <div className="flex flex-col md:flex-row md:items-end justify-between gap-4">
+              <div className="space-y-1">
+                <span className="text-primary text-xs font-bold uppercase tracking-widest">Feature Breakdown</span>
+                <h2 className="text-2xl sm:text-3xl font-black font-headline uppercase text-white">
+                  {data.competitorName} vs Elite FUT SNIPER
+                </h2>
               </div>
 
-              {data.comparisonRows.map((row, i) => {
-                const isEliteWin = row.winner === "elite";
-                const isCompetitorWin = row.winner === "competitor";
-                const isTie = row.winner === "tie";
+              {/* Filtering Controls */}
+              <div className="flex items-center gap-1.5 p-1 rounded-xl bg-black/40 border border-white/15 self-start md:self-auto font-mono text-xs">
+                <button
+                  onClick={() => setFilterMode("all")}
+                  className={`px-3 py-1.5 rounded-lg transition-colors ${filterMode === "all" ? "bg-primary text-black font-bold" : "text-gray-400 hover:text-white"}`}
+                >
+                  All Features
+                </button>
+                <button
+                  onClick={() => setFilterMode("elite")}
+                  className={`px-3 py-1.5 rounded-lg transition-colors ${filterMode === "elite" ? "bg-primary text-black font-bold" : "text-gray-400 hover:text-white"}`}
+                >
+                  Elite Advantages
+                </button>
+                <button
+                  onClick={() => setFilterMode("diff")}
+                  className={`px-3 py-1.5 rounded-lg transition-colors ${filterMode === "diff" ? "bg-primary text-black font-bold" : "text-gray-400 hover:text-white"}`}
+                >
+                  Differences
+                </button>
+              </div>
+            </div>
 
-                const renderValue = (val: string | boolean, side: "elite" | "competitor") => {
-                  if (typeof val === "boolean") {
-                    return val ? (
-                      <span className={`material-symbols-outlined text-lg ${side === "elite" ? "text-primary" : "text-green-400"}`}>check_circle</span>
-                    ) : (
-                      <span className="material-symbols-outlined text-lg text-red-500/70">cancel</span>
+            {/* Desktop Comparison Table (Hidden on Mobile) */}
+            <div className="hidden md:block rounded-2xl border border-white/10 overflow-hidden bg-black/20 shadow-[0_0_50px_rgba(0,0,0,0.8)]">
+              {/* Sticky Column Headers */}
+              <div className="grid grid-cols-[1.2fr,1fr,1.1fr] text-[10px] font-mono uppercase tracking-widest text-gray-500 px-6 py-4 border-b border-white/10 bg-black/60 items-center">
+                <span>Feature / Attribute</span>
+                <span className="text-center">{data.competitorName}</span>
+                <span className="text-center text-primary font-bold">Elite FUT SNIPER (Champion)</span>
+              </div>
+
+              {filteredRows.length > 0 ? (
+                <div className="divide-y divide-white/5">
+                  {filteredRows.map((row, i) => {
+                    const isEliteWin = row.winner === "elite";
+                    const isCompetitorWin = row.winner === "competitor";
+                    const isTie = row.winner === "tie";
+                    const desc = FEATURE_DESCRIPTIONS[row.feature] || "";
+
+                    const renderValue = (val: string | boolean, side: "elite" | "competitor") => {
+                      if (typeof val === "boolean") {
+                        return val ? (
+                          <span className={`material-symbols-outlined text-xl ${side === "elite" ? "text-primary" : "text-emerald-400"}`}>check_circle</span>
+                        ) : (
+                          <span className="material-symbols-outlined text-xl text-red-500/70">cancel</span>
+                        );
+                      }
+                      return <span className="text-sm font-medium leading-relaxed">{val}</span>;
+                    };
+
+                    return (
+                      <div
+                        key={i}
+                        className="grid grid-cols-[1.2fr,1fr,1.1fr] items-center px-6 py-5 hover:bg-white/[0.02] transition-all gap-6"
+                      >
+                        {/* Feature column */}
+                        <div className="space-y-1">
+                          <span className="text-sm text-gray-200 font-bold tracking-wide">{row.feature}</span>
+                          {desc && (
+                            <p className="text-xs text-gray-500 font-medium leading-normal">{desc}</p>
+                          )}
+                        </div>
+
+                        {/* Competitor Column */}
+                        <div className={`flex flex-col justify-center items-center text-center p-2 rounded-xl transition-all ${isCompetitorWin ? "bg-emerald-500/5 border border-emerald-500/10 text-emerald-300" : "text-gray-400"}`}>
+                          {renderValue(row.competitor, "competitor")}
+                          {isCompetitorWin && (
+                            <span className="text-[9px] font-mono font-bold uppercase tracking-wider text-emerald-400 mt-1">Challenger Win</span>
+                          )}
+                        </div>
+
+                        {/* Highlighted Elite Column */}
+                        <div className={`relative flex flex-col justify-center items-center text-center p-3 rounded-xl border transition-all ${
+                          isEliteWin 
+                            ? "bg-primary/5 border-primary/20 text-primary shadow-[0_0_20px_rgba(204,255,0,0.05)]" 
+                            : isTie 
+                              ? "bg-white/[0.02] border-white/5 text-gray-300" 
+                              : "bg-black/40 border-transparent text-gray-500"
+                        }`}>
+                          {renderValue(row.elite, "elite")}
+                          {isEliteWin && (
+                            <span className="text-[9px] font-mono font-black uppercase tracking-wider bg-primary/25 border border-primary/30 px-2 py-0.5 rounded-full text-primary mt-1 shadow-[0_0_10px_rgba(204,255,0,0.2)]">
+                              WINS
+                            </span>
+                          )}
+                          {isTie && (
+                            <span className="text-[9px] font-mono font-bold uppercase tracking-wider text-gray-500 mt-1">TIE</span>
+                          )}
+                        </div>
+                      </div>
                     );
-                  }
-                  return <span className="text-xs sm:text-sm leading-snug">{val}</span>;
-                };
+                  })}
+                </div>
+              ) : (
+                <div className="p-12 text-center text-gray-500 font-mono text-sm">
+                  No features match this filter criteria.
+                </div>
+              )}
+            </div>
 
-                return (
-                  <div
-                    key={i}
-                    className={`grid grid-cols-[1fr,1fr,1fr] items-center px-4 py-4 border-b border-white/5 last:border-b-0 gap-4 transition-colors ${
-                      isEliteWin ? "hover:bg-primary/[0.03]" : "hover:bg-white/[0.02]"
-                    }`}
-                  >
-                    <span className="text-xs sm:text-sm text-gray-300 font-medium">{row.feature}</span>
+            {/* Mobile Comparison Cards (Shown on Mobile only) */}
+            <div className="block md:hidden space-y-4">
+              {filteredRows.length > 0 ? (
+                filteredRows.map((row, i) => {
+                  const isEliteWin = row.winner === "elite";
+                  const isCompetitorWin = row.winner === "competitor";
+                  const isTie = row.winner === "tie";
+                  const desc = FEATURE_DESCRIPTIONS[row.feature] || "";
 
-                    <div className={`flex justify-center items-center text-center ${isCompetitorWin ? "text-white" : "text-gray-500"}`}>
-                      {renderValue(row.competitor, "competitor")}
+                  const renderMobileValue = (val: string | boolean) => {
+                    if (typeof val === "boolean") {
+                      return val ? "Yes" : "No";
+                    }
+                    return val;
+                  };
+
+                  return (
+                    <div
+                      key={i}
+                      className="p-5 rounded-2xl border border-white/10 bg-white/[0.01] space-y-4 hover:border-white/20 transition-all"
+                    >
+                      {/* Feature Name & Description */}
+                      <div className="space-y-1">
+                        <span className="text-sm font-bold text-white uppercase tracking-wider">{row.feature}</span>
+                        {desc && <p className="text-xs text-gray-500 leading-normal">{desc}</p>}
+                      </div>
+
+                      {/* Side-by-side boxes */}
+                      <div className="grid grid-cols-2 gap-3 text-xs">
+                        {/* Challenger Box */}
+                        <div className={`p-3 rounded-xl border text-center space-y-1 ${
+                          isCompetitorWin ? "bg-emerald-500/10 border-emerald-500/20 text-emerald-300" : "bg-black/40 border-white/5 text-gray-400"
+                        }`}>
+                          <span className="text-[9px] font-mono uppercase tracking-widest text-gray-600 block">{data.competitorName}</span>
+                          <span className="font-bold text-sm">{renderMobileValue(row.competitor)}</span>
+                        </div>
+
+                        {/* Elite Box */}
+                        <div className={`p-3 rounded-xl border text-center space-y-1 ${
+                          isEliteWin 
+                            ? "bg-primary/10 border-primary/30 text-primary shadow-[0_0_15px_rgba(204,255,0,0.1)]" 
+                            : isTie 
+                              ? "bg-white/5 border-white/10 text-white" 
+                              : "bg-black/40 border-white/5 text-gray-400"
+                        }`}>
+                          <span className="text-[9px] font-mono uppercase tracking-widest text-primary/60 block">Elite FUT SNIPER</span>
+                          <span className="font-bold text-sm">{renderMobileValue(row.elite)}</span>
+                        </div>
+                      </div>
                     </div>
-
-                    <div className={`flex justify-center items-center gap-2 text-center ${isEliteWin ? "text-primary" : isTie ? "text-gray-300" : "text-gray-500"}`}>
-                      {renderValue(row.elite, "elite")}
-                      {isEliteWin && (
-                        <span className="hidden sm:inline-flex items-center gap-0.5 text-[9px] font-black uppercase tracking-widest bg-primary/20 text-primary border border-primary/30 px-1.5 py-0.5 rounded-full shrink-0">
-                          <span className="material-symbols-outlined text-[10px]">arrow_upward</span>
-                          WINS
-                        </span>
-                      )}
-                      {isTie && (
-                        <span className="hidden sm:inline-flex text-[9px] font-bold uppercase tracking-widest text-gray-600 shrink-0">TIE</span>
-                      )}
-                    </div>
-                  </div>
-                );
-              })}
+                  );
+                })
+              ) : (
+                <div className="p-8 text-center text-gray-500 border border-white/10 rounded-2xl bg-white/[0.01] font-mono text-xs">
+                  No features match this filter criteria.
+                </div>
+              )}
             </div>
 
             {/* Elite Score Summary */}
