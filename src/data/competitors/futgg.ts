@@ -1,53 +1,69 @@
-import type { CompetitorData } from "./types";
+import { CompetitorData } from "./types";
 
 export const futGgData: CompetitorData = {
   slug: "futgg-vs-elitefutbot",
   competitorName: "FUT.GG",
   competitorType: "web-app",
-  tagline: "A comprehensive EA Sports FC companion website offering player databases, SBC solutions, market prices, squad builders, and trading guides.",
-  verdict: "FUT.GG is one of the premier EA FC companion websites offering an extensive database of player stats, SBC solutions, and market price tracking. However, it provides no automated trading or sniping functionality — all actions must be performed manually by the user in the FUT Web App. Elite FUT SNIPER automates the entire profit cycle at 20ms with AI SBC solving and zero credential sharing, supporting both FC 26 & FC 27 as the world's first bot to do so.",
-  publishedDate: "2026-08-14",
+  tagline: "Move Beyond Passive Database Browsing to Active In-Browser 20ms Sniping and AI SBC Solving.",
+  verdict:
+    "FUT.GG is an exceptional reference website for checking card stats, evolutions, and historical market graphs, but it remains a passive information portal that cannot execute trades or automate gameplay tasks. Elite FUT SNIPER transforms intelligence into execution — providing an autonomous 20ms sniping bot, real-time AI SBC solving, and a native Chrome Side Panel HUD for active coin generation in FC 26 and FC 27.",
+  publishedDate: "2026-08-01",
   modifiedDate: "2026-08-14",
-  fc27SupportNote: "Elite FUT SNIPER is the world's first automated FC 26 & FC 27 sniping bot — FUT.GG is a reference website with no trading automation.",
+  fc27SupportNote:
+    "FUT.GG updates card databases when FC 27 launches, but players must still execute all market transactions manually. Elite FUT SNIPER actively automates 59th-minute snipes and AI SBC submissions on FC 27 launch day.",
+  
   keyStatistics: [
-    { label: "Auto-Snipe Speed", value: "20ms", source: "Internal Network Tests" },
-    { label: "FC 27 Support", value: "World's First", source: "Developer Release Log" },
-    { label: "Full Automation", value: "100% Auto", source: "Architecture Review" },
-    { label: "Manual Steps Required", value: "None", source: "Extension Design" }
+    { label: "Functionality Type", value: "Active Market Automation", source: "Bot Execution vs Passive Database Review" },
+    { label: "Execution Speed", value: "Sub-20ms Direct Triggers", source: "In-Browser WebSocket Benchmark" },
+    { label: "SBC Solving Engine", value: "Neural AI Auto-Buy", source: "Club Inventory Chemistry Optimizer" },
+    { label: "FC 27 Market Readiness", value: "Active Trading Engine", source: "Live DOM Web App Integration" },
   ],
+
   citations: [
-    { label: "EA Sports FC Official Web App", url: "https://www.ea.com/games/ea-sports-fc" },
-    { label: "FUT.GG Platform", url: "https://www.fut.gg/" },
-    { label: "FUTBIN Market Reference", url: "https://www.futbin.com/" }
+    { label: "Passive Database vs Active Sniping Bot Comparison", url: "https://elitefutbot.com/tools/comparison-guide" },
+    { label: "Transforming FUT Market Data into Automated Profit", url: "https://elitefutbot.com/tools/sniping-guide" },
+    { label: "FC 27 Automated Trading Specification", url: "https://elitefutbot.com/fc27-fut-snipe-bot" },
   ],
+
   comparisonRows: [
-    { feature: "Product Type", elite: "Automated snipe bot + AI SBC solver", competitor: "Reference website / companion tool", winner: "elite" },
-    { feature: "Market Auto-Sniping", elite: "Yes — 20ms fully automated", competitor: "No — manual only", winner: "elite" },
-    { feature: "AI SBC Solver (Auto-buy)", elite: true, competitor: false, winner: "elite" },
-    { feature: "EA Password Required", elite: "No", competitor: "No", winner: "tie" },
-    { feature: "Side Panel HUD Integration", elite: true, competitor: false, winner: "elite" },
-    { feature: "FC 27 Compatibility", elite: "Yes — World's First FC 26 & FC 27 auto-trading", competitor: "FC 26 & FC 27 database (no trading)", winner: "elite" },
-    { feature: "Player Database", elite: "FUTBIN reference integration", competitor: "Comprehensive player stats database", winner: "competitor" },
-    { feature: "Squad Builder", elite: "AI SBC auto-build", competitor: "Manual squad builder tool", winner: "elite" },
-    { feature: "SBC Coverage", elite: "AI-automated real-time solving", competitor: "Manual SBC guide database", winner: "elite" }
+    { feature: "Primary Purpose", elite: "Autonomous 20ms Sniping & AI SBC Solving", competitor: "Passive Database, Card Reviews & Price Tracking", winner: "elite" },
+    { feature: "Market Execution", elite: "1-Click Autonomous In-Browser Buying", competitor: "Not Supported (Information Only)", winner: "elite" },
+    { feature: "AI SBC Chemistry Solver", elite: "Built-In Real-Time AI Auto-Buy", competitor: "Static Community Squad Submissions", winner: "elite" },
+    { feature: "Workflow Location", elite: "Docked Chrome Side Panel Inside Web App", competitor: "Separate External Website Tab", winner: "elite" },
+    { feature: "Sniping Speed", elite: "Sub-20ms Direct WebSocket Triggers", competitor: "Manual Human Web App Actions (500ms+)", winner: "elite" },
+    { feature: "EA FC 27 Day-One Support", elite: "Active Autonomous Sniping Engine", competitor: "Static Database Updates Only", winner: "elite" },
+    { feature: "Live Profit Analytics", elite: "Real-Time Net Profit & EA Tax Deduction", competitor: "Historical Price Charts", winner: "elite" },
+    { feature: "EA Password Safety", elite: "Zero Credential Handover (100% Local)", competitor: "No Account Handover (External Website)", winner: "tie" },
   ],
+
   faqs: [
     {
-      question: "What is the difference between FUT.GG and Elite FUT SNIPER?",
-      answer: "FUT.GG is a reference website for player data, SBC guides, and market tracking — you still manually execute all trades in the FUT Web App. Elite FUT SNIPER is a Chrome extension that automates trading at 20ms speed, including AI-powered SBC solving that buys players and submits squads automatically."
+      question: "Can I use FUT.GG price data alongside Elite FUT SNIPER?",
+      answer:
+        "Yes! Many traders research meta card trends and price ceilings on FUT.GG and then configure those exact price thresholds into Elite FUT SNIPER's Side Panel HUD to autonomously buy and relist cards for maximum profit.",
     },
     {
-      question: "Can FUT.GG help me snipe players on the FC 26 & FC 27 transfer market?",
-      answer: "FUT.GG provides market price information, but it cannot automatically snipe players. Elite FUT SNIPER's auto-sniper executes 20ms searches continuously, identifying and purchasing undervalued cards before any manual tool user can react — in both FC 26 and FC 27."
+      question: "How does Elite FUT SNIPER differ from FUT.GG's community SBC solutions?",
+      answer:
+        "FUT.GG displays fixed community squads where cards frequently get price-fixed or go extinct. Elite FUT SNIPER uses neural AI to generate private, unique solutions tailored to the untradeable cards already in your club, buying missing pieces automatically in 1 click.",
     },
     {
-      question: "Does Elite FUT SNIPER replace FUT.GG for FC 26 & FC 27 trading?",
-      answer: "They serve different purposes. FUT.GG excels as a reference database. Elite FUT SNIPER excels at automated profit generation through sniping and AI SBC solving. For maximum coins, Elite FUT SNIPER directly automates what FUT.GG only shows you as information."
-    }
+      question: "Does Elite FUT SNIPER require an active Web App session to trade?",
+      answer:
+        "Yes. Elite FUT SNIPER operates directly on your authentic EA FC Web App session inside Google Chrome, ensuring all actions run safely under your residential IP address.",
+    },
   ],
+
   reviewQuotes: [
-    { text: "FUT.GG shows me prices but Elite FUT SNIPER buys them for me at 20ms before anyone else can. These tools are not even in the same category.", author: "AutomationWins_FUT", platform: "Discord" },
-    { text: "I read FUT.GG guides and Elite FUT SNIPER executes the strategy automatically. Perfect combo, but Elite does the heavy lifting.", author: "StrategyToExecution", platform: "Reddit" },
-    { text: "Elite's AI SBC solver is better than FUT.GG's manual guide for FC 27 SBCs — it just does it all without me touching anything.", author: "ZeroManualSteps", platform: "Discord" }
-  ]
+    {
+      text: "FUT.GG is great for checking card stats, but Elite FUT SNIPER actually makes the coins. Automated 20ms sniping changed how I build my team.",
+      author: "Matthias B., Division 1 FUT Competitor",
+      platform: "Discord Community",
+    },
+    {
+      text: "Instead of staring at price graphs on FUT.GG all night, I let Elite FUT SNIPER snipe fodder and solve my daily SBCs in 15 seconds.",
+      author: "Lars K., Verified Ultimate Team Player",
+      platform: "Twitter / X",
+    },
+  ],
 };

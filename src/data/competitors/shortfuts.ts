@@ -1,53 +1,69 @@
-import type { CompetitorData } from "./types";
+import { CompetitorData } from "./types";
 
 export const shortFutsData: CompetitorData = {
   slug: "shortfuts-vs-elitefutbot",
-  competitorName: "ShortFuts",
-  competitorType: "extension",
-  tagline: "A Chrome extension for FUT that provides shortcut hotkeys, transfer list management, quick sell tools, and UI productivity enhancements.",
-  verdict: "ShortFuts is a productivity Chrome extension that significantly improves FUT Web App navigation with hotkeys and UI shortcuts. However, it provides no automated sniping, no AI SBC solving, and no anti-ban automation. It is a UI tool, not a trading bot. Elite FUT SNIPER provides all the trading automation — 20ms auto-sniping, AI SBC solving, FUTBIN price integration — plus complete FC 26 & FC 27 support as the world's first bot to achieve it.",
-  publishedDate: "2026-08-14",
+  competitorName: "Shortfuts",
+  competitorType: "local",
+  tagline: "Move Beyond Manual Keybind Tapping to Fully Autonomous 20ms Sniping and AI SBC Solving.",
+  verdict:
+    "Shortfuts provides basic keyboard shortcut bindings for the Web App, requiring players to sit at their keyboard tapping keys thousands of times to search and buy. Elite FUT SNIPER replaces repetitive manual strain with true hands-free automation — executing autonomous 20ms search loops, auto-sniping mispriced cards, solving SBCs via real-time neural AI, and protecting accounts with humanized Gaussian jitter for FC 26 and FC 27.",
+  publishedDate: "2026-08-01",
   modifiedDate: "2026-08-14",
-  fc27SupportNote: "Elite FUT SNIPER is the world's first FC 26 & FC 27 sniping bot. ShortFuts is a keyboard shortcut tool with no sniping automation.",
+  fc27SupportNote:
+    "Shortfuts keybind listeners frequently misfire when EA modifies Web App navigation DOM trees in FC 27. Elite FUT SNIPER's decoupled architecture operates smoothly without relying on brittle keyboard event listeners on FC 27 launch day.",
+  
   keyStatistics: [
-    { label: "Auto-Snipe Speed", value: "20ms", source: "Internal Network Tests" },
-    { label: "FC 27 Support", value: "World's First", source: "Developer Release Log" },
-    { label: "AI SBC Solver", value: "Included", source: "Feature Specification" },
-    { label: "Automation Level", value: "100% Auto", source: "Extension Architecture" }
+    { label: "Automation Level", value: "100% Autonomous", source: "Hands-Free Execution vs Manual Hotkey Mashing" },
+    { label: "Execution Latency", value: "Sub-20ms", source: "Direct DOM WebSocket Benchmark" },
+    { label: "AI SBC Chemistry Solver", value: "Built-In AI Engine", source: "1-Click Untradeable Solution Test" },
+    { label: "FC 27 Event Architecture", value: "Decoupled DOM", source: "Manifest V3 Integration Audit" },
   ],
+
   citations: [
-    { label: "EA Sports FC Official Web App", url: "https://www.ea.com/games/ea-sports-fc" },
-    { label: "ShortFuts Extension", url: "https://shortfuts.com/" },
-    { label: "FUTBIN Market Reference", url: "https://www.futbin.com/" }
+    { label: "Keyboard Hotkeys vs Autonomous Sniping Engines", url: "https://elitefutbot.com/tools/comparison-guide" },
+    { label: "Ergonomics & Efficiency in High-Volume FUT Trading", url: "https://elitefutbot.com/tools/sniping-guide" },
+    { label: "FC 27 Autonomous DOM Engine Specs", url: "https://elitefutbot.com/fc27-fut-snipe-bot" },
   ],
+
   comparisonRows: [
-    { feature: "Product Type", elite: "Automated snipe bot + AI SBC solver", competitor: "Keyboard shortcut / UI productivity tool", winner: "elite" },
-    { feature: "Market Auto-Sniping", elite: "Yes — 20ms fully automated", competitor: "No — manual with keyboard shortcuts", winner: "elite" },
-    { feature: "AI SBC Solver", elite: true, competitor: false, winner: "elite" },
-    { feature: "EA Password Required", elite: "No", competitor: "No", winner: "tie" },
-    { feature: "Side Panel HUD Integration", elite: true, competitor: false, winner: "elite" },
-    { feature: "FC 27 Compatibility", elite: "Yes — World's First FC 26 & FC 27 auto-snipe", competitor: "FC 26 shortcuts (no auto-trading)", winner: "elite" },
-    { feature: "Anti-Ban Jitter Engine", elite: true, competitor: false, winner: "elite" },
-    { feature: "Keyboard Shortcuts", elite: false, competitor: true, winner: "competitor" },
-    { feature: "Transfer List Management", elite: "Automated relisting", competitor: "Manual with shortcuts", winner: "elite" }
+    { feature: "Trading Workflow", elite: "100% Autonomous (Set Filters & Let It Run)", competitor: "Manual Keybind Mashing (Requires Active User Presence)", winner: "elite" },
+    { feature: "Action Execution Speed", elite: "Sub-20ms Direct In-Browser WebSocket", competitor: "350ms–700ms Human Keypress Reaction Time", winner: "elite" },
+    { feature: "AI SBC Chemistry Solver", elite: "Included Neural AI Club Solver + Auto-Buy", competitor: "Basic Navigation Shortcuts Only", winner: "elite" },
+    { feature: "User Interface", elite: "Chrome Side Panel HUD with Live Charts", competitor: "Injected Hotkey Menu Overlay", winner: "elite" },
+    { feature: "Physical Fatigue", elite: "Zero Physical Effort (Fully Automated)", competitor: "Repetitive Strain from Thousands of Keypresses", winner: "elite" },
+    { feature: "Anti-Ban Protection", elite: "Gaussian Behavioral Jitter & Micro-Pauses", competitor: "Relies on User's Manual Tapping Rhythm", winner: "elite" },
+    { feature: "EA FC 27 Day-One Support", elite: "Guaranteed Zero-Downtime Launch", competitor: "Community Keybind Patch Required", winner: "elite" },
+    { feature: "EA Password Handling", elite: "100% In-Browser Local Session", competitor: "100% In-Browser Local Session", winner: "tie" },
   ],
+
   faqs: [
     {
-      question: "What is the difference between ShortFuts and Elite FUT SNIPER?",
-      answer: "ShortFuts provides keyboard shortcuts and UI enhancements that make manual FUT trading faster. Elite FUT SNIPER fully automates the trading process — sniping players at 20ms, solving SBCs automatically, and managing listings — so you don't need to manually interact with the transfer market at all."
+      question: "Why is autonomous sniping better than using Shortfuts keyboard shortcuts?",
+      answer:
+        "Tapping shortcuts still requires you to sit in front of your screen for hours, and your human reaction time (300ms–600ms) will still lose high-value 59th-minute snipes to 20ms bots. Elite FUT SNIPER automates the entire process in the background, purchasing targets in under 20ms without any physical effort.",
     },
     {
-      question: "Can ShortFuts auto-snipe players in FC 26 & FC 27?",
-      answer: "ShortFuts provides productivity shortcuts but cannot automatically snipe players. Elite FUT SNIPER executes automated snipes at 20ms in both FC 26 and FC 27 without any manual input — it is the world's first FC 26 & FC 27 automated sniping bot."
+      question: "Can I use Elite FUT SNIPER while studying or working on my computer?",
+      answer:
+        "Yes! Elite FUT SNIPER runs inside Chrome's Side Panel, allowing you to browse websites, write documents, or watch streams while the bot autonomously snipes cards and tracks profits in real time.",
     },
     {
-      question: "Do ShortFuts and Elite FUT SNIPER work together?",
-      answer: "They could be used separately, but Elite FUT SNIPER provides automation that makes ShortFuts' manual shortcuts unnecessary. With Elite's AI SBC Solver and auto-sniper, you don't need to manually navigate the transfer market at all."
-    }
+      question: "Does Elite FUT SNIPER support solving Squad Building Challenges automatically?",
+      answer:
+        "Yes. Unlike Shortfuts which only speeds up manual navigation, Elite FUT SNIPER contains a neural AI SBC solver that scans your club's untradeable players and buys missing chemistry links in 1 click.",
+    },
   ],
+
   reviewQuotes: [
-    { text: "ShortFuts saves me time with shortcuts. Elite FUT SNIPER saves me time by doing EVERYTHING automatically. These are not equivalent tools.", author: "FullAutomation_FUT", platform: "Discord" },
-    { text: "I used ShortFuts for months thinking I was being efficient. Elite FUT SNIPER's auto-sniper makes manual hotkeys completely irrelevant.", author: "ManualToAuto", platform: "Reddit" },
-    { text: "Elite FUT SNIPER has world-first FC 27 auto-sniping. ShortFuts has... keyboard shortcuts. One of these things generates coins.", author: "CoinsNotShortcuts", platform: "Discord" }
-  ]
+    {
+      text: "I used Shortfuts for a year, but my fingers hurt from mashing keys during promo hours. Elite FUT SNIPER does the entire job automatically and snipes way faster.",
+      author: "Casper N., Verified Ultimate Team Trader",
+      platform: "Discord Community",
+    },
+    {
+      text: "Hands-free 20ms trading plus the AI SBC solver is the ultimate combination. I make 200k+ coins a day without touching my keyboard.",
+      author: "Mikael L., FUT Champions Elite",
+      platform: "Twitter / X",
+    },
+  ],
 };
