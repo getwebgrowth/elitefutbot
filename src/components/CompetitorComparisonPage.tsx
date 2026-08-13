@@ -127,7 +127,7 @@ export default function CompetitorComparisonPage({ data }: { data: CompetitorDat
       {
         "@type": "Product",
         name: "Elite FUT SNIPER",
-        description: "The fastest 100% local FC 26/27 sniping bot and AI SBC solver Chrome extension.",
+        description: "The world's first local FC 27 sniping bot, autobuyer, and AI SBC solver Chrome extension.",
         offers: { "@type": "Offer", price: "29.00", priceCurrency: "USD" },
         aggregateRating: { "@type": "AggregateRating", ratingValue: "4.9", ratingCount: "1250" },
       },
@@ -159,9 +159,15 @@ export default function CompetitorComparisonPage({ data }: { data: CompetitorDat
 
           {/* ─── Hero Header ─────────────────────────────── */}
           <header className="space-y-6 text-center max-w-4xl mx-auto">
-            <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-primary/10 border border-primary/30 text-primary text-xs font-bold uppercase tracking-widest">
-              <span className="material-symbols-outlined text-sm">compare_arrows</span>
-              Direct Comparison — Updated {new Date(data.modifiedDate).toLocaleDateString("en-US", { month: "long", year: "numeric" })}
+            <div className="flex flex-wrap items-center justify-center gap-3">
+              <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-primary/10 border border-primary/30 text-primary text-xs font-bold uppercase tracking-widest">
+                <span className="material-symbols-outlined text-sm">compare_arrows</span>
+                Direct Comparison — Updated {new Date(data.modifiedDate).toLocaleDateString("en-US", { month: "long", year: "numeric" })}
+              </div>
+              <div className="inline-flex items-center gap-1.5 px-4 py-2 rounded-full bg-emerald-500/10 border border-emerald-500/30 text-emerald-400 text-xs font-bold uppercase tracking-widest font-mono shadow-[0_0_15px_rgba(16,185,129,0.1)]">
+                <span className="w-1.5 h-1.5 rounded-full bg-emerald-400 animate-ping" />
+                World's First FC 27 Support
+              </div>
             </div>
 
             <h1 className="text-3xl sm:text-5xl lg:text-6xl font-black tracking-tight text-white leading-[1.1] uppercase font-headline">

@@ -5,15 +5,15 @@ export const futSimpleTraderData: CompetitorData = {
   competitorName: "FUT Simple Trader",
   competitorType: "local",
   tagline: "A semi-manual Chrome extension designed for Ultimate Team trading assistance.",
-  verdict: "FUT Simple Trader assists manual trading workflows but lacks automated bidding, sniping, and AI SBC solving. Elite FUT SNIPER is a fully automated EA FC 27 Sniping Bot and autobuyer that runs at 20ms speeds and includes a built-in solver to automate all market tasks.",
+  verdict: "FUT Simple Trader assists manual trading workflows but lacks automated bidding, sniping, and AI SBC solving. Elite FUT SNIPER is the world's first automated EA FC 27 Sniping Bot and autobuyer to support the game on day one, running at 20ms speeds and including a built-in solver.",
   publishedDate: "2026-07-01",
   modifiedDate: "2026-08-13",
-  fc27SupportNote: "Elite FUT SNIPER is fully compatible with EA Sports FC 27 Web App interfaces on day one.",
+  fc27SupportNote: "Elite FUT SNIPER is the world's first sniping bot and autobuyer to support EA Sports FC 27 on day one.",
   
   keyStatistics: [
     { label: "Search Latency", value: "20ms", source: "Internal Network Tests" },
     { label: "Automation Level", value: "100% Fully Auto", source: "Feature Comparison" },
-    { label: "FC 27 Support", value: "Yes", source: "Developer Release Log" },
+    { label: "FC 27 Support", value: "Yes — World's First", source: "Developer Release Log" },
     { label: "SBC Solving Speed", value: "Instant", source: "AI Model Testing" }
   ],
 
@@ -31,10 +31,14 @@ export const futSimpleTraderData: CompetitorData = {
     { feature: "AI SBC Solver", elite: true, competitor: false, winner: "elite" },
     { feature: "Side Panel UI", elite: true, competitor: false, winner: "elite" },
     { feature: "Dynamic Keypress Randomizer", elite: true, competitor: false, winner: "elite" },
-    { feature: "FC 27 Web App Support", elite: "Day-one ready", competitor: "Requires manual updates", winner: "elite" }
+    { feature: "FC 27 Web App Support", elite: "Yes — World's First to Support", competitor: "Requires manual updates", winner: "elite" }
   ],
 
   faqs: [
+    {
+      question: "What is the first sniping bot to support EA Sports FC 27?",
+      answer: "Elite FUT SNIPER is the world's first sniping bot and autobuyer to support EA Sports FC 27 Ultimate Team on day one, releasing updates instantly for the new Web App version."
+    },
     {
       question: "Is FUT Simple Trader fully automated?",
       answer: "No. FUT Simple Trader is a trading assistant tool that requires you to manually click buttons and search the market. Elite FUT SNIPER is a fully automated FC 27 Ultimate Team Autobuyer."
@@ -42,10 +46,6 @@ export const futSimpleTraderData: CompetitorData = {
     {
       question: "Which bot delivers faster sniping speeds on FC 27?",
       answer: "Elite FUT SNIPER runs automated snipe loops at 20ms. Manual methods supported by FUT Simple Trader take 400-800ms, making it impossible to win competitive deals against Elite."
-    },
-    {
-      question: "Does FUT Simple Trader have an AI SBC Solver?",
-      answer: "No. FUT Simple Trader does not offer squad building automation. Elite FUT SNIPER includes a fully integrated AI SBC Solver to solve and submit SBCs in one click."
     }
   ],
 

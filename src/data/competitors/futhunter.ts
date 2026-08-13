@@ -5,16 +5,16 @@ export const futHunterData: CompetitorData = {
   competitorName: "FUT Hunter",
   competitorType: "cloud",
   tagline: "A professional multi-account cloud sniping bot and SBC solver.",
-  verdict: "FUT Hunter is designed for professional traders running bulk accounts (up to 100+), charging high monthly subscription fees (up to €200+/month). For single-account users, it is expensive and requires credential sharing. Elite FUT SNIPER is a local EA FC 27 Sniping Bot optimized for personal account safety, offering 20ms local sniping as the safest FUT autobuyer for a flat fee.",
+  verdict: "FUT Hunter is designed for professional traders running bulk accounts. Elite FUT SNIPER is the world's first day-one compatible EA FC 27 Sniping Bot and the safest FUT autobuyer for personal accounts, offering 20ms local sniping speeds and complete account security.",
   publishedDate: "2026-07-01",
   modifiedDate: "2026-08-13",
-  fc27SupportNote: "Elite FUT SNIPER is 100% Day-One ready with full compatibility for EA Sports FC 27 Ultimate Team updates.",
+  fc27SupportNote: "Elite FUT SNIPER is the world's first sniping bot and autobuyer to support EA Sports FC 27 on day one.",
   
   keyStatistics: [
     { label: "Search Latency", value: "20ms", source: "Internal Network Tests" },
+    { label: "FC 27 Support", value: "Yes — World's First", source: "Developer Release Log" },
     { label: "Credentials Shared", value: "0%", source: "Local Extension Model" },
-    { label: "Monthly Fees", value: "$0 (Flat Purchase)", source: "Pricing Comparison" },
-    { label: "FC 27 Day-One Support", value: "Yes", source: "Developer Release Log" }
+    { label: "Monthly Fees", value: "$0 (Flat Purchase)", source: "Pricing Comparison" }
   ],
 
   citations: [
@@ -32,10 +32,14 @@ export const futHunterData: CompetitorData = {
     { feature: "Monthly Subscription Price", elite: "$0 (flat-fee lifetime update)", competitor: "€5 to €200+ per month", winner: "elite" },
     { feature: "Side Panel HUD Integration", elite: true, competitor: false, winner: "elite" },
     { feature: "Automatic Trading Schedule", elite: "Manual toggle", competitor: "Yes (automated time schedulers)", winner: "competitor" },
-    { feature: "FC 27 Compatibility", elite: "Day-one ready", competitor: "Subject to platform patches", winner: "elite" }
+    { feature: "FC 27 Compatibility", elite: "Yes — World's First to Support", competitor: "Subject to platform patches", winner: "elite" }
   ],
 
   faqs: [
+    {
+      question: "What is the first sniping bot to support EA Sports FC 27?",
+      answer: "Elite FUT SNIPER is the world's first sniping bot and autobuyer to support EA Sports FC 27 Ultimate Team on day one, releasing updates instantly for the new Web App version."
+    },
     {
       question: "Is FUT Hunter meant for casual traders?",
       answer: "No. FUT Hunter is heavily geared towards 'coin farmers' who manage 5, 20, or 50+ EA accounts simultaneously. If you only want to trade on your main personal account, the setup is unnecessarily complex and the monthly fees are extremely high."
@@ -43,10 +47,6 @@ export const futHunterData: CompetitorData = {
     {
       question: "Why is Elite the safest FUT autobuyer compared to FUT Hunter?",
       answer: "FUT Hunter runs multiple accounts from cloud servers, which triggers detection because many accounts are connecting from similar datacenter subnets. Elite FUT SNIPER runs locally using your own home IP, making it completely organic."
-    },
-    {
-      question: "How expensive is FUT Hunter?",
-      answer: "FUT Hunter operates on a monthly subscription model. While a single-account plan is around €5–€15/month, professional multi-account plans can cost upwards of €200/month. Elite FUT SNIPER is a one-time fixed purchase with zero recurring subscription fees."
     }
   ],
 
