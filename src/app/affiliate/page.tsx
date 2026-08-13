@@ -3,7 +3,7 @@ import AffiliatePageClient from "./AffiliatePageClient";
 
 export const metadata: Metadata = {
   title: "Affiliate Program | Elite FUT SNIPER",
-  description: "Join the Elite FUT SNIPER Affiliate Program. Earn 50% lifetime recurring commission promoting the #1 FC 26 sniping bot.",
+  description: "Join the Elite FUT SNIPER Affiliate Program. Earn 50% lifetime recurring commission promoting the #1 FC 26 & FC 27 sniping bot.",
   alternates: {
     canonical: "https://elitefutbot.com/affiliate",
   },
@@ -16,7 +16,7 @@ export const metadata: Metadata = {
   },
   twitter: {
     title: "Affiliate Program | Elite FUT SNIPER",
-    description: "Earn 50% recurring commission promoting the #1 FC 26 sniping bot.",
+    description: "Earn 50% recurring commission promoting the #1 FC 26 & FC 27 sniping bot.",
   }
 };
 

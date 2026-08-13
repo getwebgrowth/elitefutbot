@@ -23,7 +23,7 @@ export const metadata: Metadata = {
 const jsonLd = {
   "@context": "https://schema.org",
   "@type": "Article",
-  "headline": "How to Sniping 1M+ Coins Daily in FC 26",
+  "headline": "How to Sniping 1M+ Coins Daily in FC 26 & FC 27",
   "description": "Learn elite sniping strategies for FC 26 & FC 27. Master the 59th minute algorithm patterns and predictive price drop anticipation.",
   "image": "https://elitefutbot.com/og-image.png",
   "author": {
@@ -55,7 +55,7 @@ export default function TacticalIntelArticlePage() {
         <header className="space-y-6">
           <div className="space-y-2">
             <span className="text-primary text-[11px] font-bold font-label tracking-[0.2em] uppercase">DATA CATEGORY: STRATEGY_INTEL</span>
-            <h1 className="text-5xl md:text-7xl font-headline font-bold tracking-tight-custom leading-[0.9] text-white">How to Sniping 1M+ Coins Daily in FC 26</h1>
+            <h1 className="text-5xl md:text-7xl font-headline font-bold tracking-tight-custom leading-[0.9] text-white">How to Sniping 1M+ Coins Daily in FC 26 & FC 27</h1>
           </div>
           <div className="flex flex-wrap items-center gap-x-6 gap-y-2 border-y border-outline-variant/30 py-4 font-label text-[10px] uppercase tracking-widest text-on-surface-variant">
             <div className="flex items-center gap-2">
@@ -110,7 +110,7 @@ export default function TacticalIntelArticlePage() {
         </header>
 
         <div className="prose prose-invert max-w-none space-y-8 font-body text-on-surface-variant leading-relaxed">
-          <p className="text-lg text-white font-medium border-l-2 border-primary pl-6 py-2">To snipe 1M+ coins daily in FC 26, you must use a local Chrome extension bot like Elite FUT SNIPER that provides 20ms execution speeds. Combining this sub-millisecond reaction time with late-night high-frequency trading windows and the ladder selling strategy allows you to exploit market price floor inaccuracies effectively.</p>
+          <p className="text-lg text-white font-medium border-l-2 border-primary pl-6 py-2">To snipe 1M+ coins daily in FC 26 &amp; FC 27, you must use a local Chrome extension bot like Elite FUT SNIPER that provides 20ms execution speeds. Combining this sub-millisecond reaction time with late-night high-frequency trading windows and the ladder selling strategy allows you to exploit market price floor inaccuracies effectively.</p>
           <div className="space-y-4">
             <h2 className="text-2xl font-headline font-bold text-white flex items-center gap-3">
               <span className="text-primary text-base font-mono">01/</span>
