@@ -49,6 +49,44 @@ export default function CompetitorComparisonPage({ data }: { data: CompetitorDat
     return true;
   });
 
+  const renderValue = (val: string | boolean, side: "elite" | "competitor", winner: string) => {
+    if (typeof val === "boolean") {
+      if (val) {
+        return (
+          <span className={`inline-flex items-center gap-1.5 px-3 py-1 rounded-full text-[10px] font-bold font-mono tracking-wider ${
+            side === "elite"
+              ? "bg-primary/10 text-primary border border-primary/20"
+              : "bg-emerald-500/10 text-emerald-400 border border-emerald-500/20"
+          }`}>
+            <span className="w-1.5 h-1.5 rounded-full bg-current animate-pulse" />
+            AVAILABLE
+          </span>
+        );
+      } else {
+        return (
+          <span className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full text-[10px] font-bold font-mono tracking-wider bg-white/[0.04] text-gray-500 border border-white/5">
+            <span className="w-1.5 h-1.5 rounded-full bg-gray-600" />
+            MISSING
+          </span>
+        );
+      }
+    }
+
+    const isElite = side === "elite";
+    const isWinner = winner === side;
+    return (
+      <span className={`text-xs sm:text-sm font-semibold tracking-wide ${
+        isElite
+          ? "text-primary font-bold"
+          : isWinner
+            ? "text-white"
+            : "text-gray-400"
+      }`}>
+        {val}
+      </span>
+    );
+  };
+
   const schemaJsonLd = {
     "@context": "https://schema.org",
     "@graph": [
@@ -144,9 +182,9 @@ export default function CompetitorComparisonPage({ data }: { data: CompetitorDat
           </header>
 
           {/* ─── Battle Score Card ───────────────────────── */}
-          <section className="grid grid-cols-3 gap-0 rounded-2xl overflow-hidden border border-white/10 shadow-[0_0_60px_rgba(0,0,0,0.6)]">
+          <section className="grid grid-cols-3 gap-0 rounded-2xl overflow-hidden border border-white/10 shadow-[0_0_60px_rgba(0,0,0,0.6)] bg-black/40 backdrop-blur-md">
             {/* Competitor Side */}
-            <div className="p-6 sm:p-8 bg-white/[0.02] space-y-3 text-center">
+            <div className="p-6 sm:p-8 bg-white/[0.01] space-y-3 text-center">
               <span className="text-xs font-mono uppercase tracking-widest text-gray-500">Challenger</span>
               <p className="text-xl sm:text-2xl font-black font-headline text-gray-300">{data.competitorName}</p>
               <p className="text-xs text-gray-500 uppercase tracking-wider">{data.competitorType}</p>
@@ -166,7 +204,7 @@ export default function CompetitorComparisonPage({ data }: { data: CompetitorDat
             </div>
 
             {/* Elite Side */}
-            <div className="p-6 sm:p-8 bg-primary/5 border-l border-primary/20 space-y-3 text-center relative overflow-hidden">
+            <div className="p-6 sm:p-8 bg-primary/[0.03] border-l border-primary/20 space-y-3 text-center relative overflow-hidden">
               <div className="absolute inset-0 bg-gradient-to-br from-primary/8 to-transparent pointer-events-none" />
               <span className="relative text-xs font-mono uppercase tracking-widest text-primary">Champion</span>
               <p className="relative text-xl sm:text-2xl font-black font-headline text-white">Elite FUT SNIPER</p>
@@ -243,82 +281,80 @@ export default function CompetitorComparisonPage({ data }: { data: CompetitorDat
               </div>
             </div>
 
-            {/* Desktop Comparison Table (Hidden on Mobile) */}
-            <div className="hidden md:block rounded-2xl border border-white/10 overflow-hidden bg-black/20 shadow-[0_0_50px_rgba(0,0,0,0.8)]">
-              {/* Sticky Column Headers */}
-              <div className="grid grid-cols-[1.2fr,1fr,1.1fr] text-[10px] font-mono uppercase tracking-widest text-gray-500 px-6 py-4 border-b border-white/10 bg-black/60 items-center">
-                <span>Feature / Attribute</span>
-                <span className="text-center">{data.competitorName}</span>
-                <span className="text-center text-primary font-bold">Elite FUT SNIPER (Champion)</span>
-              </div>
-
-              {filteredRows.length > 0 ? (
-                <div className="divide-y divide-white/5">
-                  {filteredRows.map((row, i) => {
-                    const isEliteWin = row.winner === "elite";
-                    const isCompetitorWin = row.winner === "competitor";
-                    const isTie = row.winner === "tie";
-                    const desc = FEATURE_DESCRIPTIONS[row.feature] || "";
-
-                    const renderValue = (val: string | boolean, side: "elite" | "competitor") => {
-                      if (typeof val === "boolean") {
-                        return val ? (
-                          <span className={`material-symbols-outlined text-xl ${side === "elite" ? "text-primary" : "text-emerald-400"}`}>check_circle</span>
-                        ) : (
-                          <span className="material-symbols-outlined text-xl text-red-500/70">cancel</span>
-                        );
-                      }
-                      return <span className="text-sm font-medium leading-relaxed">{val}</span>;
-                    };
-
-                    return (
-                      <div
-                        key={i}
-                        className="grid grid-cols-[1.2fr,1fr,1.1fr] items-center px-6 py-5 hover:bg-white/[0.02] transition-all gap-6"
-                      >
-                        {/* Feature column */}
-                        <div className="space-y-1">
-                          <span className="text-sm text-gray-200 font-bold tracking-wide">{row.feature}</span>
-                          {desc && (
-                            <p className="text-xs text-gray-500 font-medium leading-normal">{desc}</p>
-                          )}
-                        </div>
-
-                        {/* Competitor Column */}
-                        <div className={`flex flex-col justify-center items-center text-center p-2 rounded-xl transition-all ${isCompetitorWin ? "bg-emerald-500/5 border border-emerald-500/10 text-emerald-300" : "text-gray-400"}`}>
-                          {renderValue(row.competitor, "competitor")}
-                          {isCompetitorWin && (
-                            <span className="text-[9px] font-mono font-bold uppercase tracking-wider text-emerald-400 mt-1">Challenger Win</span>
-                          )}
-                        </div>
-
-                        {/* Highlighted Elite Column */}
-                        <div className={`relative flex flex-col justify-center items-center text-center p-3 rounded-xl border transition-all ${
-                          isEliteWin 
-                            ? "bg-primary/5 border-primary/20 text-primary shadow-[0_0_20px_rgba(204,255,0,0.05)]" 
-                            : isTie 
-                              ? "bg-white/[0.02] border-white/5 text-gray-300" 
-                              : "bg-black/40 border-transparent text-gray-500"
-                        }`}>
-                          {renderValue(row.elite, "elite")}
-                          {isEliteWin && (
-                            <span className="text-[9px] font-mono font-black uppercase tracking-wider bg-primary/25 border border-primary/30 px-2 py-0.5 rounded-full text-primary mt-1 shadow-[0_0_10px_rgba(204,255,0,0.2)]">
-                              WINS
-                            </span>
-                          )}
-                          {isTie && (
-                            <span className="text-[9px] font-mono font-bold uppercase tracking-wider text-gray-500 mt-1">TIE</span>
-                          )}
-                        </div>
+            {/* Semantic Desktop Comparison Table (Hidden on Mobile) */}
+            <div className="hidden md:block overflow-x-auto rounded-2xl border border-white/10 bg-black/30 backdrop-blur-md shadow-[0_0_50px_rgba(0,0,0,0.8)]">
+              <table className="w-full text-left border-collapse">
+                <thead>
+                  <tr className="border-b border-white/10 bg-black/60 font-mono text-[10px] tracking-widest text-gray-400">
+                    <th className="px-6 py-5 font-bold uppercase">Feature / Attribute</th>
+                    <th className="px-6 py-5 font-bold text-center w-[25%]">
+                      <div className="flex flex-col items-center gap-1.5">
+                        <span className="uppercase">{data.competitorName}</span>
+                        <span className="inline-flex items-center px-2 py-0.5 rounded-full bg-white/[0.05] text-gray-500 font-bold font-mono text-[8px] uppercase tracking-wider">
+                          CHALLENGER
+                        </span>
                       </div>
-                    );
-                  })}
-                </div>
-              ) : (
-                <div className="p-12 text-center text-gray-500 font-mono text-sm">
-                  No features match this filter criteria.
-                </div>
-              )}
+                    </th>
+                    <th className="px-6 py-5 font-bold text-center text-primary w-[30%] bg-primary/[0.02] border-x border-primary/10">
+                      <div className="flex flex-col items-center gap-1.5">
+                        <span className="uppercase text-primary font-black">Elite FUT SNIPER</span>
+                        <span className="inline-flex items-center px-2.5 py-0.5 rounded-full bg-primary text-black font-black font-mono text-[8px] uppercase tracking-wider shadow-[0_0_12px_rgba(204,255,0,0.5)]">
+                          CHAMPION
+                        </span>
+                      </div>
+                    </th>
+                  </tr>
+                </thead>
+                <tbody className="divide-y divide-white/5 font-sans">
+                  {filteredRows.length > 0 ? (
+                    filteredRows.map((row, i) => {
+                      const isEliteWin = row.winner === "elite";
+                      const isCompetitorWin = row.winner === "competitor";
+                      const desc = FEATURE_DESCRIPTIONS[row.feature] || "";
+
+                      return (
+                        <tr key={i} className="hover:bg-white/[0.01] transition-all group">
+                          {/* Feature cell */}
+                          <td className="px-6 py-5 space-y-1">
+                            <span className="text-sm text-gray-200 font-bold tracking-wide group-hover:text-white transition-colors">{row.feature}</span>
+                            {desc && (
+                              <p className="text-xs text-gray-500 font-medium leading-relaxed">{desc}</p>
+                            )}
+                          </td>
+
+                          {/* Competitor cell */}
+                          <td className="px-6 py-5 text-center">
+                            <div className="flex justify-center">
+                              {renderValue(row.competitor, "competitor", row.winner)}
+                            </div>
+                            {isCompetitorWin && (
+                              <span className="text-[9px] font-mono font-bold uppercase tracking-wider text-emerald-400 mt-1.5 block">Challenger Win</span>
+                            )}
+                          </td>
+
+                          {/* Highlighted Elite cell */}
+                          <td className="px-6 py-5 text-center bg-primary/[0.01] border-x border-primary/5 group-hover:bg-primary/[0.02] transition-all">
+                            <div className="flex flex-col items-center gap-1.5">
+                              {renderValue(row.elite, "elite", row.winner)}
+                              {isEliteWin && (
+                                <span className="text-[9px] font-mono font-black uppercase tracking-wider bg-primary/20 border border-primary/30 px-2.5 py-0.5 rounded-full text-primary shadow-[0_0_10px_rgba(204,255,0,0.1)]">
+                                  WINS
+                                </span>
+                              )}
+                            </div>
+                          </td>
+                        </tr>
+                      );
+                    })
+                  ) : (
+                    <tr>
+                      <td colSpan={3} className="px-6 py-12 text-center text-gray-500 font-mono text-sm bg-black/20">
+                        No features match this filter criteria.
+                      </td>
+                    </tr>
+                  )}
+                </tbody>
+              </table>
             </div>
 
             {/* Mobile Comparison Cards (Shown on Mobile only) */}
