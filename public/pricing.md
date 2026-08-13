@@ -1,24 +1,28 @@
 # Pricing — Elite FUT SNIPER
 
-## Access Tier
-- Price: Free (Beta Phase)
-- Limits: Full access via Discord
+## Free Open Beta Tier (Active)
+- Price: $0 (Free Community Access)
+- Access: Instant download & key via official Discord
 - Features: 
-  - Elite FUT SNIPER Autobuyer (Chrome Extension)
-  - Tax Calculator
-  - Sniping Filters Guide
-  - Cloud SBC Solutions
-  - Basic Discord Support
+  - 100% Local Chrome Extension (Zero password sharing)
+  - Sub-20ms market search triggers
+  - Real-time AI SBC Solver & Untradeable Optimizer
+  - Gaussian Anti-Detection Behavioral Jitter
+  - Chrome Side Panel HUD with Live Profit Tracking
+  - Full Day-One Support for EA Sports FC 26 & FC 27
 
-## Pro / Elite Tier (Releasing Soon)
-- Price: TBD (Expected ~ $29/month)
+## Pro Lifetime Tier (Releasing Soon)
+- Price: Flat License (~$29 one-time / seasonal)
 - Features:
-  - Advanced AI SBC Engine Automation
-  - 20ms Cloud-based Autobuyer execution
-  - Real-time Premium Market Signals
-  - VIP 1-on-1 Trading Support
+  - All Free Beta features included
+  - Advanced Multi-Profile Filter Automation
+  - Priority AI SBC Chemistry Solving Engine
+  - 1-Click Mass Repeatable SBC Batch Solver
+  - VIP 1-on-1 Trading Strategy Discord Channel
+  - Continuous Forward-Compatible FC 27 Updates (Zero Upgrade Fees)
 
-## Terms & Info
-- Status: Currently in free open beta. Join Discord for the Chrome Extension key.
-- Guarantee: 100% Anti-Ban Guarantee.
-- Platform Support: EA FC 26, FC 25 & FC 27 Web App.
+## Security & Compatibility
+- Execution Model: 100% Local In-Browser (Home Residential IP)
+- Password Requirement: Never Required (Zero Credential Handover)
+- Compatibility: EA Sports FC 27, FC 26, and FC 25 Web App (Windows, Mac, Linux, ChromeOS)
+- Anti-Ban Protocol: Dynamic Gaussian Randomization & Micro-Pauses
