@@ -27,7 +27,7 @@ export default function PrivacyPage() {
               1. Introduction
             </h2>
             <p>
-              At Elite FUT SNIPER (accessible via <a href="https://www.elitefutbot.com/" className="text-primary hover:underline">https://www.elitefutbot.com/</a>), we respect your privacy and are committed to protecting any personal data we process. This Privacy Policy explains how we collect, use, disclose, and protect your information when you visit or use our website, tools, and companion overlay services.
+              At Elite FUT SNIPER (accessible via <a href="https://elitefutbot.com/" className="text-primary hover:underline">https://elitefutbot.com/</a>), we respect your privacy and are committed to protecting any personal data we process. This Privacy Policy explains how we collect, use, disclose, and protect your information when you visit or use our website, tools, and companion overlay services.
             </p>
           </section>
 

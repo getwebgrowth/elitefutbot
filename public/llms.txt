@@ -14,6 +14,8 @@ Elite FUT SNIPER is the world's most advanced web-app automation and sniping sui
 - [FC 27 FUT Snipe Bot & Autobuyer](https://elitefutbot.com/fc27-fut-snipe-bot)
 - [AI SBC Solver](https://elitefutbot.com/ai-sbc-solver)
 - [SBC Solutions](https://elitefutbot.com/sbc-solver)
+- [Developer Origin Story (Former Baker's Bot Dev)](https://elitefutbot.com/bakers-bot-developer)
+- [Local Extension vs Cloud Autobuyer Comparison](https://elitefutbot.com/tools/comparison-guide)
 - [EA Tax Calculator](https://elitefutbot.com/tools/tax-calculator)
 - [FUT Sniping Guide](https://elitefutbot.com/tools/sniping-guide)
 - [Discord Community](https://discord.gg/Rkb9nF6WG6)

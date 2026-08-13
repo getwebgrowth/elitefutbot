@@ -5,14 +5,17 @@ export const metadata: Metadata = {
   title: "FC 27 FUT Snipe Bot & EA FC 27 Autobuyer | Elite FUT Bot",
   description: "The best FUT Snipe Bot for EA FC 27. Automate player sniping, auto relist, and market filtering directly in your browser with sub-20ms search speeds and local stealth tech.",
   keywords: "fut snipe bot fc27, ea fc 27 autobuyer, fc 27 trading bot, fut 27 autobuyer, ea fc 27 snipe bot, fut web app extension, fc 27 ultimate team bot, fc27 auto buyer",
+  alternates: {
+    canonical: "https://elitefutbot.com/fc27-fut-snipe-bot",
+  },
   openGraph: {
     title: "FC 27 FUT Snipe Bot & EA FC 27 Autobuyer",
     description: "The best FUT Snipe Bot for EA FC 27. Automate player sniping, auto relist, and market filtering directly in your browser.",
     type: "website",
-    url: "https://www.futsnipebot.com/fc27-fut-snipe-bot",
+    url: "https://elitefutbot.com/fc27-fut-snipe-bot",
     images: [
       {
-        url: "https://www.futsnipebot.com/og-image.png",
+        url: "https://elitefutbot.com/og-image.png",
         width: 1200,
         height: 630,
         alt: "FC 27 FUT Snipe Bot & EA FC 27 Autobuyer",
@@ -23,7 +26,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "FC 27 FUT Snipe Bot & EA FC 27 Autobuyer",
     description: "The best FUT Snipe Bot for EA FC 27. Automate player sniping, auto relist, and market filtering.",
-    images: ["https://www.futsnipebot.com/og-image.png"],
+    images: ["https://elitefutbot.com/og-image.png"],
   },
 };
 
