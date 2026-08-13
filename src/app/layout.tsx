@@ -258,7 +258,7 @@ export default function RootLayout({
               </div>
               
               {/* Links Grid */}
-              <div className="md:col-span-8 grid grid-cols-2 sm:grid-cols-3 gap-12">
+              <div className="md:col-span-8 grid grid-cols-2 sm:grid-cols-4 gap-8">
                 <nav className="space-y-6" aria-labelledby="footer-sbc">
                   <h2 id="footer-sbc" className="text-white font-black text-xs uppercase tracking-[0.2em] font-headline">SBC Solving</h2>
                   <ul className="space-y-4 text-sm font-medium">
@@ -273,19 +273,30 @@ export default function RootLayout({
                   <ul className="space-y-4 text-sm font-medium">
                     <li><Link className="text-gray-400 hover:text-primary transition-colors focus-visible:text-primary focus-visible:outline-none" href="/fc27-fut-snipe-bot">FC 27 Snipe Bot</Link></li>
                     <li><Link className="text-gray-400 hover:text-primary transition-colors focus-visible:text-primary focus-visible:outline-none" href="/tools/tax-calculator">Tax Calculator</Link></li>
-                    <li><Link className="text-gray-400 hover:text-primary transition-colors focus-visible:text-primary focus-visible:outline-none" href="/tools/sniping-guide">Sniping Guide</Link></li>
                     <li><Link className="text-gray-400 hover:text-primary transition-colors focus-visible:text-primary focus-visible:outline-none" href="/blog">Tactical Intel Hub</Link></li>
                     <li><Link className="text-gray-400 hover:text-primary transition-colors focus-visible:text-primary focus-visible:outline-none" href="/article/tactical-intel">Latest Briefing</Link></li>
+                  </ul>
+                </nav>
+
+                <nav className="space-y-6" aria-labelledby="footer-comparisons">
+                  <h2 id="footer-comparisons" className="text-white font-black text-xs uppercase tracking-[0.2em] font-headline">Comparisons</h2>
+                  <ul className="space-y-4 text-sm font-medium">
+                    <li><Link className="text-gray-400 hover:text-primary transition-colors focus-visible:text-primary focus-visible:outline-none" href="/tools/comparison-guide">Comparison Hub</Link></li>
+                    <li><Link className="text-gray-400 hover:text-primary transition-colors focus-visible:text-primary focus-visible:outline-none" href="/futsimpletrader-vs-elitefutbot">vs Simple Trader</Link></li>
+                    <li><Link className="text-gray-400 hover:text-primary transition-colors focus-visible:text-primary focus-visible:outline-none" href="/futmania-vs-elitefutbot">vs FUTMania</Link></li>
+                    <li><Link className="text-gray-400 hover:text-primary transition-colors focus-visible:text-primary focus-visible:outline-none" href="/steviessniper-vs-elitefutbot">vs Stevie's Sniper</Link></li>
+                    <li><Link className="text-gray-400 hover:text-primary transition-colors focus-visible:text-primary focus-visible:outline-none" href="/bakers-bot-vs-elitefutbot">vs Baker's Bot</Link></li>
                   </ul>
                 </nav>
 
                 <nav className="space-y-6" aria-labelledby="footer-resources">
                   <h2 id="footer-resources" className="text-white font-black text-xs uppercase tracking-[0.2em] font-headline">Resources</h2>
                   <ul className="space-y-4 text-sm font-medium">
-                    <li><Link className="text-gray-400 hover:text-primary transition-colors focus-visible:text-primary focus-visible:outline-none" href="/bio">Link in Bio</Link></li>
+                    <li><Link className="text-gray-400 hover:text-primary transition-colors focus-visible:text-primary focus-visible:outline-none" href="/affiliate">Affiliate Program</Link></li>
                     <li><Link className="text-gray-400 hover:text-primary transition-colors focus-visible:text-primary focus-visible:outline-none" href="/volt-velocity">Volt Velocity</Link></li>
                     <li><Link className="text-gray-400 hover:text-primary transition-colors focus-visible:text-primary focus-visible:outline-none" href="/bakers-bot-developer">Origin Story</Link></li>
-                    <li><Link className="text-gray-400 hover:text-primary transition-colors focus-visible:text-primary focus-visible:outline-none" href="/">Homepage</Link></li>
+                    <li><Link className="text-gray-400 hover:text-primary transition-colors focus-visible:text-primary focus-visible:outline-none" href="/bio">Link in Bio</Link></li>
+                    <li><Link className="text-gray-400 hover:text-primary transition-colors focus-visible:text-primary focus-visible:outline-none" href="/links">Direct Links</Link></li>
                   </ul>
                 </nav>
               </div>
@@ -299,6 +310,7 @@ export default function RootLayout({
                 <span>Not Affiliated with EA Sports</span>
               </div>
               <nav className="flex gap-10" aria-label="Legal">
+                <Link className="hover:text-primary transition-colors focus-visible:text-primary focus-visible:outline-none" href="/sitemap.xml">Sitemap</Link>
                 <Link className="hover:text-primary transition-colors focus-visible:text-primary focus-visible:outline-none" href="/terms">Terms</Link>
                 <Link className="hover:text-primary transition-colors focus-visible:text-primary focus-visible:outline-none" href="/privacy">Privacy</Link>
                 <Link className="hover:text-primary transition-colors focus-visible:text-primary focus-visible:outline-none" href="/contact">Contact</Link>
