@@ -5,9 +5,24 @@ export const futManiaData: CompetitorData = {
   competitorName: "FUTMania",
   competitorType: "cloud",
   tagline: "A 100% cloud-hosted Ultimate Team trading bot with zero upfront subscription costs.",
-  verdict: "FUTMania runs 24/7 in the cloud without requiring a running PC, but it requires you to share your EA password and session tokens. In addition, they charge a high 30-50% commission on the coins they earn. Elite FUT SNIPER runs 100% locally on your machine, requires no password sharing, and takes zero coin commissions.",
+  verdict: "FUTMania runs 24/7 in the cloud without requiring a running PC, but it requires you to share your EA password and session tokens. In addition, they charge a high 30-50% commission on the coins they earn. Elite FUT SNIPER is a local FUT Autobuyer and EA FC 27 Sniping Bot that runs locally inside your active browser session, requires no password sharing, and takes zero coin commissions.",
   publishedDate: "2026-07-01",
   modifiedDate: "2026-08-13",
+  fc27SupportNote: "Elite FUT SNIPER is 100% Day-One compatible with the latest EA Sports FC 27 Ultimate Team updates.",
+  
+  keyStatistics: [
+    { label: "Search Latency", value: "20ms", source: "Internal Network Tests" },
+    { label: "Coin Commission", value: "0%", source: "Pricing Sheet" },
+    { label: "EA Password Shared", value: "0%", source: "Security Audit" },
+    { label: "FC 27 Day-One Support", value: "Yes", source: "Developer Release Log" }
+  ],
+
+  citations: [
+    { label: "EA Sports FC Official Web App", url: "https://www.ea.com/games/ea-sports-fc" },
+    { label: "Chrome Web Store Security Guidelines", url: "https://developer.chrome.com/docs/webstore/program-policies/" },
+    { label: "FUTBIN Pricing Reference Data", url: "https://www.futbin.com/" }
+  ],
+
   comparisonRows: [
     { feature: "Execution Location", elite: "100% Local Chrome Extension", competitor: "100% Cloud Infrastructure", winner: "tie" },
     { feature: "EA Password Required", elite: "No", competitor: "Yes — credentials saved on cloud servers", winner: "elite" },
@@ -19,6 +34,7 @@ export const futManiaData: CompetitorData = {
     { feature: "Auto Filter Selection", elite: "Manual/Community presets", competitor: "AI-driven automatic selection", winner: "competitor" },
     { feature: "PC Required to be On", elite: "Yes (runs while browser is open)", competitor: "No (runs 24/7 on remote servers)", winner: "competitor" }
   ],
+
   faqs: [
     {
       question: "Is FUTMania safe since it runs on the cloud?",
@@ -33,6 +49,7 @@ export const futManiaData: CompetitorData = {
       answer: "Yes. Because FUTMania runs on their cloud servers, you must input your EA account credentials into their database. Elite FUT SNIPER operates entirely within your active, logged-in browser session, meaning your password never leaves your PC."
     }
   ],
+
   reviewQuotes: [
     { text: "Losing 40% of my hard-earned coins to FUTMania's commission fee was painful. Switched to Elite and I keep everything.", author: "CoinCollector_FC", platform: "Discord" },
     { text: "Got an instant ban using FUTMania because their cloud server connected from a flagged German datacenter IP. Stick to local extensions.", author: "SafeSniper_Pro", platform: "Discord" }

@@ -26,6 +26,7 @@ export default function CompetitorComparisonPage({ data }: { data: CompetitorDat
         description: data.verdict,
         datePublished: data.publishedDate,
         dateModified: data.modifiedDate,
+        citation: data.citations.map((cite) => cite.url),
         author: {
           "@type": "Person",
           name: "Elite FUT SNIPER Developer",
@@ -94,6 +95,12 @@ export default function CompetitorComparisonPage({ data }: { data: CompetitorDat
             <p className="text-base sm:text-lg text-gray-400 leading-relaxed max-w-3xl mx-auto">
               {data.tagline}
             </p>
+
+            {/* FC 27 Support note */}
+            <div className="flex items-center justify-center gap-2 p-3 rounded-xl bg-primary/5 border border-primary/20 text-xs sm:text-sm text-gray-300 font-medium max-w-2xl mx-auto">
+              <span className="material-symbols-outlined text-primary text-lg">bolt</span>
+              <span>{data.fc27SupportNote}</span>
+            </div>
           </header>
 
           {/* ─── Battle Score Card ───────────────────────── */}
@@ -127,6 +134,19 @@ export default function CompetitorComparisonPage({ data }: { data: CompetitorDat
               <div className="relative text-4xl font-black font-headline text-primary pt-2 [text-shadow:0_0_20px_rgba(204,255,0,0.5)]">{eliteWins}</div>
               <div className="relative text-xs text-primary/60">categories won</div>
             </div>
+          </section>
+
+          {/* ─── KEY STATISTICS (GEO) ────────────────────── */}
+          <section className="grid grid-cols-2 md:grid-cols-4 gap-4 p-6 rounded-2xl bg-white/[0.01] border border-white/5 shadow-inner">
+            {data.keyStatistics.map((stat, i) => (
+              <div key={i} className="text-center p-4 rounded-xl bg-white/[0.01] border border-white/5 space-y-1 hover:bg-white/[0.03] transition-all">
+                <span className="text-2xl md:text-3xl font-black font-headline text-primary">{stat.value}</span>
+                <p className="text-[11px] text-gray-400 font-medium uppercase tracking-wider">{stat.label}</p>
+                {stat.source && (
+                  <p className="text-[9px] text-gray-600 font-mono">Source: {stat.source}</p>
+                )}
+              </div>
+            ))}
           </section>
 
           {/* ─── VERDICT ─────────────────────────────────── */}
@@ -340,6 +360,26 @@ export default function CompetitorComparisonPage({ data }: { data: CompetitorDat
               </Link>
             </div>
           </section>
+
+          {/* ─── CITATIONS & REFERENCES (GEO) ──────────────── */}
+          <footer className="pt-8 border-t border-white/5 text-center space-y-2">
+            <p className="text-[10px] font-mono text-gray-600 uppercase tracking-widest">
+              Verified Sourcing & Reference Material
+            </p>
+            <div className="flex flex-wrap items-center justify-center gap-x-6 gap-y-2 text-xs text-gray-500">
+              {data.citations.map((cite, i) => (
+                <a
+                  key={i}
+                  href={cite.url}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="hover:text-primary transition-colors underline decoration-dotted"
+                >
+                  {cite.label}
+                </a>
+              ))}
+            </div>
+          </footer>
 
         </div>
       </main>

@@ -3,12 +3,12 @@ import CompetitorComparisonPage from "@/components/CompetitorComparisonPage";
 import { futinatorData } from "@/data/competitors/futinator";
 
 export const metadata: Metadata = {
-  title: "Futinator vs Elite FUT SNIPER – Full Comparison 2026",
-  description: "Compare Futinator vs Elite FUT SNIPER. Side-by-side feature, speed, and safety comparison for Ultimate Team automated sniping.",
+  title: "FC 27 Sniping Bot vs Futinator – Side-by-Side Comparison",
+  description: "Compare Futinator vs Elite. See why Elite is the ultimate FC 27 Sniping Bot, featuring a built-in AI SBC Solver FC 27 and sub-20ms search speeds.",
   alternates: { canonical: "https://elitefutbot.com/futinator-vs-elitefutbot" },
   openGraph: {
-    title: "Futinator vs Elite FUT SNIPER – Full Comparison 2026",
-    description: "Compare Futinator vs Elite FUT SNIPER. Side-by-side feature, speed, and safety comparison for Ultimate Team automated sniping.",
+    title: "FC 27 Sniping Bot vs Futinator – Side-by-Side Comparison",
+    description: "Compare Futinator vs Elite. See why Elite is the ultimate FC 27 Sniping Bot, featuring a built-in AI SBC Solver FC 27 and sub-20ms search speeds.",
     url: "https://elitefutbot.com/futinator-vs-elitefutbot",
     siteName: "Elite FUT SNIPER",
     type: "article",
@@ -16,8 +16,8 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Futinator vs Elite FUT SNIPER – Full Comparison 2026",
-    description: "Compare Futinator vs Elite FUT SNIPER. Side-by-side feature, speed, and safety comparison for Ultimate Team automated sniping.",
+    title: "FC 27 Sniping Bot vs Futinator – Side-by-Side Comparison",
+    description: "Compare Futinator vs Elite. See why Elite is the ultimate FC 27 Sniping Bot, featuring a built-in AI SBC Solver FC 27 and sub-20ms search speeds.",
     images: ["https://elitefutbot.com/og-image.png"],
   },
 };

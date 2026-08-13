@@ -3,12 +3,12 @@ import CompetitorComparisonPage from "@/components/CompetitorComparisonPage";
 import { steviesSniperData } from "@/data/competitors/steviessniper";
 
 export const metadata: Metadata = {
-  title: "Stevie's Sniper vs Elite FUT SNIPER – Full Comparison 2026",
-  description: "Compare Stevie's Sniper vs Elite FUT SNIPER. Side-by-side comparison of features, pricing, safety, and speed for EA FC Ultimate Team.",
+  title: "FC 27 Ultimate Team Autobuyer – Stevie's Sniper vs Elite",
+  description: "Compare Stevie's Sniper vs Elite. Discover the premier FC 27 Ultimate Team Autobuyer and EA FC 27 Trading Bot with sub-20ms local sniping and AI SBC Solver.",
   alternates: { canonical: "https://elitefutbot.com/steviessniper-vs-elitefutbot" },
   openGraph: {
-    title: "Stevie's Sniper vs Elite FUT SNIPER – Full Comparison 2026",
-    description: "Compare Stevie's Sniper vs Elite FUT SNIPER. Side-by-side comparison of features, pricing, safety, and speed for EA FC Ultimate Team.",
+    title: "FC 27 Ultimate Team Autobuyer – Stevie's Sniper vs Elite",
+    description: "Compare Stevie's Sniper vs Elite. Discover the premier FC 27 Ultimate Team Autobuyer and EA FC 27 Trading Bot with sub-20ms local sniping and AI SBC Solver.",
     url: "https://elitefutbot.com/steviessniper-vs-elitefutbot",
     siteName: "Elite FUT SNIPER",
     type: "article",
@@ -16,8 +16,8 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Stevie's Sniper vs Elite FUT SNIPER – Full Comparison 2026",
-    description: "Compare Stevie's Sniper vs Elite FUT SNIPER. Side-by-side comparison of features, pricing, safety, and speed for EA FC Ultimate Team.",
+    title: "FC 27 Ultimate Team Autobuyer – Stevie's Sniper vs Elite",
+    description: "Compare Stevie's Sniper vs Elite. Discover the premier FC 27 Ultimate Team Autobuyer and EA FC 27 Trading Bot with sub-20ms local sniping and AI SBC Solver.",
     images: ["https://elitefutbot.com/og-image.png"],
   },
 };

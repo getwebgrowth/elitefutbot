@@ -3,12 +3,12 @@ import CompetitorComparisonPage from "@/components/CompetitorComparisonPage";
 import { bakersBotData } from "@/data/competitors/bakers-bot";
 
 export const metadata: Metadata = {
-  title: "Baker's Bot vs Elite FUT SNIPER – Full Comparison 2026",
-  description: "Compare Baker's Bot vs Elite FUT SNIPER. Built by the same core developer — see why local execution, 20ms speed, and zero password sharing make Elite FUT SNIPER the clear upgrade.",
+  title: "Safest FUT Autobuyer vs Baker's Bot – EA FC 27 Comparison",
+  description: "Compare Baker's Bot vs Elite FUT SNIPER. Rebuilt by the same core engineer with 100% local execution and zero password sharing — the safest FUT autobuyer for EA FC 27.",
   alternates: { canonical: "https://elitefutbot.com/bakers-bot-vs-elitefutbot" },
   openGraph: {
-    title: "Baker's Bot vs Elite FUT SNIPER – Full Comparison 2026",
-    description: "Compare Baker's Bot vs Elite FUT SNIPER. Built by the same core developer — see why local execution, 20ms speed, and zero password sharing make Elite FUT SNIPER the clear upgrade.",
+    title: "Safest FUT Autobuyer vs Baker's Bot – EA FC 27 Comparison",
+    description: "Compare Baker's Bot vs Elite FUT SNIPER. Rebuilt by the same core engineer with 100% local execution and zero password sharing — the safest FUT autobuyer for EA FC 27.",
     url: "https://elitefutbot.com/bakers-bot-vs-elitefutbot",
     siteName: "Elite FUT SNIPER",
     type: "article",
@@ -16,8 +16,8 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Baker's Bot vs Elite FUT SNIPER – Full Comparison 2026",
-    description: "Compare Baker's Bot vs Elite FUT SNIPER. Built by the same core developer — see why local execution, 20ms speed, and zero password sharing make Elite FUT SNIPER the clear upgrade.",
+    title: "Safest FUT Autobuyer vs Baker's Bot – EA FC 27 Comparison",
+    description: "Compare Baker's Bot vs Elite FUT SNIPER. Rebuilt by the same core engineer with 100% local execution and zero password sharing — the safest FUT autobuyer for EA FC 27.",
     images: ["https://elitefutbot.com/og-image.png"],
   },
 };

@@ -3,12 +3,12 @@ import CompetitorComparisonPage from "@/components/CompetitorComparisonPage";
 import { futRichData } from "@/data/competitors/futrich";
 
 export const metadata: Metadata = {
-  title: "FUTRich vs Elite FUT SNIPER – Full Comparison 2026",
-  description: "Compare FUTRich vs Elite FUT SNIPER. Standard Chrome extension with trial vs flat-fee 20ms Side Panel automation and solver.",
+  title: "AI SBC Solver FC 27 – FUTRich vs Elite FUT SNIPER",
+  description: "Compare FUTRich vs Elite. Discover the premium AI SBC Solver FC 27 and local FUT Autobuyer Chrome extension with 20ms speeds and zero password sharing.",
   alternates: { canonical: "https://elitefutbot.com/futrich-vs-elitefutbot" },
   openGraph: {
-    title: "FUTRich vs Elite FUT SNIPER – Full Comparison 2026",
-    description: "Compare FUTRich vs Elite FUT SNIPER. Standard Chrome extension with trial vs flat-fee 20ms Side Panel automation and solver.",
+    title: "AI SBC Solver FC 27 – FUTRich vs Elite FUT SNIPER",
+    description: "Compare FUTRich vs Elite. Discover the premium AI SBC Solver FC 27 and local FUT Autobuyer Chrome extension with 20ms speeds and zero password sharing.",
     url: "https://elitefutbot.com/futrich-vs-elitefutbot",
     siteName: "Elite FUT SNIPER",
     type: "article",
@@ -16,8 +16,8 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "FUTRich vs Elite FUT SNIPER – Full Comparison 2026",
-    description: "Compare FUTRich vs Elite FUT SNIPER. Standard Chrome extension with trial vs flat-fee 20ms Side Panel automation and solver.",
+    title: "AI SBC Solver FC 27 – FUTRich vs Elite FUT SNIPER",
+    description: "Compare FUTRich vs Elite. Discover the premium AI SBC Solver FC 27 and local FUT Autobuyer Chrome extension with 20ms speeds and zero password sharing.",
     images: ["https://elitefutbot.com/og-image.png"],
   },
 };

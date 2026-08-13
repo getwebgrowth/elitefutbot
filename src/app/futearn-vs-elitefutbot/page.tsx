@@ -3,12 +3,12 @@ import CompetitorComparisonPage from "@/components/CompetitorComparisonPage";
 import { futEarnData } from "@/data/competitors/futearn";
 
 export const metadata: Metadata = {
-  title: "FutEarn vs Elite FUT SNIPER – Full Comparison 2026",
-  description: "Compare FutEarn vs Elite FUT SNIPER. FutEarn uses cloud servers requiring your EA password. Elite FUT SNIPER runs 100% locally at 20ms with zero credential sharing.",
+  title: "FUT Web App Bot vs FutEarn – Safe FC 27 Sniping Comparison",
+  description: "Compare FutEarn vs Elite. FutEarn cloud servers require your EA password. Elite is a secure local FUT Web App Bot and no ban sniping bot FC 27 running at 20ms.",
   alternates: { canonical: "https://elitefutbot.com/futearn-vs-elitefutbot" },
   openGraph: {
-    title: "FutEarn vs Elite FUT SNIPER – Full Comparison 2026",
-    description: "Compare FutEarn vs Elite FUT SNIPER. FutEarn uses cloud servers requiring your EA password. Elite FUT SNIPER runs 100% locally at 20ms with zero credential sharing.",
+    title: "FUT Web App Bot vs FutEarn – Safe FC 27 Sniping Comparison",
+    description: "Compare FutEarn vs Elite. FutEarn cloud servers require your EA password. Elite is a secure local FUT Web App Bot and no ban sniping bot FC 27 running at 20ms.",
     url: "https://elitefutbot.com/futearn-vs-elitefutbot",
     siteName: "Elite FUT SNIPER",
     type: "article",
@@ -16,8 +16,8 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "FutEarn vs Elite FUT SNIPER – Full Comparison 2026",
-    description: "Compare FutEarn vs Elite FUT SNIPER. FutEarn uses cloud servers requiring your EA password. Elite FUT SNIPER runs 100% locally at 20ms with zero credential sharing.",
+    title: "FUT Web App Bot vs FutEarn – Safe FC 27 Sniping Comparison",
+    description: "Compare FutEarn vs Elite. FutEarn cloud servers require your EA password. Elite is a secure local FUT Web App Bot and no ban sniping bot FC 27 running at 20ms.",
     images: ["https://elitefutbot.com/og-image.png"],
   },
 };

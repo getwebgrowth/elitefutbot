@@ -3,12 +3,12 @@ import CompetitorComparisonPage from "@/components/CompetitorComparisonPage";
 import { futBotManagerData } from "@/data/competitors/futbotmanager";
 
 export const metadata: Metadata = {
-  title: "FutBotManager vs Elite FUT SNIPER – Full Comparison 2026",
-  description: "Compare FutBotManager vs Elite FUT SNIPER. Side-by-side feature breakdown of Pro Windows client vs native Chrome Side Panel extension.",
+  title: "FC 27 Ultimate Team Trading Extension – FutBotManager vs Elite",
+  description: "Compare FutBotManager vs Elite. Discover the premium FC 27 Ultimate Team trading extension and EA FC 27 Autobuyer with native Chrome side panel HUD.",
   alternates: { canonical: "https://elitefutbot.com/futbotmanager-vs-elitefutbot" },
   openGraph: {
-    title: "FutBotManager vs Elite FUT SNIPER – Full Comparison 2026",
-    description: "Compare FutBotManager vs Elite FUT SNIPER. Side-by-side feature breakdown of Pro Windows client vs native Chrome Side Panel extension.",
+    title: "FC 27 Ultimate Team Trading Extension – FutBotManager vs Elite",
+    description: "Compare FutBotManager vs Elite. Discover the premium FC 27 Ultimate Team trading extension and EA FC 27 Autobuyer with native Chrome side panel HUD.",
     url: "https://elitefutbot.com/futbotmanager-vs-elitefutbot",
     siteName: "Elite FUT SNIPER",
     type: "article",
@@ -16,8 +16,8 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "FutBotManager vs Elite FUT SNIPER – Full Comparison 2026",
-    description: "Compare FutBotManager vs Elite FUT SNIPER. Side-by-side feature breakdown of Pro Windows client vs native Chrome Side Panel extension.",
+    title: "FC 27 Ultimate Team Trading Extension – FutBotManager vs Elite",
+    description: "Compare FutBotManager vs Elite. Discover the premium FC 27 Ultimate Team trading extension and EA FC 27 Autobuyer with native Chrome side panel HUD.",
     images: ["https://elitefutbot.com/og-image.png"],
   },
 };

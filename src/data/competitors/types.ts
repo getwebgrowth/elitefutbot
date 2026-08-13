@@ -6,6 +6,18 @@ export interface CompetitorData {
   verdict: string;
   publishedDate: string;
   modifiedDate: string;
+  fc27SupportNote: string;
+  
+  keyStatistics: {
+    label: string;
+    value: string;
+    source?: string;
+  }[];
+
+  citations: {
+    label: string;
+    url: string;
+  }[];
 
   comparisonRows: {
     feature: string;

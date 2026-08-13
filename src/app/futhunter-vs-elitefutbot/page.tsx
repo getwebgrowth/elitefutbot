@@ -3,12 +3,12 @@ import CompetitorComparisonPage from "@/components/CompetitorComparisonPage";
 import { futHunterData } from "@/data/competitors/futhunter";
 
 export const metadata: Metadata = {
-  title: "FUT Hunter vs Elite FUT SNIPER – Full Comparison 2026",
-  description: "Compare FUT Hunter vs Elite FUT SNIPER. Multi-account cloud farming vs personal account 20ms local sniping automation.",
+  title: "EA FC 27 Sniping Bot vs FUT Hunter – Security Comparison",
+  description: "Compare FUT Hunter vs Elite. See why local execution makes Elite the safest FUT autobuyer and fastest EA FC 27 Sniping Bot for personal Ultimate Team accounts.",
   alternates: { canonical: "https://elitefutbot.com/futhunter-vs-elitefutbot" },
   openGraph: {
-    title: "FUT Hunter vs Elite FUT SNIPER – Full Comparison 2026",
-    description: "Compare FUT Hunter vs Elite FUT SNIPER. Multi-account cloud farming vs personal account 20ms local sniping automation.",
+    title: "EA FC 27 Sniping Bot vs FUT Hunter – Security Comparison",
+    description: "Compare FUT Hunter vs Elite. See why local execution makes Elite the safest FUT autobuyer and fastest EA FC 27 Sniping Bot for personal Ultimate Team accounts.",
     url: "https://elitefutbot.com/futhunter-vs-elitefutbot",
     siteName: "Elite FUT SNIPER",
     type: "article",
@@ -16,8 +16,8 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "FUT Hunter vs Elite FUT SNIPER – Full Comparison 2026",
-    description: "Compare FUT Hunter vs Elite FUT SNIPER. Multi-account cloud farming vs personal account 20ms local sniping automation.",
+    title: "EA FC 27 Sniping Bot vs FUT Hunter – Security Comparison",
+    description: "Compare FUT Hunter vs Elite. See why local execution makes Elite the safest FUT autobuyer and fastest EA FC 27 Sniping Bot for personal Ultimate Team accounts.",
     images: ["https://elitefutbot.com/og-image.png"],
   },
 };

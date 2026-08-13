@@ -5,9 +5,24 @@ export const futHunterData: CompetitorData = {
   competitorName: "FUT Hunter",
   competitorType: "cloud",
   tagline: "A professional multi-account cloud sniping bot and SBC solver.",
-  verdict: "FUT Hunter is designed for professional traders running bulk accounts (up to 100+), charging high monthly subscription fees (up to €200+/month). For single-account users, it is expensive and requires credential sharing. Elite FUT SNIPER is optimized for personal account safety, offering 20ms local sniping, a native side panel UI, and an SBC solver for a flat fee.",
+  verdict: "FUT Hunter is designed for professional traders running bulk accounts (up to 100+), charging high monthly subscription fees (up to €200+/month). For single-account users, it is expensive and requires credential sharing. Elite FUT SNIPER is a local EA FC 27 Sniping Bot optimized for personal account safety, offering 20ms local sniping as the safest FUT autobuyer for a flat fee.",
   publishedDate: "2026-07-01",
   modifiedDate: "2026-08-13",
+  fc27SupportNote: "Elite FUT SNIPER is 100% Day-One ready with full compatibility for EA Sports FC 27 Ultimate Team updates.",
+  
+  keyStatistics: [
+    { label: "Search Latency", value: "20ms", source: "Internal Network Tests" },
+    { label: "Credentials Shared", value: "0%", source: "Local Extension Model" },
+    { label: "Monthly Fees", value: "$0 (Flat Purchase)", source: "Pricing Comparison" },
+    { label: "FC 27 Day-One Support", value: "Yes", source: "Developer Release Log" }
+  ],
+
+  citations: [
+    { label: "EA Sports FC Official Web App", url: "https://www.ea.com/games/ea-sports-fc" },
+    { label: "Chrome Web Store Security Guidelines", url: "https://developer.chrome.com/docs/webstore/program-policies/" },
+    { label: "FUTBIN Pricing Reference Data", url: "https://www.futbin.com/" }
+  ],
+
   comparisonRows: [
     { feature: "Execution Location", elite: "100% Local Chrome Extension", competitor: "Multi-Account Cloud Platform", winner: "elite" },
     { feature: "EA Password Required", elite: "No", competitor: "Yes (required for multi-account automation)", winner: "elite" },
@@ -17,22 +32,24 @@ export const futHunterData: CompetitorData = {
     { feature: "Monthly Subscription Price", elite: "$0 (flat-fee lifetime update)", competitor: "€5 to €200+ per month", winner: "elite" },
     { feature: "Side Panel HUD Integration", elite: true, competitor: false, winner: "elite" },
     { feature: "Automatic Trading Schedule", elite: "Manual toggle", competitor: "Yes (automated time schedulers)", winner: "competitor" },
-    { feature: "FC 27 Compatibility", elite: "Day-one updates", competitor: "Subject to platform patches", winner: "elite" }
+    { feature: "FC 27 Compatibility", elite: "Day-one ready", competitor: "Subject to platform patches", winner: "elite" }
   ],
+
   faqs: [
     {
       question: "Is FUT Hunter meant for casual traders?",
       answer: "No. FUT Hunter is heavily geared towards 'coin farmers' who manage 5, 20, or 50+ EA accounts simultaneously. If you only want to trade on your main personal account, the setup is unnecessarily complex and the monthly fees are extremely high."
     },
     {
-      question: "How expensive is FUT Hunter?",
-      answer: "FUT Hunter operates on a monthly subscription model. While a single-account plan is around €5–€15/month, professional multi-account plans can cost upwards of €200/month. Elite FUT SNIPER is a one-time fixed purchase with zero recurring subscription fees."
+      question: "Why is Elite the safest FUT autobuyer compared to FUT Hunter?",
+      answer: "FUT Hunter runs multiple accounts from cloud servers, which triggers detection because many accounts are connecting from similar datacenter subnets. Elite FUT SNIPER runs locally using your own home IP, making it completely organic."
     },
     {
-      question: "Does FUT Hunter have an AI SBC Solver?",
-      answer: "Yes. FUT Hunter includes an SBC solver. However, Elite FUT SNIPER's AI SBC Solver runs entirely locally inside Chrome's Side Panel, which prevents EA from detecting background solver requests."
+      question: "How expensive is FUT Hunter?",
+      answer: "FUT Hunter operates on a monthly subscription model. While a single-account plan is around €5–€15/month, professional multi-account plans can cost upwards of €200/month. Elite FUT SNIPER is a one-time fixed purchase with zero recurring subscription fees."
     }
   ],
+
   reviewQuotes: [
     { text: "FUT Hunter is great for coin sellers, but for my personal team, the €15/month subscription was a waste compared to Elite's flat fee.", author: "MainAccountTrader", platform: "Discord" },
     { text: "Losing three accounts in a ban wave because of FUT Hunter's cloud server IPs taught me my lesson. Local extensions are the only way.", author: "FUT_Regret", platform: "Discord" }
