@@ -44,7 +44,9 @@ export default function ComparisonHubClient() {
       <header className="text-center space-y-6 max-w-4xl mx-auto">
         <div className="flex flex-wrap items-center justify-center gap-3">
           <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-primary/10 border border-primary/30 text-primary text-xs font-bold uppercase tracking-widest backdrop-blur-sm shadow-[0_0_20px_rgba(204,255,0,0.08)]">
-            <span className="material-symbols-outlined text-sm" aria-hidden="true">compare_arrows</span>
+            <svg className="w-3.5 h-3.5 shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M8 7h12m0 0l-4-4m4 4l-4 4m0 6H4m0 0l4 4m-4-4l4-4" />
+            </svg>
             Official Comparison Hub — 30 Platforms
           </div>
           <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-emerald-500/10 border border-emerald-500/30 text-emerald-400 text-xs font-bold uppercase tracking-widest font-mono shadow-[0_0_20px_rgba(16,185,129,0.15)]">
@@ -179,7 +181,9 @@ export default function ComparisonHubClient() {
 
                   <div className="flex items-center gap-2 text-primary text-xs font-bold group-hover:gap-3 transition-all pt-1">
                     <span>View In-Depth Comparison</span>
-                    <span className="material-symbols-outlined text-sm" aria-hidden="true">arrow_forward</span>
+                    <svg className="w-4 h-4 text-primary shrink-0 transition-transform group-hover:translate-x-1" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2.5" d="M14 5l7 7m0 0l-7 7m7-7H3" />
+                    </svg>
                   </div>
                 </div>
               </Link>
@@ -187,7 +191,9 @@ export default function ComparisonHubClient() {
           </div>
         ) : (
           <div className="p-12 text-center rounded-2xl bg-white/[0.01] border border-white/10 space-y-3">
-            <span className="material-symbols-outlined text-gray-500 text-4xl" aria-hidden="true">search_off</span>
+            <svg className="w-10 h-10 mx-auto text-gray-500" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="1.5" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0zM10 7v6m-3-3h6" />
+            </svg>
             <p className="text-white font-bold text-base">No competitor comparisons found matching &ldquo;{searchQuery}&rdquo;</p>
             <p className="text-gray-400 text-xs">Try clearing your search query or selecting &ldquo;All Platforms&rdquo; above.</p>
             <button

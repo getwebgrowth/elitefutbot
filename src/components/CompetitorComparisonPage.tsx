@@ -107,7 +107,9 @@ export default function CompetitorComparisonPage({ data }: { data: CompetitorDat
           <header className="space-y-6 text-center max-w-4xl mx-auto">
             <div className="flex flex-wrap items-center justify-center gap-3">
               <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-primary/10 border border-primary/30 text-primary text-xs font-bold uppercase tracking-widest backdrop-blur-sm shadow-[0_0_20px_rgba(204,255,0,0.08)]">
-                <span className="material-symbols-outlined text-sm" aria-hidden="true">compare_arrows</span>
+                <svg className="w-3.5 h-3.5 shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M8 7h12m0 0l-4-4m4 4l-4 4m0 6H4m0 0l4 4m-4-4l4-4" />
+                </svg>
                 Direct Comparison — Updated {new Date(data.modifiedDate).toLocaleDateString("en-US", { month: "long", year: "numeric" })}
               </div>
               <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-emerald-500/10 border border-emerald-500/30 text-emerald-400 text-xs font-bold uppercase tracking-widest font-mono shadow-[0_0_20px_rgba(16,185,129,0.15)]">
@@ -124,7 +126,9 @@ export default function CompetitorComparisonPage({ data }: { data: CompetitorDat
             
             {/* FC 27 Readiness Highlight Box */}
             <div className="flex items-center justify-center gap-3 p-4 rounded-2xl bg-gradient-to-r from-primary/10 via-primary/5 to-transparent border border-primary/25 text-xs sm:text-sm text-gray-200 font-medium max-w-2xl mx-auto backdrop-blur-md shadow-[0_0_25px_rgba(204,255,0,0.05)]">
-              <span className="material-symbols-outlined text-primary text-xl shrink-0" aria-hidden="true">bolt</span>
+              <svg className="w-5 h-5 text-primary shrink-0" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                <path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z" />
+              </svg>
               <span className="text-left">{data.fc27SupportNote}</span>
             </div>
           </header>
@@ -188,7 +192,9 @@ export default function CompetitorComparisonPage({ data }: { data: CompetitorDat
             <div className="absolute -top-6 -right-6 w-32 h-32 border-4 border-primary/15 rounded-full" />
             <div className="absolute -top-4 -right-4 w-20 h-20 border-2 border-primary/20 rounded-full" />
             <div className="flex items-start gap-4 relative">
-              <span className="material-symbols-outlined text-primary text-3xl mt-1 shrink-0" aria-hidden="true">verified</span>
+              <svg className="w-7 h-7 text-primary mt-1 shrink-0" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z" />
+              </svg>
               <div className="space-y-2">
                 <h2 className="text-xs font-mono uppercase tracking-widest text-primary font-bold">Bottom Line Verdict</h2>
                 <p className="text-gray-200 leading-relaxed text-base sm:text-lg">{data.verdict}</p>
@@ -313,14 +319,18 @@ export default function CompetitorComparisonPage({ data }: { data: CompetitorDat
           {/* Structured Key Advantages Breakdown */}
           <section className="space-y-8 p-8 sm:p-10 rounded-2xl bg-white/[0.02] border border-white/10 backdrop-blur-sm" aria-label="Why Elite FUT SNIPER is better">
             <div className="flex items-center gap-3 text-primary">
-              <span className="material-symbols-outlined text-2xl font-black" aria-hidden="true">military_tech</span>
+              <svg className="w-6 h-6 text-primary shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z" />
+              </svg>
               <h2 className="text-xl sm:text-2xl font-bold font-headline uppercase tracking-wider text-white">Why Elite FUT SNIPER Outperforms {data.competitorName}</h2>
             </div>
             
             <div className="grid grid-cols-1 md:grid-cols-2 gap-5">
               <div className="p-5 rounded-xl bg-black/40 border border-white/10 space-y-2.5 hover:border-primary/30 transition-colors">
                 <div className="flex items-center gap-2 text-primary font-bold text-xs font-mono uppercase tracking-wider">
-                  <span className="material-symbols-outlined text-base">memory</span>
+                  <svg className="w-4 h-4 text-primary shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M9 3v2m6-2v2M9 19v2m6-2v2M3 9h2m-2 6h2m14-6h2m-2 6h2M7 7h10v10H7V7z" />
+                  </svg>
                   1. Local In-Browser Architecture
                 </div>
                 <p className="text-sm text-gray-300 leading-relaxed">
@@ -330,7 +340,9 @@ export default function CompetitorComparisonPage({ data }: { data: CompetitorDat
 
               <div className="p-5 rounded-xl bg-black/40 border border-white/10 space-y-2.5 hover:border-primary/30 transition-colors">
                 <div className="flex items-center gap-2 text-primary font-bold text-xs font-mono uppercase tracking-wider">
-                  <span className="material-symbols-outlined text-base">speed</span>
+                  <svg className="w-4 h-4 text-primary shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M13 10V3L4 14h7v7l9-11h-7z" />
+                  </svg>
                   2. Surgical 20ms Execution Speed
                 </div>
                 <p className="text-sm text-gray-300 leading-relaxed">
@@ -340,7 +352,9 @@ export default function CompetitorComparisonPage({ data }: { data: CompetitorDat
 
               <div className="p-5 rounded-xl bg-black/40 border border-white/10 space-y-2.5 hover:border-primary/30 transition-colors">
                 <div className="flex items-center gap-2 text-primary font-bold text-xs font-mono uppercase tracking-wider">
-                  <span className="material-symbols-outlined text-base">psychology</span>
+                  <svg className="w-4 h-4 text-primary shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z" />
+                  </svg>
                   3. Real-Time AI SBC Solver
                 </div>
                 <p className="text-sm text-gray-300 leading-relaxed">
@@ -350,7 +364,9 @@ export default function CompetitorComparisonPage({ data }: { data: CompetitorDat
 
               <div className="p-5 rounded-xl bg-black/40 border border-white/10 space-y-2.5 hover:border-primary/30 transition-colors">
                 <div className="flex items-center gap-2 text-primary font-bold text-xs font-mono uppercase tracking-wider">
-                  <span className="material-symbols-outlined text-base">security</span>
+                  <svg className="w-4 h-4 text-primary shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M12 15v2m-6 4h12a2 2 0 002-2v-6a2 2 0 00-2-2H6a2 2 0 00-2 2v6a2 2 0 002 2zm10-10V7a4 4 0 00-8 0v4h8z" />
+                  </svg>
                   4. Maximum Account Protection &amp; FC 27 Day-One
                 </div>
                 <p className="text-sm text-gray-300 leading-relaxed">
@@ -376,7 +392,9 @@ export default function CompetitorComparisonPage({ data }: { data: CompetitorDat
                     aria-controls={`competitor-faq-answer-${i}`}
                   >
                     <span className={`text-sm sm:text-base font-semibold leading-snug pr-4 transition-colors ${openFaq === i ? "text-primary" : "text-white group-hover:text-primary"}`}>{faq.question}</span>
-                    <span className={`material-symbols-outlined text-gray-400 shrink-0 transition-transform duration-300 ${openFaq === i ? "rotate-180 text-primary" : ""}`} aria-hidden="true">expand_more</span>
+                    <svg className={`w-5 h-5 text-gray-400 shrink-0 transition-transform duration-300 ${openFaq === i ? "rotate-180 text-primary" : ""}`} fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2.5" d="M19 9l-7 7-7-7" />
+                    </svg>
                   </button>
                   {openFaq === i && (
                     <div id={`competitor-faq-answer-${i}`} className="px-5 pb-5 text-gray-300 text-sm leading-relaxed border-t border-white/5 pt-4">
@@ -398,7 +416,13 @@ export default function CompetitorComparisonPage({ data }: { data: CompetitorDat
               {data.reviewQuotes.map((quote, i) => (
                 <div key={i} className="p-5 rounded-xl bg-white/[0.02] border border-white/10 space-y-3 hover:border-primary/30 hover:bg-primary/[0.03] transition-all group relative overflow-hidden">
                   <div className="absolute top-0 right-0 w-16 h-16 bg-primary/5 rounded-bl-full opacity-0 group-hover:opacity-100 transition-opacity" />
-                  <div className="flex text-primary text-sm gap-0.5">{[...Array(5)].map((_, s) => (<span key={s} className="material-symbols-outlined text-base" aria-hidden="true" style={{ fontVariationSettings: "'FILL' 1" }}>star</span>))}</div>
+                  <div className="flex text-primary text-sm gap-0.5">
+                    {[...Array(5)].map((_, s) => (
+                      <svg key={s} className="w-4 h-4 fill-primary" viewBox="0 0 20 20" aria-hidden="true">
+                        <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+                      </svg>
+                    ))}
+                  </div>
                   <p className="text-gray-300 text-sm leading-relaxed relative">&ldquo;{quote.text}&rdquo;</p>
                   <div className="pt-1 border-t border-white/5">
                     <p className="text-xs font-mono text-gray-400">{quote.author}</p>
