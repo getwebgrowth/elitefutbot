@@ -133,29 +133,36 @@ export default function BlogHubPage() {
           </div>
           {/* Trending Intel */}
           <div className="intel-card bg-[#1A1A1A] p-8">
-            <h4 className="font-headline text-[10px] font-black uppercase tracking-[0.3em] mb-8 text-slate-500">Hot Signals</h4>
+            <h3 className="font-headline text-[10px] font-black uppercase tracking-[0.3em] mb-8 text-slate-400">Hot Signals</h3>
             <div className="space-y-8">
               <div className="group cursor-pointer">
-                <div className="text-[10px] font-bold text-primary/40 mb-1">01_ANALYSIS</div>
+                <div className="text-[10px] font-bold text-primary/70 mb-1">01_ANALYSIS</div>
                 <div className="font-headline text-sm font-bold uppercase tracking-tight text-slate-300 group-hover:text-primary transition-colors">Market Crash Prediction: SBC Leak</div>
               </div>
               <div className="group cursor-pointer">
-                <div className="text-[10px] font-bold text-primary/40 mb-1">02_COMPARISON</div>
+                <div className="text-[10px] font-bold text-primary/70 mb-1">02_COMPARISON</div>
                 <div className="font-headline text-sm font-bold uppercase tracking-tight text-slate-300 group-hover:text-primary transition-colors">Auto-Buy vs Sniper: Technical Diff</div>
               </div>
               <div className="group cursor-pointer">
-                <div className="text-[10px] font-bold text-primary/40 mb-1">03_STATUS</div>
+                <div className="text-[10px] font-bold text-primary/70 mb-1">03_STATUS</div>
                 <div className="font-headline text-sm font-bold uppercase tracking-tight text-slate-300 group-hover:text-primary transition-colors">Global Node Status: Optimal</div>
               </div>
             </div>
           </div>
           {/* Protocol Feed */}
           <div className="intel-card bg-[#0F0F0F] p-8 border-t border-primary/20">
-            <h4 className="font-headline text-[10px] font-black uppercase tracking-[0.3em] mb-2 text-white">Protocol Feed</h4>
-            <p className="text-[10px] text-slate-500 uppercase tracking-widest mb-8">Technical updates via encrypted mail.</p>
+            <h3 className="font-headline text-[10px] font-black uppercase tracking-[0.3em] mb-2 text-white">Protocol Feed</h3>
+            <p className="text-[10px] text-slate-400 uppercase tracking-widest mb-8">Technical updates via encrypted mail.</p>
             <div className="space-y-2">
-              <input className="w-full bg-[#1A1A1A] border-none text-[10px] font-headline font-bold placeholder:text-slate-500 p-4 focus:ring-1 focus:ring-primary uppercase tracking-widest text-white" placeholder="AGENT_ID@INTEL.NET" type="email" />
-              <button className="w-full bg-primary py-4 text-[10px] font-headline font-black uppercase tracking-widest text-black hover:brightness-110 transition-all">
+              <label htmlFor="protocol-feed-email" className="sr-only">Email address for protocol feed</label>
+              <input
+                id="protocol-feed-email"
+                className="w-full bg-[#1A1A1A] border-none text-[10px] font-headline font-bold placeholder:text-slate-500 p-4 focus:ring-1 focus:ring-primary uppercase tracking-widest text-white"
+                placeholder="AGENT_ID@INTEL.NET"
+                type="email"
+                aria-label="Email address for protocol feed"
+              />
+              <button type="button" className="w-full bg-primary py-4 text-[10px] font-headline font-black uppercase tracking-widest text-black hover:brightness-110 transition-all">
                 INITIALIZE FEED
               </button>
             </div>

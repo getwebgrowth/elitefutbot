@@ -163,13 +163,15 @@ export default function FC27FutSnipeBotPage() {
                   LIVE DEMO
                 </div>
               </div>
-              <div className="aspect-video w-full">
+              <div className="aspect-video w-full relative">
                 <iframe
-                  className="w-full h-full rounded-b-2xl border-0"
-                  src="https://www.youtube-nocookie.com/embed/S0YuEelYNQ8?autoplay=0&rel=0"
+                  className="absolute inset-0 w-full h-full rounded-b-2xl border-0"
+                  src="https://www.youtube-nocookie.com/embed/S0YuEelYNQ8?autoplay=0&rel=0&modestbranding=1"
                   title="EA FC 27 Sniping Bot & Autobuyer Demonstration"
-                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                  allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
                   allowFullScreen
+                  loading="lazy"
+                  sandbox="allow-scripts allow-same-origin allow-presentation allow-popups"
                 ></iframe>
               </div>
             </div>
@@ -179,7 +181,7 @@ export default function FC27FutSnipeBotPage() {
       </header>
 
       {/* HOW IT WORKS SECTION (ENHANCED VISUAL TIMELINE CARD LAYOUT) */}
-      <section className="py-24 bg-dark relative border-t border-white/5" id="how-it-works">
+      <section className="py-24 bg-dark relative border-t border-white/5 contain-layout" id="how-it-works">
         <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 relative">
           
           <div className="text-center mb-16">

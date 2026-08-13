@@ -39,7 +39,7 @@ const jsonLd = {
     }
   },
   "datePublished": "2026-07-28T08:00:00Z",
-  "dateModified": "2026-07-28T08:00:00Z"
+  "dateModified": "2026-08-14T00:00:00Z"
 };
 
 export default function TacticalIntelArticlePage() {
@@ -131,12 +131,12 @@ export default function TacticalIntelArticlePage() {
           {/* Key Takeaway Callout Box */}
           <div className="p-8 bg-surface-container-low border border-outline-variant/30 relative">
             <div className="absolute top-0 right-0 p-2 font-mono text-[8px] text-accent-gold uppercase">Module: Intel_Snippet</div>
-            <h4 className="text-primary font-headline font-bold text-xs uppercase tracking-widest mb-4">CRITICAL SYSTEM ADVISORY</h4>
+            <p className="text-primary font-headline font-bold text-xs uppercase tracking-widest mb-4" role="note">CRITICAL SYSTEM ADVISORY</p>
             <div className="space-y-4">
               <p className="text-white text-base leading-relaxed">Manual sniping latency is capped at human reaction times (~250ms). Our execution engine operates at <span className="text-primary font-mono">20ms</span>. The math is simple: you cannot win the 59th minute battle manually against high-tier competition.</p>
-              <button className="bg-primary text-black px-6 py-3 font-label font-bold uppercase tracking-widest text-[10px] hover:brightness-110 transition-all glow-lime">
+              <Link href="https://discord.gg/Rkb9nF6WG6" className="inline-block bg-primary text-black px-6 py-3 font-label font-bold uppercase tracking-widest text-[10px] hover:brightness-110 transition-all glow-lime">
                 Upgrade Execution Engine
-              </button>
+              </Link>
             </div>
           </div>
           <div className="space-y-4">
@@ -191,11 +191,11 @@ export default function TacticalIntelArticlePage() {
             </div>
             {/* EA Tax Calculator (Condensed) */}
             <div className="space-y-3">
-              <label className="text-[9px] font-label uppercase tracking-widest text-on-surface-variant">Rapid Tax Calculator</label>
+              <label htmlFor="rapid-tax-sale-price" className="text-[9px] font-label uppercase tracking-widest text-on-surface-variant">Rapid Tax Calculator</label>
               <div className="grid grid-cols-2 gap-2">
                 <div className="bg-black/60 border border-outline-variant/30 p-2">
-                  <div className="text-[8px] text-on-surface-variant mb-1 uppercase">Sale Price</div>
-                  <input className="bg-transparent border-none p-0 text-white font-mono text-sm focus:ring-0 w-full" type="text" defaultValue="100,000" />
+                  <div className="text-[8px] text-on-surface-variant mb-1 uppercase" aria-hidden="true">Sale Price</div>
+                  <input id="rapid-tax-sale-price" aria-label="Sale price for tax calculation" className="bg-transparent border-none p-0 text-white font-mono text-sm focus:ring-0 w-full" type="text" defaultValue="100,000" />
                 </div>
                 <div className="bg-black/60 border border-outline-variant/30 p-2">
                   <div className="text-[8px] text-primary mb-1 uppercase">Net Profit</div>

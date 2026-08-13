@@ -27,7 +27,7 @@ export default function PrivacyPage() {
               1. Introduction
             </h2>
             <p>
-              At Elite FUT SNIPER (accessible via <a href="https://elitefutbot.com/" className="text-primary hover:underline">https://elitefutbot.com/</a>), we respect your privacy and are committed to protecting any personal data we process. This Privacy Policy explains how we collect, use, disclose, and protect your information when you visit or use our website, tools, and companion overlay services.
+              At Elite FUT SNIPER (accessible via <a href="https://elitefutbot.com/" className="text-primary underline hover:underline">https://elitefutbot.com/</a>), we respect your privacy and are committed to protecting any personal data we process. This Privacy Policy explains how we collect, use, disclose, and protect your information when you visit or use our website, tools, and companion overlay services.
             </p>
           </section>
 
@@ -97,7 +97,7 @@ export default function PrivacyPage() {
               <li><strong>Right to Erasure (Deletion):</strong> You can request that we delete all your account records and personal data from our active databases.</li>
             </ul>
             <p>
-              To exercise any of these rights, please email us directly at <a href="mailto:support@elitefutbot.com" className="text-primary hover:underline">support@elitefutbot.com</a>.
+              To exercise any of these rights, please email us directly at <a href="mailto:support@elitefutbot.com" className="text-primary underline hover:underline">support@elitefutbot.com</a>.
             </p>
           </section>
 

@@ -27,7 +27,7 @@ export default function TermsPage() {
               1. Acceptance of Terms
             </h2>
             <p>
-              By accessing or using the Elite FUT SNIPER website (located at <a href="https://elitefutbot.com/" className="text-primary hover:underline">https://elitefutbot.com/</a>), services, browser helper overlays, and tools (collectively, the &quot;Service&quot;), you agree to be bound by these Terms of Service. If you do not agree to all of these terms, do not access or use the Service.
+              By accessing or using the Elite FUT SNIPER website (located at <a href="https://elitefutbot.com/" className="text-primary hover:underline underline">https://elitefutbot.com/</a>), services, browser helper overlays, and tools (collectively, the &quot;Service&quot;), you agree to be bound by these Terms of Service. If you do not agree to all of these terms, do not access or use the Service.
             </p>
           </section>
 

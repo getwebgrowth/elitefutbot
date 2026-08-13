@@ -102,6 +102,14 @@ const jsonLd = {
       "description": "World's fastest sniping bot and autobuyer for FC 26, FC 25 & FC 27.",
       "publisher": {
         "@id": "https://elitefutbot.com/#organization"
+      },
+      "potentialAction": {
+        "@type": "SearchAction",
+        "target": {
+          "@type": "EntryPoint",
+          "urlTemplate": "https://elitefutbot.com/?q={search_term_string}"
+        },
+        "query-input": "required name=search_term_string"
       }
     }
   ]
@@ -141,7 +149,21 @@ export default function RootLayout({
         }} />
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />
-        <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet" />
+        <link rel="preconnect" href="https://www.youtube-nocookie.com" />
+        <link rel="preconnect" href="https://www.google-analytics.com" />
+        <link rel="dns-prefetch" href="https://i.ytimg.com" />
+        {/* Material Symbols loaded asynchronously to eliminate render-blocking */}
+        <link rel="preload" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0&display=optional" as="style" />
+        <link
+          id="material-symbols-css"
+          href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0&display=optional"
+          rel="stylesheet"
+          media="print"
+        />
+        <script dangerouslySetInnerHTML={{ __html: `document.getElementById('material-symbols-css').media='all';` }} />
+        <noscript>
+          <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0&display=optional" rel="stylesheet" />
+        </noscript>
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
@@ -160,10 +182,10 @@ export default function RootLayout({
                 </span>
               </Link>
               <div className="hidden md:flex items-center space-x-6 text-xs font-semibold text-gray-300">
-                <Link className="hover:text-primary transition-colors py-1 px-3 rounded-lg hover:bg-white/5" href="/#features">Features</Link>
-                <Link className="hover:text-primary transition-colors py-1 px-3 rounded-lg hover:bg-white/5" href="/#pricing">Pricing</Link>
-                <Link className="hover:text-primary transition-colors py-1 px-3 rounded-lg hover:bg-white/5" href="/#reviews">Reviews</Link>
-                <Link className="bg-primary/10 hover:bg-primary/20 border border-primary/30 text-primary px-4 py-1.5 rounded-full font-bold transition-all flex items-center gap-2 shadow-[0_0_15px_rgba(204,255,0,0.1)]" href="https://discord.gg/Rkb9nF6WG6">
+                <Link className="hover:text-primary transition-colors py-2.5 px-3 rounded-lg hover:bg-white/5 inline-flex items-center min-h-[44px]" href="/#features">Features</Link>
+                <Link className="hover:text-primary transition-colors py-2.5 px-3 rounded-lg hover:bg-white/5 inline-flex items-center min-h-[44px]" href="/#pricing">Pricing</Link>
+                <Link className="hover:text-primary transition-colors py-2.5 px-3 rounded-lg hover:bg-white/5 inline-flex items-center min-h-[44px]" href="/#reviews">Reviews</Link>
+                <Link className="bg-primary/10 hover:bg-primary/20 border border-primary/30 text-primary px-4 py-2.5 rounded-full font-bold transition-all flex items-center gap-2 shadow-[0_0_15px_rgba(204,255,0,0.1)] min-h-[44px]" href="https://discord.gg/Rkb9nF6WG6">
                   <span className="w-2 h-2 rounded-full bg-primary animate-pulse"></span>
                   Discord Login
                 </Link>
@@ -261,59 +283,111 @@ export default function RootLayout({
               <div className="md:col-span-8 grid grid-cols-2 sm:grid-cols-4 gap-8">
                 <nav className="space-y-6" aria-labelledby="footer-sbc">
                   <h2 id="footer-sbc" className="text-white font-black text-xs uppercase tracking-[0.2em] font-headline">SBC Solving</h2>
-                  <ul className="space-y-4 text-sm font-medium">
-                    <li><Link className="text-gray-400 hover:text-primary transition-colors focus-visible:text-primary focus-visible:outline-none" href="/sbc-solver">SBC Solutions</Link></li>
-                    <li><Link className="text-gray-400 hover:text-primary transition-colors focus-visible:text-primary focus-visible:outline-none" href="/ai-sbc-solver">AI SBC Engine</Link></li>
-                    <li><Link className="text-gray-400 hover:text-primary transition-colors focus-visible:text-primary focus-visible:outline-none" href="/tools/sniping-guide">Sniping Guide</Link></li>
+                  <ul className="space-y-2 text-sm font-medium">
+                    <li><Link className="text-gray-400 hover:text-primary transition-colors focus-visible:text-primary focus-visible:outline-none block py-1.5" href="/sbc-solver">SBC Solutions</Link></li>
+                    <li><Link className="text-gray-400 hover:text-primary transition-colors focus-visible:text-primary focus-visible:outline-none block py-1.5" href="/ai-sbc-solver">AI SBC Engine</Link></li>
+                    <li><Link className="text-gray-400 hover:text-primary transition-colors focus-visible:text-primary focus-visible:outline-none block py-1.5" href="/tools/sniping-guide">Sniping Guide</Link></li>
+                    <li><Link className="text-gray-400 hover:text-primary transition-colors focus-visible:text-primary focus-visible:outline-none block py-1.5" href="/tools/tax-calculator">Tax Calculator</Link></li>
                   </ul>
                 </nav>
 
                 <nav className="space-y-6" aria-labelledby="footer-tools">
                   <h2 id="footer-tools" className="text-white font-black text-xs uppercase tracking-[0.2em] font-headline">Tools &amp; Intel</h2>
-                  <ul className="space-y-4 text-sm font-medium">
-                    <li><Link className="text-gray-400 hover:text-primary transition-colors focus-visible:text-primary focus-visible:outline-none" href="/fc27-fut-snipe-bot">FC 27 Snipe Bot</Link></li>
-                    <li><Link className="text-gray-400 hover:text-primary transition-colors focus-visible:text-primary focus-visible:outline-none" href="/tools/tax-calculator">Tax Calculator</Link></li>
-                    <li><Link className="text-gray-400 hover:text-primary transition-colors focus-visible:text-primary focus-visible:outline-none" href="/blog">Tactical Intel Hub</Link></li>
-                    <li><Link className="text-gray-400 hover:text-primary transition-colors focus-visible:text-primary focus-visible:outline-none" href="/article/tactical-intel">Latest Briefing</Link></li>
+                  <ul className="space-y-2 text-sm font-medium">
+                    <li><Link className="text-gray-400 hover:text-primary transition-colors focus-visible:text-primary focus-visible:outline-none block py-1.5" href="/fc27-fut-snipe-bot">FC 27 Snipe Bot</Link></li>
+                    <li><Link className="text-gray-400 hover:text-primary transition-colors focus-visible:text-primary focus-visible:outline-none block py-1.5" href="/blog">Tactical Intel Hub</Link></li>
+                    <li><Link className="text-gray-400 hover:text-primary transition-colors focus-visible:text-primary focus-visible:outline-none block py-1.5" href="/article/tactical-intel">Latest Briefing</Link></li>
+                    <li><Link className="text-gray-400 hover:text-primary transition-colors focus-visible:text-primary focus-visible:outline-none block py-1.5" href="/tools/comparison-guide">Comparison Hub</Link></li>
                   </ul>
                 </nav>
 
                 <nav className="space-y-6" aria-labelledby="footer-comparisons">
-                  <h2 id="footer-comparisons" className="text-white font-black text-xs uppercase tracking-[0.2em] font-headline">Comparisons</h2>
-                  <ul className="space-y-4 text-sm font-medium">
-                    <li><Link className="text-gray-400 hover:text-primary transition-colors focus-visible:text-primary focus-visible:outline-none" href="/tools/comparison-guide">Comparison Hub</Link></li>
-                    <li><Link className="text-gray-400 hover:text-primary transition-colors focus-visible:text-primary focus-visible:outline-none" href="/futsimpletrader-vs-elitefutbot">vs Simple Trader</Link></li>
-                    <li><Link className="text-gray-400 hover:text-primary transition-colors focus-visible:text-primary focus-visible:outline-none" href="/futmania-vs-elitefutbot">vs FUTMania</Link></li>
-                    <li><Link className="text-gray-400 hover:text-primary transition-colors focus-visible:text-primary focus-visible:outline-none" href="/steviessniper-vs-elitefutbot">vs Stevie's Sniper</Link></li>
-                    <li><Link className="text-gray-400 hover:text-primary transition-colors focus-visible:text-primary focus-visible:outline-none" href="/bakers-bot-vs-elitefutbot">vs Baker's Bot</Link></li>
+                  <h2 id="footer-comparisons" className="text-white font-black text-xs uppercase tracking-[0.2em] font-headline">Top Comparisons</h2>
+                  <ul className="space-y-2 text-sm font-medium">
+                    <li><Link className="text-gray-400 hover:text-primary transition-colors focus-visible:text-primary focus-visible:outline-none block py-1.5" href="/bakers-bot-vs-elitefutbot">vs Baker&apos;s Bot</Link></li>
+                    <li><Link className="text-gray-400 hover:text-primary transition-colors focus-visible:text-primary focus-visible:outline-none block py-1.5" href="/futsimpletrader-vs-elitefutbot">vs Simple Trader</Link></li>
+                    <li><Link className="text-gray-400 hover:text-primary transition-colors focus-visible:text-primary focus-visible:outline-none block py-1.5" href="/futmania-vs-elitefutbot">vs FUTMania</Link></li>
+                    <li><Link className="text-gray-400 hover:text-primary transition-colors focus-visible:text-primary focus-visible:outline-none block py-1.5" href="/steviessniper-vs-elitefutbot">vs Stevie&apos;s Sniper</Link></li>
+                    <li><Link className="text-gray-400 hover:text-primary transition-colors focus-visible:text-primary focus-visible:outline-none block py-1.5" href="/paletools-vs-elitefutbot">vs Paletools</Link></li>
+                    <li><Link className="text-primary hover:underline transition-colors focus-visible:text-primary focus-visible:outline-none block py-1 font-bold text-xs" href="/tools/comparison-guide">View All 30 Comparisons &rarr;</Link></li>
                   </ul>
                 </nav>
 
                 <nav className="space-y-6" aria-labelledby="footer-resources">
                   <h2 id="footer-resources" className="text-white font-black text-xs uppercase tracking-[0.2em] font-headline">Resources</h2>
-                  <ul className="space-y-4 text-sm font-medium">
-                    <li><Link className="text-gray-400 hover:text-primary transition-colors focus-visible:text-primary focus-visible:outline-none" href="/affiliate">Affiliate Program</Link></li>
-                    <li><Link className="text-gray-400 hover:text-primary transition-colors focus-visible:text-primary focus-visible:outline-none" href="/volt-velocity">Volt Velocity</Link></li>
-                    <li><Link className="text-gray-400 hover:text-primary transition-colors focus-visible:text-primary focus-visible:outline-none" href="/bakers-bot-developer">Origin Story</Link></li>
-                    <li><Link className="text-gray-400 hover:text-primary transition-colors focus-visible:text-primary focus-visible:outline-none" href="/bio">Link in Bio</Link></li>
-                    <li><Link className="text-gray-400 hover:text-primary transition-colors focus-visible:text-primary focus-visible:outline-none" href="/links">Direct Links</Link></li>
+                  <ul className="space-y-2 text-sm font-medium">
+                    <li><Link className="text-gray-400 hover:text-primary transition-colors focus-visible:text-primary focus-visible:outline-none block py-1.5" href="/affiliate">Affiliate Program</Link></li>
+                    <li><Link className="text-gray-400 hover:text-primary transition-colors focus-visible:text-primary focus-visible:outline-none block py-1.5" href="/volt-velocity">Volt Velocity</Link></li>
+                    <li><Link className="text-gray-400 hover:text-primary transition-colors focus-visible:text-primary focus-visible:outline-none block py-1.5" href="/bakers-bot-developer">Origin Story</Link></li>
+                    <li><Link className="text-gray-400 hover:text-primary transition-colors focus-visible:text-primary focus-visible:outline-none block py-1.5" href="/bio">Link in Bio</Link></li>
+                    <li><Link className="text-gray-400 hover:text-primary transition-colors focus-visible:text-primary focus-visible:outline-none block py-1.5" href="/links">Direct Links</Link></li>
                   </ul>
                 </nav>
               </div>
             </div>
+
+            {/* Quick Comparisons Pill Cloud for SEO / GEO Crawlers */}
+            <div className="pt-8 pb-12 border-t border-white/5 space-y-4">
+              <div className="flex items-center justify-between">
+                <span className="text-[11px] font-mono uppercase tracking-[0.2em] text-gray-400">Direct Competitor Breakdowns</span>
+                <Link href="/tools/comparison-guide" className="text-xs text-primary font-bold hover:underline font-mono">Explore Hub (30 Tools)</Link>
+              </div>
+              <div className="flex flex-wrap gap-2 text-xs">
+                {[
+                  { slug: "bakers-bot-vs-elitefutbot", name: "Baker's Bot" },
+                  { slug: "futsimpletrader-vs-elitefutbot", name: "FUT Simple Trader" },
+                  { slug: "futearn-vs-elitefutbot", name: "FutEarn" },
+                  { slug: "futsniper-vs-elitefutbot", name: "FUT Sniper" },
+                  { slug: "futsnipingbot-vs-elitefutbot", name: "FUT Sniping Bot" },
+                  { slug: "futinator-vs-elitefutbot", name: "Futinator" },
+                  { slug: "futbotmanager-vs-elitefutbot", name: "FutBotManager" },
+                  { slug: "futmania-vs-elitefutbot", name: "FUTMania" },
+                  { slug: "futcoinbuddy-vs-elitefutbot", name: "Futcoinbuddy" },
+                  { slug: "futhunter-vs-elitefutbot", name: "FUT Hunter" },
+                  { slug: "futultimatesniper-vs-elitefutbot", name: "FUT Ultimate Sniper" },
+                  { slug: "futdroid-vs-elitefutbot", name: "FUTDroid" },
+                  { slug: "steviessniper-vs-elitefutbot", name: "Stevie's Sniper" },
+                  { slug: "futrich-vs-elitefutbot", name: "FUTRich" },
+                  { slug: "futlocker-vs-elitefutbot", name: "FUT Locker" },
+                  { slug: "futtbot-vs-elitefutbot", name: "Futtbot" },
+                  { slug: "fifasnipebot-vs-elitefutbot", name: "FIFA Snipe Bot" },
+                  { slug: "fc26snipingbot-vs-elitefutbot", name: "FC26 Sniping Bot" },
+                  { slug: "easyfutweb-vs-elitefutbot", name: "EasyFUTWeb" },
+                  { slug: "futmaker-vs-elitefutbot", name: "FUT Maker" },
+                  { slug: "snipesensei-vs-elitefutbot", name: "Snipe Sensei" },
+                  { slug: "futsniperweb-vs-elitefutbot", name: "FUT Sniper Web" },
+                  { slug: "easysbc-vs-elitefutbot", name: "EasySBC" },
+                  { slug: "paletools-vs-elitefutbot", name: "Paletools" },
+                  { slug: "futgg-vs-elitefutbot", name: "FUT.GG" },
+                  { slug: "futsnipingbot24-vs-elitefutbot", name: "FUT Sniping Bot 24" },
+                  { slug: "futgenie-vs-elitefutbot", name: "FUT Genie" },
+                  { slug: "exesniper-vs-elitefutbot", name: "ExeSniper" },
+                  { slug: "futbotclub-vs-elitefutbot", name: "FUT Bot Club" },
+                  { slug: "shortfuts-vs-elitefutbot", name: "Shortfuts" },
+                ].map((item) => (
+                  <Link
+                    key={item.slug}
+                    href={`/${item.slug}`}
+                    className="px-2.5 py-1 rounded-lg bg-white/[0.03] hover:bg-primary/10 border border-white/5 hover:border-primary/30 text-gray-400 hover:text-primary transition-all text-[11px]"
+                  >
+                    vs {item.name}
+                  </Link>
+                ))}
+              </div>
+            </div>
             
             {/* Bottom Bar */}
-            <div className="pt-12 border-t border-white/5 flex flex-col md:flex-row justify-between items-center gap-8 text-[10px] text-gray-400 font-bold uppercase tracking-[0.3em] font-headline">
+            <div className="pt-8 border-t border-white/5 flex flex-col md:flex-row justify-between items-center gap-8 text-[10px] text-gray-400 font-bold uppercase tracking-[0.3em] font-headline">
               <div className="flex items-center gap-6">
                 <span>© 2026 Elite FUT SNIPER</span>
                 <span className="w-1 h-1 bg-white/10 rounded-full" aria-hidden="true"></span>
                 <span>Not Affiliated with EA Sports</span>
               </div>
-              <nav className="flex gap-10" aria-label="Legal">
-                <Link className="hover:text-primary transition-colors focus-visible:text-primary focus-visible:outline-none" href="/sitemap.xml">Sitemap</Link>
-                <Link className="hover:text-primary transition-colors focus-visible:text-primary focus-visible:outline-none" href="/terms">Terms</Link>
-                <Link className="hover:text-primary transition-colors focus-visible:text-primary focus-visible:outline-none" href="/privacy">Privacy</Link>
-                <Link className="hover:text-primary transition-colors focus-visible:text-primary focus-visible:outline-none" href="/contact">Contact</Link>
+              <nav className="flex gap-4" aria-label="Legal">
+                <Link className="hover:text-primary transition-colors focus-visible:text-primary focus-visible:outline-none py-2 px-2 inline-flex items-center min-h-[44px]" href="/sitemap.xml">Sitemap</Link>
+                <Link className="hover:text-primary transition-colors focus-visible:text-primary focus-visible:outline-none py-2 px-2 inline-flex items-center min-h-[44px]" href="/terms">Terms</Link>
+                <Link className="hover:text-primary transition-colors focus-visible:text-primary focus-visible:outline-none py-2 px-2 inline-flex items-center min-h-[44px]" href="/privacy">Privacy</Link>
+                <Link className="hover:text-primary transition-colors focus-visible:text-primary focus-visible:outline-none py-2 px-2 inline-flex items-center min-h-[44px]" href="/contact">Contact</Link>
               </nav>
             </div>
           </div>

@@ -116,55 +116,61 @@ export default function TaxCalculatorPage() {
             {/* Input Controls Grid */}
             <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
               <div className="space-y-2">
-                <label className="text-xs font-headline font-bold uppercase tracking-wider text-gray-400">
+                <label htmlFor="tax-buy-price" className="text-xs font-headline font-bold uppercase tracking-wider text-gray-400">
                   Buy Price (Coins)
                 </label>
                 <div className="relative">
                   <input
+                    id="tax-buy-price"
                     type="number"
                     value={buyPrice || ""}
                     onChange={(e) => setBuyPrice(Number(e.target.value))}
                     placeholder="e.g. 85000"
+                    aria-label="Buy Price in Coins"
                     className="w-full px-4 py-3.5 rounded-xl bg-black/60 border border-white/15 focus:border-primary focus:outline-none text-white font-mono font-bold text-lg"
                   />
-                  <span className="absolute right-4 top-1/2 -translate-y-1/2 text-xs font-bold text-gray-400 uppercase">
+                  <span className="absolute right-4 top-1/2 -translate-y-1/2 text-xs font-bold text-gray-400 uppercase" aria-hidden="true">
                     Coins
                   </span>
                 </div>
               </div>
 
               <div className="space-y-2">
-                <label className="text-xs font-headline font-bold uppercase tracking-wider text-gray-400">
+                <label htmlFor="tax-sell-price" className="text-xs font-headline font-bold uppercase tracking-wider text-gray-400">
                   Target Sell Price (Coins)
                 </label>
                 <div className="relative">
                   <input
+                    id="tax-sell-price"
                     type="number"
                     value={sellPrice || ""}
                     onChange={(e) => setSellPrice(Number(e.target.value))}
                     placeholder="e.g. 110000"
+                    aria-label="Target Sell Price in Coins"
                     className="w-full px-4 py-3.5 rounded-xl bg-black/60 border border-white/15 focus:border-primary focus:outline-none text-primary font-mono font-bold text-lg"
                   />
-                  <span className="absolute right-4 top-1/2 -translate-y-1/2 text-xs font-bold text-gray-400 uppercase">
+                  <span className="absolute right-4 top-1/2 -translate-y-1/2 text-xs font-bold text-gray-400 uppercase" aria-hidden="true">
                     Coins
                   </span>
                 </div>
               </div>
 
               <div className="space-y-2">
-                <label className="text-xs font-headline font-bold uppercase tracking-wider text-gray-400">
+                <label htmlFor="tax-quantity" className="text-xs font-headline font-bold uppercase tracking-wider text-gray-400">
                   Quantity
                 </label>
                 <div className="relative">
                   <input
+                    id="tax-quantity"
                     type="number"
                     value={quantity || ""}
                     onChange={(e) => setQuantity(Number(e.target.value))}
                     placeholder="1"
                     min="1"
+                    aria-label="Quantity of Cards"
                     className="w-full px-4 py-3.5 rounded-xl bg-black/60 border border-white/15 focus:border-primary focus:outline-none text-white font-mono font-bold text-lg"
                   />
-                  <span className="absolute right-4 top-1/2 -translate-y-1/2 text-xs font-bold text-gray-400 uppercase">
+                  <span className="absolute right-4 top-1/2 -translate-y-1/2 text-xs font-bold text-gray-400 uppercase" aria-hidden="true">
                     Cards
                   </span>
                 </div>

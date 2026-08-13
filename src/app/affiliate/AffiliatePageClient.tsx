@@ -341,13 +341,19 @@ export default function AffiliatePageClient({ faqs }: AffiliatePageClientProps) 
 
             {/* Range Input */}
             <div className="space-y-3">
+              <label htmlFor="referral-count-slider" className="sr-only">Number of active subscribers (5 to 500)</label>
               <input
+                id="referral-count-slider"
                 type="range"
                 min="5"
                 max="500"
                 step="5"
                 value={referrals}
                 onChange={(e) => setReferrals(parseInt(e.target.value))}
+                aria-label="Number of active subscribers"
+                aria-valuemin={5}
+                aria-valuemax={500}
+                aria-valuenow={referrals}
                 className="w-full h-3 bg-gray-800 rounded-lg appearance-none cursor-pointer accent-primary border border-white/10"
               />
               <div className="flex justify-between text-[11px] text-gray-400 font-bold uppercase tracking-widest">
@@ -558,15 +564,17 @@ export default function AffiliatePageClient({ faqs }: AffiliatePageClientProps) 
               >
                 <button
                   onClick={() => setOpenFaq(openFaq === index ? null : index)}
+                  aria-expanded={openFaq === index}
+                  aria-controls={`affiliate-faq-answer-${index}`}
                   className="w-full p-6 text-left flex justify-between items-center gap-4 hover:bg-white/[0.02]"
                 >
                   <span className="font-bold text-white text-sm sm:text-base">{faq.q}</span>
-                  <span className="material-symbols-outlined text-primary text-xl">
+                  <span className="material-symbols-outlined text-primary text-xl" aria-hidden="true">
                     {openFaq === index ? "remove" : "add"}
                   </span>
                 </button>
                 {openFaq === index && (
-                  <div className="px-6 pb-6 text-xs sm:text-sm text-gray-400 border-t border-white/5 pt-4 leading-relaxed font-medium">
+                  <div id={`affiliate-faq-answer-${index}`} className="px-6 pb-6 text-xs sm:text-sm text-gray-400 border-t border-white/5 pt-4 leading-relaxed font-medium">
                     {faq.a}
                   </div>
                 )}

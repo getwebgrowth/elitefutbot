@@ -3,12 +3,12 @@ import CompetitorComparisonPage from "@/components/CompetitorComparisonPage";
 import { futUltimateSniperData } from "@/data/competitors/futultimatesniper";
 
 export const metadata: Metadata = {
-  title: "FUT 27 Web App Extension Comparison – FUT Ultimate Sniper vs Elite",
-  description: "Compare FUT Ultimate Sniper vs Elite. Discover the top FUT 27 Web App extension and Ultimate Team Sniping Bot with 1-click store installation and 20ms speeds.",
+  title: "FC 27 Web App Extension Comparison – FUT Ultimate Sniper vs Elite",
+  description: "Compare FUT Ultimate Sniper vs Elite. Discover the top EA FC 27 Web App extension and Ultimate Team Sniping Bot with 1-click store installation and 20ms speeds.",
   alternates: { canonical: "https://elitefutbot.com/futultimatesniper-vs-elitefutbot" },
   openGraph: {
-    title: "FUT 27 Web App Extension Comparison – FUT Ultimate Sniper vs Elite",
-    description: "Compare FUT Ultimate Sniper vs Elite. Discover the top FUT 27 Web App extension and Ultimate Team Sniping Bot with 1-click store installation and 20ms speeds.",
+    title: "FC 27 Web App Extension Comparison – FUT Ultimate Sniper vs Elite",
+    description: "Compare FUT Ultimate Sniper vs Elite. Discover the top EA FC 27 Web App extension and Ultimate Team Sniping Bot with 1-click store installation and 20ms speeds.",
     url: "https://elitefutbot.com/futultimatesniper-vs-elitefutbot",
     siteName: "Elite FUT SNIPER",
     type: "article",
@@ -16,8 +16,8 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "FUT 27 Web App Extension Comparison – FUT Ultimate Sniper vs Elite",
-    description: "Compare FUT Ultimate Sniper vs Elite. Discover the top FUT 27 Web App extension and Ultimate Team Sniping Bot with 1-click store installation and 20ms speeds.",
+    title: "FC 27 Web App Extension Comparison – FUT Ultimate Sniper vs Elite",
+    description: "Compare FUT Ultimate Sniper vs Elite. Discover the top EA FC 27 Web App extension and Ultimate Team Sniping Bot with 1-click store installation and 20ms speeds.",
     images: ["https://elitefutbot.com/og-image.png"],
   },
 };

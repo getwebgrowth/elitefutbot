@@ -193,8 +193,7 @@ export default function Home() {
                     alt="Yamal 97 Snipe Price Stats Proof (Bought for 337,000)" 
                     width={292} 
                     height={339} 
-                    quality={100}
-                    unoptimized
+                    quality={85}
                     className="w-full h-auto rounded-xl block" 
                     src="/yamal-snipe-proof-stats.png" 
                   />
@@ -211,8 +210,7 @@ export default function Home() {
                     alt="97 Lamine Yamal Rating TOTS Card Snipe Result" 
                     width={219} 
                     height={257} 
-                    quality={100}
-                    unoptimized
+                    quality={85}
                     className="w-full h-auto rounded-xl block" 
                     src="/yamal-97-card.png" 
                   />
@@ -678,7 +676,7 @@ export default function Home() {
           </div>
           <div className="space-y-4">
             <div className="glass-card rounded-2xl overflow-hidden border border-white/10 hover:border-primary/30 transition-all">
-              <button type="button" aria-expanded="true" aria-label="Toggle answer for What makes this the Best FIFA Sniping Bot for FC 26 &amp; FC 27" className="w-full flex items-center justify-between p-6 text-left focus:outline-none">
+              <button type="button" aria-expanded="true" className="w-full flex items-center justify-between p-6 text-left focus:outline-none">
                 <span className="font-bold text-white">What makes this the Best FIFA Sniping Bot for FC 26 &amp; FC 27?</span>
                 <span className="material-symbols-outlined text-primary" aria-hidden="true">expand_more</span>
               </button>
@@ -687,7 +685,7 @@ export default function Home() {
               </div>
             </div>
             <div className="glass-card rounded-2xl overflow-hidden border border-white/10 hover:border-primary/30 transition-all">
-              <button type="button" aria-expanded="true" aria-label="Toggle answer for Is there an FC 26 &amp; FC 27 Autobuyer feature included" className="w-full flex items-center justify-between p-6 text-left focus:outline-none">
+              <button type="button" aria-expanded="true" className="w-full flex items-center justify-between p-6 text-left focus:outline-none">
                 <span className="font-bold text-white">Is there an FC 26 &amp; FC 27 Autobuyer feature included?</span>
                 <span className="material-symbols-outlined text-primary" aria-hidden="true">expand_more</span>
               </button>
@@ -696,7 +694,7 @@ export default function Home() {
               </div>
             </div>
             <div className="glass-card rounded-2xl overflow-hidden border border-white/10 hover:border-primary/30 transition-all">
-              <button type="button" aria-expanded="true" aria-label="Toggle answer for What is the difference between a FUT Snipe Bot and a FUT Autobuyer" className="w-full flex items-center justify-between p-6 text-left focus:outline-none">
+              <button type="button" aria-expanded="true" className="w-full flex items-center justify-between p-6 text-left focus:outline-none">
                 <span className="font-bold text-white">What is the difference between a FUT Snipe Bot and a FUT Autobuyer?</span>
                 <span className="material-symbols-outlined text-primary" aria-hidden="true">expand_more</span>
               </button>
@@ -705,7 +703,7 @@ export default function Home() {
               </div>
             </div>
             <div className="glass-card rounded-2xl overflow-hidden border border-white/10 hover:border-primary/30 transition-all">
-              <button type="button" aria-expanded="true" aria-label="Toggle answer for Why is a local Chrome Extension safer than cloud-based FIFA sniping bots" className="w-full flex items-center justify-between p-6 text-left focus:outline-none">
+              <button type="button" aria-expanded="true" className="w-full flex items-center justify-between p-6 text-left focus:outline-none">
                 <span className="font-bold text-white">Why is a local Chrome Extension safer than cloud-based FIFA sniping bots?</span>
                 <span className="material-symbols-outlined text-primary" aria-hidden="true">expand_more</span>
               </button>
@@ -714,7 +712,7 @@ export default function Home() {
               </div>
             </div>
             <div className="glass-card rounded-2xl overflow-hidden border border-white/10 hover:border-primary/30 transition-all">
-              <button type="button" aria-expanded="true" aria-label="Toggle answer for Does Elite FUT SNIPER support FC 25, FC 26, and upcoming FC 27 Web Apps" className="w-full flex items-center justify-between p-6 text-left focus:outline-none">
+              <button type="button" aria-expanded="true" className="w-full flex items-center justify-between p-6 text-left focus:outline-none">
                 <span className="font-bold text-white">Does Elite FUT SNIPER support FC 25, FC 26, and upcoming FC 27 Web Apps?</span>
                 <span className="material-symbols-outlined text-primary" aria-hidden="true">expand_more</span>
               </button>
@@ -723,7 +721,7 @@ export default function Home() {
               </div>
             </div>
             <div className="glass-card rounded-2xl overflow-hidden border border-white/10 hover:border-primary/30 transition-all">
-              <button type="button" aria-expanded="true" aria-label="Toggle answer for How does the EA FC 26 &amp; FC 27 SBC Solver work" className="w-full flex items-center justify-between p-6 text-left focus:outline-none">
+              <button type="button" aria-expanded="true" className="w-full flex items-center justify-between p-6 text-left focus:outline-none">
                 <span className="font-bold text-white">How does the EA FC 26 &amp; FC 27 SBC Solver work?</span>
                 <span className="material-symbols-outlined text-primary" aria-hidden="true">expand_more</span>
               </button>
@@ -732,7 +730,7 @@ export default function Home() {
               </div>
             </div>
             <div className="glass-card rounded-2xl overflow-hidden border border-white/10 hover:border-primary/30 transition-all">
-              <button type="button" aria-expanded="true" aria-label="Toggle answer for Is it really a Safe Sniping Bot" className="w-full flex items-center justify-between p-6 text-left focus:outline-none">
+              <button type="button" aria-expanded="true" className="w-full flex items-center justify-between p-6 text-left focus:outline-none">
                 <span className="font-bold text-white">Is it really a Safe Sniping Bot?</span>
                 <span className="material-symbols-outlined text-primary" aria-hidden="true">expand_more</span>
               </button>
@@ -741,7 +739,7 @@ export default function Home() {
               </div>
             </div>
             <div className="glass-card rounded-2xl overflow-hidden border border-white/10 hover:border-primary/30 transition-all">
-              <button type="button" aria-expanded="true" aria-label="Toggle answer for How do I claim Free Beta access for the FC 26 &amp; FC 27 Sniping Bot" className="w-full flex items-center justify-between p-6 text-left focus:outline-none">
+              <button type="button" aria-expanded="true" className="w-full flex items-center justify-between p-6 text-left focus:outline-none">
                 <span className="font-bold text-white">How do I claim Free Beta access for the FC 26 &amp; FC 27 Sniping Bot?</span>
                 <span className="material-symbols-outlined text-primary" aria-hidden="true">expand_more</span>
               </button>
