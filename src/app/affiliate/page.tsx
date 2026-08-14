@@ -3,13 +3,13 @@ import AffiliatePageClient from "./AffiliatePageClient";
 
 export const metadata: Metadata = {
   title: "Earn 50% Lifetime Commission – FC 26 & FC 27 Bot Affiliate Program | Elite FUT SNIPER",
-  description: "Join the Elite FUT SNIPER Affiliate Program. Earn 50% lifetime recurring commission ($10 to $17.50+ per sale) promoting the #1 FC 26 & FC 27 sniping bot & autobuyer. Instant weekly Friday payouts via Crypto, PayPal & Bank Wire.",
+  description: "Join the Elite FUT SNIPER Affiliate Program. Earn 50% lifetime recurring commission ($10 to $17.50+ per sale) promoting the #1 FC 26 & FC 27 sniping bot & autobuyer. Instant Daily Payouts via Crypto USDT, PayPal & Bank Wire.",
   alternates: {
     canonical: "https://elitefutbot.com/affiliate",
   },
   openGraph: {
     title: "Earn 50% Lifetime Commission – FC 26 & FC 27 Bot Affiliate Program | Elite FUT SNIPER",
-    description: "Earn 50% lifetime recurring commission ($10 to $17.50+ per sale) promoting the world's fastest FC 26 & FC 27 sniping bot. Weekly Friday payouts, 90-day cookies & special creator rates.",
+    description: "Earn 50% lifetime recurring commission ($10 to $17.50+ per sale) promoting the world's fastest FC 26 & FC 27 sniping bot. Instant Daily Payouts, 90-day cookies & special creator rates.",
     url: "https://elitefutbot.com/affiliate",
     siteName: "Elite FUT SNIPER",
     type: "website",
@@ -25,7 +25,7 @@ export const metadata: Metadata = {
   twitter: {
     card: "summary_large_image",
     title: "Earn 50% Lifetime Commission – FC 26 & FC 27 Bot Affiliate Program",
-    description: "Earn $10 to $17.50+ per sale (50% Lifetime RevShare) promoting the #1 FC 26 & FC 27 Sniping Bot. Weekly Friday payouts & 90-day cookies.",
+    description: "Earn $10 to $17.50+ per sale (50% Lifetime RevShare) promoting the #1 FC 26 & FC 27 Sniping Bot. Instant Daily Payouts & 90-day cookies.",
     images: ["https://elitefutbot.com/og-image.png"],
   }
 };
@@ -33,20 +33,20 @@ export const metadata: Metadata = {
 export default function Page() {
   const faqs = [
     {
-      q: "How does the 50% Lifetime Commission work?",
-      a: "You earn a guaranteed 50% cut on every purchase made through your affiliate referral link or custom promo code. At our current launch price of $20, you earn $10.00 pure revenue per sale. When the price increases to $35, your payout automatically scales to $17.50 per sale! As long as referred users remain active or renew for future seasons (FC 26 & FC 27), you continue to receive recurring 50% commission."
+      q: "How does the 50% Lifetime Commission work for FC 26 & FC 27?",
+      a: "You earn a guaranteed 50% cut on every purchase made through your affiliate referral link or custom promo code. At our current launch price of $20, you earn $10.00 pure revenue per sale. When the price increases to $35, your payout automatically scales to $17.50 per sale! As long as referred users remain active or renew for upcoming seasons (FC 26 & FC 27), you continue to receive recurring 50% commission."
     },
     {
       q: "What is the current bot price and commission per sale?",
       a: "Elite FUT SNIPER is currently priced at an introductory $20 flat license (earning you $10.00 revenue per sale). As we roll out advanced AI SBC solving and FC 27 modules, the price will increase to $35, delivering an enhanced $17.50 revenue per sale directly to your affiliate balance at 50% revshare."
     },
     {
-      q: "Are TikTok, YouTube, and Twitch content creators eligible for special VIP rates?",
-      a: "Yes! Content creators with active audiences on TikTok, YouTube, Twitch, Instagram, or Discord trading servers qualify for VIP Creator status. Perks include boosted commission rates up to 60% ($12 to $21+ per sale), custom follower promo discount codes, free lifetime bot review licenses, and upfront video sponsorship bonuses."
+      q: "When and how do I receive my affiliate payouts?",
+      a: "Affiliate payouts are processed Daily with zero processing fees. You can request or receive automated daily withdrawals directly to your Crypto wallet (USDT TRC20/ERC20, Bitcoin), PayPal, or Direct Bank Wire Transfer."
     },
     {
-      q: "When and how do I receive my affiliate payouts?",
-      a: "Affiliate payouts are processed automatically every single Friday with zero processing fees. You can withdraw your earnings via Crypto (USDT TRC20/ERC20, Bitcoin, Ethereum), PayPal, or Direct Bank Wire Transfer."
+      q: "Are TikTok, YouTube, and Twitch content creators eligible for special VIP rates?",
+      a: "Yes! Content creators with active audiences on TikTok, YouTube, Twitch, Instagram, or Discord trading servers qualify for VIP Creator status. Perks include boosted commission rates up to 60% ($12 to $21+ per sale), custom follower promo discount codes, free lifetime bot review licenses, and upfront video sponsorship bonuses."
     },
     {
       q: "What is the cookie tracking duration for referral links?",
@@ -90,7 +90,7 @@ export default function Page() {
       {
         "@type": "Product",
         "name": "Elite FUT SNIPER Affiliate Program",
-        "description": "Earn 50% lifetime recurring commission promoting the #1 FC 26 & FC 27 sniping bot and autobuyer. $10 to $17.50+ revenue per sale.",
+        "description": "Earn 50% lifetime recurring commission promoting the #1 FC 26 & FC 27 sniping bot and autobuyer. $10 to $17.50+ revenue per sale with daily automated payouts.",
         "offers": {
           "@type": "Offer",
           "price": "20.00",

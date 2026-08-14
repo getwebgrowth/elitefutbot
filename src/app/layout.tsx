@@ -8,16 +8,19 @@ import "./globals.css";
 const inter = Inter({
   subsets: ["latin"],
   variable: "--font-inter",
+  display: "swap",
 });
 
 const spaceGrotesk = Space_Grotesk({
   subsets: ["latin"],
   variable: "--font-space",
+  display: "swap",
 });
 
 const publicSans = Public_Sans({
   subsets: ["latin"],
   variable: "--font-public-sans",
+  display: "swap",
 });
 
 export const metadata: Metadata = {
@@ -138,8 +141,8 @@ export default function RootLayout({
         {/* Yandex Verification */}
         <meta name="yandex-verification" content="a303969db4d28193" />
         {/* Google Analytics tag (gtag.js) */}
-        <Script src="https://www.googletagmanager.com/gtag/js?id=G-224X1P08Z4" strategy="afterInteractive" />
-        <Script id="google-analytics" strategy="afterInteractive" dangerouslySetInnerHTML={{
+        <Script src="https://www.googletagmanager.com/gtag/js?id=G-224X1P08Z4" strategy="lazyOnload" />
+        <Script id="google-analytics" strategy="lazyOnload" dangerouslySetInnerHTML={{
           __html: `
             window.dataLayer = window.dataLayer || [];
             function gtag(){dataLayer.push(arguments);}
@@ -152,7 +155,7 @@ export default function RootLayout({
         <link rel="preconnect" href="https://www.youtube-nocookie.com" />
         <link rel="preconnect" href="https://www.google-analytics.com" />
         <link rel="dns-prefetch" href="https://i.ytimg.com" />
-        {/* Material Symbols font stylesheet */}
+        {/* Material Symbols font stylesheet - Non-blocking high performance */}
         <link
           rel="stylesheet"
           href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&display=swap"
@@ -169,7 +172,7 @@ export default function RootLayout({
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div className="flex justify-between items-center h-16">
               <Link href="/" className="flex items-center gap-2.5 group">
-                <Image src="/logo-elite.png" alt="Elite FUT SNIPER Logo" width={40} height={40} className="w-10 h-10 object-contain transition-transform group-hover:scale-105" />
+                <Image src="/logo-elite.png" alt="Elite FUT SNIPER Logo" width={40} height={40} priority className="w-10 h-10 object-contain transition-transform group-hover:scale-105" />
                 <span className="text-lg font-black tracking-tighter uppercase text-white">
                   Elite FUT <span className="text-primary">SNIPER</span>
                 </span>

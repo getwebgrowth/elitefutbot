@@ -21,6 +21,13 @@
   - VIP 1-on-1 Trading Strategy Discord Channel
   - Continuous Forward-Compatible FC 27 Updates (Zero Upgrade Fees)
 
+## Affiliate & Creator Partner Program
+- Commission: 50% Standard Lifetime RevShare ($10.00 to $17.50+ per sale)
+- VIP Tier: 60% RevShare ($12.00 to $21.00+ per sale) for creators with 5K+ audience
+- Payout Schedule: Instant Daily Payouts (within 24 hours)
+- Payout Methods: Crypto (USDT), PayPal, Direct Bank Wire
+- Cookie Duration: 90 Days Persistent Attribution
+
 ## Security & Compatibility
 - Execution Model: 100% Local In-Browser (Home Residential IP)
 - Password Requirement: Never Required (Zero Credential Handover)

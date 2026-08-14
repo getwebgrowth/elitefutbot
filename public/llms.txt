@@ -50,7 +50,7 @@ The FC 26 sniping bot executes market searches in under 20ms, compared to 150–
 - [Local Extension vs Cloud Autobuyer Comparison](https://elitefutbot.com/tools/comparison-guide)
 - [EA Tax Calculator](https://elitefutbot.com/tools/tax-calculator)
 - [FUT Sniping Guide — FC 26 Filters & Methods](https://elitefutbot.com/tools/sniping-guide)
-- [Affiliate Program (50% Lifetime Commission)](https://elitefutbot.com/affiliate)
+- [Affiliate Program (50% Lifetime Commission, Instant Daily Payouts for FC 26 & FC 27)](https://elitefutbot.com/affiliate)
 - [Discord Community](https://discord.gg/Rkb9nF6WG6)
 - [Pricing (Machine-Readable)](https://elitefutbot.com/pricing.md)
 
