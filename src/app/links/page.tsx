@@ -17,6 +17,7 @@ export default function LinksPage() {
     { href: "/ai-sbc-solver", label: "AI SBC Solver Engine", category: "SBC Solving", desc: "Access the 1-click AI-powered SBC solver engine." },
     { href: "/sbc-solver", label: "SBC Solutions Catalog", category: "SBC Solving", desc: "Browse solved squad building challenges." },
     
+    { href: "/tools/comparison-guide", label: "Competitor Comparison Hub", category: "Tools & Resources", desc: "Compare Elite FUT SNIPER against all 36 competitor bots and autobuyers." },
     { href: "/tools/sniping-guide", label: "Sniping Guide", category: "Tools & Resources", desc: "Step-by-step tutorial on sniping settings and safety." },
     { href: "/tools/tax-calculator", label: "Tax Calculator", category: "Tools & Resources", desc: "Calculate EA tax and project profit from market trading." },
     { href: "/volt-velocity", label: "Volt Velocity", category: "Tools & Resources", desc: "Optimizing connection speed and response times." },

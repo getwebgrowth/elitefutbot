@@ -55,7 +55,7 @@ The FC 26 sniping bot executes market searches in under 20ms, compared to 150–
 - [Pricing (Machine-Readable)](https://elitefutbot.com/pricing.md)
 
 ## Competitor Comparisons
-Detailed side-by-side analysis pages comparing Elite FUT SNIPER against all 30 major FUT trading tools, bots, and services:
+Detailed side-by-side analysis pages comparing Elite FUT SNIPER against all 36 major FUT trading tools, bots, and services:
 - [Baker's Bot vs Elite FUT SNIPER](https://elitefutbot.com/bakers-bot-vs-elitefutbot) – Built by the same developer; local vs cloud execution comparison
 - [FUT Simple Trader vs Elite FUT SNIPER](https://elitefutbot.com/futsimpletrader-vs-elitefutbot) – Manual trading tool vs automated 20ms sniping and AI SBC solver
 - [FutEarn vs Elite FUT SNIPER](https://elitefutbot.com/futearn-vs-elitefutbot) – Cloud credential-sharing bot vs local zero-password extension
@@ -86,3 +86,10 @@ Detailed side-by-side analysis pages comparing Elite FUT SNIPER against all 30 m
 - [ExeSniper vs Elite FUT SNIPER](https://elitefutbot.com/exesniper-vs-elitefutbot) – Standalone Windows binary vs secure sandboxed Chrome extension
 - [FUT Bot Club vs Elite FUT SNIPER](https://elitefutbot.com/futbotclub-vs-elitefutbot) – Community bot requiring server logins vs privacy-first local client execution
 - [Shortfuts vs Elite FUT SNIPER](https://elitefutbot.com/shortfuts-vs-elitefutbot) – Manual keyboard shortcuts vs 20ms autonomous sniping loop with AI SBC solving
+- [FUTCloud vs Elite FUT SNIPER](https://elitefutbot.com/futcloud-vs-elitefutbot) – Cloud server farm taking profit cuts and requiring passwords vs 100% local uncut 20ms sniping
+- [FUTMillionaire vs Elite FUT SNIPER](https://elitefutbot.com/futmillionaire-vs-elitefutbot) – Bulky 850MB desktop software with $22.90/mo recurring fee vs lightweight in-browser 20ms AI suite
+- [FutStarz vs Elite FUT SNIPER](https://elitefutbot.com/futstarz-vs-elitefutbot) – Remote cloud proxy queues with 250ms latency vs direct in-browser 20ms WebSocket execution
+- [UTSniper vs Elite FUT SNIPER](https://elitefutbot.com/utsniper-vs-elitefutbot) – Basic linear delay timers and screen overlays vs Gaussian behavioral jitter and Side Panel HUD
+- [SniperBot Italia vs Elite FUT SNIPER](https://elitefutbot.com/sniperbotitalia-vs-elitefutbot) – Localized Italian Telegram script vs universal multi-language 20ms AI sniping engine
+- [EAFC Sniper vs Elite FUT SNIPER](https://elitefutbot.com/eafcsniper-vs-elitefutbot) – Seasonal license store charging repeat re-buys vs all-in-one unified AI SBC solver & sniper
+

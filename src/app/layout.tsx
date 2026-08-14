@@ -371,6 +371,12 @@ export default function RootLayout({
                   { slug: "exesniper-vs-elitefutbot", name: "ExeSniper" },
                   { slug: "futbotclub-vs-elitefutbot", name: "FUT Bot Club" },
                   { slug: "shortfuts-vs-elitefutbot", name: "Shortfuts" },
+                  { slug: "futcloud-vs-elitefutbot", name: "FUTCloud" },
+                  { slug: "futmillionaire-vs-elitefutbot", name: "FUTMillionaire" },
+                  { slug: "futstarz-vs-elitefutbot", name: "FutStarz" },
+                  { slug: "utsniper-vs-elitefutbot", name: "UTSniper" },
+                  { slug: "sniperbotitalia-vs-elitefutbot", name: "SniperBot Italia" },
+                  { slug: "eafcsniper-vs-elitefutbot", name: "EAFC Sniper" },
                 ].map((item) => (
                   <Link
                     key={item.slug}
