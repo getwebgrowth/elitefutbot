@@ -75,10 +75,110 @@ export default function CompetitorComparisonPage({ data }: { data: CompetitorDat
   const schemaJsonLd = {
     "@context": "https://schema.org",
     "@graph": [
-      { "@type": "FAQPage", mainEntity: data.faqs.map((faq) => ({ "@type": "Question", name: faq.question, acceptedAnswer: { "@type": "Answer", text: faq.answer } })) },
-      { "@type": "Article", headline: `${data.competitorName} vs Elite FUT SNIPER – Full Comparison`, description: data.verdict, datePublished: data.publishedDate, dateModified: data.modifiedDate, citation: data.citations.map((cite) => cite.url), author: { "@type": "Person", name: "Elite FUT SNIPER Developer", url: "https://elitefutbot.com/bio" }, publisher: { "@type": "Organization", name: "Elite FUT SNIPER", logo: { "@type": "ImageObject", url: "https://elitefutbot.com/logo-elite.png" } } },
-      { "@type": "BreadcrumbList", itemListElement: [{ "@type": "ListItem", position: 1, name: "Home", item: "https://elitefutbot.com/" }, { "@type": "ListItem", position: 2, name: "Compare", item: "https://elitefutbot.com/tools/comparison-guide" }, { "@type": "ListItem", position: 3, name: `${data.competitorName} vs Elite FUT SNIPER`, item: `https://elitefutbot.com/${data.slug}` }] },
-      { "@type": "Product", name: "Elite FUT SNIPER", description: "The world's first local FC 26 & FC 27 sniping bot, autobuyer, and AI SBC solver Chrome extension.", offers: { "@type": "Offer", price: "19.00", priceCurrency: "USD" }, aggregateRating: { "@type": "AggregateRating", ratingValue: "4.9", ratingCount: "1250" } },
+      {
+        "@type": "FAQPage",
+        mainEntity: data.faqs.map((faq) => ({
+          "@type": "Question",
+          name: faq.question,
+          acceptedAnswer: { "@type": "Answer", text: faq.answer }
+        }))
+      },
+      {
+        "@type": "Article",
+        headline: `${data.competitorName} vs Elite FUT SNIPER – Full Comparison`,
+        description: data.verdict,
+        image: "https://elitefutbot.com/og-image.png",
+        datePublished: data.publishedDate,
+        dateModified: data.modifiedDate,
+        citation: data.citations.map((cite) => cite.url),
+        author: {
+          "@type": "Person",
+          name: "Elite FUT SNIPER Developer",
+          url: "https://elitefutbot.com/bio"
+        },
+        publisher: {
+          "@type": "Organization",
+          name: "Elite FUT SNIPER",
+          logo: {
+            "@type": "ImageObject",
+            url: "https://elitefutbot.com/logo-elite.png"
+          }
+        }
+      },
+      {
+        "@type": "BreadcrumbList",
+        itemListElement: [
+          { "@type": "ListItem", position: 1, name: "Home", item: "https://elitefutbot.com/" },
+          { "@type": "ListItem", position: 2, name: "Compare", item: "https://elitefutbot.com/tools/comparison-guide" },
+          { "@type": "ListItem", position: 3, name: `${data.competitorName} vs Elite FUT SNIPER`, item: `https://elitefutbot.com/${data.slug}` }
+        ]
+      },
+      {
+        "@type": "SoftwareApplication",
+        name: "Elite FUT SNIPER",
+        applicationCategory: "GameApplication",
+        operatingSystem: "Web, Windows, macOS",
+        image: "https://elitefutbot.com/og-image.png",
+        screenshot: "https://elitefutbot.com/og-image.png",
+        description: "The world's first local FC 26 & FC 27 sniping bot, autobuyer, and AI SBC solver Chrome extension.",
+        brand: {
+          "@type": "Brand",
+          name: "Elite FUT SNIPER"
+        },
+        offers: {
+          "@type": "Offer",
+          url: "https://elitefutbot.com/#pricing",
+          price: "19.00",
+          priceCurrency: "USD",
+          priceValidUntil: "2027-12-31",
+          availability: "https://schema.org/InStock",
+          seller: {
+            "@type": "Organization",
+            name: "Elite FUT SNIPER"
+          },
+          shippingDetails: {
+            "@type": "OfferShippingDetails",
+            "shippingRate": {
+              "@type": "MonetaryAmount",
+              value: "0",
+              currency: "USD"
+            },
+            "shippingDestination": [
+              {
+                "@type": "DefinedRegion",
+                addressCountry: "US"
+              }
+            ],
+            "deliveryTime": {
+              "@type": "ShippingDeliveryTime",
+              handlingTime: {
+                "@type": "QuantitativeValue",
+                minValue: 0,
+                maxValue: 0,
+                unitCode: "DAY"
+              },
+              transitTime: {
+                "@type": "QuantitativeValue",
+                minValue: 0,
+                maxValue: 0,
+                unitCode: "DAY"
+              }
+            }
+          },
+          hasMerchantReturnPolicy: {
+            "@type": "MerchantReturnPolicy",
+            applicableCountry: "US",
+            returnPolicyCategory: "https://schema.org/MerchantReturnNotPermitted"
+          }
+        },
+        aggregateRating: {
+          "@type": "AggregateRating",
+          ratingValue: "4.9",
+          ratingCount: "1250",
+          bestRating: "5",
+          worstRating: "1"
+        }
+      }
     ],
   };
 
