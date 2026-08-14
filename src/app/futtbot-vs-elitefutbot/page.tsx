@@ -3,12 +3,14 @@ import CompetitorComparisonPage from "@/components/CompetitorComparisonPage";
 import { futtBotData } from "@/data/competitors/futtbot";
 
 export const metadata: Metadata = {
-  title: "FUTTBot vs Elite FUT SNIPER – Cloud Bot vs Local FC 26 & FC 27 Sniper",
-  description: "FUTTBot vs Elite FUT SNIPER comparison. Why a local 20ms Chrome extension beats cloud FUT automation for FC 26 & FC 27. No password sharing, no ban risk.",
+  title: "Futtbot vs Elite FUT SNIPER – FC 27 Comparison",
+  description:
+    "Compare Futtbot vs Elite FUT SNIPER. Replace complex terminal scripts with a 1-click 20ms Chrome extension and AI SBC solving for FC 26 & FC 27.",
   alternates: { canonical: "https://elitefutbot.com/futtbot-vs-elitefutbot" },
   openGraph: {
-    title: "FUTTBot vs Elite FUT SNIPER – Cloud Bot vs Local FC 26 & FC 27 Sniper",
-    description: "Cloud bot vs local Chrome extension for FC 26 & FC 27 FUT trading. Elite wins on speed, safety, and FC 27 support.",
+    title: "Futtbot vs Elite FUT SNIPER – FC 27 Comparison",
+    description:
+      "Compare Futtbot vs Elite FUT SNIPER. Replace complex terminal scripts with a 1-click 20ms Chrome extension and AI SBC solving for FC 26 & FC 27.",
     url: "https://elitefutbot.com/futtbot-vs-elitefutbot",
     siteName: "Elite FUT SNIPER",
     type: "article",
@@ -16,8 +18,9 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "FUTTBot vs Elite FUT SNIPER – FC 26 & FC 27 Comparison",
-    description: "Cloud FUT bots are slow and risky. See why Elite FUT SNIPER wins.",
+    title: "Futtbot vs Elite FUT SNIPER – FC 27 Comparison",
+    description:
+      "Compare Futtbot vs Elite FUT SNIPER. Replace complex terminal scripts with a 1-click 20ms Chrome extension and AI SBC solving for FC 26 & FC 27.",
     images: ["https://elitefutbot.com/og-image.png"],
   },
 };

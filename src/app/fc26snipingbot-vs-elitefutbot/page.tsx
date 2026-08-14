@@ -3,12 +3,14 @@ import CompetitorComparisonPage from "@/components/CompetitorComparisonPage";
 import { fc26SnipingBotData } from "@/data/competitors/fc26snipingbot";
 
 export const metadata: Metadata = {
-  title: "FC26SnipingBot vs Elite FUT SNIPER – FC 26 & FC 27 Sniping Bot Comparison",
-  description: "FC26SnipingBot vs Elite FUT SNIPER. Elite supports both FC 26 & FC 27 natively while FC26SnipingBot has no FC 27 roadmap. Compare speed, safety, and features.",
+  title: "FC26 Sniping Bot vs Elite – FC 27 Comparison",
+  description:
+    "Compare FC26 Sniping Bot vs Elite FUT SNIPER. Get forward-compatible 20ms in-browser sniping & AI SBC solving for both FC 26 & FC 27.",
   alternates: { canonical: "https://elitefutbot.com/fc26snipingbot-vs-elitefutbot" },
   openGraph: {
-    title: "FC26SnipingBot vs Elite FUT SNIPER – FC 26 & FC 27 Comparison",
-    description: "FC 26 cloud bot vs world-first FC 26 & FC 27 local Chrome extension. Elite wins.",
+    title: "FC26 Sniping Bot vs Elite – FC 27 Comparison",
+    description:
+      "Compare FC26 Sniping Bot vs Elite FUT SNIPER. Get forward-compatible 20ms in-browser sniping & AI SBC solving for both FC 26 & FC 27.",
     url: "https://elitefutbot.com/fc26snipingbot-vs-elitefutbot",
     siteName: "Elite FUT SNIPER",
     type: "article",
@@ -16,8 +18,9 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "FC26SnipingBot vs Elite FUT SNIPER",
-    description: "Cloud FC 26 bot vs local FC 26 & FC 27 extension — Elite leads in every category.",
+    title: "FC26 Sniping Bot vs Elite – FC 27 Comparison",
+    description:
+      "Compare FC26 Sniping Bot vs Elite FUT SNIPER. Get forward-compatible 20ms in-browser sniping & AI SBC solving for both FC 26 & FC 27.",
     images: ["https://elitefutbot.com/og-image.png"],
   },
 };

@@ -3,12 +3,14 @@ import CompetitorComparisonPage from "@/components/CompetitorComparisonPage";
 import { futDroidData } from "@/data/competitors/futdroid";
 
 export const metadata: Metadata = {
-  title: "EA FC 27 Autobuyer vs FUTDroid – Mobile vs Desktop Comparison",
-  description: "Compare FUTDroid vs Elite. See why Elite is the leading EA FC 27 Autobuyer and FC 27 Sniping Bot, outperforming Android APK companion bots.",
+  title: "FUTDroid vs Elite FUT SNIPER – FC 27 Comparison",
+  description:
+    "Compare FUTDroid vs Elite FUT SNIPER. Upgrade from Android APK mobile limits to 20ms desktop in-browser sniping & AI SBC solving for FC 26 & 27.",
   alternates: { canonical: "https://elitefutbot.com/futdroid-vs-elitefutbot" },
   openGraph: {
-    title: "EA FC 27 Autobuyer vs FUTDroid – Mobile vs Desktop Comparison",
-    description: "Compare FUTDroid vs Elite. See why Elite is the leading EA FC 27 Autobuyer and FC 27 Sniping Bot, outperforming Android APK companion bots.",
+    title: "FUTDroid vs Elite FUT SNIPER – FC 27 Comparison",
+    description:
+      "Compare FUTDroid vs Elite FUT SNIPER. Upgrade from Android APK mobile limits to 20ms desktop in-browser sniping & AI SBC solving for FC 26 & 27.",
     url: "https://elitefutbot.com/futdroid-vs-elitefutbot",
     siteName: "Elite FUT SNIPER",
     type: "article",
@@ -16,8 +18,9 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "EA FC 27 Autobuyer vs FUTDroid – Mobile vs Desktop Comparison",
-    description: "Compare FUTDroid vs Elite. See why Elite is the leading EA FC 27 Autobuyer and FC 27 Sniping Bot, outperforming Android APK companion bots.",
+    title: "FUTDroid vs Elite FUT SNIPER – FC 27 Comparison",
+    description:
+      "Compare FUTDroid vs Elite FUT SNIPER. Upgrade from Android APK mobile limits to 20ms desktop in-browser sniping & AI SBC solving for FC 26 & 27.",
     images: ["https://elitefutbot.com/og-image.png"],
   },
 };
