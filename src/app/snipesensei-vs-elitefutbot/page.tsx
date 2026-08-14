@@ -3,12 +3,14 @@ import CompetitorComparisonPage from "@/components/CompetitorComparisonPage";
 import { snipeSenseiData } from "@/data/competitors/snipesensei";
 
 export const metadata: Metadata = {
-  title: "SnipeSensei vs Elite FUT SNIPER – Manual vs Automated FC 26 & FC 27 Sniping",
-  description: "SnipeSensei manual training vs Elite FUT SNIPER's 20ms automated FC 26 & FC 27 sniping. Compare approaches and see why full automation wins for FUT coin generation.",
+  title: "Snipe Sensei vs Elite FUT SNIPER – FC 27 Comparison",
+  description:
+    "Compare Snipe Sensei vs Elite FUT SNIPER. Replace crowded Discord callouts with private, automated 20ms in-browser sniping for EA FC 26 & FC 27.",
   alternates: { canonical: "https://elitefutbot.com/snipesensei-vs-elitefutbot" },
   openGraph: {
-    title: "SnipeSensei vs Elite FUT SNIPER – Manual vs Automated FC 26 & FC 27",
-    description: "Manual snipe training vs 20ms automated FC 26 & FC 27 bot. Elite wins on profit per hour.",
+    title: "Snipe Sensei vs Elite FUT SNIPER – FC 27 Comparison",
+    description:
+      "Compare Snipe Sensei vs Elite FUT SNIPER. Replace crowded Discord callouts with private, automated 20ms in-browser sniping for EA FC 26 & FC 27.",
     url: "https://elitefutbot.com/snipesensei-vs-elitefutbot",
     siteName: "Elite FUT SNIPER",
     type: "article",
@@ -16,8 +18,9 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "SnipeSensei vs Elite FUT SNIPER",
-    description: "Education vs automation for FC 26 & FC 27 FUT sniping.",
+    title: "Snipe Sensei vs Elite FUT SNIPER – FC 27 Comparison",
+    description:
+      "Compare Snipe Sensei vs Elite FUT SNIPER. Replace crowded Discord callouts with private, automated 20ms in-browser sniping for EA FC 26 & FC 27.",
     images: ["https://elitefutbot.com/og-image.png"],
   },
 };

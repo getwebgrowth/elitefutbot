@@ -3,12 +3,14 @@ import CompetitorComparisonPage from "@/components/CompetitorComparisonPage";
 import { exeSniperData } from "@/data/competitors/exesniper";
 
 export const metadata: Metadata = {
-  title: "ExeSniper vs Elite FUT SNIPER – Desktop App vs Chrome Extension FC 26 & FC 27",
-  description: "ExeSniper desktop executable vs Elite FUT SNIPER Chrome extension for FC 26 & FC 27 sniping. Compare installation, cross-platform support, and FC 27 readiness.",
+  title: "ExeSniper vs Elite FUT SNIPER – FC 27 Comparison",
+  description:
+    "Compare ExeSniper vs Elite FUT SNIPER. Avoid dangerous .exe files with a sandboxed 20ms Chrome extension and AI SBC solving for EA FC 26 & FC 27.",
   alternates: { canonical: "https://elitefutbot.com/exesniper-vs-elitefutbot" },
   openGraph: {
-    title: "ExeSniper vs Elite FUT SNIPER – FC 26 & FC 27 Desktop vs Extension",
-    description: "Windows-only .exe vs cross-platform Chrome extension for FC 26 & FC 27 auto-sniping.",
+    title: "ExeSniper vs Elite FUT SNIPER – FC 27 Comparison",
+    description:
+      "Compare ExeSniper vs Elite FUT SNIPER. Avoid dangerous .exe files with a sandboxed 20ms Chrome extension and AI SBC solving for EA FC 26 & FC 27.",
     url: "https://elitefutbot.com/exesniper-vs-elitefutbot",
     siteName: "Elite FUT SNIPER",
     type: "article",
@@ -16,8 +18,9 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "ExeSniper vs Elite FUT SNIPER",
-    description: "Desktop app vs Chrome extension for FC 26 & FC 27 FUT sniping.",
+    title: "ExeSniper vs Elite FUT SNIPER – FC 27 Comparison",
+    description:
+      "Compare ExeSniper vs Elite FUT SNIPER. Avoid dangerous .exe files with a sandboxed 20ms Chrome extension and AI SBC solving for EA FC 26 & FC 27.",
     images: ["https://elitefutbot.com/og-image.png"],
   },
 };
