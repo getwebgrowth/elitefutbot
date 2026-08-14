@@ -73,7 +73,7 @@ const jsonLd = {
       "applicationCategory": "GameApplication",
       "offers": {
         "@type": "Offer",
-        "price": "29.00",
+        "price": "19.00",
         "priceCurrency": "USD"
       },
       "aggregateRating": {

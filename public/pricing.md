@@ -12,7 +12,7 @@
   - Full Day-One Support for EA Sports FC 26 & FC 27
 
 ## Pro Lifetime Tier (Releasing Soon)
-- Price: Flat License (~$29 one-time / seasonal)
+- Price: Flat License (~$19 one-time / seasonal)
 - Features:
   - All Free Beta features included
   - Advanced Multi-Profile Filter Automation

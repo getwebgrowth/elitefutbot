@@ -38,7 +38,7 @@ The FC 26 sniping bot executes market searches in under 20ms, compared to 150–
 
 ## Pricing
 - Free open beta via Discord (full access to all features)
-- Pro tier releasing at approximately $29/month
+- Pro tier releasing at approximately $19 one-time / seasonal flat fee
 - See /pricing.md for full structured pricing data
 
 ## Key Pages & Documentation
