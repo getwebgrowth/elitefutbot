@@ -3,14 +3,14 @@ import CompetitorComparisonPage from "@/components/CompetitorComparisonPage";
 import { eafcSniperData } from "@/data/competitors/eafcsniper";
 
 export const metadata: Metadata = {
-  title: "EAFC Sniper vs Elite FUT SNIPER – Seasonal Re-Buys vs All-in-One AI Sniping Suite",
+  title: "EAFC Sniper vs Elite FUT SNIPER – FC 27 Comparison",
   description:
-    "Compare EAFC Sniper (formerly Futsnipe / store.futsnipe.com) vs Elite FUT SNIPER. Eliminate repeated seasonal renewal fees with our all-in-one 20ms in-browser sniping bot and neural AI SBC solver.",
+    "Compare EAFC Sniper vs Elite FUT SNIPER. Eliminate repeated seasonal fees with 20ms in-browser sniping and neural AI SBC solving for FC 26 & FC 27.",
   alternates: { canonical: "https://elitefutbot.com/eafcsniper-vs-elitefutbot" },
   openGraph: {
-    title: "EAFC Sniper vs Elite FUT SNIPER – Seasonal Re-Buys vs All-in-One AI Sniping Suite",
+    title: "EAFC Sniper vs Elite FUT SNIPER – FC 27 Comparison",
     description:
-      "Compare EAFC Sniper (formerly Futsnipe / store.futsnipe.com) vs Elite FUT SNIPER. Eliminate repeated seasonal renewal fees with our all-in-one 20ms in-browser sniping bot and neural AI SBC solver.",
+      "Compare EAFC Sniper vs Elite FUT SNIPER. Eliminate repeated seasonal fees with 20ms in-browser sniping and neural AI SBC solving for FC 26 & FC 27.",
     url: "https://elitefutbot.com/eafcsniper-vs-elitefutbot",
     siteName: "Elite FUT SNIPER",
     type: "article",
@@ -18,9 +18,9 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "EAFC Sniper vs Elite FUT SNIPER – Seasonal Re-Buys vs All-in-One AI Sniping Suite",
+    title: "EAFC Sniper vs Elite FUT SNIPER – FC 27 Comparison",
     description:
-      "Compare EAFC Sniper (formerly Futsnipe / store.futsnipe.com) vs Elite FUT SNIPER. Eliminate repeated seasonal renewal fees with our all-in-one 20ms in-browser sniping bot and neural AI SBC solver.",
+      "Compare EAFC Sniper vs Elite FUT SNIPER. Eliminate repeated seasonal fees with 20ms in-browser sniping and neural AI SBC solving for FC 26 & FC 27.",
     images: ["https://elitefutbot.com/og-image.png"],
   },
 };

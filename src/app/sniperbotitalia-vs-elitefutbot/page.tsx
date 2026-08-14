@@ -3,14 +3,14 @@ import CompetitorComparisonPage from "@/components/CompetitorComparisonPage";
 import { sniperBotItaliaData } from "@/data/competitors/sniperbotitalia";
 
 export const metadata: Metadata = {
-  title: "SniperBot Italia vs Elite FUT SNIPER – Localized Script vs Universal 20ms AI Bot",
+  title: "SniperBot Italia vs Elite FUT SNIPER – FC 27 Comparison",
   description:
-    "Compare SniperBot Italia vs Elite FUT SNIPER. Discover why our universal multi-language architecture, 20ms direct DOM triggers, and integrated neural AI SBC solver outperform regional Telegram bot overlays.",
+    "Compare SniperBot Italia vs Elite FUT SNIPER. Experience universal multi-language 20ms in-browser sniping & AI SBC solving for EA FC 26 & FC 27.",
   alternates: { canonical: "https://elitefutbot.com/sniperbotitalia-vs-elitefutbot" },
   openGraph: {
-    title: "SniperBot Italia vs Elite FUT SNIPER – Localized Script vs Universal 20ms AI Bot",
+    title: "SniperBot Italia vs Elite FUT SNIPER – FC 27 Comparison",
     description:
-      "Compare SniperBot Italia vs Elite FUT SNIPER. Discover why our universal multi-language architecture, 20ms direct DOM triggers, and integrated neural AI SBC solver outperform regional Telegram bot overlays.",
+      "Compare SniperBot Italia vs Elite FUT SNIPER. Experience universal multi-language 20ms in-browser sniping & AI SBC solving for EA FC 26 & FC 27.",
     url: "https://elitefutbot.com/sniperbotitalia-vs-elitefutbot",
     siteName: "Elite FUT SNIPER",
     type: "article",
@@ -18,9 +18,9 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "SniperBot Italia vs Elite FUT SNIPER – Localized Script vs Universal 20ms AI Bot",
+    title: "SniperBot Italia vs Elite FUT SNIPER – FC 27 Comparison",
     description:
-      "Compare SniperBot Italia vs Elite FUT SNIPER. Discover why our universal multi-language architecture, 20ms direct DOM triggers, and integrated neural AI SBC solver outperform regional Telegram bot overlays.",
+      "Compare SniperBot Italia vs Elite FUT SNIPER. Experience universal multi-language 20ms in-browser sniping & AI SBC solving for EA FC 26 & FC 27.",
     images: ["https://elitefutbot.com/og-image.png"],
   },
 };

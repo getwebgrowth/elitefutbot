@@ -3,12 +3,14 @@ import CompetitorComparisonPage from "@/components/CompetitorComparisonPage";
 import { futGgData } from "@/data/competitors/futgg";
 
 export const metadata: Metadata = {
-  title: "FUT.GG vs Elite FUT SNIPER – FC 26 & FC 27 Reference vs Automated Trading",
-  description: "FUT.GG companion website vs Elite FUT SNIPER auto-sniper for FC 26 & FC 27. Elite automates what FUT.GG only shows you. Compare sniping, SBC solving, and AI features.",
+  title: "FUT.GG vs Elite FUT SNIPER – FC 27 Comparison",
+  description:
+    "Compare FUT.GG vs Elite FUT SNIPER. Move from passive database lookups to active 20ms in-browser sniping & AI SBC solving for EA FC 26 & FC 27.",
   alternates: { canonical: "https://elitefutbot.com/futgg-vs-elitefutbot" },
   openGraph: {
-    title: "FUT.GG vs Elite FUT SNIPER – FC 26 & FC 27 Comparison",
-    description: "FUT database vs automated 20ms sniping. Elite FUT SNIPER executes what FUT.GG shows.",
+    title: "FUT.GG vs Elite FUT SNIPER – FC 27 Comparison",
+    description:
+      "Compare FUT.GG vs Elite FUT SNIPER. Move from passive database lookups to active 20ms in-browser sniping & AI SBC solving for EA FC 26 & FC 27.",
     url: "https://elitefutbot.com/futgg-vs-elitefutbot",
     siteName: "Elite FUT SNIPER",
     type: "article",
@@ -16,8 +18,9 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "FUT.GG vs Elite FUT SNIPER",
-    description: "Reference website vs full FC 26 & FC 27 trading automation. Elite wins.",
+    title: "FUT.GG vs Elite FUT SNIPER – FC 27 Comparison",
+    description:
+      "Compare FUT.GG vs Elite FUT SNIPER. Move from passive database lookups to active 20ms in-browser sniping & AI SBC solving for EA FC 26 & FC 27.",
     images: ["https://elitefutbot.com/og-image.png"],
   },
 };

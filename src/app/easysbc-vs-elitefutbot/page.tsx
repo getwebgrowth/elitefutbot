@@ -3,12 +3,14 @@ import CompetitorComparisonPage from "@/components/CompetitorComparisonPage";
 import { easySbcData } from "@/data/competitors/easysbc";
 
 export const metadata: Metadata = {
-  title: "EasySBC vs Elite FUT SNIPER – AI SBC Solver & FC 26 FC 27 Sniping Bot",
-  description: "EasySBC manual SBC guides vs Elite FUT SNIPER's automated AI SBC Solver for FC 26 & FC 27. Elite auto-buys squad players and snipes at 20ms. See full comparison.",
+  title: "EasySBC vs Elite FUT SNIPER – FC 27 AI SBC Comparison",
+  description:
+    "Compare EasySBC vs Elite FUT SNIPER. Upgrade from manual blueprints to 1-click AI SBC solving with club untradeables & 20ms auto-buying for FC 26 & 27.",
   alternates: { canonical: "https://elitefutbot.com/easysbc-vs-elitefutbot" },
   openGraph: {
-    title: "EasySBC vs Elite FUT SNIPER – AI SBC Solver Comparison for FC 26 & FC 27",
-    description: "Manual SBC guides vs automated AI SBC solving and sniping. Elite executes, EasySBC only advises.",
+    title: "EasySBC vs Elite FUT SNIPER – FC 27 AI SBC Comparison",
+    description:
+      "Compare EasySBC vs Elite FUT SNIPER. Upgrade from manual blueprints to 1-click AI SBC solving with club untradeables & 20ms auto-buying for FC 26 & 27.",
     url: "https://elitefutbot.com/easysbc-vs-elitefutbot",
     siteName: "Elite FUT SNIPER",
     type: "article",
@@ -16,8 +18,9 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "EasySBC vs Elite FUT SNIPER – AI SBC Comparison",
-    description: "EasySBC tells you what to do. Elite FUT SNIPER does it automatically.",
+    title: "EasySBC vs Elite FUT SNIPER – FC 27 AI SBC Comparison",
+    description:
+      "Compare EasySBC vs Elite FUT SNIPER. Upgrade from manual blueprints to 1-click AI SBC solving with club untradeables & 20ms auto-buying for FC 26 & 27.",
     images: ["https://elitefutbot.com/og-image.png"],
   },
 };

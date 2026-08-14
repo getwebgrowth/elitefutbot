@@ -3,12 +3,14 @@ import CompetitorComparisonPage from "@/components/CompetitorComparisonPage";
 import { futinatorData } from "@/data/competitors/futinator";
 
 export const metadata: Metadata = {
-  title: "FC 27 Sniping Bot vs Futinator – Side-by-Side Comparison",
-  description: "Compare Futinator vs Elite. See why Elite is the ultimate FC 27 Sniping Bot, featuring a built-in AI SBC Solver FC 27 and sub-20ms search speeds.",
+  title: "Futinator vs Elite FUT SNIPER – FC 27 Comparison",
+  description:
+    "Compare Futinator vs Elite FUT SNIPER. Upgrade from manual hotkey macros to autonomous 20ms in-browser sniping & AI SBC solving for FC 26 & 27.",
   alternates: { canonical: "https://elitefutbot.com/futinator-vs-elitefutbot" },
   openGraph: {
-    title: "FC 27 Sniping Bot vs Futinator – Side-by-Side Comparison",
-    description: "Compare Futinator vs Elite. See why Elite is the ultimate FC 27 Sniping Bot, featuring a built-in AI SBC Solver FC 27 and sub-20ms search speeds.",
+    title: "Futinator vs Elite FUT SNIPER – FC 27 Comparison",
+    description:
+      "Compare Futinator vs Elite FUT SNIPER. Upgrade from manual hotkey macros to autonomous 20ms in-browser sniping & AI SBC solving for FC 26 & 27.",
     url: "https://elitefutbot.com/futinator-vs-elitefutbot",
     siteName: "Elite FUT SNIPER",
     type: "article",
@@ -16,8 +18,9 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "FC 27 Sniping Bot vs Futinator – Side-by-Side Comparison",
-    description: "Compare Futinator vs Elite. See why Elite is the ultimate FC 27 Sniping Bot, featuring a built-in AI SBC Solver FC 27 and sub-20ms search speeds.",
+    title: "Futinator vs Elite FUT SNIPER – FC 27 Comparison",
+    description:
+      "Compare Futinator vs Elite FUT SNIPER. Upgrade from manual hotkey macros to autonomous 20ms in-browser sniping & AI SBC solving for FC 26 & 27.",
     images: ["https://elitefutbot.com/og-image.png"],
   },
 };
