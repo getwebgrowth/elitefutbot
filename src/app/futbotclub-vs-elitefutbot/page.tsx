@@ -3,12 +3,14 @@ import CompetitorComparisonPage from "@/components/CompetitorComparisonPage";
 import { futBotClubData } from "@/data/competitors/futbotclub";
 
 export const metadata: Metadata = {
-  title: "FUTBot Club vs Elite FUT SNIPER – Cloud Community Bot vs Local FC 26 & FC 27",
-  description: "FUTBot Club cloud subscription vs Elite FUT SNIPER local Chrome extension. Compare community features, ban risk, FC 27 readiness, and 20ms sniping automation.",
+  title: "FUT Bot Club vs Elite FUT SNIPER – FC 27 Comparison",
+  description:
+    "Compare FUT Bot Club vs Elite FUT SNIPER. Avoid centralized server crashes with 100% local 20ms in-browser sniping & AI SBC solving for FC 26 & 27.",
   alternates: { canonical: "https://elitefutbot.com/futbotclub-vs-elitefutbot" },
   openGraph: {
-    title: "FUTBot Club vs Elite FUT SNIPER – FC 26 & FC 27 Comparison",
-    description: "Community cloud bot vs local 20ms auto-sniper. Elite has zero ban risk and world-first FC 27 support.",
+    title: "FUT Bot Club vs Elite FUT SNIPER – FC 27 Comparison",
+    description:
+      "Compare FUT Bot Club vs Elite FUT SNIPER. Avoid centralized server crashes with 100% local 20ms in-browser sniping & AI SBC solving for FC 26 & 27.",
     url: "https://elitefutbot.com/futbotclub-vs-elitefutbot",
     siteName: "Elite FUT SNIPER",
     type: "article",
@@ -16,8 +18,9 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "FUTBot Club vs Elite FUT SNIPER",
-    description: "Community cloud FUT bot vs world-first local FC 26 & FC 27 sniper.",
+    title: "FUT Bot Club vs Elite FUT SNIPER – FC 27 Comparison",
+    description:
+      "Compare FUT Bot Club vs Elite FUT SNIPER. Avoid centralized server crashes with 100% local 20ms in-browser sniping & AI SBC solving for FC 26 & 27.",
     images: ["https://elitefutbot.com/og-image.png"],
   },
 };

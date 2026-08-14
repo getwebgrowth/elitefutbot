@@ -3,12 +3,14 @@ import CompetitorComparisonPage from "@/components/CompetitorComparisonPage";
 import { palEToolsData } from "@/data/competitors/paletools";
 
 export const metadata: Metadata = {
-  title: "Pale.Tools vs Elite FUT SNIPER – FC 26 & FC 27 FUT Extension Comparison",
-  description: "Pale.Tools FUT utility extension vs Elite FUT SNIPER's auto-sniper and AI SBC solver. Compare features for FC 26 & FC 27 — UI tools vs automated trading profit.",
+  title: "Paletools vs Elite FUT SNIPER – FC 27 Comparison",
+  description:
+    "Compare Paletools vs Elite FUT SNIPER. Upgrade from hotkey mods to 20ms autonomous in-browser sniping & AI SBC solving for EA FC 26 & FC 27.",
   alternates: { canonical: "https://elitefutbot.com/paletools-vs-elitefutbot" },
   openGraph: {
-    title: "Pale.Tools vs Elite FUT SNIPER – FC 26 & FC 27 FUT Extension Comparison",
-    description: "UI shortcuts vs 20ms automated sniping with AI SBC solving for FC 26 & FC 27.",
+    title: "Paletools vs Elite FUT SNIPER – FC 27 Comparison",
+    description:
+      "Compare Paletools vs Elite FUT SNIPER. Upgrade from hotkey mods to 20ms autonomous in-browser sniping & AI SBC solving for EA FC 26 & FC 27.",
     url: "https://elitefutbot.com/paletools-vs-elitefutbot",
     siteName: "Elite FUT SNIPER",
     type: "article",
@@ -16,8 +18,9 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Pale.Tools vs Elite FUT SNIPER",
-    description: "FUT utility extension vs complete FC 26 & FC 27 automated trading bot.",
+    title: "Paletools vs Elite FUT SNIPER – FC 27 Comparison",
+    description:
+      "Compare Paletools vs Elite FUT SNIPER. Upgrade from hotkey mods to 20ms autonomous in-browser sniping & AI SBC solving for EA FC 26 & FC 27.",
     images: ["https://elitefutbot.com/og-image.png"],
   },
 };

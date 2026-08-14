@@ -3,12 +3,14 @@ import CompetitorComparisonPage from "@/components/CompetitorComparisonPage";
 import { futSnipingBot24Data } from "@/data/competitors/futsnipingbot24";
 
 export const metadata: Metadata = {
-  title: "FUTSnipingBot24 vs Elite FUT SNIPER – 24/7 Cloud vs Local FC 26 & FC 27 Bot",
-  description: "FUTSnipingBot24 cloud 24/7 sniping vs Elite FUT SNIPER local 20ms execution for FC 26 & FC 27. Compare ban risk, speed, AI SBC solver, and FC 27 readiness.",
+  title: "FUT Sniping Bot 24 vs Elite – FC 27 Comparison",
+  description:
+    "Compare FUT Sniping Bot 24 vs Elite FUT SNIPER. Upgrade to actively maintained 20ms in-browser sniping & AI SBC solving for EA FC 26 & FC 27.",
   alternates: { canonical: "https://elitefutbot.com/futsnipingbot24-vs-elitefutbot" },
   openGraph: {
-    title: "FUTSnipingBot24 vs Elite FUT SNIPER – FC 26 & FC 27 Comparison",
-    description: "24/7 cloud bot vs 20ms local extension. Elite wins on safety, speed, and FC 27 support.",
+    title: "FUT Sniping Bot 24 vs Elite – FC 27 Comparison",
+    description:
+      "Compare FUT Sniping Bot 24 vs Elite FUT SNIPER. Upgrade to actively maintained 20ms in-browser sniping & AI SBC solving for EA FC 26 & FC 27.",
     url: "https://elitefutbot.com/futsnipingbot24-vs-elitefutbot",
     siteName: "Elite FUT SNIPER",
     type: "article",
@@ -16,8 +18,9 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "FUTSnipingBot24 vs Elite FUT SNIPER",
-    description: "24/7 cloud sniping risks bans. Elite's local 20ms approach is safer and faster.",
+    title: "FUT Sniping Bot 24 vs Elite – FC 27 Comparison",
+    description:
+      "Compare FUT Sniping Bot 24 vs Elite FUT SNIPER. Upgrade to actively maintained 20ms in-browser sniping & AI SBC solving for EA FC 26 & FC 27.",
     images: ["https://elitefutbot.com/og-image.png"],
   },
 };

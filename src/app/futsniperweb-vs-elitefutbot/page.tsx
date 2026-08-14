@@ -3,12 +3,14 @@ import CompetitorComparisonPage from "@/components/CompetitorComparisonPage";
 import { futSniperWebData } from "@/data/competitors/futsniperweb";
 
 export const metadata: Metadata = {
-  title: "FUTSniperWeb vs Elite FUT SNIPER – Global FC 26 & FC 27 FUT Bot Comparison",
-  description: "FUTSniperWeb vs Elite FUT SNIPER. Brazilian FUT web service vs global 20ms local Chrome extension for FC 26 & FC 27 with zero credential sharing.",
+  title: "FUT Sniper Web vs Elite FUT SNIPER – FC 27 Comparison",
+  description:
+    "Compare FUT Sniper Web vs Elite FUT SNIPER. Avoid web portal lag with direct 20ms in-browser sniping & AI SBC solving for EA FC 26 & FC 27.",
   alternates: { canonical: "https://elitefutbot.com/futsniperweb-vs-elitefutbot" },
   openGraph: {
-    title: "FUTSniperWeb vs Elite FUT SNIPER – FC 26 & FC 27 Comparison",
-    description: "Regional web service vs global Chrome extension for FC 26 & FC 27 FUT trading.",
+    title: "FUT Sniper Web vs Elite FUT SNIPER – FC 27 Comparison",
+    description:
+      "Compare FUT Sniper Web vs Elite FUT SNIPER. Avoid web portal lag with direct 20ms in-browser sniping & AI SBC solving for EA FC 26 & FC 27.",
     url: "https://elitefutbot.com/futsniperweb-vs-elitefutbot",
     siteName: "Elite FUT SNIPER",
     type: "article",
@@ -16,8 +18,9 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "FUTSniperWeb vs Elite FUT SNIPER",
-    description: "Brazilian web sniper vs global 20ms local extension for FC 26 & FC 27.",
+    title: "FUT Sniper Web vs Elite FUT SNIPER – FC 27 Comparison",
+    description:
+      "Compare FUT Sniper Web vs Elite FUT SNIPER. Avoid web portal lag with direct 20ms in-browser sniping & AI SBC solving for EA FC 26 & FC 27.",
     images: ["https://elitefutbot.com/og-image.png"],
   },
 };
