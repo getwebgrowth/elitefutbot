@@ -3,12 +3,14 @@ import CompetitorComparisonPage from "@/components/CompetitorComparisonPage";
 import { steviesSniperData } from "@/data/competitors/steviessniper";
 
 export const metadata: Metadata = {
-  title: "FC 27 Ultimate Team Autobuyer – Stevie's Sniper vs Elite",
-  description: "Compare Stevie's Sniper vs Elite. Discover the premier FC 27 Ultimate Team Autobuyer and EA FC 27 Trading Bot with sub-20ms local sniping and AI SBC Solver.",
+  title: "Stevie's Sniper vs Elite FUT SNIPER – FC 27 Comparison",
+  description:
+    "Compare Stevie's Sniper vs Elite FUT SNIPER. Avoid monthly subscription fees with 20ms in-browser sniping and AI SBC solving for EA FC 26 & FC 27.",
   alternates: { canonical: "https://elitefutbot.com/steviessniper-vs-elitefutbot" },
   openGraph: {
-    title: "FC 27 Ultimate Team Autobuyer – Stevie's Sniper vs Elite",
-    description: "Compare Stevie's Sniper vs Elite. Discover the premier FC 27 Ultimate Team Autobuyer and EA FC 27 Trading Bot with sub-20ms local sniping and AI SBC Solver.",
+    title: "Stevie's Sniper vs Elite FUT SNIPER – FC 27 Comparison",
+    description:
+      "Compare Stevie's Sniper vs Elite FUT SNIPER. Avoid monthly subscription fees with 20ms in-browser sniping and AI SBC solving for EA FC 26 & FC 27.",
     url: "https://elitefutbot.com/steviessniper-vs-elitefutbot",
     siteName: "Elite FUT SNIPER",
     type: "article",
@@ -16,8 +18,9 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "FC 27 Ultimate Team Autobuyer – Stevie's Sniper vs Elite",
-    description: "Compare Stevie's Sniper vs Elite. Discover the premier FC 27 Ultimate Team Autobuyer and EA FC 27 Trading Bot with sub-20ms local sniping and AI SBC Solver.",
+    title: "Stevie's Sniper vs Elite FUT SNIPER – FC 27 Comparison",
+    description:
+      "Compare Stevie's Sniper vs Elite FUT SNIPER. Avoid monthly subscription fees with 20ms in-browser sniping and AI SBC solving for EA FC 26 & FC 27.",
     images: ["https://elitefutbot.com/og-image.png"],
   },
 };

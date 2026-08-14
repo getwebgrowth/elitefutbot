@@ -3,12 +3,14 @@ import CompetitorComparisonPage from "@/components/CompetitorComparisonPage";
 import { futRichData } from "@/data/competitors/futrich";
 
 export const metadata: Metadata = {
-  title: "AI SBC Solver FC 27 – FUTRich vs Elite FUT SNIPER",
-  description: "Compare FUTRich vs Elite. Discover the premium AI SBC Solver FC 27 and local FUT Autobuyer Chrome extension with 20ms speeds and zero password sharing.",
+  title: "FUTRich vs Elite FUT SNIPER – FC 27 Sniping Comparison",
+  description:
+    "Compare FUTRich vs Elite FUT SNIPER. Experience Gaussian behavioral jitter, 20ms in-browser sniping, and AI SBC solving for EA FC 26 & FC 27.",
   alternates: { canonical: "https://elitefutbot.com/futrich-vs-elitefutbot" },
   openGraph: {
-    title: "AI SBC Solver FC 27 – FUTRich vs Elite FUT SNIPER",
-    description: "Compare FUTRich vs Elite. Discover the premium AI SBC Solver FC 27 and local FUT Autobuyer Chrome extension with 20ms speeds and zero password sharing.",
+    title: "FUTRich vs Elite FUT SNIPER – FC 27 Sniping Comparison",
+    description:
+      "Compare FUTRich vs Elite FUT SNIPER. Experience Gaussian behavioral jitter, 20ms in-browser sniping, and AI SBC solving for EA FC 26 & FC 27.",
     url: "https://elitefutbot.com/futrich-vs-elitefutbot",
     siteName: "Elite FUT SNIPER",
     type: "article",
@@ -16,8 +18,9 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "AI SBC Solver FC 27 – FUTRich vs Elite FUT SNIPER",
-    description: "Compare FUTRich vs Elite. Discover the premium AI SBC Solver FC 27 and local FUT Autobuyer Chrome extension with 20ms speeds and zero password sharing.",
+    title: "FUTRich vs Elite FUT SNIPER – FC 27 Sniping Comparison",
+    description:
+      "Compare FUTRich vs Elite FUT SNIPER. Experience Gaussian behavioral jitter, 20ms in-browser sniping, and AI SBC solving for EA FC 26 & FC 27.",
     images: ["https://elitefutbot.com/og-image.png"],
   },
 };

@@ -3,12 +3,14 @@ import CompetitorComparisonPage from "@/components/CompetitorComparisonPage";
 import { futCoinBuddyData } from "@/data/competitors/futcoinbuddy";
 
 export const metadata: Metadata = {
-  title: "FUT Web App Bot vs Futcoinbuddy – Safe FC 27 Sniping",
-  description: "Compare Futcoinbuddy vs Elite. See why local execution as a FUT Web App Bot and no ban sniping bot FC 27 beats cloud token credential sharing.",
+  title: "Futcoinbuddy vs Elite FUT SNIPER – FC 27 Comparison",
+  description:
+    "Compare Futcoinbuddy vs Elite FUT SNIPER. Avoid token extraction risks with 100% local, zero-leak 20ms in-browser sniping for EA FC 26 & FC 27.",
   alternates: { canonical: "https://elitefutbot.com/futcoinbuddy-vs-elitefutbot" },
   openGraph: {
-    title: "FUT Web App Bot vs Futcoinbuddy – Safe FC 27 Sniping",
-    description: "Compare Futcoinbuddy vs Elite. See why local execution as a FUT Web App Bot and no ban sniping bot FC 27 beats cloud token credential sharing.",
+    title: "Futcoinbuddy vs Elite FUT SNIPER – FC 27 Comparison",
+    description:
+      "Compare Futcoinbuddy vs Elite FUT SNIPER. Avoid token extraction risks with 100% local, zero-leak 20ms in-browser sniping for EA FC 26 & FC 27.",
     url: "https://elitefutbot.com/futcoinbuddy-vs-elitefutbot",
     siteName: "Elite FUT SNIPER",
     type: "article",
@@ -16,8 +18,9 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "FUT Web App Bot vs Futcoinbuddy – Safe FC 27 Sniping",
-    description: "Compare Futcoinbuddy vs Elite. See why local execution as a FUT Web App Bot and no ban sniping bot FC 27 beats cloud token credential sharing.",
+    title: "Futcoinbuddy vs Elite FUT SNIPER – FC 27 Comparison",
+    description:
+      "Compare Futcoinbuddy vs Elite FUT SNIPER. Avoid token extraction risks with 100% local, zero-leak 20ms in-browser sniping for EA FC 26 & FC 27.",
     images: ["https://elitefutbot.com/og-image.png"],
   },
 };
