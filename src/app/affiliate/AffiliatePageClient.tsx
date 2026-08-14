@@ -64,93 +64,69 @@ export default function AffiliatePageClient({ faqs }: AffiliatePageClientProps) 
 
   return (
     <div className="min-h-screen bg-[#050505] text-white pt-24 pb-20 overflow-hidden font-sans">
-      {/* Background Glows */}
+      {/* Dynamic Background Glows */}
       <div className="relative">
-        <div className="absolute top-0 left-1/2 -translate-x-1/2 w-[1100px] h-[550px] bg-primary/10 blur-[140px] rounded-full pointer-events-none -z-10"></div>
-        <div className="absolute top-24 right-10 w-[400px] h-[400px] bg-blue-500/10 blur-[130px] rounded-full pointer-events-none -z-10"></div>
+        <div className="absolute top-0 left-1/2 -translate-x-1/2 w-[1000px] h-[450px] bg-primary/10 blur-[140px] rounded-full pointer-events-none -z-10"></div>
+        <div className="absolute top-20 right-10 w-[350px] h-[350px] bg-blue-500/10 blur-[130px] rounded-full pointer-events-none -z-10"></div>
 
-        {/* Hero Section */}
-        <section className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-8 pb-16 text-center">
-          {/* Top Live Announcement Badge */}
-          <div className="inline-flex flex-wrap items-center justify-center gap-2.5 bg-card/80 border border-primary/30 hover:border-primary/60 px-5 py-2 rounded-full mb-8 backdrop-blur-md shadow-[0_0_25px_rgba(204,255,0,0.15)] transition-all">
-            <span className="w-2.5 h-2.5 rounded-full bg-primary animate-pulse shadow-[0_0_10px_#CCFF00]"></span>
-            <span className="text-xs font-black uppercase tracking-widest text-gray-200">
-              OFFICIAL PARTNER PROGRAM • <span className="text-primary font-bold font-technical">50% LIFETIME COMMISSION</span>
-            </span>
-            <span className="hidden sm:inline text-white/30">•</span>
-            <span className="text-xs font-bold text-emerald-400 bg-emerald-500/10 border border-emerald-500/20 px-2.5 py-0.5 rounded-md">
-              $10.00 REVENUE / SALE (PRICE INCREASING TO $35 SOON)
+        {/* Clean, High-Impact Hero Section */}
+        <section className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-6 pb-16 text-center">
+          {/* Focused Top Pill */}
+          <div className="inline-flex items-center gap-2 bg-primary/10 border border-primary/25 px-4 py-1.5 rounded-full mb-6 backdrop-blur-md shadow-[0_0_20px_rgba(204,255,0,0.12)]">
+            <span className="w-2 h-2 rounded-full bg-primary animate-pulse shadow-[0_0_8px_#CCFF00]"></span>
+            <span className="text-xs font-black uppercase tracking-widest text-primary font-mono">
+              50% Lifetime RevShare • $10 to $17.50 / Sale
             </span>
           </div>
 
-          {/* Main Headline */}
-          <h1 className="text-4xl sm:text-6xl lg:text-7xl font-black tracking-tight leading-none mb-6">
-            Earn <span className="text-transparent bg-clip-text bg-gradient-to-r from-primary via-white to-primary drop-shadow-[0_0_25px_rgba(204,255,0,0.4)]">50% Lifetime Commission</span> <br className="hidden sm:block" />
+          {/* Crisp, Bold Headline */}
+          <h1 className="text-4xl sm:text-6xl lg:text-7xl font-black tracking-tight leading-[1.05] mb-5 text-white">
+            Earn <span className="text-transparent bg-clip-text bg-gradient-to-r from-primary via-white to-primary drop-shadow-[0_0_25px_rgba(204,255,0,0.35)]">50% Lifetime Commission</span> <br className="hidden sm:block" />
             Promoting the #1 FC 26 &amp; FC 27 Bot.
           </h1>
 
-          {/* Subtitle */}
-          <p className="text-gray-300 text-base sm:text-xl max-w-3xl mx-auto leading-relaxed mb-8 font-medium">
-            Turn your FIFA Ultimate Team audience into recurring weekly income. Earn <span className="text-primary font-bold">$10.00 pure revenue per sale</span> on our $20 launch price (and <span className="text-emerald-400 font-bold">$17.50 per sale</span> when the price increases to $35). Tailor-made for <span className="text-white font-bold underline decoration-primary decoration-2 underline-offset-4">TikTok, YouTube, Twitch creators &amp; Discord owners</span>.
+          {/* Punchy 2-Line Subtitle */}
+          <p className="text-gray-300 text-base sm:text-lg max-w-2xl mx-auto leading-relaxed mb-8 font-medium">
+            Get paid <span className="text-primary font-bold">$10.00 to $17.50+ per sale</span> with weekly Friday payouts. The highest-converting partner program for TikTok, YouTube, Twitch creators &amp; Discord trading communities.
           </p>
 
-          {/* Feature Badges Grid */}
-          <div className="flex flex-wrap items-center justify-center gap-3 max-w-4xl mx-auto mb-10">
-            <div className="flex items-center gap-2 bg-white/5 border border-white/10 px-4 py-2 rounded-xl text-xs font-semibold text-gray-200 backdrop-blur-sm shadow-sm">
-              <span className="material-symbols-outlined text-primary text-base">payments</span>
-              <span><strong>50% Revenue Share</strong> ($10 to $17.50+ / Sale)</span>
-            </div>
-            <div className="flex items-center gap-2 bg-white/5 border border-white/10 px-4 py-2 rounded-xl text-xs font-semibold text-gray-200 backdrop-blur-sm shadow-sm">
-              <span className="material-symbols-outlined text-primary text-base">video_library</span>
-              <span><strong>TikTok &amp; YouTube</strong> Special Rates</span>
-            </div>
-            <div className="flex items-center gap-2 bg-white/5 border border-white/10 px-4 py-2 rounded-xl text-xs font-semibold text-gray-200 backdrop-blur-sm shadow-sm">
-              <span className="material-symbols-outlined text-primary text-base">vpn_key</span>
-              <span><strong>Free Bot Licenses</strong> for Reviewers</span>
-            </div>
-            <div className="flex items-center gap-2 bg-white/5 border border-white/10 px-4 py-2 rounded-xl text-xs font-semibold text-gray-200 backdrop-blur-sm shadow-sm">
-              <span className="material-symbols-outlined text-primary text-base">schedule</span>
-              <span><strong>Weekly Friday Payouts</strong> (Crypto &amp; PayPal)</span>
-            </div>
-          </div>
-
-          {/* Action Buttons */}
-          <div className="flex flex-col sm:flex-row gap-4 justify-center items-center mb-16">
+          {/* Action CTAs */}
+          <div className="flex flex-col sm:flex-row gap-3.5 justify-center items-center mb-12">
             <Link
               href="https://discord.gg/Rkb9nF6WG6"
               target="_blank"
               rel="noopener noreferrer"
-              className="w-full sm:w-auto px-9 py-4 bg-primary text-dark font-black text-base uppercase tracking-wider rounded-xl transition-all duration-300 hover:scale-105 hover:shadow-[0_0_35px_rgba(204,255,0,0.4)] flex items-center justify-center gap-2"
+              className="w-full sm:w-auto px-8 py-3.5 bg-primary text-dark font-black text-sm uppercase tracking-wider rounded-xl transition-all duration-300 hover:scale-105 hover:shadow-[0_0_30px_rgba(204,255,0,0.4)] flex items-center justify-center gap-2"
             >
-              <span>Join Partner Program Free</span>
-              <span className="material-symbols-outlined text-xl">bolt</span>
+              <span>Join Partner Program</span>
+              <span className="material-symbols-outlined text-lg">bolt</span>
             </Link>
             <a
               href="#calculator"
-              className="w-full sm:w-auto px-8 py-4 bg-white/5 border border-white/10 text-white font-bold text-base uppercase tracking-wider rounded-xl hover:bg-white/10 transition-all flex items-center justify-center gap-2 backdrop-blur-sm"
+              className="w-full sm:w-auto px-8 py-3.5 bg-white/5 border border-white/10 text-white font-bold text-sm uppercase tracking-wider rounded-xl hover:bg-white/10 transition-all flex items-center justify-center gap-2 backdrop-blur-sm"
             >
-              <span className="material-symbols-outlined text-primary text-xl">calculate</span>
-              <span>Calculate Earnings (Live Tool)</span>
+              <span className="material-symbols-outlined text-primary text-lg">calculate</span>
+              <span>Estimate Earnings</span>
             </a>
           </div>
 
-          {/* Quick Stat Counters */}
-          <div className="grid grid-cols-2 md:grid-cols-4 gap-4 max-w-5xl mx-auto">
-            <div className="glass-card p-6 rounded-2xl border border-white/5 text-center">
-              <div className="text-3xl sm:text-4xl font-black text-primary font-technical mb-1">$10 – $17.50</div>
-              <div className="text-xs text-gray-400 uppercase tracking-widest font-bold">Revenue Per Sale</div>
+          {/* Unified 4-Metric Glass Bar */}
+          <div className="grid grid-cols-2 md:grid-cols-4 gap-3.5 max-w-4xl mx-auto">
+            <div className="glass-card p-4 sm:p-5 rounded-2xl border border-white/5 text-center">
+              <div className="text-2xl sm:text-3xl font-black text-primary font-technical mb-0.5">$10 – $17.50</div>
+              <div className="text-[11px] text-gray-400 uppercase tracking-wider font-bold">Revenue Per Sale</div>
             </div>
-            <div className="glass-card p-6 rounded-2xl border border-white/5 text-center">
-              <div className="text-3xl sm:text-4xl font-black text-white font-technical mb-1">50% – 60%</div>
-              <div className="text-xs text-primary uppercase tracking-widest font-bold">Lifetime RevShare</div>
+            <div className="glass-card p-4 sm:p-5 rounded-2xl border border-white/5 text-center">
+              <div className="text-2xl sm:text-3xl font-black text-white font-technical mb-0.5">50% – 60%</div>
+              <div className="text-[11px] text-primary uppercase tracking-wider font-bold">Lifetime RevShare</div>
             </div>
-            <div className="glass-card p-6 rounded-2xl border border-white/5 text-center">
-              <div className="text-3xl sm:text-4xl font-black text-white font-technical mb-1">90 Days</div>
-              <div className="text-xs text-gray-400 uppercase tracking-widest font-bold">Cookie Tracking</div>
+            <div className="glass-card p-4 sm:p-5 rounded-2xl border border-white/5 text-center">
+              <div className="text-2xl sm:text-3xl font-black text-emerald-400 font-technical mb-0.5">Weekly</div>
+              <div className="text-[11px] text-gray-400 uppercase tracking-wider font-bold">Friday Payouts</div>
             </div>
-            <div className="glass-card p-6 rounded-2xl border border-white/5 text-center">
-              <div className="text-3xl sm:text-4xl font-black text-emerald-400 font-technical mb-1">Every Friday</div>
-              <div className="text-xs text-gray-400 uppercase tracking-widest font-bold">Weekly Payouts</div>
+            <div className="glass-card p-4 sm:p-5 rounded-2xl border border-white/5 text-center">
+              <div className="text-2xl sm:text-3xl font-black text-white font-technical mb-0.5">90 Days</div>
+              <div className="text-[11px] text-gray-400 uppercase tracking-wider font-bold">Cookie Tracking</div>
             </div>
           </div>
         </section>
@@ -160,13 +136,13 @@ export default function AffiliatePageClient({ faqs }: AffiliatePageClientProps) 
       <section className="py-20 max-w-5xl mx-auto px-4 sm:px-6 lg:px-8" id="calculator">
         <div className="text-center mb-12">
           <span className="text-xs font-black uppercase tracking-[0.2em] text-primary border-b border-primary/20 pb-1">
-            EARNINGS YIELD CALCULATOR
+            EARNINGS CALCULATOR
           </span>
           <h2 className="text-3xl sm:text-5xl font-black text-white tracking-tight mt-3">
             Estimate Your <span className="text-primary">Affiliate Payouts</span>
           </h2>
           <p className="text-gray-300 text-sm sm:text-base max-w-2xl mx-auto mt-3">
-            Calculate your revenue at our current <span className="text-primary font-bold">$20 introductory price ($10/sale)</span> versus the upcoming <span className="text-emerald-400 font-bold">$35 price point ($17.50/sale)</span> at 50% commission.
+            Toggle between our current <span className="text-primary font-bold">$20 introductory price ($10/sale)</span> and upcoming <span className="text-emerald-400 font-bold">$35 price point ($17.50/sale)</span> at 50% commission.
           </p>
         </div>
 
