@@ -14,37 +14,72 @@ interface AffiliatePageClientProps {
 
 export default function AffiliatePageClient({ faqs }: AffiliatePageClientProps) {
   const [referrals, setReferrals] = useState(100);
+  const [priceTier, setPriceTier] = useState<20 | 35>(20);
   const [openFaq, setOpenFaq] = useState<number | null>(null);
 
-  // $29/mo plan * 50% commission = $14.50/mo per active user
-  const pricePerUser = 29;
+  // Commission calculations based on selected price tier ($20 vs $35)
   const commissionPercentage = 50;
-  const monthlyEarnings = (referrals * pricePerUser * (commissionPercentage / 100)).toFixed(2);
+  const revenuePerSale = (priceTier * (commissionPercentage / 100)).toFixed(2);
+  const monthlyEarnings = (referrals * priceTier * (commissionPercentage / 100)).toFixed(2);
   const annualEarnings = (parseFloat(monthlyEarnings) * 12).toFixed(2);
 
   const getTier = (count: number) => {
-    if (count >= 250) return { name: "VIP Creator Tier", perk: "Custom Promo Code + 60% RevShare + Free License", color: "text-primary", bg: "bg-primary/10 border-primary/30" };
-    if (count >= 100) return { name: "Gold Ambassador", perk: "Custom Promo Code + Priority Payouts", color: "text-amber-400", bg: "bg-amber-500/10 border-amber-500/30" };
-    if (count >= 30) return { name: "Silver Partner", perk: "Free Bot License + Banner Assets", color: "text-blue-400", bg: "bg-blue-500/10 border-blue-500/30" };
-    return { name: "Starter Partner", perk: "50% Standard Commission", color: "text-gray-400", bg: "bg-gray-500/10 border-gray-500/30" };
+    if (count >= 250) {
+      return {
+        name: "VIP Creator Tier",
+        perk: "Custom Promo Code + Up to 60% RevShare ($12–$21/sale) + Upfront Video Sponsorships",
+        color: "text-primary",
+        bg: "bg-primary/10 border-primary/30",
+        badge: "VIP CREATOR",
+      };
+    }
+    if (count >= 100) {
+      return {
+        name: "Gold Ambassador",
+        perk: "Custom Follower Discount Code + Priority 24h Payouts + Dedicated Manager",
+        color: "text-amber-400",
+        bg: "bg-amber-500/10 border-amber-500/30",
+        badge: "GOLD AMBASSADOR",
+      };
+    }
+    if (count >= 30) {
+      return {
+        name: "Silver Partner",
+        perk: "Free Lifetime Pro Bot License + Ready-Made Media Kits & Graphics",
+        color: "text-blue-400",
+        bg: "bg-blue-500/10 border-blue-500/30",
+        badge: "SILVER PARTNER",
+      };
+    }
+    return {
+      name: "Starter Partner",
+      perk: "50% Standard Lifetime Commission ($10/sale now, $17.50/sale at $35)",
+      color: "text-gray-300",
+      bg: "bg-gray-500/10 border-gray-500/30",
+      badge: "STARTER TIER",
+    };
   };
 
   const currentTier = getTier(referrals);
 
   return (
     <div className="min-h-screen bg-[#050505] text-white pt-24 pb-20 overflow-hidden font-sans">
-      {/* Hero Background Glows */}
+      {/* Background Glows */}
       <div className="relative">
-        <div className="absolute top-0 left-1/2 -translate-x-1/2 w-[1000px] h-[500px] bg-primary/10 blur-[130px] rounded-full pointer-events-none -z-10"></div>
-        <div className="absolute top-20 right-10 w-[350px] h-[350px] bg-blue-500/10 blur-[120px] rounded-full pointer-events-none -z-10"></div>
+        <div className="absolute top-0 left-1/2 -translate-x-1/2 w-[1100px] h-[550px] bg-primary/10 blur-[140px] rounded-full pointer-events-none -z-10"></div>
+        <div className="absolute top-24 right-10 w-[400px] h-[400px] bg-blue-500/10 blur-[130px] rounded-full pointer-events-none -z-10"></div>
 
         {/* Hero Section */}
         <section className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-8 pb-16 text-center">
-          {/* Top Badge */}
-          <div className="inline-flex items-center gap-2.5 bg-card/80 border border-primary/30 hover:border-primary/60 px-4 py-2 rounded-full mb-8 backdrop-blur-md shadow-[0_0_20px_rgba(204,255,0,0.15)] transition-all">
-            <span className="w-2 h-2 rounded-full bg-primary animate-pulse shadow-[0_0_8px_#CCFF00]"></span>
+          {/* Top Live Announcement Badge */}
+          <div className="inline-flex flex-wrap items-center justify-center gap-2.5 bg-card/80 border border-primary/30 hover:border-primary/60 px-5 py-2 rounded-full mb-8 backdrop-blur-md shadow-[0_0_25px_rgba(204,255,0,0.15)] transition-all">
+            <span className="w-2.5 h-2.5 rounded-full bg-primary animate-pulse shadow-[0_0_10px_#CCFF00]"></span>
             <span className="text-xs font-black uppercase tracking-widest text-gray-200">
-              OFFICIAL PARTNER PROGRAM • <span className="text-primary font-bold font-technical">50% LIFETIME REVSHARE</span>
+              OFFICIAL PARTNER PROGRAM • <span className="text-primary font-bold font-technical">50% LIFETIME COMMISSION</span>
+            </span>
+            <span className="hidden sm:inline text-white/30">•</span>
+            <span className="text-xs font-bold text-emerald-400 bg-emerald-500/10 border border-emerald-500/20 px-2.5 py-0.5 rounded-md">
+              $10.00 REVENUE / SALE (PRICE INCREASING TO $35 SOON)
             </span>
           </div>
 
@@ -55,37 +90,39 @@ export default function AffiliatePageClient({ faqs }: AffiliatePageClientProps) 
           </h1>
 
           {/* Subtitle */}
-          <p className="text-gray-400 text-base sm:text-lg max-w-2xl mx-auto leading-relaxed mb-8 font-medium">
-            Turn your audience into recurring passive income. Join the most lucrative partner program for <span className="text-white font-semibold">TikTok, YouTube, Twitch creators &amp; Discord owners</span> in the FIFA Ultimate Team niche.
+          <p className="text-gray-300 text-base sm:text-xl max-w-3xl mx-auto leading-relaxed mb-8 font-medium">
+            Turn your FIFA Ultimate Team audience into recurring weekly income. Earn <span className="text-primary font-bold">$10.00 pure revenue per sale</span> on our $20 launch price (and <span className="text-emerald-400 font-bold">$17.50 per sale</span> when the price increases to $35). Tailor-made for <span className="text-white font-bold underline decoration-primary decoration-2 underline-offset-4">TikTok, YouTube, Twitch creators &amp; Discord owners</span>.
           </p>
 
           {/* Feature Badges Grid */}
-          <div className="flex flex-wrap items-center justify-center gap-3 max-w-3xl mx-auto mb-10">
-            <div className="flex items-center gap-2 bg-white/5 border border-white/10 px-3.5 py-1.5 rounded-xl text-xs font-semibold text-gray-300 backdrop-blur-sm">
-              <span className="material-symbols-outlined text-primary text-base">percent</span>
-              <span>50% Recurring Commission</span>
+          <div className="flex flex-wrap items-center justify-center gap-3 max-w-4xl mx-auto mb-10">
+            <div className="flex items-center gap-2 bg-white/5 border border-white/10 px-4 py-2 rounded-xl text-xs font-semibold text-gray-200 backdrop-blur-sm shadow-sm">
+              <span className="material-symbols-outlined text-primary text-base">payments</span>
+              <span><strong>50% Revenue Share</strong> ($10 to $17.50+ / Sale)</span>
             </div>
-            <div className="flex items-center gap-2 bg-white/5 border border-white/10 px-3.5 py-1.5 rounded-xl text-xs font-semibold text-gray-300 backdrop-blur-sm">
+            <div className="flex items-center gap-2 bg-white/5 border border-white/10 px-4 py-2 rounded-xl text-xs font-semibold text-gray-200 backdrop-blur-sm shadow-sm">
               <span className="material-symbols-outlined text-primary text-base">video_library</span>
-              <span>TikTok &amp; YouTube Special Rates</span>
+              <span><strong>TikTok &amp; YouTube</strong> Special Rates</span>
             </div>
-            <div className="flex items-center gap-2 bg-white/5 border border-white/10 px-3.5 py-1.5 rounded-xl text-xs font-semibold text-gray-300 backdrop-blur-sm">
-              <span className="material-symbols-outlined text-primary text-base">key</span>
-              <span>Free Bot Review Licenses</span>
+            <div className="flex items-center gap-2 bg-white/5 border border-white/10 px-4 py-2 rounded-xl text-xs font-semibold text-gray-200 backdrop-blur-sm shadow-sm">
+              <span className="material-symbols-outlined text-primary text-base">vpn_key</span>
+              <span><strong>Free Bot Licenses</strong> for Reviewers</span>
             </div>
-            <div className="flex items-center gap-2 bg-white/5 border border-white/10 px-3.5 py-1.5 rounded-xl text-xs font-semibold text-gray-300 backdrop-blur-sm">
-              <span className="material-symbols-outlined text-primary text-base">local_offer</span>
-              <span>Custom Follower Discount Codes</span>
+            <div className="flex items-center gap-2 bg-white/5 border border-white/10 px-4 py-2 rounded-xl text-xs font-semibold text-gray-200 backdrop-blur-sm shadow-sm">
+              <span className="material-symbols-outlined text-primary text-base">schedule</span>
+              <span><strong>Weekly Friday Payouts</strong> (Crypto &amp; PayPal)</span>
             </div>
           </div>
 
           {/* Action Buttons */}
           <div className="flex flex-col sm:flex-row gap-4 justify-center items-center mb-16">
             <Link
-              href="#join-now"
-              className="w-full sm:w-auto px-8 py-4 bg-primary text-dark font-black text-base uppercase tracking-wider rounded-xl transition-all duration-300 hover:scale-105 hover:shadow-[0_0_35px_rgba(204,255,0,0.4)] flex items-center justify-center gap-2"
+              href="https://discord.gg/Rkb9nF6WG6"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="w-full sm:w-auto px-9 py-4 bg-primary text-dark font-black text-base uppercase tracking-wider rounded-xl transition-all duration-300 hover:scale-105 hover:shadow-[0_0_35px_rgba(204,255,0,0.4)] flex items-center justify-center gap-2"
             >
-              <span>Join Partner Program</span>
+              <span>Join Partner Program Free</span>
               <span className="material-symbols-outlined text-xl">bolt</span>
             </Link>
             <a
@@ -93,44 +130,184 @@ export default function AffiliatePageClient({ faqs }: AffiliatePageClientProps) 
               className="w-full sm:w-auto px-8 py-4 bg-white/5 border border-white/10 text-white font-bold text-base uppercase tracking-wider rounded-xl hover:bg-white/10 transition-all flex items-center justify-center gap-2 backdrop-blur-sm"
             >
               <span className="material-symbols-outlined text-primary text-xl">calculate</span>
-              Calculate Earnings
+              <span>Calculate Earnings (Live Tool)</span>
             </a>
           </div>
 
           {/* Quick Stat Counters */}
           <div className="grid grid-cols-2 md:grid-cols-4 gap-4 max-w-5xl mx-auto">
             <div className="glass-card p-6 rounded-2xl border border-white/5 text-center">
-              <div className="text-3xl sm:text-4xl font-black text-primary font-technical mb-1">$180K+</div>
-              <div className="text-xs text-gray-400 uppercase tracking-widest font-bold">Total Paid Out</div>
+              <div className="text-3xl sm:text-4xl font-black text-primary font-technical mb-1">$10 – $17.50</div>
+              <div className="text-xs text-gray-400 uppercase tracking-widest font-bold">Revenue Per Sale</div>
             </div>
             <div className="glass-card p-6 rounded-2xl border border-white/5 text-center">
-              <div className="text-3xl sm:text-4xl font-black text-white font-technical mb-1">50%</div>
+              <div className="text-3xl sm:text-4xl font-black text-white font-technical mb-1">50% – 60%</div>
               <div className="text-xs text-primary uppercase tracking-widest font-bold">Lifetime RevShare</div>
             </div>
             <div className="glass-card p-6 rounded-2xl border border-white/5 text-center">
               <div className="text-3xl sm:text-4xl font-black text-white font-technical mb-1">90 Days</div>
-              <div className="text-xs text-gray-400 uppercase tracking-widest font-bold">Cookie Duration</div>
+              <div className="text-xs text-gray-400 uppercase tracking-widest font-bold">Cookie Tracking</div>
             </div>
             <div className="glass-card p-6 rounded-2xl border border-white/5 text-center">
-              <div className="text-3xl sm:text-4xl font-black text-primary font-technical mb-1">Weekly</div>
-              <div className="text-xs text-gray-400 uppercase tracking-widest font-bold">Payout Speed</div>
+              <div className="text-3xl sm:text-4xl font-black text-emerald-400 font-technical mb-1">Every Friday</div>
+              <div className="text-xs text-gray-400 uppercase tracking-widest font-bold">Weekly Payouts</div>
             </div>
           </div>
         </section>
       </div>
 
-      {/* Creator Spotlight Section */}
+      {/* Interactive Earnings Calculator Section */}
+      <section className="py-20 max-w-5xl mx-auto px-4 sm:px-6 lg:px-8" id="calculator">
+        <div className="text-center mb-12">
+          <span className="text-xs font-black uppercase tracking-[0.2em] text-primary border-b border-primary/20 pb-1">
+            EARNINGS YIELD CALCULATOR
+          </span>
+          <h2 className="text-3xl sm:text-5xl font-black text-white tracking-tight mt-3">
+            Estimate Your <span className="text-primary">Affiliate Payouts</span>
+          </h2>
+          <p className="text-gray-300 text-sm sm:text-base max-w-2xl mx-auto mt-3">
+            Calculate your revenue at our current <span className="text-primary font-bold">$20 introductory price ($10/sale)</span> versus the upcoming <span className="text-emerald-400 font-bold">$35 price point ($17.50/sale)</span> at 50% commission.
+          </p>
+        </div>
+
+        <div className="glass-card p-8 sm:p-12 rounded-3xl border border-white/10 relative overflow-hidden bg-card/70 shadow-2xl">
+          {/* Background Ambient Glow */}
+          <div className="absolute top-0 right-0 w-96 h-96 bg-primary/10 blur-3xl rounded-full pointer-events-none"></div>
+
+          <div className="space-y-8 relative z-10">
+            {/* Price Point Switcher Tabs */}
+            <div className="p-1.5 bg-black/60 border border-white/10 rounded-2xl flex flex-col sm:flex-row gap-2 max-w-xl mx-auto">
+              <button
+                type="button"
+                onClick={() => setPriceTier(20)}
+                className={`flex-1 py-3 px-4 rounded-xl text-xs sm:text-sm font-black uppercase tracking-wider transition-all flex items-center justify-center gap-2 ${
+                  priceTier === 20
+                    ? "bg-primary text-dark shadow-[0_0_20px_rgba(204,255,0,0.4)]"
+                    : "text-gray-400 hover:text-white hover:bg-white/5"
+                }`}
+              >
+                <span>Current Launch Price ($20)</span>
+                <span className={`text-[10px] px-2 py-0.5 rounded font-bold ${priceTier === 20 ? "bg-black/20 text-black" : "bg-primary/10 text-primary"}`}>
+                  $10/Sale
+                </span>
+              </button>
+
+              <button
+                type="button"
+                onClick={() => setPriceTier(35)}
+                className={`flex-1 py-3 px-4 rounded-xl text-xs sm:text-sm font-black uppercase tracking-wider transition-all flex items-center justify-center gap-2 ${
+                  priceTier === 35
+                    ? "bg-emerald-400 text-dark shadow-[0_0_20px_rgba(52,211,153,0.4)]"
+                    : "text-gray-400 hover:text-white hover:bg-white/5"
+                }`}
+              >
+                <span>Upcoming Price ($35)</span>
+                <span className={`text-[10px] px-2 py-0.5 rounded font-bold ${priceTier === 35 ? "bg-black/20 text-black" : "bg-emerald-500/10 text-emerald-400"}`}>
+                  $17.50/Sale
+                </span>
+              </button>
+            </div>
+
+            {/* Slider & Tier Info */}
+            <div className="flex flex-col sm:flex-row justify-between items-start sm:items-center gap-4 border-b border-white/10 pb-6 pt-2">
+              <div>
+                <div className="text-xs font-bold text-gray-400 uppercase tracking-widest mb-1">Referred Buyers / Active Users</div>
+                <div className="text-4xl sm:text-5xl font-black text-white font-technical">{referrals} Sales</div>
+              </div>
+              <div className="text-left sm:text-right">
+                <div className="text-xs font-bold uppercase tracking-widest text-gray-400 mb-1">Partner Tier</div>
+                <div className={`inline-block text-xs font-black px-3.5 py-1.5 rounded-lg border ${currentTier.bg} ${currentTier.color}`}>
+                  {currentTier.name}
+                </div>
+                <div className="text-[11px] text-gray-300 mt-1 max-w-xs">{currentTier.perk}</div>
+              </div>
+            </div>
+
+            {/* Range Input Slider */}
+            <div className="space-y-3">
+              <label htmlFor="referral-count-slider" className="sr-only">Number of referred buyers (5 to 500)</label>
+              <input
+                id="referral-count-slider"
+                type="range"
+                min="5"
+                max="500"
+                step="5"
+                value={referrals}
+                onChange={(e) => setReferrals(parseInt(e.target.value))}
+                aria-label="Number of referred buyers"
+                aria-valuemin={5}
+                aria-valuemax={500}
+                aria-valuenow={referrals}
+                className="w-full h-3 bg-gray-800 rounded-lg appearance-none cursor-pointer accent-primary border border-white/10"
+              />
+              <div className="flex justify-between text-[11px] text-gray-400 font-bold uppercase tracking-widest">
+                <span>5 Sales</span>
+                <span>100 Sales</span>
+                <span>250 Sales</span>
+                <span>500+ Sales</span>
+              </div>
+            </div>
+
+            {/* Yield Output Metric Cards */}
+            <div className="grid grid-cols-1 sm:grid-cols-3 gap-6 pt-4">
+              <div className="p-6 rounded-2xl bg-black/60 border border-white/10 text-center">
+                <div className="text-xs font-bold text-gray-400 uppercase tracking-widest mb-2">Revenue Per Sale</div>
+                <div className="text-3xl sm:text-4xl font-black text-white font-technical">
+                  ${revenuePerSale}
+                </div>
+                <div className="text-[11px] text-gray-400 mt-2 font-medium">50% cut on ${priceTier} license</div>
+              </div>
+
+              <div className="p-6 rounded-2xl bg-black/60 border border-primary/40 text-center relative overflow-hidden shadow-[0_0_30px_rgba(204,255,0,0.1)]">
+                <div className="absolute top-0 right-0 w-24 h-24 bg-primary/10 blur-2xl rounded-full"></div>
+                <div className="text-xs font-bold text-primary uppercase tracking-widest mb-2 font-black">Estimated Monthly Payout</div>
+                <div className="text-3xl sm:text-4xl font-black text-primary font-technical drop-shadow-[0_0_15px_rgba(204,255,0,0.3)]">
+                  ${monthlyEarnings}
+                </div>
+                <div className="text-[11px] text-gray-300 mt-2 font-medium">Direct payouts every Friday</div>
+              </div>
+
+              <div className="p-6 rounded-2xl bg-black/60 border border-white/10 text-center">
+                <div className="text-xs font-bold text-gray-400 uppercase tracking-widest mb-2">Projected Annual Total</div>
+                <div className="text-3xl sm:text-4xl font-black text-emerald-400 font-technical">
+                  ${annualEarnings}
+                </div>
+                <div className="text-[11px] text-gray-400 mt-2 font-medium">12-month passive yield</div>
+              </div>
+            </div>
+
+            {/* Formula Callout */}
+            <div className="p-4 rounded-xl bg-white/[0.03] border border-white/5 flex flex-col sm:flex-row items-center justify-between gap-3 text-xs text-gray-300 font-medium">
+              <div className="flex items-center gap-2">
+                <span className="material-symbols-outlined text-primary text-base">functions</span>
+                <span><strong>Calculation Formula:</strong> {referrals} Sales × ${priceTier}.00 × 50% Commission = <span className="text-primary font-bold font-technical">${monthlyEarnings} Monthly</span></span>
+              </div>
+              <Link
+                href="https://discord.gg/Rkb9nF6WG6"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-primary hover:underline font-bold flex items-center gap-1 shrink-0"
+              >
+                <span>Claim Your Partner Link</span>
+                <span className="material-symbols-outlined text-sm">arrow_forward</span>
+              </Link>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Creator Spotlight & Channel Monetization Blueprint */}
       <section className="py-20 bg-[#0A0A0A] border-y border-white/5 relative">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
             <span className="bg-primary/10 text-primary border border-primary/20 text-xs font-black uppercase tracking-[0.25em] px-4 py-1.5 rounded-full mb-4 inline-block">
-              INFLUENCERS &amp; CONTENT CREATORS WELCOME
+              CONTENT CREATORS &amp; INFLUENCERS
             </span>
             <h2 className="text-3xl sm:text-5xl font-black text-white tracking-tight mt-3">
-              Special Rates &amp; Perks for <span className="text-primary">Content Creators</span>
+              How Top FIFA Creators Monetize With <span className="text-primary">Elite FUT SNIPER</span>
             </h2>
-            <p className="text-gray-400 max-w-xl mx-auto mt-3 text-sm sm:text-base">
-              Tailor-made deals for TikTokers, YouTubers, Streamers &amp; Discord trading leaders.
+            <p className="text-gray-400 max-w-2xl mx-auto mt-3 text-sm sm:text-base">
+              Whether you produce short-form viral TikToks, in-depth YouTube guides, Twitch streams, or manage Discord trading groups — we provide custom tools to maximize your conversion.
             </p>
           </div>
 
@@ -148,16 +325,20 @@ export default function AffiliatePageClient({ faqs }: AffiliatePageClientProps) 
                 </div>
                 <h3 className="text-lg font-bold text-white mb-2">TikTok &amp; Reels</h3>
                 <p className="text-gray-400 text-xs leading-relaxed mb-4">
-                  Short viral trading clips convert fast. Get clip packages &amp; custom follower discount codes.
+                  Quick 15-second clips of 59th-minute snipes (Yamal, Mbappé) convert at insane rates. Place your link in bio + give followers a custom discount code.
                 </p>
                 <ul className="space-y-2 mb-6 text-xs text-gray-300">
                   <li className="flex items-center gap-2">
                     <span className="material-symbols-outlined text-primary text-sm">check_circle</span>
-                    <span>Custom discount code</span>
+                    <span>Custom vanity promo code</span>
                   </li>
                   <li className="flex items-center gap-2">
                     <span className="material-symbols-outlined text-primary text-sm">check_circle</span>
-                    <span>Viral clip hooks provided</span>
+                    <span>Viral hook &amp; script templates</span>
+                  </li>
+                  <li className="flex items-center gap-2">
+                    <span className="material-symbols-outlined text-primary text-sm">check_circle</span>
+                    <span>$10 – $17.50 payout per follower sale</span>
                   </li>
                 </ul>
               </div>
@@ -180,7 +361,7 @@ export default function AffiliatePageClient({ faqs }: AffiliatePageClientProps) 
                 </div>
                 <h3 className="text-lg font-bold text-white mb-2">YouTube Channels</h3>
                 <p className="text-gray-400 text-xs leading-relaxed mb-4">
-                  Post bot tutorials or SBC guides. Receive free licenses &amp; dedicated video sponsorship bonuses.
+                  Post filter setup tutorials, SBC solver walkthroughs, or trade reviews. Put your affiliate link in pinned comments and video descriptions.
                 </p>
                 <ul className="space-y-2 mb-6 text-xs text-gray-300">
                   <li className="flex items-center gap-2">
@@ -189,7 +370,11 @@ export default function AffiliatePageClient({ faqs }: AffiliatePageClientProps) 
                   </li>
                   <li className="flex items-center gap-2">
                     <span className="material-symbols-outlined text-primary text-sm">check_circle</span>
-                    <span>Upfront video bonuses</span>
+                    <span>Upfront sponsorship bonuses</span>
+                  </li>
+                  <li className="flex items-center gap-2">
+                    <span className="material-symbols-outlined text-primary text-sm">check_circle</span>
+                    <span>High evergreen video conversions</span>
                   </li>
                 </ul>
               </div>
@@ -212,16 +397,20 @@ export default function AffiliatePageClient({ faqs }: AffiliatePageClientProps) 
                 </div>
                 <h3 className="text-lg font-bold text-white mb-2">Twitch / Streamers</h3>
                 <p className="text-gray-400 text-xs leading-relaxed mb-4">
-                  Showcase live 20ms sniping. Use stream chat commands and subscriber perks for max conversion.
+                  Demonstrate sub-20ms sniping live on stream. Use automated chatbot commands (`!bot`, `!snipe`) and subscriber discounts to drive effortless sales.
                 </p>
                 <ul className="space-y-2 mb-6 text-xs text-gray-300">
                   <li className="flex items-center gap-2">
                     <span className="material-symbols-outlined text-primary text-sm">check_circle</span>
-                    <span>Automated chat bot links</span>
+                    <span>Automated stream chat triggers</span>
                   </li>
                   <li className="flex items-center gap-2">
                     <span className="material-symbols-outlined text-primary text-sm">check_circle</span>
-                    <span>Subscriber discount rates</span>
+                    <span>Subscriber exclusive discount</span>
+                  </li>
+                  <li className="flex items-center gap-2">
+                    <span className="material-symbols-outlined text-primary text-sm">check_circle</span>
+                    <span>Live sniping on-screen proof</span>
                   </li>
                 </ul>
               </div>
@@ -244,7 +433,7 @@ export default function AffiliatePageClient({ faqs }: AffiliatePageClientProps) 
                 </div>
                 <h3 className="text-lg font-bold text-white mb-2">Discord Groups</h3>
                 <p className="text-gray-400 text-xs leading-relaxed mb-4">
-                  Monetize your trading server with automated signal webhook integrations &amp; bulk member deals.
+                  Monetize your FC 26 / FC 27 trading server with automated signal webhook integrations, role sync, and bulk community deals.
                 </p>
                 <ul className="space-y-2 mb-6 text-xs text-gray-300">
                   <li className="flex items-center gap-2">
@@ -253,7 +442,11 @@ export default function AffiliatePageClient({ faqs }: AffiliatePageClientProps) 
                   </li>
                   <li className="flex items-center gap-2">
                     <span className="material-symbols-outlined text-primary text-sm">check_circle</span>
-                    <span>Bulk member discounts</span>
+                    <span>Bulk member discount tiers</span>
+                  </li>
+                  <li className="flex items-center gap-2">
+                    <span className="material-symbols-outlined text-primary text-sm">check_circle</span>
+                    <span>Mass passive community income</span>
                   </li>
                 </ul>
               </div>
@@ -264,21 +457,21 @@ export default function AffiliatePageClient({ faqs }: AffiliatePageClientProps) 
             </div>
           </div>
 
-          {/* Expert Testimonial Callout for EEAT */}
-          <div className="mt-10 p-6 rounded-2xl border border-white/5 bg-card/40 relative overflow-hidden">
-            <div className="absolute top-0 right-0 w-24 h-24 bg-primary/5 blur-2xl rounded-full"></div>
-            <div className="flex flex-col sm:flex-row gap-4 items-start relative z-10">
-              <div className="text-primary text-4xl leading-none font-headline font-black shrink-0">“</div>
+          {/* Testimonial Callout */}
+          <div className="mt-10 p-6 sm:p-8 rounded-2xl border border-white/5 bg-card/40 relative overflow-hidden">
+            <div className="absolute top-0 right-0 w-32 h-32 bg-primary/5 blur-3xl rounded-full"></div>
+            <div className="flex flex-col sm:flex-row gap-5 items-start relative z-10">
+              <div className="text-primary text-5xl leading-none font-headline font-black shrink-0">“</div>
               <div>
-                <blockquote className="text-xs sm:text-sm text-gray-300 italic leading-relaxed">
-                  Elite FUT SNIPER has by far the highest conversion rates in the FIFA automated trading space. The weekly Friday payouts are incredibly reliable, and my Discord members have had zero ban issues thanks to the extension's local safety architecture.
+                <blockquote className="text-sm sm:text-base text-gray-200 italic leading-relaxed">
+                  Elite FUT SNIPER has the highest conversion rates I have ever seen in the FIFA trading niche. The weekly Friday payouts have never missed a beat, and my Discord members are thrilled because the 100% local extension keeps their EA accounts completely safe with zero bans.
                 </blockquote>
-                <div className="mt-3 text-[11px] text-gray-400 font-bold uppercase tracking-widest flex items-center gap-2">
-                  <span>Matt D.</span>
+                <div className="mt-4 text-xs text-gray-400 font-bold uppercase tracking-widest flex flex-wrap items-center gap-2">
+                  <span className="text-white font-black">Matt D.</span>
                   <span className="w-1.5 h-1.5 rounded-full bg-primary"></span>
-                  <span>FIFA Trading Creator &amp; Discord Owner</span>
+                  <span>FUT Creator &amp; Discord Trading Leader (32K Members)</span>
                   <span className="w-1.5 h-1.5 rounded-full bg-primary"></span>
-                  <span className="text-primary font-technical">Earned $12,450+ in 2026</span>
+                  <span className="text-primary font-technical font-black">Earned $12,450+ in 2026</span>
                 </div>
               </div>
             </div>
@@ -293,201 +486,146 @@ export default function AffiliatePageClient({ faqs }: AffiliatePageClientProps) 
               <div>
                 <div className="text-xs font-black uppercase tracking-widest text-primary mb-0.5">VIP CREATOR DEAL</div>
                 <h4 className="text-base sm:text-lg font-bold text-white">Got 5,000+ Followers or Subscribers?</h4>
-                <p className="text-xs text-gray-300">
-                  Get <span className="text-primary font-bold">up to 60% RevShare</span>, upfront video sponsorships, and follower giveaways.
+                <p className="text-xs sm:text-sm text-gray-300">
+                  Get <span className="text-primary font-bold">up to 60% RevShare ($12 to $21/sale)</span>, upfront video sponsorships, and free community bot giveaways.
                 </p>
               </div>
             </div>
             <Link
               href="https://discord.gg/Rkb9nF6WG6"
-              className="px-6 py-3 bg-primary text-dark font-black text-xs uppercase tracking-wider rounded-xl hover:scale-105 transition-transform whitespace-nowrap shadow-[0_0_15px_rgba(204,255,0,0.3)] shrink-0"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="px-6 py-3.5 bg-primary text-dark font-black text-xs uppercase tracking-wider rounded-xl hover:scale-105 transition-transform whitespace-nowrap shadow-[0_0_20px_rgba(204,255,0,0.3)] shrink-0 flex items-center gap-2"
             >
-              Request VIP Creator Deal
+              <span>Apply for VIP Creator Deal</span>
+              <span className="material-symbols-outlined text-sm">rocket_launch</span>
             </Link>
           </div>
         </div>
       </section>
 
-      {/* Interactive Earnings Calculator Section */}
-      <section className="py-20 max-w-5xl mx-auto px-4 sm:px-6 lg:px-8" id="calculator">
-        <div className="text-center mb-12">
-          <span className="text-xs font-black uppercase tracking-[0.2em] text-primary border-b border-primary/20 pb-1">
-            ESTIMATED PASSIVE YIELD
-          </span>
-          <h2 className="text-3xl sm:text-5xl font-black text-white tracking-tight mt-3">
-            Interactive <span className="text-primary">Earnings Calculator</span>
-          </h2>
-          <p className="text-gray-400 text-sm sm:text-base max-w-xl mx-auto mt-3">
-            Adjust referrals to see your monthly &amp; annual passive income at <span className="text-white font-bold">50% recurring revshare</span>.
-          </p>
-        </div>
-
-        <div className="glass-card p-8 sm:p-12 rounded-3xl border border-white/10 relative overflow-hidden bg-card/60">
-          <div className="space-y-8 relative z-10">
-            {/* Slider Header */}
-            <div className="flex flex-col sm:flex-row justify-between items-start sm:items-center gap-4 border-b border-white/10 pb-6">
-              <div>
-                <div className="text-xs font-bold text-gray-400 uppercase tracking-widest mb-1">Active Subscribers</div>
-                <div className="text-4xl font-black text-white font-technical">{referrals} Users</div>
-              </div>
-              <div className="text-left sm:text-right">
-                <div className="text-xs font-bold uppercase tracking-widest text-gray-400 mb-1">Partner Tier</div>
-                <div className={`inline-block text-xs font-black px-3 py-1 rounded-md border ${currentTier.bg} ${currentTier.color}`}>
-                  {currentTier.name}
-                </div>
-                <div className="text-[11px] text-gray-400 mt-1">{currentTier.perk}</div>
-              </div>
-            </div>
-
-            {/* Range Input */}
-            <div className="space-y-3">
-              <label htmlFor="referral-count-slider" className="sr-only">Number of active subscribers (5 to 500)</label>
-              <input
-                id="referral-count-slider"
-                type="range"
-                min="5"
-                max="500"
-                step="5"
-                value={referrals}
-                onChange={(e) => setReferrals(parseInt(e.target.value))}
-                aria-label="Number of active subscribers"
-                aria-valuemin={5}
-                aria-valuemax={500}
-                aria-valuenow={referrals}
-                className="w-full h-3 bg-gray-800 rounded-lg appearance-none cursor-pointer accent-primary border border-white/10"
-              />
-              <div className="flex justify-between text-[11px] text-gray-400 font-bold uppercase tracking-widest">
-                <span>5 Users</span>
-                <span>100 Users</span>
-                <span>250 Users</span>
-                <span>500+ Users</span>
-              </div>
-            </div>
-
-            {/* Calculated Yield Display */}
-            <div className="grid grid-cols-1 sm:grid-cols-2 gap-6 pt-4">
-              <div className="p-6 rounded-2xl bg-black/50 border border-primary/40 text-center relative overflow-hidden">
-                <div className="absolute top-0 right-0 w-24 h-24 bg-primary/10 blur-2xl rounded-full"></div>
-                <div className="text-xs font-bold text-gray-400 uppercase tracking-widest mb-2">Estimated Monthly Income</div>
-                <div className="text-4xl sm:text-5xl font-black text-primary font-technical drop-shadow-[0_0_15px_rgba(204,255,0,0.3)]">
-                  ${monthlyEarnings}
-                </div>
-                <div className="text-[11px] text-gray-400 mt-2 font-medium">Recurring payouts every Friday</div>
-              </div>
-
-              <div className="p-6 rounded-2xl bg-black/50 border border-white/10 text-center">
-                <div className="text-xs font-bold text-gray-400 uppercase tracking-widest mb-2">Annual Passive Income</div>
-                <div className="text-4xl sm:text-5xl font-black text-white font-technical">
-                  ${annualEarnings}
-                </div>
-                <div className="text-[11px] text-gray-400 mt-2 font-medium">12-month projection at 50% commission</div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      {/* Why Partner With Us (Benefits Grid) */}
-      <section className="py-20 bg-[#0A0A0A] border-y border-white/5">
+      {/* Why Elite FUT SNIPER Converts at 14.8%+ (Affiliate Selling Points) */}
+      <section className="py-20 bg-[#070707] border-b border-white/5">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
-            <h2 className="text-3xl sm:text-5xl font-black text-white tracking-tight">
-              Why Partner With <span className="text-primary">Elite FUT SNIPER</span>
+            <span className="text-xs font-black uppercase tracking-[0.2em] text-primary border-b border-primary/20 pb-1">
+              CONVERSION ENGINE
+            </span>
+            <h2 className="text-3xl sm:text-5xl font-black text-white tracking-tight mt-3">
+              Why Our Product Converts at <span className="text-primary">14.8%+</span>
             </h2>
-            <p className="text-gray-400 max-w-xl mx-auto mt-3 text-sm sm:text-base">
-              High performance tech meets industry-leading affiliate revshare.
+            <p className="text-gray-400 max-w-2xl mx-auto mt-3 text-sm sm:text-base">
+              You won&apos;t waste traffic on a tool users hesitate to buy. Elite FUT SNIPER eliminates every major objection in the FIFA bot market.
             </p>
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-            {/* Benefit 1 */}
-            <div className="glass-card p-6 rounded-2xl border border-white/5 hover:border-primary/40 transition-all duration-300">
-              <div className="flex items-center justify-between mb-4">
-                <div className="w-10 h-10 rounded-xl bg-primary/10 flex items-center justify-center text-primary">
-                  <span className="material-symbols-outlined text-xl">payments</span>
-                </div>
-                <span className="text-[10px] font-black uppercase tracking-wider text-primary bg-primary/10 px-2 py-0.5 rounded">50% REVSHARE</span>
+            <div className="glass-card p-7 rounded-2xl border border-white/5 hover:border-primary/40 transition-all">
+              <div className="w-12 h-12 rounded-xl bg-primary/10 flex items-center justify-center text-primary mb-4">
+                <span className="material-symbols-outlined text-2xl">verified_user</span>
               </div>
-              <h3 className="text-lg font-bold text-white mb-2">50% Lifetime Commission</h3>
-              <p className="text-gray-400 text-xs leading-relaxed">
-                Receive 50% of every renewal payment for the lifetime of each subscriber you refer.
+              <h3 className="text-lg font-bold text-white mb-2">Zero Password Sharing (100% Local)</h3>
+              <p className="text-gray-400 text-xs sm:text-sm leading-relaxed">
+                Unlike cloud bots (FutEarn, FUT Hunter) that demand user EA logins, our local Chrome extension executes in the user&apos;s active browser session. Instant trust means instant sales.
               </p>
             </div>
 
-            {/* Benefit 2 */}
-            <div className="glass-card p-6 rounded-2xl border border-white/5 hover:border-primary/40 transition-all duration-300">
-              <div className="flex items-center justify-between mb-4">
-                <div className="w-10 h-10 rounded-xl bg-primary/10 flex items-center justify-center text-primary">
-                  <span className="material-symbols-outlined text-xl">electric_bolt</span>
-                </div>
-                <span className="text-[10px] font-black uppercase tracking-wider text-emerald-400 bg-emerald-500/10 px-2 py-0.5 rounded">14%+ CONVERSION</span>
+            <div className="glass-card p-7 rounded-2xl border border-white/5 hover:border-primary/40 transition-all">
+              <div className="w-12 h-12 rounded-xl bg-primary/10 flex items-center justify-center text-primary mb-4">
+                <span className="material-symbols-outlined text-2xl">speed</span>
               </div>
-              <h3 className="text-lg font-bold text-white mb-2">High Conversion Rate</h3>
-              <p className="text-gray-400 text-xs leading-relaxed">
-                20ms search speeds and local Chrome extension security drive high landing page conversions.
+              <h3 className="text-lg font-bold text-white mb-2">Sub-20ms Unbeatable Speed</h3>
+              <p className="text-gray-400 text-xs sm:text-sm leading-relaxed">
+                Direct DOM injection allows users to win 59th-minute deals 15x faster than cloud bots. High user satisfaction guarantees low refund rates and long-term customer retention.
               </p>
             </div>
 
-            {/* Benefit 3 */}
-            <div className="glass-card p-6 rounded-2xl border border-white/5 hover:border-primary/40 transition-all duration-300">
-              <div className="flex items-center justify-between mb-4">
-                <div className="w-10 h-10 rounded-xl bg-primary/10 flex items-center justify-center text-primary">
-                  <span className="material-symbols-outlined text-xl">account_balance_wallet</span>
-                </div>
-                <span className="text-[10px] font-black uppercase tracking-wider text-blue-400 bg-blue-500/10 px-2 py-0.5 rounded">FRIDAY PAYOUTS</span>
+            <div className="glass-card p-7 rounded-2xl border border-white/5 hover:border-primary/40 transition-all">
+              <div className="w-12 h-12 rounded-xl bg-primary/10 flex items-center justify-center text-primary mb-4">
+                <span className="material-symbols-outlined text-2xl">smart_toy</span>
               </div>
-              <h3 className="text-lg font-bold text-white mb-2">Weekly Payouts</h3>
-              <p className="text-gray-400 text-xs leading-relaxed">
-                Reliable weekly payouts every Friday via Crypto (USDT/BTC), PayPal, or Direct Bank Transfer.
-              </p>
-            </div>
-
-            {/* Benefit 4 */}
-            <div className="glass-card p-6 rounded-2xl border border-white/5 hover:border-primary/40 transition-all duration-300">
-              <div className="flex items-center justify-between mb-4">
-                <div className="w-10 h-10 rounded-xl bg-primary/10 flex items-center justify-center text-primary">
-                  <span className="material-symbols-outlined text-xl">query_stats</span>
-                </div>
-                <span className="text-[10px] font-black uppercase tracking-wider text-purple-400 bg-purple-500/10 px-2 py-0.5 rounded">LIVE DASHBOARD</span>
-              </div>
-              <h3 className="text-lg font-bold text-white mb-2">Real-Time Analytics</h3>
-              <p className="text-gray-400 text-xs leading-relaxed">
-                Private dashboard to monitor clicks, signups, active subscriptions, and earnings in real time.
-              </p>
-            </div>
-
-            {/* Benefit 5 */}
-            <div className="glass-card p-6 rounded-2xl border border-white/5 hover:border-primary/40 transition-all duration-300">
-              <div className="flex items-center justify-between mb-4">
-                <div className="w-10 h-10 rounded-xl bg-primary/10 flex items-center justify-center text-primary">
-                  <span className="material-symbols-outlined text-xl">inventory_2</span>
-                </div>
-                <span className="text-[10px] font-black uppercase tracking-wider text-amber-400 bg-amber-500/10 px-2 py-0.5 rounded">MEDIA ASSETS</span>
-              </div>
-              <h3 className="text-lg font-bold text-white mb-2">Ready-Made Media Kits</h3>
-              <p className="text-gray-400 text-xs leading-relaxed">
-                Access pre-made high-converting banners, video clip packages, and thumbnail graphics.
-              </p>
-            </div>
-
-            {/* Benefit 6 */}
-            <div className="glass-card p-6 rounded-2xl border border-white/5 hover:border-primary/40 transition-all duration-300">
-              <div className="flex items-center justify-between mb-4">
-                <div className="w-10 h-10 rounded-xl bg-primary/10 flex items-center justify-center text-primary">
-                  <span className="material-symbols-outlined text-xl">cookie</span>
-                </div>
-                <span className="text-[10px] font-black uppercase tracking-wider text-pink-400 bg-pink-500/10 px-2 py-0.5 rounded">90-DAY COOKIE</span>
-              </div>
-              <h3 className="text-lg font-bold text-white mb-2">90-Day Cookie Window</h3>
-              <p className="text-gray-400 text-xs leading-relaxed">
-                Generous 90-day tracking cookie ensures you receive credit even if users buy weeks later.
+              <h3 className="text-lg font-bold text-white mb-2">Built-In AI SBC Solver</h3>
+              <p className="text-gray-400 text-xs sm:text-sm leading-relaxed">
+                Features the world&apos;s first in-browser AI SBC Solver that automatically buys cheapest players and completes squad challenges with 1-click. High perceived value drives conversions.
               </p>
             </div>
           </div>
         </div>
       </section>
 
-      {/* 3-Step How it Works */}
+      {/* Comparison Table: Elite Partner Program vs Standard Affiliate Networks */}
+      <section className="py-20 max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div className="text-center mb-14">
+          <h2 className="text-3xl sm:text-5xl font-black text-white tracking-tight">
+            How We Compare to <span className="text-primary">Other Affiliate Programs</span>
+          </h2>
+          <p className="text-gray-400 text-sm sm:text-base mt-2">See why gaming creators switch to Elite FUT SNIPER.</p>
+        </div>
+
+        <div className="glass-card rounded-2xl border border-white/10 overflow-hidden shadow-2xl">
+          <div className="overflow-x-auto">
+            <table className="w-full text-left text-xs sm:text-sm border-collapse">
+              <thead>
+                <tr className="border-b border-white/10 bg-white/[0.04]">
+                  <th className="py-5 px-6 font-bold text-gray-400 uppercase tracking-wider">Feature / Policy</th>
+                  <th className="py-5 px-6 font-black text-primary uppercase tracking-wider bg-primary/5 border-x border-primary/20 text-center">
+                    Elite FUT SNIPER
+                  </th>
+                  <th className="py-5 px-6 font-bold text-gray-400 uppercase tracking-wider text-center">
+                    Typical Gaming Affiliates
+                  </th>
+                </tr>
+              </thead>
+              <tbody className="divide-y divide-white/5">
+                <tr className="hover:bg-white/[0.02]">
+                  <td className="py-4 px-6 font-semibold text-white">Commission Rate</td>
+                  <td className="py-4 px-6 text-center font-bold text-primary bg-primary/5 border-x border-primary/10">
+                    50% – 60% Lifetime RevShare
+                  </td>
+                  <td className="py-4 px-6 text-center text-gray-400">10% – 20% One-Off</td>
+                </tr>
+                <tr className="hover:bg-white/[0.02]">
+                  <td className="py-4 px-6 font-semibold text-white">Revenue Per Sale</td>
+                  <td className="py-4 px-6 text-center font-bold text-primary bg-primary/5 border-x border-primary/10">
+                    $10.00 (Launch) → $17.50 (Regular)
+                  </td>
+                  <td className="py-4 px-6 text-center text-gray-400">$2.00 – $5.00</td>
+                </tr>
+                <tr className="hover:bg-white/[0.02]">
+                  <td className="py-4 px-6 font-semibold text-white">Payout Frequency</td>
+                  <td className="py-4 px-6 text-center font-bold text-emerald-400 bg-primary/5 border-x border-primary/10">
+                    Weekly (Every Friday)
+                  </td>
+                  <td className="py-4 px-6 text-center text-gray-400">Net-30 / Net-60 Days</td>
+                </tr>
+                <tr className="hover:bg-white/[0.02]">
+                  <td className="py-4 px-6 font-semibold text-white">Cookie Duration</td>
+                  <td className="py-4 px-6 text-center font-bold text-primary bg-primary/5 border-x border-primary/10">
+                    90 Days (Persistent)
+                  </td>
+                  <td className="py-4 px-6 text-center text-gray-400">24 Hours – 30 Days</td>
+                </tr>
+                <tr className="hover:bg-white/[0.02]">
+                  <td className="py-4 px-6 font-semibold text-white">Payout Methods</td>
+                  <td className="py-4 px-6 text-center font-bold text-white bg-primary/5 border-x border-primary/10">
+                    Crypto (USDT/BTC), PayPal, Bank Wire
+                  </td>
+                  <td className="py-4 px-6 text-center text-gray-400">Bank Wire Only (High Minimum)</td>
+                </tr>
+                <tr className="hover:bg-white/[0.02]">
+                  <td className="py-4 px-6 font-semibold text-white">Creator Bot License</td>
+                  <td className="py-4 px-6 text-center font-bold text-primary bg-primary/5 border-x border-primary/10">
+                    Free Pro License Provided
+                  </td>
+                  <td className="py-4 px-6 text-center text-gray-400">Must Buy Own License</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </section>
+
+      {/* 3-Step How It Works */}
       <section className="py-20 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-16">
           <span className="text-xs font-black uppercase tracking-[0.2em] text-primary border-b border-primary/20 pb-1">
@@ -496,85 +634,86 @@ export default function AffiliatePageClient({ faqs }: AffiliatePageClientProps) 
           <h2 className="text-3xl sm:text-5xl font-black text-white tracking-tight mt-3">
             Start Earning in <span className="text-primary">3 Simple Steps</span>
           </h2>
+          <p className="text-gray-400 text-sm sm:text-base mt-2">Get up and running in less than 2 minutes.</p>
         </div>
 
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-          <div className="glass-card p-8 rounded-2xl relative border border-white/10 group">
+          <div className="glass-card p-8 rounded-2xl relative border border-white/10 group hover:border-primary/40 transition-all">
             <div className="flex justify-between items-center mb-6">
               <span className="text-xs font-black uppercase tracking-widest text-primary bg-primary/10 px-3 py-1 rounded-md border border-primary/20">
                 STEP 01
               </span>
-              <span className="material-symbols-outlined text-gray-400 group-hover:text-primary transition-colors text-2xl">
+              <span className="material-symbols-outlined text-gray-400 group-hover:text-primary transition-colors text-3xl">
                 person_add
               </span>
             </div>
-            <h3 className="text-xl font-bold text-white mb-2">Register in 60 Seconds</h3>
-            <p className="text-gray-400 text-xs leading-relaxed">
-              Create your partner account and get your instant referral link. 100% free with no signup fees.
+            <h3 className="text-xl font-bold text-white mb-2">Join Partner Network</h3>
+            <p className="text-gray-400 text-xs sm:text-sm leading-relaxed">
+              Join our Discord and request your unique partner referral link and optional custom discount code. Instant approval with zero signup fees.
             </p>
           </div>
 
-          <div className="glass-card p-8 rounded-2xl relative border border-white/10 group">
+          <div className="glass-card p-8 rounded-2xl relative border border-white/10 group hover:border-primary/40 transition-all">
             <div className="flex justify-between items-center mb-6">
               <span className="text-xs font-black uppercase tracking-widest text-primary bg-primary/10 px-3 py-1 rounded-md border border-primary/20">
                 STEP 02
               </span>
-              <span className="material-symbols-outlined text-gray-400 group-hover:text-primary transition-colors text-2xl">
+              <span className="material-symbols-outlined text-gray-400 group-hover:text-primary transition-colors text-3xl">
                 share
               </span>
             </div>
-            <h3 className="text-xl font-bold text-white mb-2">Share &amp; Promote</h3>
-            <p className="text-gray-400 text-xs leading-relaxed">
-              Add your link to YouTube descriptions, TikTok bio, Twitch chat commands, or Discord channels.
+            <h3 className="text-xl font-bold text-white mb-2">Share With Your Audience</h3>
+            <p className="text-gray-400 text-xs sm:text-sm leading-relaxed">
+              Add your link or promo code to your TikTok bio, YouTube descriptions, Twitch chatbot triggers (`!bot`), or Discord trading channels.
             </p>
           </div>
 
-          <div className="glass-card p-8 rounded-2xl relative border border-white/10 group">
+          <div className="glass-card p-8 rounded-2xl relative border border-white/10 group hover:border-primary/40 transition-all">
             <div className="flex justify-between items-center mb-6">
               <span className="text-xs font-black uppercase tracking-widest text-primary bg-primary/10 px-3 py-1 rounded-md border border-primary/20">
                 STEP 03
               </span>
-              <span className="material-symbols-outlined text-gray-400 group-hover:text-primary transition-colors text-2xl">
-                account_balance
+              <span className="material-symbols-outlined text-gray-400 group-hover:text-primary transition-colors text-3xl">
+                account_balance_wallet
               </span>
             </div>
-            <h3 className="text-xl font-bold text-white mb-2">Collect 50% Weekly</h3>
-            <p className="text-gray-400 text-xs leading-relaxed">
-              Track live conversions on your portal and withdraw recurring 50% payouts every Friday via Crypto or PayPal.
+            <h3 className="text-xl font-bold text-white mb-2">Collect 50% Every Friday</h3>
+            <p className="text-gray-400 text-xs sm:text-sm leading-relaxed">
+              Earn $10.00 to $17.50+ on every single sale. Withdraw your accumulated balance every single Friday via Crypto (USDT) or PayPal.
             </p>
           </div>
         </div>
       </section>
 
       {/* FAQ Section */}
-      <section className="py-20 bg-[#0A0A0A] border-t border-white/5">
+      <section className="py-20 bg-[#0A0A0A] border-t border-white/5" id="faq">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-12">
             <h2 className="text-3xl sm:text-4xl font-black text-white tracking-tight">
-              Partner <span className="text-primary">FAQ</span>
+              Partner &amp; Affiliate <span className="text-primary">FAQ</span>
             </h2>
-            <p className="text-gray-400 text-sm mt-2">Everything you need to know about joining the Elite FUT SNIPER Partner Network.</p>
+            <p className="text-gray-400 text-sm mt-2">Clear, straightforward answers about commissions, payouts, and creator perks.</p>
           </div>
 
           <div className="space-y-4">
             {faqs.map((faq, index) => (
               <div
                 key={index}
-                className="glass-card rounded-2xl border border-white/5 overflow-hidden transition-all"
+                className="glass-card rounded-2xl border border-white/5 overflow-hidden transition-all hover:border-primary/30"
               >
                 <button
                   onClick={() => setOpenFaq(openFaq === index ? null : index)}
                   aria-expanded={openFaq === index}
                   aria-controls={`affiliate-faq-answer-${index}`}
-                  className="w-full p-6 text-left flex justify-between items-center gap-4 hover:bg-white/[0.02]"
+                  className="w-full p-6 text-left flex justify-between items-center gap-4 hover:bg-white/[0.02] transition-colors"
                 >
                   <span className="font-bold text-white text-sm sm:text-base">{faq.q}</span>
-                  <span className="material-symbols-outlined text-primary text-xl" aria-hidden="true">
+                  <span className="material-symbols-outlined text-primary text-xl shrink-0" aria-hidden="true">
                     {openFaq === index ? "remove" : "add"}
                   </span>
                 </button>
                 {openFaq === index && (
-                  <div id={`affiliate-faq-answer-${index}`} className="px-6 pb-6 text-xs sm:text-sm text-gray-400 border-t border-white/5 pt-4 leading-relaxed font-medium">
+                  <div id={`affiliate-faq-answer-${index}`} className="px-6 pb-6 text-xs sm:text-sm text-gray-300 border-t border-white/5 pt-4 leading-relaxed font-medium">
                     {faq.a}
                   </div>
                 )}
@@ -586,31 +725,35 @@ export default function AffiliatePageClient({ faqs }: AffiliatePageClientProps) 
 
       {/* Final CTA Banner */}
       <section className="py-20 max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 text-center" id="join-now">
-        <div className="p-10 sm:p-16 rounded-3xl bg-gradient-to-br from-card via-[#121212] to-card border border-primary/30 relative overflow-hidden shadow-[0_0_50px_rgba(204,255,0,0.1)]">
+        <div className="p-10 sm:p-16 rounded-3xl bg-gradient-to-br from-card via-[#121212] to-card border border-primary/30 relative overflow-hidden shadow-[0_0_50px_rgba(204,255,0,0.15)]">
           <div className="absolute top-0 right-0 w-64 h-64 bg-primary/10 blur-[100px] rounded-full pointer-events-none"></div>
           <div className="relative z-10">
             <span className="bg-primary/10 text-primary border border-primary/20 text-xs font-black uppercase tracking-[0.2em] px-4 py-1.5 rounded-full inline-block mb-6">
-              JOIN 450+ ACTIVE CREATORS &amp; PARTNERS
+              JOIN 450+ ACTIVE GAMING CREATORS &amp; PARTNERS
             </span>
             <h2 className="text-3xl sm:text-5xl font-black text-white tracking-tight mb-4">
-              Ready to Start Earning <span className="text-primary">50% Lifetime Commission?</span>
+              Ready to Earn <span className="text-primary">50% Lifetime Commission?</span>
             </h2>
-            <p className="text-gray-400 text-sm sm:text-base max-w-xl mx-auto mb-8">
-              Sign up today in under 60 seconds. Instant approval for YouTube, TikTok, Twitch, and Discord creators.
+            <p className="text-gray-300 text-sm sm:text-base max-w-xl mx-auto mb-8 font-medium">
+              Start earning $10.00 to $17.50+ per sale today. Instant approval for YouTube, TikTok, Twitch, and Discord creators.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
               <Link
                 href="https://discord.gg/Rkb9nF6WG6"
-                className="w-full sm:w-auto px-10 py-4 bg-primary text-dark font-black text-base uppercase tracking-wider rounded-xl hover:scale-105 transition-all shadow-[0_0_30px_rgba(204,255,0,0.4)] flex items-center justify-center gap-2"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="w-full sm:w-auto px-10 py-4 bg-primary text-dark font-black text-base uppercase tracking-wider rounded-xl hover:scale-105 transition-all shadow-[0_0_35px_rgba(204,255,0,0.4)] flex items-center justify-center gap-2"
               >
-                <span>Apply as a Creator</span>
+                <span>Apply as a Creator / Partner</span>
                 <span className="material-symbols-outlined text-xl">rocket_launch</span>
               </Link>
               <Link
                 href="https://discord.gg/Rkb9nF6WG6"
+                target="_blank"
+                rel="noopener noreferrer"
                 className="w-full sm:w-auto px-8 py-4 bg-white/5 border border-white/10 text-white font-bold text-base uppercase tracking-wider rounded-xl hover:bg-white/10 transition-all flex items-center justify-center gap-2"
               >
-                <span>Contact Partner Support</span>
+                <span>Contact Affiliate Manager</span>
                 <span className="material-symbols-outlined text-xl">forum</span>
               </Link>
             </div>
