@@ -47,7 +47,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
       changeFrequency: 'monthly',
       priority: 0.8,
     },
-    // Competitor comparison pages (All 30 platforms)
+    // Competitor comparison pages (All 36 platforms)
     {
       url: `${baseUrl}/bakers-bot-vs-elitefutbot`,
       lastModified: currentDate,

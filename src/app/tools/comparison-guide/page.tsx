@@ -3,13 +3,13 @@ import ComparisonHubClient from "./ComparisonHubClient";
 import { COMPARISONS } from "@/data/comparisons-hub";
 
 export const metadata: Metadata = {
-  title: "FUT Bot Comparison Hub – Elite FUT SNIPER vs All 30 Competitors",
-  description: "Compare Elite FUT SNIPER against every major FUT sniping bot, autobuyer, and trading tool. Side-by-side speed, safety, and FC 27 feature breakdowns for 30 platforms.",
+  title: "FUT Bot Comparison Hub – Elite FUT SNIPER vs All 36 Competitors",
+  description: "Compare Elite FUT SNIPER against every major FUT sniping bot, autobuyer, and trading tool. Side-by-side speed, safety, and FC 27 feature breakdowns for 36 platforms.",
   alternates: {
     canonical: "https://elitefutbot.com/tools/comparison-guide",
   },
   openGraph: {
-    title: "FUT Bot Comparison Hub – Elite FUT SNIPER vs All 30 Competitors",
+    title: "FUT Bot Comparison Hub – Elite FUT SNIPER vs All 36 Competitors",
     description: "Compare Elite FUT SNIPER against every FUT bot and trading tool. Full breakdowns including speed, safety, and features.",
     url: "https://elitefutbot.com/tools/comparison-guide",
     siteName: "Elite FUT SNIPER",
@@ -18,7 +18,7 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "FUT Bot Comparison Hub – Elite FUT SNIPER vs All 30 Competitors",
+    title: "FUT Bot Comparison Hub – Elite FUT SNIPER vs All 36 Competitors",
     description: "Compare Elite FUT SNIPER against every FUT bot. Speed, safety, features — full side-by-side breakdowns.",
     images: ["https://elitefutbot.com/og-image.png"],
   },
@@ -31,7 +31,7 @@ export default function ComparisonGuidePage() {
       {
         "@type": "CollectionPage",
         name: "FUT Bot Comparison Hub",
-        description: "Comprehensive side-by-side comparisons of Elite FUT SNIPER against 30 automated trading tools and sniping extensions.",
+        description: "Comprehensive side-by-side comparisons of Elite FUT SNIPER against 36 automated trading tools and sniping extensions.",
         url: "https://elitefutbot.com/tools/comparison-guide",
       },
       {
