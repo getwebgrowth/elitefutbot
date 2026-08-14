@@ -88,19 +88,13 @@ export default function Page() {
         ]
       },
       {
-        "@type": "Product",
+        "@type": "Service",
         "name": "Elite FUT SNIPER Affiliate Program",
         "description": "Earn 50% lifetime recurring commission promoting the #1 FC 26 & FC 27 sniping bot and autobuyer. $10 to $17.50+ revenue per sale with daily automated payouts.",
-        "offers": {
-          "@type": "Offer",
-          "price": "20.00",
-          "priceCurrency": "USD",
-          "description": "50% Affiliate Revenue Share ($10.00 per sale, increasing to $17.50 per sale at $35 regular price)",
-          "seller": {
-            "@type": "Organization",
-            "name": "Elite FUT SNIPER",
-            "url": "https://elitefutbot.com"
-          }
+        "provider": {
+          "@type": "Organization",
+          "name": "Elite FUT SNIPER",
+          "url": "https://elitefutbot.com"
         }
       },
       {

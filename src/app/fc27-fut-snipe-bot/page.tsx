@@ -39,12 +39,58 @@ export default function FC27FutSnipeBotPage() {
         "name": "FC 27 FUT Snipe Bot & Autobuyer",
         "operatingSystem": "Chrome OS, Windows, macOS",
         "applicationCategory": "BrowserApplication",
+        "image": "https://elitefutbot.com/og-image.png",
+        "brand": {
+          "@type": "Brand",
+          "name": "Elite FUT SNIPER"
+        },
+        "description": "Fastest and safest EA FC 27 FUT Snipe Bot and Autobuyer Chrome extension.",
         "offers": {
           "@type": "Offer",
+          "url": "https://elitefutbot.com/fc27-fut-snipe-bot",
           "price": "0",
-          "priceCurrency": "USD"
-        },
-        "description": "Fastest and safest EA FC 27 FUT Snipe Bot and Autobuyer Chrome extension."
+          "priceCurrency": "USD",
+          "priceValidUntil": "2027-12-31",
+          "availability": "https://schema.org/InStock",
+          "seller": {
+            "@type": "Organization",
+            "name": "Elite FUT SNIPER"
+          },
+          "shippingDetails": {
+            "@type": "OfferShippingDetails",
+            "shippingRate": {
+              "@type": "MonetaryAmount",
+              "value": "0",
+              "currency": "USD"
+            },
+            "shippingDestination": [
+              {
+                "@type": "DefinedRegion",
+                "addressCountry": "US"
+              }
+            ],
+            "deliveryTime": {
+              "@type": "ShippingDeliveryTime",
+              "handlingTime": {
+                "@type": "QuantitativeValue",
+                "minValue": 0,
+                "maxValue": 0,
+                "unitCode": "DAY"
+              },
+              "transitTime": {
+                "@type": "QuantitativeValue",
+                "minValue": 0,
+                "maxValue": 0,
+                "unitCode": "DAY"
+              }
+            }
+          },
+          "hasMerchantReturnPolicy": {
+            "@type": "MerchantReturnPolicy",
+            "applicableCountry": "US",
+            "returnPolicyCategory": "https://schema.org/MerchantReturnNotPermitted"
+          }
+        }
       },
       {
         "@type": "FAQPage",

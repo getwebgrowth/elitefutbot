@@ -26,13 +26,58 @@ const jsonLd = {
       name: "Elite FUT SNIPER AI SBC Solver Engine",
       applicationCategory: "GameApplication",
       operatingSystem: "Windows, macOS, Chrome OS",
+      image: "https://elitefutbot.com/og-image.png",
+      brand: {
+        "@type": "Brand",
+        "name": "Elite FUT SNIPER"
+      },
       description: "AI-powered Squad Building Challenge solver for EA Sports FC 26 and FC 27. Scans club inventory, computes 33/33 chemistry, and auto-submits.",
       url: "https://elitefutbot.com/ai-sbc-solver",
       offers: {
         "@type": "Offer",
+        url: "https://elitefutbot.com/ai-sbc-solver",
         price: "0",
         priceCurrency: "USD",
-        availability: "https://schema.org/PreOrder"
+        priceValidUntil: "2027-12-31",
+        availability: "https://schema.org/PreOrder",
+        seller: {
+          "@type": "Organization",
+          name: "Elite FUT SNIPER"
+        },
+        shippingDetails: {
+          "@type": "OfferShippingDetails",
+          shippingRate: {
+            "@type": "MonetaryAmount",
+            value: "0",
+            currency: "USD"
+          },
+          shippingDestination: [
+            {
+              "@type": "DefinedRegion",
+              addressCountry: "US"
+            }
+          ],
+          deliveryTime: {
+            "@type": "ShippingDeliveryTime",
+            handlingTime: {
+              "@type": "QuantitativeValue",
+              minValue: 0,
+              maxValue: 0,
+              unitCode: "DAY"
+            },
+            transitTime: {
+              "@type": "QuantitativeValue",
+              minValue: 0,
+              maxValue: 0,
+              unitCode: "DAY"
+            }
+          }
+        },
+        hasMerchantReturnPolicy: {
+          "@type": "MerchantReturnPolicy",
+          applicableCountry: "US",
+          returnPolicyCategory: "https://schema.org/MerchantReturnNotPermitted"
+        }
       }
     },
     {

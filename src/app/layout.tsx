@@ -72,17 +72,67 @@ const jsonLd = {
       "@type": "SoftwareApplication",
       "@id": "https://elitefutbot.com/#software",
       "name": "Elite FUT SNIPER",
-      "operatingSystem": "Web, Windows, macOS",
       "applicationCategory": "GameApplication",
+      "operatingSystem": "Web, Windows, macOS",
+      "image": "https://elitefutbot.com/og-image.png",
+      "screenshot": "https://elitefutbot.com/og-image.png",
+      "description": "World's fastest sniping bot and autobuyer for FC 26, FC 25 & FC 27 transfer market with sub-20ms speed and local security.",
+      "brand": {
+        "@type": "Brand",
+        "name": "Elite FUT SNIPER"
+      },
       "offers": {
         "@type": "Offer",
+        "url": "https://elitefutbot.com/#pricing",
         "price": "19.00",
-        "priceCurrency": "USD"
+        "priceCurrency": "USD",
+        "priceValidUntil": "2027-12-31",
+        "availability": "https://schema.org/InStock",
+        "seller": {
+          "@type": "Organization",
+          "name": "Elite FUT SNIPER"
+        },
+        "shippingDetails": {
+          "@type": "OfferShippingDetails",
+          "shippingRate": {
+            "@type": "MonetaryAmount",
+            "value": "0",
+            "currency": "USD"
+          },
+          "shippingDestination": [
+            {
+              "@type": "DefinedRegion",
+              "addressCountry": "US"
+            }
+          ],
+          "deliveryTime": {
+            "@type": "ShippingDeliveryTime",
+            "handlingTime": {
+              "@type": "QuantitativeValue",
+              "minValue": 0,
+              "maxValue": 0,
+              "unitCode": "DAY"
+            },
+            "transitTime": {
+              "@type": "QuantitativeValue",
+              "minValue": 0,
+              "maxValue": 0,
+              "unitCode": "DAY"
+            }
+          }
+        },
+        "hasMerchantReturnPolicy": {
+          "@type": "MerchantReturnPolicy",
+          "applicableCountry": "US",
+          "returnPolicyCategory": "https://schema.org/MerchantReturnNotPermitted"
+        }
       },
       "aggregateRating": {
         "@type": "AggregateRating",
         "ratingValue": "4.9",
-        "ratingCount": "1250"
+        "ratingCount": "1250",
+        "bestRating": "5",
+        "worstRating": "1"
       }
     },
     {
