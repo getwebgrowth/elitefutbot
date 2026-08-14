@@ -3,12 +3,14 @@ import CompetitorComparisonPage from "@/components/CompetitorComparisonPage";
 import { futSniperData } from "@/data/competitors/futsniper";
 
 export const metadata: Metadata = {
-  title: "EA FC 27 Trading Bot vs FUT Sniper – Comparison",
-  description: "Compare FUT Sniper vs Elite FUT SNIPER. See why local execution as a FUT 27 Web App extension with 20ms speeds beats legacy cloud autobuyers.",
+  title: "FUT Sniper vs Elite FUT SNIPER – FC 27 Comparison",
+  description:
+    "Compare FUT Sniper vs Elite FUT SNIPER. Win 59th-minute deals with 20ms local in-browser sniping and AI SBC solving for EA FC 26 & FC 27.",
   alternates: { canonical: "https://elitefutbot.com/futsniper-vs-elitefutbot" },
   openGraph: {
-    title: "EA FC 27 Trading Bot vs FUT Sniper – Comparison",
-    description: "Compare FUT Sniper vs Elite FUT SNIPER. See why local execution as a FUT 27 Web App extension with 20ms speeds beats legacy cloud autobuyers.",
+    title: "FUT Sniper vs Elite FUT SNIPER – FC 27 Comparison",
+    description:
+      "Compare FUT Sniper vs Elite FUT SNIPER. Win 59th-minute deals with 20ms local in-browser sniping and AI SBC solving for EA FC 26 & FC 27.",
     url: "https://elitefutbot.com/futsniper-vs-elitefutbot",
     siteName: "Elite FUT SNIPER",
     type: "article",
@@ -16,8 +18,9 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "EA FC 27 Trading Bot vs FUT Sniper – Comparison",
-    description: "Compare FUT Sniper vs Elite FUT SNIPER. See why local execution as a FUT 27 Web App extension with 20ms speeds beats legacy cloud autobuyers.",
+    title: "FUT Sniper vs Elite FUT SNIPER – FC 27 Comparison",
+    description:
+      "Compare FUT Sniper vs Elite FUT SNIPER. Win 59th-minute deals with 20ms local in-browser sniping and AI SBC solving for EA FC 26 & FC 27.",
     images: ["https://elitefutbot.com/og-image.png"],
   },
 };
