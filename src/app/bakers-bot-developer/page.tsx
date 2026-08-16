@@ -1,6 +1,7 @@
 import { Metadata } from 'next';
 import Link from 'next/link';
 import Image from 'next/image';
+import LiteYouTubeEmbed from '@/components/LiteYouTubeEmbed';
 
 export const metadata: Metadata = {
   title: "Baker's Bot Developer Creates Elite FUT SNIPER",
@@ -127,14 +128,9 @@ export default function BakersBotDeveloperPage() {
 
               {/* YouTube Responsive Video Container */}
               <div className="relative w-full aspect-video rounded-xl overflow-hidden bg-black border border-white/5 shadow-2xl">
-                <iframe
-                  className="absolute inset-0 w-full h-full object-cover"
-                  src="https://www.youtube-nocookie.com/embed/uaXx0upIiGU?autoplay=0&rel=0&modestbranding=1"
+                <LiteYouTubeEmbed
+                  videoId="uaXx0upIiGU"
                   title="Elite FUT SNIPER Technical Demonstration"
-                  allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                  allowFullScreen
-                  loading="lazy"
-                  sandbox="allow-scripts allow-same-origin allow-presentation allow-popups"
                 />
               </div>
             </div>

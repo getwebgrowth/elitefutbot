@@ -3,8 +3,8 @@ import { Inter, Space_Grotesk, Public_Sans } from "next/font/google";
 import Link from "next/link";
 import Script from "next/script";
 import Image from "next/image";
-import { Analytics } from "@vercel/analytics/next";
-import { SpeedInsights } from "@vercel/speed-insights/next";
+import VercelAnalyticsWrapper from "@/components/VercelAnalyticsWrapper";
+import AnalyticsScripts from "@/components/AnalyticsScripts";
 import "./globals.css";
 
 const inter = Inter({
@@ -192,26 +192,7 @@ export default function RootLayout({
         <meta name="msvalidate.01" content="DF183DB29828D77C74770B08A8F24DD0" />
         {/* Yandex Verification */}
         <meta name="yandex-verification" content="a303969db4d28193" />
-        {/* Google Analytics tag (gtag.js) */}
-        <Script src="https://www.googletagmanager.com/gtag/js?id=G-224X1P08Z4" strategy="lazyOnload" />
-        <Script id="google-analytics" strategy="lazyOnload" dangerouslySetInnerHTML={{
-          __html: `
-            window.dataLayer = window.dataLayer || [];
-            function gtag(){dataLayer.push(arguments);}
-            gtag('js', new Date());
-            gtag('config', 'G-224X1P08Z4');
-          `
-        }} />
-        {/* Microsoft Clarity */}
-        <Script id="microsoft-clarity" strategy="afterInteractive" dangerouslySetInnerHTML={{
-          __html: `
-            (function(c,l,a,r,i,t,y){
-                c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};
-                t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;
-                y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
-            })(window, document, "clarity", "script", "y24lqc637w");
-          `
-        }} />
+        <AnalyticsScripts />
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />
         <link rel="preconnect" href="https://www.youtube-nocookie.com" />
@@ -467,8 +448,7 @@ export default function RootLayout({
             </div>
           </div>
         </footer>
-        <Analytics />
-        <SpeedInsights />
+        <VercelAnalyticsWrapper />
       </body>
     </html>
   );

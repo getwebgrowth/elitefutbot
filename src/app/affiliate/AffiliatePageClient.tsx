@@ -132,7 +132,6 @@ export default function AffiliatePageClient({ faqs }: AffiliatePageClientProps) 
                   href="https://discord.gg/Rkb9nF6WG6"
                   target="_blank"
                   rel="noopener noreferrer"
-                  aria-label="Become an Elite FUT SNIPER Partner via Discord"
                   className="group relative inline-flex items-center justify-center px-8 py-4 font-black text-dark bg-primary rounded-xl overflow-hidden transition-transform duration-200 hover:scale-105 active:scale-95 cursor-pointer shadow-[0_0_30px_rgba(204,255,0,0.35)] min-h-[48px]"
                 >
                   <span className="relative flex items-center gap-2 uppercase tracking-wider text-sm font-black">
@@ -141,7 +140,6 @@ export default function AffiliatePageClient({ faqs }: AffiliatePageClientProps) 
                 </Link>
                 <a
                   href="#calculator"
-                  aria-label="Jump to earnings calculator"
                   className="group inline-flex items-center justify-center px-8 py-4 font-bold text-white bg-white/[0.05] border border-white/15 rounded-xl hover:bg-white/[0.08] hover:border-primary/40 transition-colors uppercase tracking-wider text-sm gap-2 cursor-pointer min-h-[48px]"
                 >
                   <span className="material-symbols-outlined text-primary" aria-hidden="true">calculate</span>
@@ -270,7 +268,6 @@ export default function AffiliatePageClient({ faqs }: AffiliatePageClientProps) 
                     <button
                       type="button"
                       onClick={copySampleLink}
-                      aria-label="Copy affiliate referral link"
                       className="px-3.5 py-1.5 bg-primary text-dark rounded-lg text-xs font-black transition-transform shrink-0 flex items-center gap-1 shadow-[0_0_15px_rgba(204,255,0,0.3)] hover:scale-105 active:scale-95 cursor-pointer min-h-[36px]"
                     >
                       <span className="material-symbols-outlined text-sm" aria-hidden="true">
@@ -332,7 +329,6 @@ export default function AffiliatePageClient({ faqs }: AffiliatePageClientProps) 
                 type="button"
                 onClick={() => setPriceTier(20)}
                 aria-pressed={priceTier === 20}
-                aria-label="Select Launch Price of 20 dollars with 10 dollars cut per sale"
                 className={`flex-1 py-3.5 px-4 rounded-xl text-xs sm:text-sm font-black uppercase tracking-wider transition-all flex items-center justify-center gap-2 cursor-pointer min-h-[48px] ${
                   priceTier === 20
                     ? "bg-primary text-dark shadow-[0_0_20px_rgba(204,255,0,0.35)]"
@@ -349,7 +345,6 @@ export default function AffiliatePageClient({ faqs }: AffiliatePageClientProps) 
                 type="button"
                 onClick={() => setPriceTier(35)}
                 aria-pressed={priceTier === 35}
-                aria-label="Select Official Price of 35 dollars with 17.50 dollars cut per sale"
                 className={`flex-1 py-3.5 px-4 rounded-xl text-xs sm:text-sm font-black uppercase tracking-wider transition-all flex items-center justify-center gap-2 cursor-pointer min-h-[48px] ${
                   priceTier === 35
                     ? "bg-emerald-400 text-dark shadow-[0_0_20px_rgba(52,211,153,0.35)]"
@@ -475,7 +470,6 @@ export default function AffiliatePageClient({ faqs }: AffiliatePageClientProps) 
                 href="https://discord.gg/Rkb9nF6WG6"
                 target="_blank"
                 rel="noopener noreferrer"
-                aria-label="Lock in 50% commission rate on Discord"
                 className="text-primary hover:underline font-bold flex items-center gap-1 shrink-0 cursor-pointer min-h-[44px]"
               >
                 <span>Lock In Your 50% Rate</span>
@@ -979,7 +973,6 @@ export default function AffiliatePageClient({ faqs }: AffiliatePageClientProps) 
                 href="https://discord.gg/Rkb9nF6WG6"
                 target="_blank"
                 rel="noopener noreferrer"
-                aria-label="Apply as a Creator or Partner on Discord"
                 className="w-full sm:w-auto px-10 py-4 bg-primary text-dark font-black text-base uppercase tracking-wider rounded-xl hover:scale-105 transition-transform shadow-[0_0_30px_rgba(204,255,0,0.4)] flex items-center justify-center gap-2 cursor-pointer min-h-[48px]"
               >
                 <span>Apply as a Creator / Partner</span>
@@ -989,7 +982,6 @@ export default function AffiliatePageClient({ faqs }: AffiliatePageClientProps) 
                 href="https://discord.gg/Rkb9nF6WG6"
                 target="_blank"
                 rel="noopener noreferrer"
-                aria-label="Contact Affiliate Manager on Discord"
                 className="w-full sm:w-auto px-8 py-4 bg-white/5 border border-white/15 text-white font-bold text-base uppercase tracking-wider rounded-xl hover:bg-white/10 transition-colors flex items-center justify-center gap-2 cursor-pointer min-h-[48px]"
               >
                 <span>Contact Affiliate Manager</span>

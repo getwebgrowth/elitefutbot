@@ -203,9 +203,9 @@ export default function TacticalIntelArticlePage() {
                 </div>
               </div>
             </div>
-            <button className="w-full py-4 bg-primary text-black font-label font-bold uppercase tracking-[0.2em] text-xs hover:brightness-110 transition-all glow-lime">
+            <Link href="https://discord.gg/Rkb9nF6WG6" className="block text-center w-full py-4 bg-primary text-black font-label font-bold uppercase tracking-[0.2em] text-xs hover:brightness-110 transition-all glow-lime">
               DEPLOY SNIPER NOW
-            </button>
+            </Link>
           </section>
 
           {/* Leaderboard */}

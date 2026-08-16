@@ -12,6 +12,7 @@ const PAGES = [
   "/bio",
   "/blog",
   "/contact",
+  "/eafcsniper-vs-elitefutbot",
   "/easyfutweb-vs-elitefutbot",
   "/easysbc-vs-elitefutbot",
   "/exesniper-vs-elitefutbot",
@@ -20,6 +21,7 @@ const PAGES = [
   "/fifasnipebot-vs-elitefutbot",
   "/futbotclub-vs-elitefutbot",
   "/futbotmanager-vs-elitefutbot",
+  "/futcloud-vs-elitefutbot",
   "/futcoinbuddy-vs-elitefutbot",
   "/futdroid-vs-elitefutbot",
   "/futearn-vs-elitefutbot",
@@ -30,12 +32,14 @@ const PAGES = [
   "/futlocker-vs-elitefutbot",
   "/futmaker-vs-elitefutbot",
   "/futmania-vs-elitefutbot",
+  "/futmillionaire-vs-elitefutbot",
   "/futrich-vs-elitefutbot",
   "/futsimpletrader-vs-elitefutbot",
   "/futsniper-vs-elitefutbot",
   "/futsniperweb-vs-elitefutbot",
   "/futsnipingbot-vs-elitefutbot",
   "/futsnipingbot24-vs-elitefutbot",
+  "/futstarz-vs-elitefutbot",
   "/futtbot-vs-elitefutbot",
   "/futultimatesniper-vs-elitefutbot",
   "/links",
@@ -43,12 +47,14 @@ const PAGES = [
   "/privacy",
   "/sbc-solver",
   "/shortfuts-vs-elitefutbot",
+  "/sniperbotitalia-vs-elitefutbot",
   "/snipesensei-vs-elitefutbot",
   "/steviessniper-vs-elitefutbot",
   "/terms",
   "/tools/comparison-guide",
   "/tools/sniping-guide",
   "/tools/tax-calculator",
+  "/utsniper-vs-elitefutbot",
   "/volt-velocity"
 ];
 
@@ -69,7 +75,7 @@ for (let i = 0; i < PAGES.length; i++) {
   console.log(`[${i + 1}/${PAGES.length}] Auditing: ${page}`);
   try {
     execSync(
-      `npx lighthouse "${url}" --output=json --output-path="${outFile}" --chrome-flags="--headless --no-sandbox --disable-gpu" --only-categories=performance,accessibility,best-practices,seo --quiet 2>/dev/null`,
+      `npx lighthouse "${url}" --output=json --output-path="${outFile}" --preset=desktop --chrome-flags="--headless --no-sandbox --disable-gpu" --only-categories=performance,accessibility,best-practices,seo --quiet 2>/dev/null`,
       { stdio: "ignore" }
     );
 

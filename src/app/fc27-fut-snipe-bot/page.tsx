@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import Link from "next/link";
+import LiteYouTubeEmbed from "@/components/LiteYouTubeEmbed";
 
 export const metadata: Metadata = {
   title: "FC 27 FUT Snipe Bot & EA FC 27 Autobuyer | Elite FUT Bot",
@@ -210,15 +211,10 @@ export default function FC27FutSnipeBotPage() {
                 </div>
               </div>
               <div className="aspect-video w-full relative">
-                <iframe
-                  className="absolute inset-0 w-full h-full rounded-b-2xl border-0"
-                  src="https://www.youtube-nocookie.com/embed/S0YuEelYNQ8?autoplay=0&rel=0&modestbranding=1"
+                <LiteYouTubeEmbed
+                  videoId="S0YuEelYNQ8"
                   title="EA FC 27 Sniping Bot & Autobuyer Demonstration"
-                  allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                  allowFullScreen
-                  loading="lazy"
-                  sandbox="allow-scripts allow-same-origin allow-presentation allow-popups"
-                ></iframe>
+                />
               </div>
             </div>
           </div>
