@@ -198,10 +198,17 @@ export default function RootLayout({
         <link rel="preconnect" href="https://www.youtube-nocookie.com" />
         <link rel="preconnect" href="https://www.google-analytics.com" />
         <link rel="dns-prefetch" href="https://i.ytimg.com" />
-        {/* Material Symbols font stylesheet - Non-blocking high performance */}
+        {/* Material Symbols font stylesheet - Non-blocking async load */}
         <link
+          id="material-symbols-font"
           rel="stylesheet"
           href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&display=swap"
+          media="print"
+        />
+        <script
+          dangerouslySetInnerHTML={{
+            __html: `(function(){var l=document.getElementById('material-symbols-font');if(l){l.media='all';}})();`,
+          }}
         />
         <script
           type="application/ld+json"
