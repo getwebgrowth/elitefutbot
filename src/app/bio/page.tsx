@@ -134,13 +134,22 @@ export default function BioPage() {
     "@type": "ProfilePage",
     "name": "Elite FUT SNIPER Official Communities & Links",
     "url": "https://elitefutbot.com/bio",
-    "sameAs": [
-      "https://www.tiktok.com/@elitefutbotx",
-      "https://www.instagram.com/elitefutbot/",
-      "https://x.com/FutSnipeBot",
-      "https://discord.gg/Rkb9nF6WG6",
-      "https://t.me/elitefutbot"
-    ]
+    "description": "Official community channels, social media links, and tools for Elite FUT SNIPER - The #1 FC 26 & FC 27 Sniping Bot suite.",
+    "mainEntity": {
+      "@type": "Organization",
+      "name": "Elite FUT SNIPER",
+      "alternateName": "EliteFUTBot",
+      "url": "https://elitefutbot.com",
+      "image": "https://elitefutbot.com/logo-elite.png",
+      "description": "The World's Fastest FC 26 & FC 27 Sniping Bot & Autobuyer Suite.",
+      "sameAs": [
+        "https://www.tiktok.com/@elitefutbotx",
+        "https://www.instagram.com/elitefutbot/",
+        "https://x.com/FutSnipeBot",
+        "https://discord.gg/Rkb9nF6WG6",
+        "https://t.me/elitefutbot"
+      ]
+    }
   };
 
   return (
