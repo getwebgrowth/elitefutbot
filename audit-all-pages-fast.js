@@ -1,4 +1,4 @@
-const { exec } = require("child_process");
+const { execSync } = require("child_process");
 const fs = require("fs");
 const path = require("path");
 
@@ -58,85 +58,56 @@ const PAGES = [
   "/volt-velocity"
 ];
 
-const CONCURRENCY = 4;
-const outDir = path.join(__dirname, "lh-results");
+const outDir = path.join(__dirname, "lh-results-dual");
 if (!fs.existsSync(outDir)) {
   fs.mkdirSync(outDir, { recursive: true });
 }
 
-console.log(`Starting parallel audit of ${PAGES.length} pages (Concurrency: ${CONCURRENCY})...`);
+console.log(`Starting DUAL (Mobile & PC) audit of ${PAGES.length} pages...`);
 
 const results = [];
-let completedCount = 0;
 
-function auditPage(page) {
-  return new Promise((resolve) => {
-    const slug = page === "/" ? "homepage" : page.replace(/\//g, "_").replace(/^_/, "");
-    const outFile = path.join(outDir, `${slug}.json`);
-    const url = `http://localhost:3000${page}`;
-    const cmd = `npx lighthouse "${url}" --output=json --output-path="${outFile}" --preset=desktop --chrome-flags="--headless --no-sandbox --disable-gpu" --only-categories=performance,accessibility,best-practices,seo --quiet`;
+function runSingleAudit(url, mode, outFile) {
+  const extraFlags = mode === "desktop" ? "--preset=desktop" : "--form-factor=mobile";
+  const cmd = `npx lighthouse "${url}" --output=json --output-path="${outFile}" ${extraFlags} --chrome-flags="--headless --no-sandbox --disable-gpu" --only-categories=performance,accessibility,best-practices,seo --quiet`;
+  try {
+    execSync(cmd, { stdio: "ignore" });
+    if (!fs.existsSync(outFile)) return { error: "No output file" };
+    const data = JSON.parse(fs.readFileSync(outFile, "utf8"));
+    const c = data.categories;
+    const perf = Math.round((c.performance?.score || 0) * 100);
+    const a11y = Math.round((c.accessibility?.score || 0) * 100);
+    const bp = Math.round((c["best-practices"]?.score || 0) * 100);
+    const seo = Math.round((c.seo?.score || 0) * 100);
+    return { perf, a11y, bp, seo };
+  } catch (err) {
+    return { error: err.message };
+  }
+}
 
-    exec(cmd, (err) => {
-      completedCount++;
-      if (err || !fs.existsSync(outFile)) {
-        console.error(`[${completedCount}/${PAGES.length}] ❌ ${page}: ${err ? err.message : "No output file"}`);
-        results.push({ page, error: err ? err.message : "Audit failed" });
-        return resolve();
-      }
+for (let i = 0; i < PAGES.length; i++) {
+  const page = PAGES[i];
+  const slug = page === "/" ? "homepage" : page.replace(/\//g, "_").replace(/^_/, "");
+  const desktopOut = path.join(outDir, `${slug}_desktop.json`);
+  const mobileOut = path.join(outDir, `${slug}_mobile.json`);
+  const url = `http://localhost:3000${page}`;
 
-      try {
-        const data = JSON.parse(fs.readFileSync(outFile, "utf8"));
-        const c = data.categories;
-        const perf = Math.round((c.performance?.score || 0) * 100);
-        const a11y = Math.round((c.accessibility?.score || 0) * 100);
-        const bp = Math.round((c["best-practices"]?.score || 0) * 100);
-        const seo = Math.round((c.seo?.score || 0) * 100);
+  console.log(`[${i + 1}/${PAGES.length}] Auditing: ${page}`);
+  const desktopRes = runSingleAudit(url, "desktop", desktopOut);
+  const mobileRes = runSingleAudit(url, "mobile", mobileOut);
 
-        const failures = [];
-        ["accessibility", "best-practices", "seo", "performance"].forEach((catKey) => {
-          if (!c[catKey]) return;
-          c[catKey].auditRefs?.forEach((ref) => {
-            const audit = data.audits[ref.id];
-            if (audit && audit.score !== null && audit.score < 1) {
-              failures.push({
-                category: catKey,
-                id: ref.id,
-                title: audit.title
-              });
-            }
-          });
-        });
+  const dStr = desktopRes.perf !== undefined ? `Perf: ${String(desktopRes.perf).padStart(3)} | A11y: ${String(desktopRes.a11y).padStart(3)} | BP: ${String(desktopRes.bp).padStart(3)} | SEO: ${String(desktopRes.seo).padStart(3)}` : "ERR";
+  const mStr = mobileRes.perf !== undefined ? `Perf: ${String(mobileRes.perf).padStart(3)} | A11y: ${String(mobileRes.a11y).padStart(3)} | BP: ${String(mobileRes.bp).padStart(3)} | SEO: ${String(mobileRes.seo).padStart(3)}` : "ERR";
 
-        results.push({ page, perf, a11y, bp, seo, failures });
-        const icon = (perf >= 95 && a11y === 100 && bp >= 95 && seo === 100) ? "✅" : "⚠️";
-        console.log(`[${completedCount}/${PAGES.length}] ${icon} ${page.padEnd(35)} | Perf: ${String(perf).padStart(3)} | A11y: ${String(a11y).padStart(3)} | BP: ${String(bp).padStart(3)} | SEO: ${String(seo).padStart(3)}`);
-      } catch (parseErr) {
-        console.error(`[${completedCount}/${PAGES.length}] ❌ ${page}: JSON Parse error`);
-        results.push({ page, error: "Parse error" });
-      }
-      resolve();
-    });
+  console.log(`      Desktop -> ${dStr}\n      Mobile  -> ${mStr}`);
+
+  results.push({
+    page,
+    desktop: desktopRes,
+    mobile: mobileRes
   });
 }
 
-async function runPool() {
-  const queue = [...PAGES];
-  const workers = Array(CONCURRENCY).fill(null).map(async () => {
-    while (queue.length > 0) {
-      const page = queue.shift();
-      if (page) await auditPage(page);
-    }
-  });
-
-  await Promise.all(workers);
-  
-  // Sort results by page name order
-  results.sort((a, b) => PAGES.indexOf(a.page) - PAGES.indexOf(b.page));
-  
-  fs.writeFileSync("all-pages-audit-summary.json", JSON.stringify(results, null, 2), "utf8");
-  console.log("\n=== ALL 53 PAGES AUDIT COMPLETED ===");
-  const perfectPages = results.filter(r => r.perf >= 95 && r.a11y === 100 && r.bp >= 95 && r.seo === 100).length;
-  console.log(`Total Pages: ${results.length} | Top-Tier / Perfect: ${perfectPages}`);
-}
-
-runPool();
+fs.writeFileSync("all-pages-audit-summary-mobile-pc.json", JSON.stringify(results, null, 2), "utf8");
+console.log("\n=== DUAL PRESET (MOBILE & PC) AUDIT COMPLETED ===");
+console.log(`Total Pages Audited: ${results.length}`);

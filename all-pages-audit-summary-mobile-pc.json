@@ -1,0 +1,797 @@
+[
+  {
+    "page": "/",
+    "desktop": {
+      "perf": 99,
+      "a11y": 100,
+      "bp": 100,
+      "seo": 100
+    },
+    "mobile": {
+      "perf": 55,
+      "a11y": 100,
+      "bp": 100,
+      "seo": 100
+    }
+  },
+  {
+    "page": "/affiliate",
+    "desktop": {
+      "perf": 97,
+      "a11y": 100,
+      "bp": 100,
+      "seo": 100
+    },
+    "mobile": {
+      "perf": 55,
+      "a11y": 100,
+      "bp": 100,
+      "seo": 100
+    }
+  },
+  {
+    "page": "/ai-sbc-solver",
+    "desktop": {
+      "perf": 99,
+      "a11y": 100,
+      "bp": 100,
+      "seo": 100
+    },
+    "mobile": {
+      "perf": 55,
+      "a11y": 100,
+      "bp": 100,
+      "seo": 100
+    }
+  },
+  {
+    "page": "/article/tactical-intel",
+    "desktop": {
+      "perf": 100,
+      "a11y": 100,
+      "bp": 100,
+      "seo": 100
+    },
+    "mobile": {
+      "perf": 88,
+      "a11y": 100,
+      "bp": 100,
+      "seo": 100
+    }
+  },
+  {
+    "page": "/bakers-bot-developer",
+    "desktop": {
+      "perf": 100,
+      "a11y": 100,
+      "bp": 100,
+      "seo": 100
+    },
+    "mobile": {
+      "perf": 55,
+      "a11y": 100,
+      "bp": 100,
+      "seo": 100
+    }
+  },
+  {
+    "page": "/bakers-bot-vs-elitefutbot",
+    "desktop": {
+      "perf": 99,
+      "a11y": 100,
+      "bp": 100,
+      "seo": 100
+    },
+    "mobile": {
+      "perf": 86,
+      "a11y": 100,
+      "bp": 100,
+      "seo": 100
+    }
+  },
+  {
+    "page": "/bio",
+    "desktop": {
+      "perf": 100,
+      "a11y": 100,
+      "bp": 100,
+      "seo": 100
+    },
+    "mobile": {
+      "perf": 92,
+      "a11y": 100,
+      "bp": 100,
+      "seo": 100
+    }
+  },
+  {
+    "page": "/blog",
+    "desktop": {
+      "perf": 99,
+      "a11y": 100,
+      "bp": 100,
+      "seo": 100
+    },
+    "mobile": {
+      "perf": 55,
+      "a11y": 100,
+      "bp": 100,
+      "seo": 100
+    }
+  },
+  {
+    "page": "/contact",
+    "desktop": {
+      "perf": 100,
+      "a11y": 100,
+      "bp": 100,
+      "seo": 100
+    },
+    "mobile": {
+      "perf": 93,
+      "a11y": 100,
+      "bp": 100,
+      "seo": 100
+    }
+  },
+  {
+    "page": "/eafcsniper-vs-elitefutbot",
+    "desktop": {
+      "perf": 100,
+      "a11y": 100,
+      "bp": 100,
+      "seo": 100
+    },
+    "mobile": {
+      "perf": 86,
+      "a11y": 100,
+      "bp": 100,
+      "seo": 100
+    }
+  },
+  {
+    "page": "/easyfutweb-vs-elitefutbot",
+    "desktop": {
+      "perf": 99,
+      "a11y": 100,
+      "bp": 100,
+      "seo": 100
+    },
+    "mobile": {
+      "perf": 86,
+      "a11y": 100,
+      "bp": 100,
+      "seo": 100
+    }
+  },
+  {
+    "page": "/easysbc-vs-elitefutbot",
+    "desktop": {
+      "perf": 100,
+      "a11y": 100,
+      "bp": 100,
+      "seo": 100
+    },
+    "mobile": {
+      "perf": 86,
+      "a11y": 100,
+      "bp": 100,
+      "seo": 100
+    }
+  },
+  {
+    "page": "/exesniper-vs-elitefutbot",
+    "desktop": {
+      "perf": 100,
+      "a11y": 100,
+      "bp": 100,
+      "seo": 100
+    },
+    "mobile": {
+      "perf": 86,
+      "a11y": 100,
+      "bp": 100,
+      "seo": 100
+    }
+  },
+  {
+    "page": "/fc26snipingbot-vs-elitefutbot",
+    "desktop": {
+      "perf": 100,
+      "a11y": 100,
+      "bp": 100,
+      "seo": 100
+    },
+    "mobile": {
+      "perf": 86,
+      "a11y": 100,
+      "bp": 100,
+      "seo": 100
+    }
+  },
+  {
+    "page": "/fc27-fut-snipe-bot",
+    "desktop": {
+      "perf": 98,
+      "a11y": 100,
+      "bp": 100,
+      "seo": 100
+    },
+    "mobile": {
+      "perf": 55,
+      "a11y": 100,
+      "bp": 100,
+      "seo": 100
+    }
+  },
+  {
+    "page": "/fifasnipebot-vs-elitefutbot",
+    "desktop": {
+      "perf": 100,
+      "a11y": 100,
+      "bp": 100,
+      "seo": 100
+    },
+    "mobile": {
+      "perf": 86,
+      "a11y": 100,
+      "bp": 100,
+      "seo": 100
+    }
+  },
+  {
+    "page": "/futbotclub-vs-elitefutbot",
+    "desktop": {
+      "perf": 100,
+      "a11y": 100,
+      "bp": 100,
+      "seo": 100
+    },
+    "mobile": {
+      "perf": 86,
+      "a11y": 100,
+      "bp": 100,
+      "seo": 100
+    }
+  },
+  {
+    "page": "/futbotmanager-vs-elitefutbot",
+    "desktop": {
+      "perf": 100,
+      "a11y": 100,
+      "bp": 100,
+      "seo": 100
+    },
+    "mobile": {
+      "perf": 86,
+      "a11y": 100,
+      "bp": 100,
+      "seo": 100
+    }
+  },
+  {
+    "page": "/futcloud-vs-elitefutbot",
+    "desktop": {
+      "perf": 100,
+      "a11y": 100,
+      "bp": 100,
+      "seo": 100
+    },
+    "mobile": {
+      "perf": 86,
+      "a11y": 100,
+      "bp": 100,
+      "seo": 100
+    }
+  },
+  {
+    "page": "/futcoinbuddy-vs-elitefutbot",
+    "desktop": {
+      "perf": 100,
+      "a11y": 100,
+      "bp": 100,
+      "seo": 100
+    },
+    "mobile": {
+      "perf": 86,
+      "a11y": 100,
+      "bp": 100,
+      "seo": 100
+    }
+  },
+  {
+    "page": "/futdroid-vs-elitefutbot",
+    "desktop": {
+      "perf": 99,
+      "a11y": 100,
+      "bp": 100,
+      "seo": 100
+    },
+    "mobile": {
+      "perf": 86,
+      "a11y": 100,
+      "bp": 100,
+      "seo": 100
+    }
+  },
+  {
+    "page": "/futearn-vs-elitefutbot",
+    "desktop": {
+      "perf": 100,
+      "a11y": 100,
+      "bp": 100,
+      "seo": 100
+    },
+    "mobile": {
+      "perf": 86,
+      "a11y": 100,
+      "bp": 100,
+      "seo": 100
+    }
+  },
+  {
+    "page": "/futgenie-vs-elitefutbot",
+    "desktop": {
+      "perf": 100,
+      "a11y": 100,
+      "bp": 100,
+      "seo": 100
+    },
+    "mobile": {
+      "perf": 86,
+      "a11y": 100,
+      "bp": 100,
+      "seo": 100
+    }
+  },
+  {
+    "page": "/futgg-vs-elitefutbot",
+    "desktop": {
+      "perf": 100,
+      "a11y": 100,
+      "bp": 100,
+      "seo": 100
+    },
+    "mobile": {
+      "perf": 86,
+      "a11y": 100,
+      "bp": 100,
+      "seo": 100
+    }
+  },
+  {
+    "page": "/futhunter-vs-elitefutbot",
+    "desktop": {
+      "perf": 100,
+      "a11y": 100,
+      "bp": 100,
+      "seo": 100
+    },
+    "mobile": {
+      "perf": 86,
+      "a11y": 100,
+      "bp": 100,
+      "seo": 100
+    }
+  },
+  {
+    "page": "/futinator-vs-elitefutbot",
+    "desktop": {
+      "perf": 100,
+      "a11y": 100,
+      "bp": 100,
+      "seo": 100
+    },
+    "mobile": {
+      "perf": 86,
+      "a11y": 100,
+      "bp": 100,
+      "seo": 100
+    }
+  },
+  {
+    "page": "/futlocker-vs-elitefutbot",
+    "desktop": {
+      "perf": 100,
+      "a11y": 100,
+      "bp": 100,
+      "seo": 100
+    },
+    "mobile": {
+      "perf": 86,
+      "a11y": 100,
+      "bp": 100,
+      "seo": 100
+    }
+  },
+  {
+    "page": "/futmaker-vs-elitefutbot",
+    "desktop": {
+      "perf": 100,
+      "a11y": 100,
+      "bp": 100,
+      "seo": 100
+    },
+    "mobile": {
+      "perf": 86,
+      "a11y": 100,
+      "bp": 100,
+      "seo": 100
+    }
+  },
+  {
+    "page": "/futmania-vs-elitefutbot",
+    "desktop": {
+      "perf": 100,
+      "a11y": 100,
+      "bp": 100,
+      "seo": 100
+    },
+    "mobile": {
+      "perf": 86,
+      "a11y": 100,
+      "bp": 100,
+      "seo": 100
+    }
+  },
+  {
+    "page": "/futmillionaire-vs-elitefutbot",
+    "desktop": {
+      "perf": 100,
+      "a11y": 100,
+      "bp": 100,
+      "seo": 100
+    },
+    "mobile": {
+      "perf": 86,
+      "a11y": 100,
+      "bp": 100,
+      "seo": 100
+    }
+  },
+  {
+    "page": "/futrich-vs-elitefutbot",
+    "desktop": {
+      "perf": 100,
+      "a11y": 100,
+      "bp": 100,
+      "seo": 100
+    },
+    "mobile": {
+      "perf": 86,
+      "a11y": 100,
+      "bp": 100,
+      "seo": 100
+    }
+  },
+  {
+    "page": "/futsimpletrader-vs-elitefutbot",
+    "desktop": {
+      "perf": 100,
+      "a11y": 100,
+      "bp": 100,
+      "seo": 100
+    },
+    "mobile": {
+      "perf": 86,
+      "a11y": 100,
+      "bp": 100,
+      "seo": 100
+    }
+  },
+  {
+    "page": "/futsniper-vs-elitefutbot",
+    "desktop": {
+      "perf": 100,
+      "a11y": 100,
+      "bp": 100,
+      "seo": 100
+    },
+    "mobile": {
+      "perf": 86,
+      "a11y": 100,
+      "bp": 100,
+      "seo": 100
+    }
+  },
+  {
+    "page": "/futsniperweb-vs-elitefutbot",
+    "desktop": {
+      "perf": 100,
+      "a11y": 100,
+      "bp": 100,
+      "seo": 100
+    },
+    "mobile": {
+      "perf": 86,
+      "a11y": 100,
+      "bp": 100,
+      "seo": 100
+    }
+  },
+  {
+    "page": "/futsnipingbot-vs-elitefutbot",
+    "desktop": {
+      "perf": 100,
+      "a11y": 100,
+      "bp": 100,
+      "seo": 100
+    },
+    "mobile": {
+      "perf": 86,
+      "a11y": 100,
+      "bp": 100,
+      "seo": 100
+    }
+  },
+  {
+    "page": "/futsnipingbot24-vs-elitefutbot",
+    "desktop": {
+      "perf": 100,
+      "a11y": 100,
+      "bp": 100,
+      "seo": 100
+    },
+    "mobile": {
+      "perf": 86,
+      "a11y": 100,
+      "bp": 100,
+      "seo": 100
+    }
+  },
+  {
+    "page": "/futstarz-vs-elitefutbot",
+    "desktop": {
+      "perf": 100,
+      "a11y": 100,
+      "bp": 100,
+      "seo": 100
+    },
+    "mobile": {
+      "perf": 86,
+      "a11y": 100,
+      "bp": 100,
+      "seo": 100
+    }
+  },
+  {
+    "page": "/futtbot-vs-elitefutbot",
+    "desktop": {
+      "perf": 100,
+      "a11y": 100,
+      "bp": 100,
+      "seo": 100
+    },
+    "mobile": {
+      "perf": 86,
+      "a11y": 100,
+      "bp": 100,
+      "seo": 100
+    }
+  },
+  {
+    "page": "/futultimatesniper-vs-elitefutbot",
+    "desktop": {
+      "perf": 100,
+      "a11y": 100,
+      "bp": 100,
+      "seo": 100
+    },
+    "mobile": {
+      "perf": 86,
+      "a11y": 100,
+      "bp": 100,
+      "seo": 100
+    }
+  },
+  {
+    "page": "/links",
+    "desktop": {
+      "perf": 100,
+      "a11y": 100,
+      "bp": 100,
+      "seo": 100
+    },
+    "mobile": {
+      "perf": 85,
+      "a11y": 100,
+      "bp": 100,
+      "seo": 100
+    }
+  },
+  {
+    "page": "/paletools-vs-elitefutbot",
+    "desktop": {
+      "perf": 100,
+      "a11y": 100,
+      "bp": 100,
+      "seo": 100
+    },
+    "mobile": {
+      "perf": 86,
+      "a11y": 100,
+      "bp": 100,
+      "seo": 100
+    }
+  },
+  {
+    "page": "/privacy",
+    "desktop": {
+      "perf": 100,
+      "a11y": 100,
+      "bp": 100,
+      "seo": 100
+    },
+    "mobile": {
+      "perf": 88,
+      "a11y": 100,
+      "bp": 100,
+      "seo": 100
+    }
+  },
+  {
+    "page": "/sbc-solver",
+    "desktop": {
+      "perf": 99,
+      "a11y": 100,
+      "bp": 100,
+      "seo": 100
+    },
+    "mobile": {
+      "perf": 55,
+      "a11y": 100,
+      "bp": 100,
+      "seo": 100
+    }
+  },
+  {
+    "page": "/shortfuts-vs-elitefutbot",
+    "desktop": {
+      "perf": 100,
+      "a11y": 100,
+      "bp": 100,
+      "seo": 100
+    },
+    "mobile": {
+      "perf": 86,
+      "a11y": 100,
+      "bp": 100,
+      "seo": 100
+    }
+  },
+  {
+    "page": "/sniperbotitalia-vs-elitefutbot",
+    "desktop": {
+      "perf": 100,
+      "a11y": 100,
+      "bp": 100,
+      "seo": 100
+    },
+    "mobile": {
+      "perf": 86,
+      "a11y": 100,
+      "bp": 100,
+      "seo": 100
+    }
+  },
+  {
+    "page": "/snipesensei-vs-elitefutbot",
+    "desktop": {
+      "perf": 100,
+      "a11y": 100,
+      "bp": 100,
+      "seo": 100
+    },
+    "mobile": {
+      "perf": 86,
+      "a11y": 100,
+      "bp": 100,
+      "seo": 100
+    }
+  },
+  {
+    "page": "/steviessniper-vs-elitefutbot",
+    "desktop": {
+      "perf": 100,
+      "a11y": 100,
+      "bp": 100,
+      "seo": 100
+    },
+    "mobile": {
+      "perf": 86,
+      "a11y": 100,
+      "bp": 100,
+      "seo": 100
+    }
+  },
+  {
+    "page": "/terms",
+    "desktop": {
+      "perf": 100,
+      "a11y": 100,
+      "bp": 100,
+      "seo": 100
+    },
+    "mobile": {
+      "perf": 88,
+      "a11y": 100,
+      "bp": 100,
+      "seo": 100
+    }
+  },
+  {
+    "page": "/tools/comparison-guide",
+    "desktop": {
+      "perf": 100,
+      "a11y": 100,
+      "bp": 100,
+      "seo": 100
+    },
+    "mobile": {
+      "perf": 88,
+      "a11y": 100,
+      "bp": 100,
+      "seo": 100
+    }
+  },
+  {
+    "page": "/tools/sniping-guide",
+    "desktop": {
+      "perf": 99,
+      "a11y": 100,
+      "bp": 100,
+      "seo": 100
+    },
+    "mobile": {
+      "perf": 55,
+      "a11y": 100,
+      "bp": 100,
+      "seo": 100
+    }
+  },
+  {
+    "page": "/tools/tax-calculator",
+    "desktop": {
+      "perf": 100,
+      "a11y": 100,
+      "bp": 100,
+      "seo": 100
+    },
+    "mobile": {
+      "perf": 84,
+      "a11y": 100,
+      "bp": 100,
+      "seo": 100
+    }
+  },
+  {
+    "page": "/utsniper-vs-elitefutbot",
+    "desktop": {
+      "perf": 100,
+      "a11y": 100,
+      "bp": 100,
+      "seo": 100
+    },
+    "mobile": {
+      "perf": 85,
+      "a11y": 100,
+      "bp": 100,
+      "seo": 100
+    }
+  },
+  {
+    "page": "/volt-velocity",
+    "desktop": {
+      "perf": 100,
+      "a11y": 100,
+      "bp": 100,
+      "seo": 100
+    },
+    "mobile": {
+      "perf": 55,
+      "a11y": 100,
+      "bp": 100,
+      "seo": 100
+    }
+  }
+]
