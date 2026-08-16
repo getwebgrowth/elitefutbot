@@ -38,12 +38,16 @@ export default function CompetitorComparisonPage({ data }: { data: CompetitorDat
   const [openFaq, setOpenFaq] = useState<number | null>(null);
   const [filterMode, setFilterMode] = useState<"all" | "elite" | "diff">("all");
 
-  const eliteWins = data.comparisonRows.filter((r) => r.winner === "elite").length;
-  const competitorWins = data.comparisonRows.filter((r) => r.winner === "competitor").length;
-  const total = data.comparisonRows.length;
+  const comparisonRows = data?.comparisonRows || [];
+  const faqs = data?.faqs || [];
+  const citations = data?.citations || [];
+
+  const eliteWins = comparisonRows.filter((r) => r.winner === "elite").length;
+  const competitorWins = comparisonRows.filter((r) => r.winner === "competitor").length;
+  const total = comparisonRows.length || 1;
   const elitePct = Math.round((eliteWins / total) * 100);
 
-  const filteredRows = data.comparisonRows.filter((row) => {
+  const filteredRows = comparisonRows.filter((row) => {
     if (filterMode === "elite") return row.winner === "elite";
     if (filterMode === "diff") return String(row.elite) !== String(row.competitor);
     return true;
@@ -77,7 +81,7 @@ export default function CompetitorComparisonPage({ data }: { data: CompetitorDat
     "@graph": [
       {
         "@type": "FAQPage",
-        mainEntity: data.faqs.map((faq) => ({
+        mainEntity: faqs.map((faq) => ({
           "@type": "Question",
           name: faq.question,
           acceptedAnswer: { "@type": "Answer", text: faq.answer }
@@ -85,12 +89,12 @@ export default function CompetitorComparisonPage({ data }: { data: CompetitorDat
       },
       {
         "@type": "Article",
-        headline: `${data.competitorName} vs Elite FUT SNIPER – Full Comparison`,
-        description: data.verdict,
+        headline: `${data?.competitorName || "Competitor"} vs Elite FUT SNIPER – Full Comparison`,
+        description: data?.verdict || "",
         image: "https://elitefutbot.com/og-image.png",
-        datePublished: data.publishedDate,
-        dateModified: data.modifiedDate,
-        citation: data.citations.map((cite) => cite.url),
+        datePublished: data?.publishedDate || "2026-08-01",
+        dateModified: data?.modifiedDate || "2026-08-14",
+        citation: citations.map((cite) => cite.url),
         author: {
           "@type": "Person",
           name: "Elite FUT SNIPER Developer",

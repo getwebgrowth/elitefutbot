@@ -53,18 +53,20 @@ export default function TaxCalculatorComponent() {
       <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
         {/* Buy Price */}
         <div className="space-y-2">
-          <label className="block text-xs font-bold text-gray-300 uppercase tracking-wider">
+          <label htmlFor="buy-price-input" className="block text-xs font-bold text-gray-200 uppercase tracking-wider">
             Buy Price (Coins)
           </label>
           <div className="relative">
             <input
+              id="buy-price-input"
               type="number"
               value={buyPrice || ""}
               onChange={(e) => setBuyPrice(Math.max(0, parseInt(e.target.value) || 0))}
               placeholder="e.g. 85000"
-              className="w-full bg-black/60 border border-white/10 rounded-2xl px-4 py-3 text-white font-mono font-bold focus:outline-none focus:border-primary transition-all"
+              aria-label="Buy Price in Coins"
+              className="w-full bg-black/60 border border-white/20 rounded-2xl px-4 py-3 text-white font-mono font-bold focus:outline-none focus:border-primary transition-all"
             />
-            <span className="absolute right-4 top-1/2 -translate-y-1/2 text-xs font-bold text-gray-500 font-mono">
+            <span className="absolute right-4 top-1/2 -translate-y-1/2 text-xs font-bold text-gray-300 font-mono">
               COINS
             </span>
           </div>
@@ -72,18 +74,20 @@ export default function TaxCalculatorComponent() {
 
         {/* Sell Price */}
         <div className="space-y-2">
-          <label className="block text-xs font-bold text-gray-300 uppercase tracking-wider">
+          <label htmlFor="sell-price-input" className="block text-xs font-bold text-gray-200 uppercase tracking-wider">
             Target Sell Price (Coins)
           </label>
           <div className="relative">
             <input
+              id="sell-price-input"
               type="number"
               value={sellPrice || ""}
               onChange={(e) => setSellPrice(Math.max(0, parseInt(e.target.value) || 0))}
               placeholder="e.g. 110000"
-              className="w-full bg-black/60 border border-white/10 rounded-2xl px-4 py-3 text-white font-mono font-bold focus:outline-none focus:border-primary transition-all"
+              aria-label="Target Sell Price in Coins"
+              className="w-full bg-black/60 border border-white/20 rounded-2xl px-4 py-3 text-white font-mono font-bold focus:outline-none focus:border-primary transition-all"
             />
-            <span className="absolute right-4 top-1/2 -translate-y-1/2 text-xs font-bold text-gray-500 font-mono">
+            <span className="absolute right-4 top-1/2 -translate-y-1/2 text-xs font-bold text-gray-300 font-mono">
               COINS
             </span>
           </div>
@@ -91,18 +95,20 @@ export default function TaxCalculatorComponent() {
 
         {/* Card Quantity */}
         <div className="space-y-2">
-          <label className="block text-xs font-bold text-gray-300 uppercase tracking-wider">
+          <label htmlFor="card-quantity-input" className="block text-xs font-bold text-gray-200 uppercase tracking-wider">
             Quantity (Cards)
           </label>
           <div className="relative">
             <input
+              id="card-quantity-input"
               type="number"
               min="1"
               value={quantity || 1}
               onChange={(e) => setQuantity(Math.max(1, parseInt(e.target.value) || 1))}
-              className="w-full bg-black/60 border border-white/10 rounded-2xl px-4 py-3 text-white font-mono font-bold focus:outline-none focus:border-primary transition-all"
+              aria-label="Quantity in Cards"
+              className="w-full bg-black/60 border border-white/20 rounded-2xl px-4 py-3 text-white font-mono font-bold focus:outline-none focus:border-primary transition-all"
             />
-            <span className="absolute right-4 top-1/2 -translate-y-1/2 text-xs font-bold text-gray-500 font-mono">
+            <span className="absolute right-4 top-1/2 -translate-y-1/2 text-xs font-bold text-gray-300 font-mono">
               UNITS
             </span>
           </div>

@@ -261,7 +261,7 @@ export default function RootLayout({
                 </p>
                 <div className="flex items-center gap-2.5 flex-wrap">
                   <Link 
-                    className="w-10 h-10 rounded-xl border border-white/10 flex items-center justify-center text-gray-400 hover:text-[#ff0050] hover:border-[#ff0050]/40 hover:bg-[#ff0050]/5 transition-all duration-300 focus-visible:ring-2 focus-visible:ring-primary focus-visible:outline-none" 
+                    className="w-12 h-12 rounded-xl border border-white/10 flex items-center justify-center text-gray-400 hover:text-[#ff0050] hover:border-[#ff0050]/40 hover:bg-[#ff0050]/5 transition-all duration-300 focus-visible:ring-2 focus-visible:ring-primary focus-visible:outline-none" 
                     href="https://www.tiktok.com/@elitefutbotx"
                     target="_blank"
                     rel="noopener noreferrer"
@@ -272,7 +272,7 @@ export default function RootLayout({
                     </svg>
                   </Link>
                   <Link 
-                    className="w-10 h-10 rounded-xl border border-white/10 flex items-center justify-center text-gray-400 hover:text-[#e1306c] hover:border-[#e1306c]/40 hover:bg-[#e1306c]/5 transition-all duration-300 focus-visible:ring-2 focus-visible:ring-primary focus-visible:outline-none" 
+                    className="w-12 h-12 rounded-xl border border-white/10 flex items-center justify-center text-gray-400 hover:text-[#e1306c] hover:border-[#e1306c]/40 hover:bg-[#e1306c]/5 transition-all duration-300 focus-visible:ring-2 focus-visible:ring-primary focus-visible:outline-none" 
                     href="https://www.instagram.com/elitefutbot/"
                     target="_blank"
                     rel="noopener noreferrer"
@@ -283,7 +283,7 @@ export default function RootLayout({
                     </svg>
                   </Link>
                   <Link 
-                    className="w-10 h-10 rounded-xl border border-white/10 flex items-center justify-center text-gray-400 hover:text-[#1da1f2] hover:border-[#1da1f2]/40 hover:bg-[#1da1f2]/5 transition-all duration-300 focus-visible:ring-2 focus-visible:ring-primary focus-visible:outline-none" 
+                    className="w-12 h-12 rounded-xl border border-white/10 flex items-center justify-center text-gray-400 hover:text-[#1da1f2] hover:border-[#1da1f2]/40 hover:bg-[#1da1f2]/5 transition-all duration-300 focus-visible:ring-2 focus-visible:ring-primary focus-visible:outline-none" 
                     href="https://x.com/FutSnipeBot"
                     target="_blank"
                     rel="noopener noreferrer"
@@ -294,7 +294,7 @@ export default function RootLayout({
                     </svg>
                   </Link>
                   <Link 
-                    className="w-10 h-10 rounded-xl border border-white/10 flex items-center justify-center text-gray-400 hover:text-[#5865F2] hover:border-[#5865F2]/40 hover:bg-[#5865F2]/5 transition-all duration-300 focus-visible:ring-2 focus-visible:ring-primary focus-visible:outline-none" 
+                    className="w-12 h-12 rounded-xl border border-white/10 flex items-center justify-center text-gray-400 hover:text-[#5865F2] hover:border-[#5865F2]/40 hover:bg-[#5865F2]/5 transition-all duration-300 focus-visible:ring-2 focus-visible:ring-primary focus-visible:outline-none" 
                     href="https://discord.gg/Rkb9nF6WG6"
                     target="_blank"
                     rel="noopener noreferrer"
@@ -305,7 +305,7 @@ export default function RootLayout({
                     </svg>
                   </Link>
                   <Link 
-                    className="w-10 h-10 rounded-xl border border-white/10 flex items-center justify-center text-gray-400 hover:text-white hover:border-white/40 hover:bg-white/5 transition-all duration-300 focus-visible:ring-2 focus-visible:ring-primary focus-visible:outline-none" 
+                    className="w-12 h-12 rounded-xl border border-white/10 flex items-center justify-center text-gray-400 hover:text-white hover:border-white/40 hover:bg-white/5 transition-all duration-300 focus-visible:ring-2 focus-visible:ring-primary focus-visible:outline-none" 
                     href="https://github.com/getwebgrowth/elitefutbot"
                     target="_blank"
                     rel="noopener noreferrer"
@@ -316,7 +316,7 @@ export default function RootLayout({
                     </svg>
                   </Link>
                   <Link 
-                    className="w-10 h-10 rounded-xl border border-white/10 flex items-center justify-center text-gray-400 hover:text-[#26A5E4] hover:border-[#26A5E4]/40 hover:bg-[#26A5E4]/5 transition-all duration-300 focus-visible:ring-2 focus-visible:ring-primary focus-visible:outline-none" 
+                    className="w-12 h-12 rounded-xl border border-white/10 flex items-center justify-center text-gray-400 hover:text-[#26A5E4] hover:border-[#26A5E4]/40 hover:bg-[#26A5E4]/5 transition-all duration-300 focus-visible:ring-2 focus-visible:ring-primary focus-visible:outline-none" 
                     href="https://t.me/elitefutbot"
                     target="_blank"
                     rel="noopener noreferrer"
@@ -382,7 +382,7 @@ export default function RootLayout({
                 <span className="text-[11px] font-mono uppercase tracking-[0.2em] text-gray-400">Direct Competitor Breakdowns</span>
                 <Link href="/tools/comparison-guide" className="text-xs text-primary font-bold hover:underline font-mono">Explore Hub (36 Tools)</Link>
               </div>
-              <div className="flex flex-wrap gap-2 text-xs">
+              <div className="flex flex-wrap gap-3 text-xs">
                 {[
                   { slug: "bakers-bot-vs-elitefutbot", name: "Baker's Bot" },
                   { slug: "futsimpletrader-vs-elitefutbot", name: "FUT Simple Trader" },
@@ -424,7 +424,7 @@ export default function RootLayout({
                   <Link
                     key={item.slug}
                     href={`/${item.slug}`}
-                    className="px-2.5 py-1 rounded-lg bg-white/[0.03] hover:bg-primary/10 border border-white/5 hover:border-primary/30 text-gray-400 hover:text-primary transition-all text-[11px]"
+                    className="px-3.5 py-2 min-h-[36px] my-0.5 inline-flex items-center rounded-xl bg-white/[0.04] hover:bg-primary/10 border border-white/10 hover:border-primary/40 text-gray-300 hover:text-primary transition-all text-xs font-medium"
                   >
                     vs {item.name}
                   </Link>

@@ -232,11 +232,11 @@ export default function TacticalIntelArticlePage() {
           <section className="space-y-4">
             <h4 className="font-headline font-bold text-white text-[10px] uppercase tracking-widest border-b border-outline-variant/10 pb-2">Related Intel</h4>
             <div className="space-y-4">
-              <Link className="group block space-y-1" href="/article/tactical-intel">
+              <Link className="group block space-y-1 py-2 min-h-[48px]" href="/article/tactical-intel">
                 <h5 className="text-on-surface group-hover:text-primary transition-colors font-headline font-bold text-sm leading-tight">Advanced Filter Logic: Combining Chem Styles</h5>
                 <p className="text-on-surface-variant text-[9px] uppercase font-label tracking-widest">3 Days Ago • INTERMEDIATE</p>
               </Link>
-              <Link className="group block space-y-1" href="/article/tactical-intel">
+              <Link className="group block space-y-1 py-2 min-h-[48px]" href="/article/tactical-intel">
                 <h5 className="text-on-surface group-hover:text-primary transition-colors font-headline font-bold text-sm leading-tight">Predicting the Market Crash: Black Friday Prep</h5>
                 <p className="text-on-surface-variant text-[9px] uppercase font-label tracking-widest">1 Week Ago • EXPERT</p>
               </Link>

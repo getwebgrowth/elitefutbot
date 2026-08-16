@@ -336,5 +336,15 @@ body {
 }
 
 
-
+/* Mobile Performance & Rendering Optimizations */
+@media (max-width: 640px) {
+  .blur-\[120px\], .blur-\[150px\], .blur-\[180px\], .blur-\[100px\] {
+    filter: blur(20px) !important;
+  }
+  
+  article section, main section {
+    content-visibility: auto;
+    contain-intrinsic-size: 1px 600px;
+  }
+}
 
